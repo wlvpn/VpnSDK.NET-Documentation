@@ -1,0 +1,820 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/D/Documents/VpnSDK/VpnSDK.Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Enums.AuthenticationStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Enums.AuthenticationStatus.html",
+          "hash": "BCnhX/El+4pSH3rsPiYckg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Enums.ConnectionStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Enums.ConnectionStatus.html",
+          "hash": "yiJlobEhR0uSy4ZPhQJSTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Enums.NetworkConnectionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Enums.NetworkConnectionType.html",
+          "hash": "aEoWwy40gWcu5WMHMIlb7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Enums.NetworkProtocolType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Enums.NetworkProtocolType.html",
+          "hash": "Y8FtUYOBx9BhIBmURSEaZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Enums.OpenVpnCipherType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Enums.OpenVpnCipherType.html",
+          "hash": "BDvCSZGW53SVWSWT5lUvsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Enums.PositionInfoStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Enums.PositionInfoStatus.html",
+          "hash": "qp1SELWXcDt1PLDOllldlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Enums.RefreshLocationListStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Enums.RefreshLocationListStatus.html",
+          "hash": "lcMNz2Gr5zBciQ94F1ulQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Enums.html",
+          "hash": "ARVG3sUnKJqo6ZUY5WiILg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKAPIException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKAPIException.html",
+          "hash": "Vd7w2ygXkt1RvQ3s+RLl8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKAuthenticationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKAuthenticationException.html",
+          "hash": "Gyzh+fBBbH8Kyi/px8XZeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKBaseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKBaseException.html",
+          "hash": "pZr8jdyhmYomdfoL2LBsfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKConnectionAlreadyEstablishedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKConnectionAlreadyEstablishedException.html",
+          "hash": "4id47joP6DUFyzXFass4Pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKConnectionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKConnectionException.html",
+          "hash": "3TKcQLbSxokLiljQfdSToA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKConnectionTerminatedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKConnectionTerminatedException.html",
+          "hash": "QgzdF6uOc6yCWlLW5F4CiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKCoreException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKCoreException.html",
+          "hash": "rz9yKDe4QT6aFbukvBCSHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKEmptyAvailableVpnProtocolsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKEmptyAvailableVpnProtocolsException.html",
+          "hash": "lYfzfc4sh7hxhHC6rTWtQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKFetchLocationsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKFetchLocationsException.html",
+          "hash": "evy9fkkdXj9oJpFlZK6ovQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKInvalidConfigurationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKInvalidConfigurationException.html",
+          "hash": "lt0WD5gI2iqpdVjDHWrPhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKNotAuthorizedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKNotAuthorizedException.html",
+          "hash": "9i7LaXWZwF+PDcgz9LZmWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKNullLocationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKNullLocationException.html",
+          "hash": "cYpIyVq0ZG9GHz+rFHGzKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKOAuthException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKOAuthException.html",
+          "hash": "6ttwb81ZwdWDD6g7wICvag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKUnsupportedProtocolException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKUnsupportedProtocolException.html",
+          "hash": "rRzJk5SDCllj9XSbnx9/9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKVPNAuthenticationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.VpnSDKVPNAuthenticationException.html",
+          "hash": "p1bc1d/HaMTm/lOdHA+fuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Exceptions.html",
+          "hash": "/jjK8F7QfuRh8zQh61qqOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Extensions.ExceptionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Extensions.ExceptionExtensions.html",
+          "hash": "eQvUW2vn7bAyOjfyZFfr3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Extensions.LoadLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Extensions.LoadLevel.html",
+          "hash": "TGMBJ55TkrFDX1mfMsYGKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Extensions.RegionLoadChecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Extensions.RegionLoadChecker.html",
+          "hash": "DJdJA3q6bTQAYnlT8c3fkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Extensions.html",
+          "hash": "JQ8Qh0EXT5AgVLaykiIkPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Helpers.VpnProtocolDiagnostics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Helpers.VpnProtocolDiagnostics.html",
+          "hash": "iaBv/rWSe0MXiD8qE4DleQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Helpers.html",
+          "hash": "1qbBzam8iqvlMbT+tSLPxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.IBestAvailable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.IBestAvailable.html",
+          "hash": "d0FP7aEW//G5ySYAXmqWGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.IConnectionConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.IConnectionConfiguration.html",
+          "hash": "XY9+22xw0WdPFxc1kZAPEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.ILocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.ILocation.html",
+          "hash": "6sdwv1H3qr7nS9J8CvwUqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.IOpenVpnConnectionConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.IOpenVpnConnectionConfiguration.html",
+          "hash": "kSrqvQfCq9u8h+suPe03og=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.IRasConnectionConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.IRasConnectionConfiguration.html",
+          "hash": "JG0BcgubZg2ID55fD7uSPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.IRegion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.IRegion.html",
+          "hash": "3KWpk72KRcaIDELQWyVZTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.ISDK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.ISDK.html",
+          "hash": "baDgg08UiGDU8oRGd+j0Ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.IServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.IServer.html",
+          "hash": "j50xbePQCpueSXuNjGGGrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.IUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.IUser.html",
+          "hash": "anVyQ9u0fAoF1TIqK+6LzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Interfaces.html",
+          "hash": "dF0NaU7oj8WxCHZ9As7a7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Messages.RefreshLocationListMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Messages.RefreshLocationListMessage.html",
+          "hash": "FMeNqBadzq7Bg48Vu5eZRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.Messages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.Messages.html",
+          "hash": "fJfvIBytJPWz6IiShY/bCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.OpenVpnConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.OpenVpnConfiguration.html",
+          "hash": "rpbtaGWAdeatRdmJcrKj6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.OpenVpnConnectionConfigurationBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.OpenVpnConnectionConfigurationBuilder.html",
+          "hash": "3pn7ZGDR7yaz4qxWbEGrAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.PositionInfoEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.PositionInfoEventArgs.html",
+          "hash": "WKbsOGnf9eeSPA8htsTwcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.RasConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.RasConfiguration.html",
+          "hash": "mf13T5KaTAlKOfiteQQamg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.RasConnectionConfigurationBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.RasConnectionConfigurationBuilder.html",
+          "hash": "tjuicjh2HFFKyYdAM8RgJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.SDKBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.SDKBuilder.html",
+          "hash": "5xqa3IBNNbV0Gu/hABWP8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.Public.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.Public.html",
+          "hash": "HEalmEkUgJ7YmhCzrZIUAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Z5GMAKvfoD9rihnY9o2FmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "xyWje0jaZTGJ/yZL0gTYZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/branding.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/branding.html",
+          "hash": "MtxStY2zXbgXZsJloT5cOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "7rHvaXSksoJDx3icG92pfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/quickstart.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/quickstart.html",
+          "hash": "jTsjuV4QgEY/NrTU2uCthA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "WkgviuIBa9GQlE73kTPt/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/brandIcon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/brandIcon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/brandIcon.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/brandIcon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/dotmap.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dotmap.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/imageBanner.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/imageBanner.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/screenshots/GreenMain.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/screenshots/GreenMain.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/screenshots/OrangeMain.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/screenshots/OrangeMain.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "9GZpPEEW/bDRK38INqTh7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Ljhn5cShDXS2seu5HewdHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because docfx version changed from 2.34.0.0 to 2.39.2.0.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

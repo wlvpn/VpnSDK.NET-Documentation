@@ -1,0 +1,696 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Branding - How To Make ConsumerVPN Yours | Windows WLVPN SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Branding - How To Make ConsumerVPN Yours | Windows WLVPN SDK ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../articles/intro.html" title="Guides &amp; Articles" class="active">Guides &amp; Articles</a>
+                  </li>
+                  <li class="">
+                    <a href="../api/index.html" title="API Documentation" class="">API Documentation</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="Quick Start" class="">Quick Start</a>
+                    </li>
+                    <li class="active">
+                      <a href="branding.html" title="Branding ConsumerVPN" class="active">Branding ConsumerVPN</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="branding---how-to-make-consumervpn-yours">Branding - How To Make ConsumerVPN Yours</h1>
+
+<p>Provided to you is a copy of the example ConsumerVPN client, a base application that can be simply modified to be used as your customer-facing application. Designed to be simple to make unique, for most WLVPN partners, you will find yourself using it as your launching point as you use the features WLVPN provides.</p>
+<h2 id="what-you-need">What you need</h2>
+<p>You will need to become a registered WLVPN reseller to run the application. If you have not done so already, please visit <a href="https://wlvpn.com/#contact">https://wlvpn.com/#contact</a> to get started.</p>
+<p>To create your own application from this template, you will need a copy of Visual Studio.  This can be obtained from here:  <a href="https://www.visualstudio.com/vs/">https://www.visualstudio.com/vs/</a>   </p>
+<p>Once Visual Studio 2017 has been installed, you will need to clone or download the repository for the ConsumerVPN application. You can either clone using git at <a href="https://github.com/wlvpn/ConsumerVPN-Windows">https://github.com/wlvpn/ConsumerVPN-Windows</a> or download the ZIP from our partner portal. </p>
+<p>Once downloaded an extracted, open the <code>VpnSDK.WLVpn.sln</code> file in the extracted folder. </p>
+<p>The application is a Microsoft .NET C# WPF application.  It follows the normal MVVM patterns associated with a WPF application.  This document does not detail the code in the application but how to change the look of the application generated from the code.  If you install Visual Studio 2017, which is what we are using currently, you will get .NET 4.6.1 which is the .NET prerequisite for the application.  </p>
+<p> We use the WiX toolset for building installers. You will also need to download and install the WiX Toolset build tools and WiX Toolset Visual Studio Extensions that are compatible with your environment from this link: <a href="http://wixtoolset.org/releases/">http://wixtoolset.org/releases/</a>   </p>
+<p>The Wix installation will require you to enable .net 3.5 on your machine. If WiX does not automatically do this for you, perform the following instructions:</p>
+<ol>
+<li>Press “<strong>Windows Logo</strong>” + “<strong>R</strong>” keys on the keyboard.</li>
+<li>Type “<strong>appwiz.cpl</strong>” in the “<strong>Run</strong>” command box and press “<strong>ENTER</strong>” on the keyboard or click <strong>Run</strong>.</li>
+<li>In the “<strong>*Programs and Features</strong><em>” window, click on the link “</em><em>*Turn Windows features on or off</em>**”.</li>
+<li>Check if the “<strong>*.NET Framework 3.5 (includes .NET 2.0 and 3.0)</strong>*” option is available in it.</li>
+<li>If yes, then enable it and then click on “<strong>*OK</strong>*”.</li>
+<li>Follow the on-screen instructions to complete the installation and restart the computer, if prompted.</li>
+</ol>
+<p>If you run in to any errors, the following link will provide information from Microsoft on how to solve any potential issues.</p>
+<p><a href="https://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_install/how-to-instal-net-framework-35-on-windows-10/450b3ba6-4d19-45ae-840e-78519f36d7a4?auth=1">https://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_install/how-to-instal-net-framework-35-on-windows-10/450b3ba6-4d19-45ae-840e-78519f36d7a4?auth=1</a></p>
+<h2 id="navigating-the-project">Navigating the project</h2>
+<p><strong><em>Solution Structure</em></strong></p>
+<p>The application is divided in to the following solution structure.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Folder / Namespace</th>
+<th style="text-align:left">Explanation / Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Behaviors</td>
+<td style="text-align:left">WPF behavior utilities</td>
+</tr>
+<tr>
+<td style="text-align:center">Common</td>
+<td style="text-align:left">Common View utilities</td>
+</tr>
+<tr>
+<td style="text-align:center">Converters</td>
+<td style="text-align:left">Data converters for UI elements</td>
+</tr>
+<tr>
+<td style="text-align:center">Events</td>
+<td style="text-align:left">Application-wide events</td>
+</tr>
+<tr>
+<td style="text-align:center">Extensions</td>
+<td style="text-align:left">Custom utility class extensions</td>
+</tr>
+<tr>
+<td style="text-align:center">Helpers</td>
+<td style="text-align:left">Utility classes for dealing with all kinds of data</td>
+</tr>
+<tr>
+<td style="text-align:center">Resources</td>
+<td style="text-align:left">All visual resources are stored here. You will most likely be working in here. There is a branding subfolder in this which contains all the files required to be modified to make the application visually yours.</td>
+</tr>
+<tr>
+<td style="text-align:center">ViewModels</td>
+<td style="text-align:left">View models (for standard MVVM development) for all views in the application.</td>
+</tr>
+<tr>
+<td style="text-align:center">Views</td>
+<td style="text-align:left">All the views the application uses.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="things-to-change-when-branding">Things to change when branding</h2>
+<h4 id="application-settings">Application Settings</h4>
+<p>In the VpnSDK.WLVPN application properties (found by right clicking on the project in the solution explorer and then going to settings on the left-hand side bar) you will find the following settings.</p>
+<ul>
+<li>API_KEY</li>
+<li>AUTHORIZATION_TOKEN</li>
+<li>APPLICATION_NAME</li>
+</ul>
+<p>These keys will need to be updated to match the data provided to you by WLVPN SDK to ensure you&#39;re able to authorize to the backend and use all functionality.</p>
+<h4 id="application-name-and-namespace">Application name and namespace</h4>
+<p>Under the <strong>Application</strong> section of the project properties, you will want to change the field <code>WLConcepts</code> to something along the lines of your application brand. For example, if you were called ConsumerVPN, it would be suggested to call it ConsumerVPN. As well as this, you should changed the <strong>Default Namespace</strong> to <code>CompanyName.ApplicationName</code>. Visual Studio will assist you in updating all the namespaces in the project files automatically.</p>
+<h4 id="visual-settings">Visual Settings</h4>
+<p>Each of the files in the Branding folder within Resources may be changed to have your visualization. Each file will be discussed in this section. </p>
+<h4 id="brandingxaml">Branding.xaml</h4>
+<p>The <code>Branding.xaml</code> file is a WPF resource file that defines brushes, colors, images and strings used in various places within the application.   Resources are defined in this file using the normal WPF Resource definition forms. If you wish to change a color or a brush, this is the file where you do it.  The keys and values defined in the file are shown below and are generally self-explanatory. Refer to the key names to get a better understanding of what the value represents.</p>
+<pre><code class="lang-xml">    &lt;!--  Names and URLs  --&gt;
+
+    &lt;system:String x:Key=&quot;BRAND_NAME&quot;&gt;Consumer VPN&lt;/system:String&gt;
+    &lt;system:String x:Key=&quot;BRAND_LOGFILE_NAME&quot;&gt;ConsumerVPN.log&lt;/system:String&gt;
+    &lt;system:String x:Key=&quot;BRAND_MAIN_URL&quot;&gt;https://wlvpn.com/#contact&lt;/system:String&gt;
+    &lt;system:String x:Key=&quot;BRAND_REGISTER_URL&quot;&gt;https://wlvpn.com/#contact&lt;/system:String&gt;
+    &lt;system:String x:Key=&quot;BRAND_FORGOT_PASSWORD_URL&quot;&gt;https://wlvpn.com/#contact&lt;/system:String&gt;
+    &lt;system:String x:Key=&quot;BRAND_SPARKLE_URL&quot;&gt;https://example/sparkle.xml&lt;/system:String&gt;
+
+    &lt;!--  Logos, images and licenses  --&gt;
+
+    &lt;BitmapImage x:Key=&quot;BRAND_LOGO&quot; UriSource=&quot;pack://application:,,,/WLVpn;component/Resources/Branding/Assets/logo.png&quot; /&gt;
+    &lt;BitmapImage x:Key=&quot;BRAND_BANNER&quot; UriSource=&quot;pack://application:,,,/WLVpn;component/Resources/Branding/Assets/imageBanner.png&quot; /&gt;
+    &lt;BitmapImage x:Key=&quot;BRAND_MAP&quot; UriSource=&quot;pack://application:,,,/WLVpn;component/Resources/Branding/Assets/dotmap.png&quot; /&gt;
+    &lt;ImageSource x:Key=&quot;BRANDING_UNKNOWN_COUNTRY_LOGO&quot;&gt;pack://application:,,,/WLVpn;component/Resources/Branding/Assets/logo.png&lt;/ImageSource&gt;
+    &lt;system:String x:Key=&quot;BRAND_LICENSE&quot;&gt;pack://application:,,,/WLVpn;component/Resources/Branding/Assets/licenses.rtf&lt;/system:String&gt;
+    &lt;system:String x:Key=&quot;BRAND_ICON&quot;&gt;pack://application:,,,/WLVpn;component/Resources/Branding/Assets/brandIcon.ico&lt;/system:String&gt;
+
+    &lt;!--  Branding colors and brushes  --&gt;
+
+    &lt;!--  Multiview colors and brushes  --&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_TITLE_TEXT_FOREGROUND&quot; Color=&quot;White&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_NORMAL_TEXT_FOREGROUND&quot; Color=&quot;White&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_CONTRAST_FOREGROUND&quot; Color=&quot;White&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_ACTION_PANEL_BRUSH&quot; Color=&quot;#545454&quot; /&gt;
+
+    &lt;!--  Login view brushes  --&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_LOGIN_LOGO_BACKGROUND&quot; Color=&quot;#202020&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_LOGIN_PANEL_BACKGROUND&quot; Color=&quot;#545454&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_LOGIN_ICON_ACCENT&quot; Color=&quot;White&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_LOGIN_ERROR_ACCENT&quot; Color=&quot;#E10000&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_LOGIN_ACCENT&quot; Color=&quot;White&quot; /&gt;
+
+    &lt;!--  Location view brushes  --&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_LOCATION_LIST_BACKGROUND&quot; Color=&quot;#545454&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_LOCATION_SERVERS_LIST_BACKGROUND&quot; Color=&quot;#2a2a2a&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_LOCATION_LIST_HEADER_BORDER&quot; Color=&quot;Black&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_SEARCH_BACKGROUND&quot; Color=&quot;#717171&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_SEARCH_FOREGROUND&quot; Color=&quot;White&quot; /&gt;
+
+    &lt;!--  Main view brushes  --&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_CONNECTIVITY_PANEL_BACKGROUND&quot; Color=&quot;#545454&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_CONNECT_BUTTON_FOREGROUND&quot; Color=&quot;White&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_CONNECT_BUTTON_BACKGROUND_NORMAL&quot; Color=&quot;#5FB006&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_CONNECT_BUTTON_BACKGROUND_DISABLED&quot; Color=&quot;#929292&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_CONNECT_BUTTON_BACKGROUND_MOUSEOVER&quot; Color=&quot;#417C0A&quot; /&gt;
+
+    &lt;!--  Settings view brushes  --&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_SETTINGS_TAB_FOREGROUND&quot; Color=&quot;White&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_SETTINGS_TAB_BOTTOM_BORDER_HIGHLIGHT&quot; Color=&quot;#D8D8D9&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_SETTINGS_TAB_BOTTOM_BORDER&quot; Color=&quot;#0c0c0c&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_SETTINGS_PANEL_BACKGROUND&quot; Color=&quot;#202020&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_SETTINGS_CONTROLS_COLOR&quot; Color=&quot;White&quot; /&gt;
+
+    &lt;!--  Miscs  --&gt;
+    &lt;Color x:Key=&quot;BRAND_ISBUSY_BACKGROUND&quot;&gt;Black&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_GRID_TEXT_FOREGROUND&quot; Color=&quot;White&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_COMBOBOX_BACKGROUND&quot; Color=&quot;#2a2a2a&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_DIALOG_BACKGROUND&quot; Color=&quot;#545454&quot; /&gt;
+    &lt;Color x:Key=&quot;BRAND_TAB_DISABLED_BORDER_COLOR&quot;&gt;#AAAAAA&lt;/Color&gt;
+    &lt;system:Boolean x:Key=&quot;BRAND_USES_EMAIL&quot;&gt;False&lt;/system:Boolean&gt;
+
+    &lt;!--  Context Menu colors  --&gt;
+    &lt;Color x:Key=&quot;BRAND_MENU_TEXT_HIGHLIGHT&quot;&gt;Black&lt;/Color&gt;
+    &lt;Color x:Key=&quot;BRAND_CONTEXT_MENU_BACKGROUND_COLOR&quot;&gt;Black&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;BRAND_CONTEXT_MENU_FOREGROUND_BRUSH&quot; Color=&quot;White&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ContextMenuBackgroundBrush&quot; Color=&quot;{StaticResource BRAND_CONTEXT_MENU_BACKGROUND_COLOR}&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;SubMenuBackgroundBrush&quot; Color=&quot;{StaticResource BRAND_CONTEXT_MENU_BACKGROUND_COLOR}&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;MenuItemBackgroundBrush&quot; Color=&quot;{StaticResource BRAND_CONTEXT_MENU_BACKGROUND_COLOR}&quot; /&gt;
+</code></pre><p>There are quite a lot of colors to change but don&#39;t get too scared. Nearly every color can be modified to your hearts content to ensure your application color scheme fits with the palette you wish to use for your brand.</p>
+<h4 id="stringsresx">Strings.resx</h4>
+<p>Shown below are the strings we currently use in the application.  If you wish a different string to be used, change the text value in the <code>Strings.resx</code> file.  Note, the <code>Strings.resx</code> file defines all the strings that are user facing.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">KEY</th>
+<th style="text-align:left">VALUE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">AUTHENTICATING</td>
+<td style="text-align:left">Authenticating</td>
+</tr>
+<tr>
+<td style="text-align:left">BEST_AVAILABLE</td>
+<td style="text-align:left">Best</td>
+</tr>
+<tr>
+<td style="text-align:left">CANCEL</td>
+<td style="text-align:left">Cancel</td>
+</tr>
+<tr>
+<td style="text-align:left">CHANGE_LOCATION_BUTTON</td>
+<td style="text-align:left">Change</td>
+</tr>
+<tr>
+<td style="text-align:left">CIPHER_LEVEL</td>
+<td style="text-align:left">Cipher</td>
+</tr>
+<tr>
+<td style="text-align:left">CITY</td>
+<td style="text-align:left">City</td>
+</tr>
+<tr>
+<td style="text-align:left">CLOSE</td>
+<td style="text-align:left">CLOSE</td>
+</tr>
+<tr>
+<td style="text-align:left">CLOSE_DIALOG_QUIT_BUTTON</td>
+<td style="text-align:left">Quit</td>
+</tr>
+<tr>
+<td style="text-align:left">CONNECTED_ENCRYPTION</td>
+<td style="text-align:left">Cipher:</td>
+</tr>
+<tr>
+<td style="text-align:left">CONNECTED_PUBLIC_IP_HEADER</td>
+<td style="text-align:left">Public</td>
+</tr>
+<tr>
+<td style="text-align:left">CONNECTED_VISIBLE_LOCATION_HEADER</td>
+<td style="text-align:left">Visible</td>
+</tr>
+<tr>
+<td style="text-align:left">CONNECTED_VISIBLE_LOCATION_HEADER_CHANGED</td>
+<td style="text-align:left">Visible</td>
+</tr>
+<tr>
+<td style="text-align:left">CONNECTING</td>
+<td style="text-align:left">Connecting</td>
+</tr>
+<tr>
+<td style="text-align:left">COUNTRY</td>
+<td style="text-align:left">Country</td>
+</tr>
+<tr>
+<td style="text-align:left">CURRENT_VISIBLE_LOCATION</td>
+<td style="text-align:left">You</td>
+</tr>
+<tr>
+<td style="text-align:left">DIALOG_ACTION_CANCEL</td>
+<td style="text-align:left">Dont</td>
+</tr>
+<tr>
+<td style="text-align:left">DIALOG_ACTION_DESCRIPTION</td>
+<td style="text-align:left">This</td>
+</tr>
+<tr>
+<td style="text-align:left">DIALOG_ACTION_OK</td>
+<td style="text-align:left">OK</td>
+</tr>
+<tr>
+<td style="text-align:left">DIALOG_ACTION_OK_LOGOUT</td>
+<td style="text-align:left">Continue</td>
+</tr>
+<tr>
+<td style="text-align:left">DIALOG_ACTION_TITLE</td>
+<td style="text-align:left">You</td>
+</tr>
+<tr>
+<td style="text-align:left">DISCONNECTING</td>
+<td style="text-align:left">Disconnecting</td>
+</tr>
+<tr>
+<td style="text-align:left">ERROR_OCCURED</td>
+<td style="text-align:left">An</td>
+</tr>
+<tr>
+<td style="text-align:left">IP_UPDATING_TEXT</td>
+<td style="text-align:left">Updating...</td>
+</tr>
+<tr>
+<td style="text-align:left">LOAD</td>
+<td style="text-align:left">Load</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGGING_OUT</td>
+<td style="text-align:left">Logging</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGIN_EMAILBOX_HINT</td>
+<td style="text-align:left">Email</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGIN_FORGOT_EMAIL_PASSWORD</td>
+<td style="text-align:left">Forgot</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGIN_FORGOT_USERNAME_PASSWORD</td>
+<td style="text-align:left">Forgot</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGIN_PASSWORDBOX_HINT</td>
+<td style="text-align:left">Password</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGIN_SIGNIN_BUTTON</td>
+<td style="text-align:left">Sign</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGIN_SIGNUP_BUTTON</td>
+<td style="text-align:left">Sign</td>
+</tr>
+<tr>
+<td style="text-align:left">LOGIN_USERNAMEBOX_HINT</td>
+<td style="text-align:left">Username</td>
+</tr>
+<tr>
+<td style="text-align:left">NOTIFICATION_CONNECTED_TEXT</td>
+<td style="text-align:left">You</td>
+</tr>
+<tr>
+<td style="text-align:left">NOTIFICATION_DISCONNECTED_TEXT</td>
+<td style="text-align:left">You</td>
+</tr>
+<tr>
+<td style="text-align:left">OK</td>
+<td style="text-align:left">OK</td>
+</tr>
+<tr>
+<td style="text-align:left">PING</td>
+<td style="text-align:left">Ping</td>
+</tr>
+<tr>
+<td style="text-align:left">RECONNECTING</td>
+<td style="text-align:left">Reconnecting</td>
+</tr>
+<tr>
+<td style="text-align:left">REINSTALL_TAP_DRIVER</td>
+<td style="text-align:left">Reinstall</td>
+</tr>
+<tr>
+<td style="text-align:left">SAVE</td>
+<td style="text-align:left">Save</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_APPLICATION_STARTUP</td>
+<td style="text-align:left">Application</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_APPLICATION_STARTUP_OPTION1</td>
+<td style="text-align:left">Do</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_APPLICATION_STARTUP_OPTION2</td>
+<td style="text-align:left">Connect</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_AUTO_RECONNECT</td>
+<td style="text-align:left">Auto</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_CLOSING</td>
+<td style="text-align:left">Closing</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_CLOSING_OPTION2</td>
+<td style="text-align:left">Close</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_CLOSING_OPTION3</td>
+<td style="text-align:left">Show</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_DIAGNOSTICS</td>
+<td style="text-align:left">Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_GENERAL_KILLSWITCH_DESCRIPTION</td>
+<td style="text-align:left">Kill</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_GENERAL_NOTIFICATIONS</td>
+<td style="text-align:left">Show</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_KILL_SWITCH</td>
+<td style="text-align:left">Kill</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_OTHER</td>
+<td style="text-align:left">Other</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_PROTOCOL_IKEV2</td>
+<td style="text-align:left">IKEv2</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_PROTOCOL_IKEV2_DESC</td>
+<td style="text-align:left">Offers highly stable security, especially when switching networks or reconnecting.</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_PROTOCOL_OPENVPN</td>
+<td style="text-align:left">OpenVPN</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_PROTOCOL_OPENVPN_DESC</td>
+<td style="text-align:left">Provides the best security. It may be slower than other protocols due to its stronger security. OpenVPN is also good choice when other protocols are not available due to firewall restrictions.</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_PROTOCOL_OPENVPN_SCRAMBLE</td>
+<td style="text-align:left">Scramble</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_PROTOCOL_OPENVPN_SCRAMBLE_INFO</td>
+<td style="text-align:left">Scramble adds obfuscation capability to OpenVPN, allowing it to bypass network traffic sensors which aim to detect usage of a VPN and block it.</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_SYSTEM_STARTUP</td>
+<td style="text-align:left">System</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_SYSTEM_STARTUP_OPTION1</td>
+<td style="text-align:left">Start</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_SYSTEM_STARTUP_OPTION2</td>
+<td style="text-align:left">Hide</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_TAB_ABOUT</td>
+<td style="text-align:left">About</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_TAB_CONNECTION</td>
+<td style="text-align:left">Connection</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_TAB_GENERAL</td>
+<td style="text-align:left">General</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_TAB_LICENSES</td>
+<td style="text-align:left">Licenses</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_TAB_LOGS</td>
+<td style="text-align:left">Logs</td>
+</tr>
+<tr>
+<td style="text-align:left">SETTINGS_UPDATES</td>
+<td style="text-align:left">Updates</td>
+</tr>
+<tr>
+<td style="text-align:left">TASKBAR_CONNECTED</td>
+<td style="text-align:left">Status:</td>
+</tr>
+<tr>
+<td style="text-align:left">TASKBAR_CURRENT_IP</td>
+<td style="text-align:left">Current</td>
+</tr>
+<tr>
+<td style="text-align:left">TASKBAR_DISCONNECTED</td>
+<td style="text-align:left">Status:</td>
+</tr>
+<tr>
+<td style="text-align:left">TASKBAR_HIDE_WINDOW</td>
+<td style="text-align:left">Hide</td>
+</tr>
+<tr>
+<td style="text-align:left">TASKBAR_SHOW_WINDOW</td>
+<td style="text-align:left">Show</td>
+</tr>
+<tr>
+<td style="text-align:left">UPDATE_DIALOG_DESCRIPTION</td>
+<td style="text-align:left">{0}</td>
+</tr>
+<tr>
+<td style="text-align:left">UPDATE_DIALOG_HEADER</td>
+<td style="text-align:left">A</td>
+</tr>
+<tr>
+<td style="text-align:left">UPDATE_DIALOG_INSTALL</td>
+<td style="text-align:left">Install</td>
+</tr>
+<tr>
+<td style="text-align:left">UPDATE_DIALOG_RELEASE_NOTES</td>
+<td style="text-align:left">Release</td>
+</tr>
+<tr>
+<td style="text-align:left">UPDATE_DIALOG_REMIND</td>
+<td style="text-align:left">Remind</td>
+</tr>
+<tr>
+<td style="text-align:left">UPDATE_DIALOG_SKIP</td>
+<td style="text-align:left">Skip</td>
+</tr>
+<tr>
+<td style="text-align:left">UPDATE_DIALOG_TITLE</td>
+<td style="text-align:left">Update</td>
+</tr>
+<tr>
+<td style="text-align:left">VERSION</td>
+<td style="text-align:left">Version</td>
+</tr>
+<tr>
+<td style="text-align:left">VPN_BUTTON_CONNECT</td>
+<td style="text-align:left">Connect</td>
+</tr>
+<tr>
+<td style="text-align:left">VPN_BUTTON_DISCONNECT</td>
+<td style="text-align:left">Disconnect</td>
+</tr>
+<tr>
+<td style="text-align:left">WINDOW_BUTTON_SETTINGS</td>
+<td style="text-align:left">Preferences</td>
+</tr>
+<tr>
+<td style="text-align:left">WINDOW_BUTTON_SIGNOUT</td>
+<td style="text-align:left">Sign</td>
+</tr>
+</tbody>
+</table>
+<p>If you don&#39;t like some of the terminology used within the application, can easily modify this file to set the tone of voice you&#39;d like your customer faceting application.</p>
+<h4 id="image-assets">Image Assets</h4>
+<p>Within the Branding/  folder, you will find multiple images to replace to make the client look how you wish it to. Keep in mind, it is suggested to keep them the same size unless you intend on modifying the view XAML files to fit everything correctly.</p>
+<table>
+<thead>
+<tr>
+<th>Image Description</th>
+<th style="text-align:center">Image</th>
+<th>Filename</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>An image of the countries on earth done in the style of a dot painting. This shows under the the text in the main application UI post-authenticate. (440x262)</td>
+<td style="text-align:center"><img src="../images/dotmap.png" alt="1527411730916"></td>
+<td>dotmap.png</td>
+</tr>
+<tr>
+<td>An image of the icon used for the system tray icon as well as the logo in the about screen. Ensure this is a multi-dimension (16x16 up to 512x512) .ico file.</td>
+<td style="text-align:center"><img src="../images/brandIcon.png" alt=""></td>
+<td>brandIcon.ico</td>
+</tr>
+<tr>
+<td>An image that acts as a banner for the top of the application. (634 x 192)</td>
+<td style="text-align:center"><img src="../images/imageBanner.png" alt="imageBanner"></td>
+<td>imageBanner.png</td>
+</tr>
+</tbody>
+</table>
+<h4 id="library-licenses">Library licenses</h4>
+<p>The licenses.rtf file is a compilation of the licenses used for the 3rd party products used in this application.  If you leave it as is, it should be fine.  If you change the application logic and add any 3rd party libraries,  you will need to update this file with the appropriate licenses.</p>
+<h2 id="building-the-application-and-making-it-yours">Building the Application and making it yours</h2>
+<h3 id="getting-the-code">Getting the Code</h3>
+<p>The code is kept in a git repository at <a href="https://github.com/wlvpn/ConsumerVPN-Windows">https://github.com/wlvpn/ConsumerVPN-Windows</a>.  Clone the repository using your git client of choice on to your local machine.  The solution file in the repository is named VpnSDK.WLVpn.sln. Using an instance of Visual Studio 2017 running as an <strong>administrator</strong>, open the VpnSDK.WLVpn.sln folder to begin.</p>
+<h3 id="configuring-visual-studio-to-use-the-wlvpn-nuget-feed">Configuring Visual Studio to use the WLVPN NuGet feed.</h3>
+<p>Your account manager will provide you the details required to add the private WLVPN NuGet feed to your instance of Visual Studio. Using the provided details, follow the instructions provided by Microsoft <a href="https://docs.microsoft.com/en-us/vsts/package/nuget/consume?view=vsts#windows-add-the-feed-to-your-nuget-configuration">here</a> on how to add an external NuGet repository, this will allow you to use the VpnSDK package as well as others that may be required depending on your requirements. (Note: Do not follow any instructions past the linked paragraph as they are for VSTS configurations.)</p>
+<h3 id="changing-the-branding">Changing the Branding</h3>
+<p>You can change all the colors and links used by the application by changing values in the <strong>branding.xaml</strong> file.  Start by changing one of the colors to something glaring and then looking at the application to better understand the relationship between the definitions and where they are used in the application.  For instance, changing one of the default gray colors to Orange gives us the following.</p>
+<h5 id="gray-to-orange">Gray to Orange</h5>
+<pre><code class="lang-xaml">&lt;Color x:Key=&quot;Gray4&quot; options:Freeze=&quot;true&quot;&gt;Orange&lt;/Color&gt;
+</code></pre><p><img src="../images/screenshots/OrangeMain.png" alt="Gray to Orange"></p>
+<p>Another example would be changing the <code>BRAND_CONNECTIVITY_PANEL_BACKGROUND</code> key to Green.</p>
+<h5 id="connectivity-panel-to-green">Connectivity Panel to Green</h5>
+<pre><code class="lang-xaml">   &lt;SolidColorBrush x:Key=&quot;BRAND_CONNECTIVITY_PANEL_BACKGROUND&quot;
+                     options:Freeze=&quot;true&quot;
+                     Color=&quot;Green&quot; /&gt;
+</code></pre><p><img src="../images/screenshots/GreenMain.png" alt="Connectivity Panel to Green"></p>
+<p>All of these resources can be found in <code>{PROJECT_ROOT}\src\VpnSDK.WLVpn\Resources\Branding\</code>.</p>
+<p>Just as you can easily change the colors or the images by modifying the files in the Branding folder, you can modify all the text strings in the <strong>Strings.resx</strong> file. For example, if you wanted to change &quot;Change Location&quot; to &quot;Select a Server&quot;, look for &quot;Change Location&quot; within the <strong>Strings.resx</strong> file and update it. As the ConsumerVPN example project uses standard string resources, you can also build multi-locale strings like any other .NET/WPF application.</p>
+<h2 id="building">Building</h2>
+<p>The ConsumerVPN project uses the WiX installer to handle compilation of the setup application. Please ensure you have the WiX toolset installed before going ahead. There are more detailed instructions in the <strong>Build_Installer.md</strong> and <strong>README.md</strong> files located in the root of the project.</p>
+<p>Assuming you have correctly configured the WLVPN NuGet feed as earlier instructed, you should now be able to just build the VpnSDK.WLVpn project in Visual Studio and have a live/working build.</p>
+<p>Now all that&#39;s left is for you to brand it, modify the UI how you wish and have fun building a product your customers will love.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span><b>Pre-release documentation. These do not represent the final product and are subject to change.</b></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

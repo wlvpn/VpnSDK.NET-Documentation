@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quick Start | Windows WLVPN SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Quick Start | Windows WLVPN SDK ">
+    <meta name="generator" content="docfx 2.39.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../articles/intro.html" title="Guides &amp; Articles" class="active">Guides &amp; Articles</a>
+                  </li>
+                  <li class="">
+                    <a href="../api/index.html" title="API Documentation" class="">API Documentation</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="active">
+                      <a href="quickstart.html" title="Quick Start" class="active">Quick Start</a>
+                    </li>
+                    <li class="">
+                      <a href="branding.html" title="Branding ConsumerVPN" class="">Branding ConsumerVPN</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="quick-start">Quick Start</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>VpnSDK is a reactive/observable library that allows developers to easily implement VPN functionality in to their application. In this quick start we will build a basic console application that authenticates with the WLVPN API, finds a VPN server to connect to and connect to it using the IKEv2 protocol.</p>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="create-a-project-and-install-the-nuget-package">Create a Project and Install the NuGet package</h3>
+<p>Begin by creating a .NET Framework console application the standard way in Visual Studio. After your project has been created, add the NuGet package &quot;VpnSDK.Whitelabel&quot; from the WLVPN MyGet feed. </p>
+<h3 id="our-basic-console-vpn-application">Our basic console VPN application</h3>
+<p>To get you up and running, shown below is the full source code for a console application that implements the functionality described in the introduction. While it might seem intimidating at first, the following sections will dissect this and explain the steps required to get up and running and what each line of code means. If you&#39;re familiar with reactive-style development, the following code may only be what you need to get started on your own application. If you&#39;re not familiar, continue reading.</p>
+<p><em>Code example: The full console application.</em></p>
+<pre><code class="lang-c#">using DynamicData;
+using System;
+using System.IO;
+using System.Linq;
+using VpnSDK.Public;
+using VpnSDK.Public.Enums;
+using VpnSDK.Public.Interfaces;
+
+namespace VpnSdkExample
+{
+    internal class Program
+    {
+
+        private static void Main(string[] args)
+        {
+            ISDK sdkManager = new SDKBuilder()
+                .SetApiKey(&quot;EXAMPLE_API_KEY&quot;)
+                .SetApplicationName(&quot;VPN SDK Example&quot;)
+                .SetAuthenticationToken(&quot;AUTHENTICATION_TOKEN&quot;)
+                .SetRasConfiguration(new RasConfiguration()
+                {
+                    RasDeviceDescription = &quot;ExampleVPN&quot;
+                })
+                .Create();
+
+            sdkManager.Login(&quot;demo&quot;, &quot;demo&quot;).Subscribe(status =&gt;
+            {
+                Console.WriteLine($&quot;Authentication status: {status}&quot;);
+                if (status == AuthenticationStatus.Authenticated)
+                {
+                    Console.WriteLine(&quot;Authenticated successfully!&quot;);
+                    PostLogin(sdkManager);
+                }
+            }, exception =&gt; { Console.WriteLine($&quot;Unable to authenticate. Reason: {exception.Message}&quot;); });
+
+            Console.ReadLine();
+        }
+
+        private static void PostLogin(ISDK sdkManager)
+        {
+            // We&#39;re now logged in.
+
+            // First we&#39;ll subscribe to the WhenLocationListChanged observable.
+            // This allows the SDK to know that it needs to start watching for location changes.
+            sdkManager.WhenLocationListChanged.Subscribe();
+
+            // Connect to the RegionList and turn it in to an observable list.
+            var observableList = sdkManager.RegionsList.Connect().AsObservableList();
+
+            // Observe our list for changes.
+            // For now, we just listen until the first region appears then unsubscribe.
+            observableList.CountChanged.Subscribe(regionsAvailable =&gt;
+            {
+                Console.WriteLine($&quot;Amount of available regions updated to: {regionsAvailable}&quot;);
+                if (regionsAvailable &gt;= 2)
+                {
+                    // Get the first region, use OfType&lt;IRegion&gt; if you wish to not get the IBestAvailable (this means the best region for the current user) location.
+                    IRegion region = observableList.Items.OfType&lt;IRegion&gt;().First();
+                    Console.WriteLine($&quot;Found region! {region.City}, {region.Country}.&quot;);
+
+                    // Dispose the list since for our example, we don&#39;t want to be informed of anymore changes.
+                    observableList.Dispose();
+                    ConnectToVPN(sdkManager, region);
+                }
+            });
+        }
+
+        private static void ConnectToVPN(ISDK sdkManager, IRegion region)
+      {
+          Console.WriteLine(&quot;Starting VPN connection.&quot;);
+
+          // Create an IConnectionConfiguration that describes how you want to connect to the ILocation.
+          // In this example, we&#39;re just using IKEv2.
+          IConnectionConfiguration vpnConfiguration = new RasConnectionConfigurationBuilder().SetConnectionType(NetworkConnectionType.IKEv2).Build();
+
+          sdkManager.Connect(region, vpnConfiguration).Subscribe(vpnStatus =&gt;
+              {
+                  Console.WriteLine($&quot;VPN status: {vpnStatus}&quot;);
+                  if (vpnStatus == ConnectionStatus.Connected)
+                  {
+                      Console.WriteLine(&quot;Connection successful!&quot;);
+
+                      // Now disconnect and listen for the disconnect changes.
+                      sdkManager.Disconnect().Subscribe(status =&gt;
+                      {
+                          Console.WriteLine($&quot;Disconnect status: {status}&quot;);
+                          if (status == ConnectionStatus.Disconnected)
+                          {
+                              Console.WriteLine(&quot;Disconnected from the VPN.&quot;);
+                              Console.WriteLine(&quot;Press enter to quit.&quot;);
+                          }
+                      });
+                  }
+              },
+              exception =&gt;
+              {
+                  Console.WriteLine(&quot;The VPN connection encountered an error.&quot;);
+                  Console.WriteLine($&quot;Error: {exception.Message}&quot;);
+              });
+        }
+    }
+}
+</code></pre><p>As mentioned before, this might be a lot to take in. We&#39;ll now dissect this and explain step by step what is going on and how to write this for yourself.</p>
+<h3 id="configuring-the-sdk-manager">Configuring the SDK Manager</h3>
+<p>Everything in the VpnSDK library is provided through an <code>ISDK</code>  object that provides observable methods for both WLVPN API operations and VPN connectivity.</p>
+<p>The <code>ISDK</code> can be thought of as your single source of truth. It is the base object that will handle everything, and be your main source of data. You create one instance and use that throughout your entire application lifetime. Before we get in to using the <code>ISDK</code> object (also referred as the SDK manager), we need to actually construct it first.</p>
+<p>To construct an <code>ISDK</code> object, we provide a <code>SDKBuilder</code> that uses the standard builder pattern to configure and construct the <code>ISDK</code> object.</p>
+<p>Let&#39;s start by doing the bare minimum.</p>
+<p><em>Code example: Creating an <code>ISDK</code> object using the configuration builder.</em></p>
+<pre><code class="lang-c#">ISDK sdkManager = new SDKBuilder().Create();
+</code></pre><p>As you&#39;ll see quickly, upon execution this will throw an exception informing you that you did not configure the required parameters. The method called at the end of this chain <code>.Create()</code> is always the last one to be called and before it, should be the configuration of your SDK object.</p>
+<p>Let&#39;s start by configuring it with an API key (this is provided by your WLVPN account manager).</p>
+<p><em>Code example: Creating an <code>ISDK</code> object using the configuration builder and configuring an API key.</em></p>
+<pre><code class="lang-c#">ISDK sdkManager = new SDKBuilder().SetApiKey(&quot;ExampleAPIKeyHere&quot;).Create();
+</code></pre><p>Unfortunately again, you will see this throws an exception about there still being missing parameters. We&#39;ll expand this further by configuring the authentication token (provided by your account manager), setting the application name.</p>
+<p><em>Code example: Creating an <code>ISDK</code> object using the configuration builder and configuring the mandatory parameters.</em></p>
+<pre><code class="lang-c#">ISDK sdkManager = new SDKBuilder()
+.SetApiKey(&quot;ExampleAPIKeyHere&quot;)
+.SetAuthenticationToken(&quot;@authToken&quot;)
+.SetApplicationName(&quot;VpnSDK Console Example&quot;)
+.Create();
+</code></pre><p>For a final time, you&#39;re going to an exception on create but notice this time, the exception is telling you that you have not added any VPN configuration settings. As our example application only intends to use IKEv2, we need to use the method <code>.SetRasConfiguration()</code>. RAS (Remote Access Services) refers to the Windows provided VPN API that handles IKEv2, SSTP and L2TP connections. To use those, it requires what is referred to as a &quot;Device Description&quot; which is just Microsoft phrasing for the name of the connection. You generally want to refer to your connection name as a single word that reflects your brand name. Knowing this now, let&#39;s configure the ability to use IKEv2 with our SDK manager and finally have an instance of <code>ISDK</code> that we can use.</p>
+<p><em>Code example: Creating an <code>ISDK</code> object using the configuration builder and configuring the mandatory parameters as well as the RAS configuration.</em></p>
+<pre><code class="lang-c#">ISDK sdkManager = new SDKBuilder()
+.SetApiKey(&quot;ExampleAPIKeyHere&quot;)
+.SetAuthenticationToken(&quot;@authToken&quot;)
+.SetApplicationName(&quot;VpnSDK Console Example&quot;)
+.SetRasConfiguration(new RasConfiguration()
+{
+    RasDeviceDescription = &quot;ExampleVPN&quot;
+})
+.Create();
+</code></pre><p>We now have a working <code>ISDK</code> object we can use and move forward with. Next, we&#39;ll go in to how to authenticate a user with the WLVPN API.</p>
+<h3 id="logging-a-user-in">Logging a user in</h3>
+<p>Now that the <code>ISDK</code> object has been created, we can start using the reactive methods provided to login to the API.  Reactive methods are asynchronous functions that expect a delegate/callback to handle when something has updated or when an error has occurred. The method used to begin a login attempt is <code>.Login(&quot;username&quot;,&quot;password&quot;);</code>.</p>
+<p><em>Code example: Using the login method and subscribing to the result to monitor whether the user was able to log in or not.</em></p>
+<pre><code class="lang-c#">sdkManager.Login(&quot;demo&quot;, &quot;user&quot;).Subscribe(status =&gt;
+{
+    Console.WriteLine($&quot;Authentication status: {status}&quot;);
+    if (status == AuthenticationStatus.Authenticated)
+    {
+        Console.WriteLine(&quot;Authenticated successfully!&quot;);
+    }
+}, exception =&gt;
+{
+    Console.WriteLine($&quot;Unable to authenticate. Reason: {exception.Message}&quot;);
+});
+</code></pre><p>As you can see, it&#39;s fairly simple, we have one delegate that prints to the console if the authentication status has updated, checks if the status is now <code>AuthenticationStatus.Authenticated</code> and prints a congratulatory message. The second delegate checks if an exception/error was thrown during authentication (e.g. if the username or password was wrong) and prints out a message informing so that includes the message returned by the API. These messages are considered user friendly so in your application if you wish to present the reason it failed to the user, do not be afraid to use <code>exception.Message</code>.</p>
+<p>You may have noticed something wrong though, your application exists instantly before the login can complete. At the end of your <code>private static void Main(string[] args)</code> method, add a a <code>Console.ReadLine()</code> so your console application only closes when you press <code>Enter</code>.</p>
+<p>Now with that out of the way, we can see in our console that the authentication occurs and we&#39;re told whether it connected or if it failed.</p>
+<p>The SDK manager is now in a state where all the other methods on it are able to actually do something as API connectivity has been configured and we have a user authenticated.</p>
+<p>To help us keep all our code related to what to do post-login, create the following function under <code>Main()</code>. We make sure to pass a copy of our SDK manager, you could keep this as a global static object if you wished, in a real-world application you&#39;d most likely have this set up in an IoC container (e.g. SimpleInjector).</p>
+<pre><code class="lang-c#">private static void PostLogin(ISDK sdkManager)
+{
+}
+</code></pre><p>Finally, after the line <code>Console.WriteLine(&quot;Authenticated successfully!&quot;)</code> add a call to <code>PostLogin()</code>
+like so: <code>PostLogin(sdkManager);</code></p>
+<p>We now have a <code>PostLogin(ISDK sdkManager)</code> method that will only be called when the SDK manager has authenticated.</p>
+<p>All future logic that needs a connected SDK manager is placed within the <code>PostLogin</code> method.</p>
+<h3 id="retrieving-regionslocations">Retrieving Regions/Locations</h3>
+<p>Once logged in, we can now start retrieving all the available locations the end user can connect to. This is provided through a DynamicData <code>SourceList</code> that updates itself automatically when there are changes on the API side. Unless you&#39;re very familiar with how the DynamicData library works, you will most likely want to just convert this to an <code>ObservableList</code>. This functionality is built in and very easily done.</p>
+<p>To keep things simple, we will do that and work from there. A caveat with this approach is you must have a subscription to <code>WhenLocationListChanged</code> to inform the SDK manager that something is listening for location updates and to start updating the <code>RegionsList</code> observable. It is suggested that you use <code>WhenLocationListChanged</code> which can be seen used in the ConsumerVPN example but for this console application we will keep things simple.</p>
+<p><em>Code example: Converting the <code>RegionsList</code> in to a standard <code>ObservableList</code>.</em></p>
+<pre><code>private static void PostLogin(ISDK sdkManager)
+{
+    // First we&#39;ll subscribe and start listening for server changes.
+    // This allows the SDK to know that it needs to start watching for server changes.
+    sdkManager.WhenLocationListChanged.Subscribe();
+
+    // Connect to the RegionList and turn it in to an observable list.
+    var observableList = sdkManager.RegionsList.Connect().AsObservableList();
+}
+</code></pre><p>You may have noticed we needed to call <code>Connect()</code> first. Since it&#39;s a live collection, we connect to it and it updates itself, rather than subscribing to an event stream. </p>
+<p>We now have our good old fashioned observable list. In a GUI application you could use this to bind it to a UI element or you could apply filters after running <code>Connect()</code> to restrict the end result observable list only having certain countries or locations. Since this is just a simple example, all we want to do is observe the list, find when it is populated and connect to the first region available.</p>
+<p>The <code>ObservableList</code> type provides another observable of it&#39;s own that allows us to subscribe to when the amount of items in the collection have changed. This property is called <code>CountChanged</code>.</p>
+<p><em>Code example: Subscribing to the observable list of regions and finding when there are more than 2 regions available.</em></p>
+<pre><code class="lang-c#">observableList.CountChanged.Subscribe(regionsAvailable =&gt;
+    {
+        Console.WriteLine($&quot;Amount of available regions updated to: {regionsAvailable}&quot;);
+        if (regionsAvailable &gt;= 2)
+        {
+            Console.WriteLine(&quot;There are more than two regions available!&quot;);
+        }
+    });
+</code></pre><p>Now that we have a way of knowing that there are a good amount of regions available in the observable list, let&#39;s get the first region in the list. </p>
+<p><em>Code example: Getting the first region from our observable list.</em></p>
+<pre><code class="lang-c#">observableList.CountChanged.Subscribe(regionsAvailable =&gt;
+    {
+        Console.WriteLine($&quot;Amount of available regions updated to: {regionsAvailable}&quot;);
+        if (regionsAvailable &gt;= 2)
+        {
+            // Get the first region, use OfType&lt;IRegion&gt; if you wish
+            // to not get an IBestAvailable object.IBestAvailable is a region 
+            // that represents the best server for the user to connect to.
+
+            IRegion region = observableList.Items.OfType&lt;IRegion&gt;().First();
+            Console.WriteLine($&quot;Found region! {region.City}, {region.Country}.&quot;);
+        }
+});
+</code></pre><p>The <code>.OfType&lt;IRegion&gt;()</code> might throw you off at first. This is because the first object you get from the region list is an <code>IBestLocation</code> object that acts like a location but when passed to the VPN connection methods, automatically gets converted in to what the current best region for the user to connect to (based off region load as well as distance).</p>
+<p>If you run your console application now, you should see that you found a region. The first one that generally appears is Toronto, Canada but this doesn&#39;t matter. As you build your real application, you can use the <code>Sort()</code> and <code>Filter()</code> methods on the observable list to sort and represent the regions in your preferred way. One simple example might be filtering out any regions with the country code <code>AU</code> if you do not wish for your users to be able to connect to Australia.</p>
+<p>With an <code>IRegion</code> object at your disposal, we now have everything we need to establish a VPN connection.</p>
+<p>Before we go on to the next step, like in the previous section (Logging a user in), we&#39;re going to create a new static method in our application where we can keep our VPN connection logic in. Create the following static method:</p>
+<pre><code class="lang-c#">private static void ConnectToVPN(ISDK sdkManager, IRegion region)
+{
+}
+</code></pre><p>We also need to do two last things, before we call <code>ConnectToVPN()</code> after getting our <code>IRegion</code> object, we need to dispose the observable list. By doing so, this ensures no further subscription callbacks happen as disposing an observable stops any future delegate execution attempts. In a standard application you would tend to not dispose but since our application is very &quot;Do X then Y then Z&quot;, we don&#39;t want to accidentally call <code>ConnectToVPN()</code> twice.</p>
+<p>Update your <code>CountChanged</code> subscriber to the following to both dispose and call the <code>ConnectToVPN()</code> method.</p>
+<p><em>Code example: Final implementation of the CountChanged subscriber for our observable region list.</em></p>
+<pre><code class="lang-c#">observableList.CountChanged.Subscribe(regionsAvailable =&gt;
+{
+    Console.WriteLine($&quot;Amount of available regions updated to: {regionsAvailable}&quot;);
+    if (regionsAvailable &gt;= 2)
+    {
+        // Get the first region, use OfType&lt;IRegion&gt; if you wish
+        // to not get an IBestAvailable object.IBestAvailable is a region 
+        // that represents the best server for the user to connect to.
+        IRegion location = observableList.Items.OfType&lt;IRegion&gt;().First();
+
+        // Dispose the list which will in turn cancel the subscription.
+        observableList.Dispose();
+
+        Console.WriteLine($&quot;Found region! {location.City}, {location.Country}.&quot;);
+        StartConnection(location);
+    }
+});
+</code></pre><h3 id="connecting-to-a-region">Connecting to a Region</h3>
+<p>Now that you have an <code>IRegion</code> object that you wish to connect to, we will use the <code>.Connect(region, configuration)</code> method on the SDK manager. This returns an observable VPN connection that allows you to observe the connection status as well as any errors that occur.</p>
+<p>You may have noticed that Connect requires a configuration parameter, per-connection you must create this object based on what type of VPN protocol you want to use. In this quick-start since we are planning to use IKEv2, we will use the <code>RasConnectionBuilder</code> class (remember RAS from constructing the <code>ISDK</code> object?) to create our configuration. Refer to the following code example as a way to create a simple IKEv2 configuration.</p>
+<pre><code class="lang-c#">IConnectionConfiguration vpnConfiguration = new RasConnectionConfigurationBuilder().SetConnectionType(NetworkConnectionType.IKEv2).Build();
+</code></pre><p>With both our <code>IRegion</code> and <code>IConnnectionConfiguration</code> objects prepared, we can connect. Just like the login method, you subscribe to the result of <code>Connect()</code> and provide a delegate to handle updates of the VPN connection and a delegate to handle any errors.</p>
+<p>For our console application we will use the following as a simple example that writes to the console the VPN connection status and checks if it was successful, if so, print a special message and then disconnects. If there was an error connecting or the connection fails while it&#39;s connected, we will write that to the console as well.</p>
+<p>Since we don&#39;t want to create an application that creates a VPN application and then it stays connected forever for our example, we&#39;re going to subscribe to the <code>Connect()</code> method and when the status is <code>ConnectionStatus.Connected</code> we will run a <code>Disconnect()</code> in there and subscribe to that. You can observe new observables in the observation of your current observables. It can get pretty crazy.</p>
+<p>While it might be intimidating at first, this is no different than how we use <code>.Login()</code> earlier.</p>
+<p><em>Code example: Connecting to an IKEv2 VPN with an <code>IConnectionConfiguration</code> object and an <code>IRegion</code> followed by a disconnect if the connection process had no issues.</em></p>
+<pre><code class="lang-c#">sdkManager.Connect(region, vpnConfiguration).Subscribe(vpnStatus =&gt;
+    {
+        Console.WriteLine($&quot;VPN status: {vpnStatus}&quot;);
+        if (vpnStatus == ConnectionStatus.Connected)
+        {
+            Console.WriteLine(&quot;Connection successful!&quot;);
+
+            // Now disconnect and listen for the disconnect changes.
+            sdkManager.Disconnect().Subscribe(status =&gt;
+            {
+                Console.WriteLine($&quot;Disconnect status: {status}&quot;);
+                if (status == ConnectionStatus.Disconnected)
+                {
+                    Console.WriteLine(&quot;Disconnected from the VPN.&quot;);
+                    Console.WriteLine(&quot;Press enter to quit.&quot;);
+                }
+            });
+        }
+    },
+    exception =&gt;
+    {
+        Console.WriteLine(&quot;The VPN connection encountered an error.&quot;);
+        Console.WriteLine($&quot;Error: {exception.Message}&quot;);
+    });
+</code></pre><p>We now have a complete console application that authenticates, finds a region to connect to, establishes a VPN connection and disconnects and all within the restrictions that developing for a console application provides without issue.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As the guide has shown, the abstractions provided to you with VpnSDK makes everything about integrating WLSDK API and VPN functionality simple. While the quick start guide doesn&#39;t cover all the features provided by VpnSDK (they are covered in other articles), you should now have a launching point on how to get started with your own application. Provided with your WLVPN VpnSDK package are two example WPF applications built as a reference guide on how we at WLVPN use the VpnSDK in our own applications.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span><b>Pre-release documentation. These do not represent the final product and are subject to change.</b></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
