@@ -220,6 +220,9 @@
                             <a href="VpnSDK.Enums.ErrorType.html" title="ErrorType" class="">ErrorType</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Enums.LoadLevel.html" title="LoadLevel" class="">LoadLevel</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Enums.NetworkConnectionType.html" title="NetworkConnectionType" class="">NetworkConnectionType</a>
                           </li>
                           <li class="">
@@ -245,9 +248,6 @@
                         <ul class="nav level2">
                           <li class="">
                             <a href="VpnSDK.Extensions.ExceptionExtensions.html" title="ExceptionExtensions" class="">ExceptionExtensions</a>
-                          </li>
-                          <li class="">
-                            <a href="VpnSDK.Extensions.LoadLevel.html" title="LoadLevel" class="">LoadLevel</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.Extensions.LocationExtensions.html" title="LocationExtensions" class="">LocationExtensions</a>
@@ -313,7 +313,7 @@
   
   <h1 id="VpnSDK_Enums_AccountStatus" data-uid="VpnSDK.Enums.AccountStatus" class="text-break">Enum AccountStatus
   </h1>
-  <div class="markdown level0 summary"><p>Enum AccountStatus. Refers to what status the account has on the API.</p>
+  <div class="markdown level0 summary"><p>Enum AccountStatus. Refers to what status the account has on the API. Values &quot;Paid&quot;, &quot;Expired&quot;, &quot;Trial&quot; and &quot;Free&quot; should be ignored as they only pertain to specific resellers who have been informed directly about these values.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Enums.html">VpnSDK.Enums</a></h6>
@@ -334,47 +334,58 @@
     <tbody>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Active">Active</td>
-        <td></td>
+        <td><p>The account is currently active and valid.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_CapReached">CapReached</td>
-        <td></td>
+        <td><p>The account has reached it&apos;s data cap.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Closed">Closed</td>
-        <td></td>
+        <td><p>The account has been closed permanently.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Expired">Expired</td>
-        <td></td>
+        <td><p>(Legacy / Unused) The account has expired.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Free">Free</td>
-        <td></td>
+        <td><p>(Legacy / Unused) The account is a free account.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Paid">Paid</td>
-        <td></td>
+        <td><p>(Legacy / Unused) The account has been paid for.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Paused">Paused</td>
-        <td></td>
+        <td><p>The account has been paused.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Pending">Pending</td>
-        <td></td>
+        <td><p>The account is currently pending setup.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Suspended">Suspended</td>
-        <td></td>
+        <td><p>The account has been suspended temporarily.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Trial">Trial</td>
-        <td></td>
+        <td><p>(Legacy / Unused) The account is on a trial.</p>
+</td>
       </tr>
       <tr>
         <td id="VpnSDK_Enums_AccountStatus_Unknown">Unknown</td>
-        <td></td>
+        <td><p>The account status is unknown.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>

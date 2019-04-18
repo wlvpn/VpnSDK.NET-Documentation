@@ -800,6 +800,36 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.VpnUnsupportedProtocolError
   fullName: VpnSDK.Enums.ErrorType.VpnUnsupportedProtocolError
   nameWithType: ErrorType.VpnUnsupportedProtocolError
+- uid: VpnSDK.Enums.LoadLevel
+  name: LoadLevel
+  href: api/VpnSDK.Enums.LoadLevel.html
+  commentId: T:VpnSDK.Enums.LoadLevel
+  fullName: VpnSDK.Enums.LoadLevel
+  nameWithType: LoadLevel
+- uid: VpnSDK.Enums.LoadLevel.High
+  name: High
+  href: api/VpnSDK.Enums.LoadLevel.html#VpnSDK_Enums_LoadLevel_High
+  commentId: F:VpnSDK.Enums.LoadLevel.High
+  fullName: VpnSDK.Enums.LoadLevel.High
+  nameWithType: LoadLevel.High
+- uid: VpnSDK.Enums.LoadLevel.Invalid
+  name: Invalid
+  href: api/VpnSDK.Enums.LoadLevel.html#VpnSDK_Enums_LoadLevel_Invalid
+  commentId: F:VpnSDK.Enums.LoadLevel.Invalid
+  fullName: VpnSDK.Enums.LoadLevel.Invalid
+  nameWithType: LoadLevel.Invalid
+- uid: VpnSDK.Enums.LoadLevel.Low
+  name: Low
+  href: api/VpnSDK.Enums.LoadLevel.html#VpnSDK_Enums_LoadLevel_Low
+  commentId: F:VpnSDK.Enums.LoadLevel.Low
+  fullName: VpnSDK.Enums.LoadLevel.Low
+  nameWithType: LoadLevel.Low
+- uid: VpnSDK.Enums.LoadLevel.Medium
+  name: Medium
+  href: api/VpnSDK.Enums.LoadLevel.html#VpnSDK_Enums_LoadLevel_Medium
+  commentId: F:VpnSDK.Enums.LoadLevel.Medium
+  fullName: VpnSDK.Enums.LoadLevel.Medium
+  nameWithType: LoadLevel.Medium
 - uid: VpnSDK.Enums.NetworkConnectionType
   name: NetworkConnectionType
   href: api/VpnSDK.Enums.NetworkConnectionType.html
@@ -1000,36 +1030,6 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Extensions.ExceptionExtensions.GetAllExceptions
   nameWithType: ExceptionExtensions.GetAllExceptions
-- uid: VpnSDK.Extensions.LoadLevel
-  name: LoadLevel
-  href: api/VpnSDK.Extensions.LoadLevel.html
-  commentId: T:VpnSDK.Extensions.LoadLevel
-  fullName: VpnSDK.Extensions.LoadLevel
-  nameWithType: LoadLevel
-- uid: VpnSDK.Extensions.LoadLevel.High
-  name: High
-  href: api/VpnSDK.Extensions.LoadLevel.html#VpnSDK_Extensions_LoadLevel_High
-  commentId: F:VpnSDK.Extensions.LoadLevel.High
-  fullName: VpnSDK.Extensions.LoadLevel.High
-  nameWithType: LoadLevel.High
-- uid: VpnSDK.Extensions.LoadLevel.Invalid
-  name: Invalid
-  href: api/VpnSDK.Extensions.LoadLevel.html#VpnSDK_Extensions_LoadLevel_Invalid
-  commentId: F:VpnSDK.Extensions.LoadLevel.Invalid
-  fullName: VpnSDK.Extensions.LoadLevel.Invalid
-  nameWithType: LoadLevel.Invalid
-- uid: VpnSDK.Extensions.LoadLevel.Low
-  name: Low
-  href: api/VpnSDK.Extensions.LoadLevel.html#VpnSDK_Extensions_LoadLevel_Low
-  commentId: F:VpnSDK.Extensions.LoadLevel.Low
-  fullName: VpnSDK.Extensions.LoadLevel.Low
-  nameWithType: LoadLevel.Low
-- uid: VpnSDK.Extensions.LoadLevel.Medium
-  name: Medium
-  href: api/VpnSDK.Extensions.LoadLevel.html#VpnSDK_Extensions_LoadLevel_Medium
-  commentId: F:VpnSDK.Extensions.LoadLevel.Medium
-  fullName: VpnSDK.Extensions.LoadLevel.Medium
-  nameWithType: LoadLevel.Medium
 - uid: VpnSDK.Extensions.LocationExtensions
   name: LocationExtensions
   href: api/VpnSDK.Extensions.LocationExtensions.html
