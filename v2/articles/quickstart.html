@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quick Start | VpnSDK v2 - WLVPN .NET Framework SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Quick Start | VpnSDK v2 - WLVPN .NET Framework SDK ">
+    <meta name="generator" content="docfx 2.41.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../articles/intro.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/index.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="active">
+                      <a href="quickstart.html" title="Quick Start" class="active">Quick Start</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="quick-start">Quick Start</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>VpnSDK v2 is a pure async/TPL library that abstracts all WLVPN and VPN connectivity in to an easy to use SDK.</p>
+<p>In the following code example, the simplicity of getting started is shown through a code example that you can use as a base for a console application.</p>
+<p>It is suggested that you read through the code and try running it yourself, make your own adjustments along the way to get a good feel for how it works.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>Assuming you have added the NuGet repository provided to you by your account holder, create an empty .NET Console application targeting .NET 4.6.2 at minimum.
+You will also require a version of Visual Studio that has support for C# 7.1. If this isn&#39;t possible, you will need to adapt the <code>async Task Main()</code> method to
+create a method where you can run async operations.</p>
+<p>In your new project import &quot;VpnSDK 2.0.x&quot; from NuGet and copy the following code.
+You will need to read through the code and provide your own API keys and authorization tokens.</p>
+<h2 id="the-code">The Code</h2>
+<pre><code class="lang-c#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+using VpnSDK;
+using VpnSDK.Enums;
+using VpnSDK.Interfaces;
+
+namespace WLVPN.Example
+{
+    class Program
+    {
+        public static string WLVPN_API_KEY = &quot;ASK_YOUR_ACCOUNT_MANAGER_FOR_THIS&quot;;
+        public static string WLVPN_AUTH_TOKEN = &quot;@ASK_YOUR_ACCOUNT_MANAGER_FOR_THIS&quot;;
+        public static string WLVPN_USERNAME = &quot;FAKE&quot;;
+        public static string WLVPN_PASSWORD = &quot;FAKE&quot;;
+
+        static async Task Main(string[] args)
+        {
+            // Build an SDK instance using the info your account manager has provided.
+            // If you do not have these, please contact WLVPN.
+
+            ISDK sdk = null;
+            try
+            {
+
+                sdk = new SDKBuilder&lt;ISDK&gt;().SetApiKey(WLVPN_API_KEY).SetAuthenticationToken(WLVPN_AUTH_TOKEN)
+                    .SetApplicationName(&quot;Console Example&quot;).Create();
+            }
+            catch(Exception e)
+            {
+                Exit(e.Message);
+            }
+
+            WriteInfo(&quot;SDK instance constructed.&quot;);
+            WriteInfo(&quot;Ready to authenticate.&quot;);
+
+            // Using your WLVPN customer credentials, authenticate against the WLVPN API.
+
+            try
+            {
+                await sdk.Login(WLVPN_USERNAME, WLVPN_PASSWORD);
+            }
+            catch (Exception e)
+            {
+                Exit($&quot;Unable to authenticate. {e.Message}&quot;);
+            }
+
+            // You can access the users basic info using the User object in the SDK.
+            // You can also get the users current GeoIP information if it is important to your UI/UX.
+
+            WriteInfo($&quot;Authenticated user: {sdk.User.VpnCredential.UserName} (Status: {sdk.User.Status.ToString()}) IP: {sdk.CurrentNetworkGeolocation.IPAddress}&quot;);
+
+            // All of the SDK locations are now available and exposed through an ObservableCollection.
+            // This acts the same as any other collection except you can get events on when it updates
+            // or use it with popular libraries such as Reactive Extensions or DynamicData.
+
+            WriteInfo($&quot;{sdk.Locations.Count} locations detected. Total countries: {sdk.Locations.GroupBy(x =&gt; x.CountryCode).Count()} and total cities: {sdk.Locations.GroupBy(x =&gt; x.City).Count()}&quot;);
+
+            // To connect to these locations, we use the Connect() method in the SDK to establish the connection.
+            // Before we connect though, we need to set up what type of VPN connection the user will use.
+
+            // Using the RasConnectionConfigurationBuilder which is responsible for IKEv2 connections, we will build an IConnectionConfiguration object
+            // for the Connect method.
+
+            IConnectionConfiguration rasConfiguration = new RasConnectionConfigurationBuilder()
+                .SetConnectionType(NetworkConnectionType.IKEv2).Build();
+
+            // Now that we have a configuration object, we can connect. First let&#39;s get an ILocation from our Locations collection.
+
+            ILocation location = sdk.Locations.First(x =&gt; x.Country == &quot;Canada&quot;);
+
+            // As you can see we&#39;ve picked the first server in Canada that has appeared in the collection.
+            // In a standard application you will want to expose this list for user choice.
+            // As a side note, if you pass a null instead of an ILocation or the &#39;Best Available&#39; ILocation, the best available server for the user will be chosen.
+
+            try
+            {
+                WriteInfo($&quot;Connecting to {location} with {rasConfiguration.ConnectionType}.&quot;);
+
+                // Pass the location and configuration to the connect method and await it. If the connection fails, an exception is thrown.
+                await sdk.Connect(location, rasConfiguration);
+                WriteInfo(&quot;Connection established. Press enter to disconnect.&quot;);
+                System.Console.ReadLine();
+
+                // Now await the disconnection.
+                await sdk.Disconnect();
+            }
+            catch (Exception e)
+            {
+                // Unfortunately the VPN connection failed, possibly due to invalid credentials or network issues.
+                Exit($&quot;The VPN connection was unable to be established. Error: {e.Message}&quot;);
+            }
+            finally
+            {
+                // As a just in case, the finally block is used to make sure the VPN connection is disconnected.
+                if (!sdk.IsDisconnecting)
+                {
+                    await sdk.Disconnect();
+                }
+            }
+
+            WriteInfo(&quot;You have authenticated, retrieved a server, connected to it and disconnected with just a few methods.&quot;);
+            WriteInfo(&quot;We can&#39;t wait to see what you do next.&quot;);
+
+            // There are a lot more features available throughout the SDK that do not fit the scope of this quick example.
+            // Please refer to the API documentation, our ExampleApp and ConsumerVPN repositories for real world examples of using the SDK.
+
+            Exit();
+        }
+
+        // This is just a utility method to make logging more simple.
+        static void WriteInfo(string line)
+        {
+            System.Console.WriteLine($&quot;[Example SDK] {line}&quot;);
+        }
+
+        // This is a utility to help write an error message and quit the application.
+        static void Exit(string error = null)
+        {
+            if (!string.IsNullOrEmpty(error))
+            {
+                WriteInfo($&quot;Failed to execute operation. {error}&quot;);
+            }
+            System.Console.WriteLine(&quot;Press enter to exit...&quot;);
+            System.Console.ReadLine();
+            Environment.Exit(0);
+        }
+    }
+}
+</code></pre><h3 id="conclusion">Conclusion</h3>
+<p>As you can see, the WLVPN SDK has been simplified from previous versions by ensuring that you can use just the standard .NET Framework library and start building your application rapidly.</p>
+<p>For more information, consider studying our ExampleApp found at <a href="https://github.com/wlvpn/ExampleApp-Windows/tree/v2">https://github.com/wlvpn/ExampleApp-Windows/tree/v2</a> or reviewing the API reference.</p>
+<p>Due to the simplicity in version 2 of the SDK, many barriers have been removed, simple events have replaced observable chaining and going from nothing to a working VPN connection is faster than ever before.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span><b>VpnSDK v2.0.x Documentation - © 2019 WLVPN</b></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
