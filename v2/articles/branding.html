@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Branding ConsumerVPN | VpnSDK v2 - WLVPN .NET Framework SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Branding ConsumerVPN | VpnSDK v2 - WLVPN .NET Framework SDK ">
+    <meta name="generator" content="docfx 2.34.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../articles/intro.html" title="Articles" class="active">Articles</a>
+                  </li>
+                  <li class="">
+                    <a href="../api/index.html" title="API Documentation" class="">API Documentation</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="Quick Start" class="">Quick Start</a>
+                    </li>
+                    <li class="active">
+                      <a href="branding.html" title="Branding ConsumerVPN" class="active">Branding ConsumerVPN</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="branding-consumervpn">Branding ConsumerVPN</h1>
+
+<p>Provided to you is a copy of the example ConsumerVPN v2 client, a base application that can be easily modified to work with your design. Architected to be simple to iterate on, for most WLVPN partners, you will find yourself using it as a launching point.</p>
+<h2 id="requirements">Requirements</h2>
+<p>You will need to become a registered WLVPN reseller to run the application. If you have not done so already, please visit <a href="https://wlvpn.com/#contact">https://wlvpn.com/#contact</a> to get started.</p>
+<p>To create your own application from this template, you will need a copy of Visual Studio 2017 or 2019 (preferred).  This can be obtained from here:  <a href="https://www.visualstudio.com/vs/">https://www.visualstudio.com/vs/</a></p>
+<p>Once Visual Studio has been installed, you will need to clone or download the repository for the ConsumerVPN application found at <a href="https://github.com/wlvpn/ConsumerVPN-v2-Windows">https://github.com/wlvpn/ConsumerVPN-v2-Windows</a>. Make sure to checkout the <code>v2</code> branch.</p>
+<p>Once downloaded an extracted, open the <code>ConsumerVPN.sln</code> file in the extracted folder.</p>
+<p>The application is a Microsoft .NET C# WPF application. It follows the normal MVVM patterns associated with a WPF application. This document does not detail the code in the application but how to change the look of the application generated from the code. The application targets .NET Framework 4.6.2 and you may need to install the targeting pack for that or alternatively change the target to .NET Framework 4.7.2.</p>
+<p>To install .NET framework 4.6.2 either use Visual Studio Installer or download it directly from Microsoft website: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=53344">https://www.microsoft.com/en-us/download/details.aspx?id=53344</a></p>
+<p>We use the WiX toolset for building installers. You will also need to download and install the WiX Toolset build tools and WiX Toolset Visual Studio Extensions that are compatible with your environment from this link: <a href="http://wixtoolset.org/releases/">http://wixtoolset.org/releases/</a>.</p>
+<p>The Wix installation will require you to enable .NET 3.5 on your machine. If WiX does not automatically do this for you, perform the following instructions:</p>
+<ol>
+<li>Press “<strong>Windows Logo</strong>” + “<strong>R</strong>” keys on the keyboard.</li>
+<li>Type “<strong>appwiz.cpl</strong>” in the “<strong>Run</strong>” command box and press “<strong>ENTER</strong>” on the keyboard or click <strong>Run</strong>.</li>
+<li>In the “<strong>*Programs and Features</strong><em>” window, click on the link “</em><em>*Turn Windows features on or off</em>**”.</li>
+<li>Check if the “<strong>*.NET Framework 3.5 (includes .NET 2.0 and 3.0)</strong>*” option is available in it.</li>
+<li>If yes, then enable it and then click on “<strong>*OK</strong>*”.</li>
+<li>Follow the on-screen instructions to complete the installation and restart the computer, if prompted.</li>
+</ol>
+<p>If you run in to any errors, the following link will provide information from Microsoft on how to solve any potential issues.</p>
+<p><a href="https://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_install/how-to-instal-net-framework-35-on-windows-10/450b3ba6-4d19-45ae-840e-78519f36d7a4?auth=1">https://answers.microsoft.com/en-us/insider/forum/insider_wintp-insider_install/how-to-instal-net-framework-35-on-windows-10/450b3ba6-4d19-45ae-840e-78519f36d7a4?auth=1</a></p>
+<h2 id="localization">Localization</h2>
+<p>The application supports different languages. Currently, there&#39;re English, Spanish, Hindi and Russian language strings available in this repository. You can add your own translation to any other languages. To do that, create a new resource file with the next name <code>Strings.xx.resx</code> under ConsumerVPN-&gt;Properties, where <code>xx</code> is 2-letter ISO language name (ex. <code>en</code>, <code>bg</code>, <code>de</code>).</p>
+<p>For better work with translations, we recommend you to install ResXManager from Visual Studio Extensions portal. For Visual Studio 2019, you can find the extension here: <a href="https://marketplace.visualstudio.com/items?itemName=TomEnglert.ResXManager">https://marketplace.visualstudio.com/items?itemName=TomEnglert.ResXManager</a>. Adding new languages and translations is much more easier with the ResXManager extension.</p>
+<h2 id="navigating-the-project">Navigating the project</h2>
+<p><strong><em>Solution Structure</em></strong></p>
+<p>The application is divided in to the following solution structure.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Folder / Namespace</th>
+<th style="text-align:left">Explanation / Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Behaviors</td>
+<td style="text-align:left">WPF behavior utilities</td>
+</tr>
+<tr>
+<td style="text-align:center">Controls</td>
+<td style="text-align:left">Custom controls and visual states</td>
+</tr>
+<tr>
+<td style="text-align:center">Enums</td>
+<td style="text-align:left">Various application enumerables</td>
+</tr>
+<tr>
+<td style="text-align:center">Extensions</td>
+<td style="text-align:left">Custom utility class extensions</td>
+</tr>
+<tr>
+<td style="text-align:center">Factories</td>
+<td style="text-align:left">Factory classes that the app uses</td>
+</tr>
+<tr>
+<td style="text-align:center">Helpers</td>
+<td style="text-align:left">Utility classes for dealing with all kinds of data</td>
+</tr>
+<tr>
+<td style="text-align:center">Input</td>
+<td style="text-align:left">Multi Key Gesture classes for hotkeys support</td>
+</tr>
+<tr>
+<td style="text-align:center">Interfaces</td>
+<td style="text-align:left">All interfaces</td>
+</tr>
+<tr>
+<td style="text-align:center">Resources</td>
+<td style="text-align:left">All visual resources are stored here. You will most likely be working in here. There is a branding subfolder in this which contains all the files required to be modified to make the application visually yours.</td>
+</tr>
+<tr>
+<td style="text-align:center">Utils</td>
+<td style="text-align:left">Utility classes</td>
+</tr>
+<tr>
+<td style="text-align:center">ValueConverters</td>
+<td style="text-align:left">Data converters for UI elements</td>
+</tr>
+<tr>
+<td style="text-align:center">ViewModels</td>
+<td style="text-align:left">View models (for standard MVVM development) for all views in the application.</td>
+</tr>
+<tr>
+<td style="text-align:center">Views</td>
+<td style="text-align:left">All the views the application uses.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="things-to-change-when-branding">Things to change when branding</h2>
+<h3 id="application-settings">Application Settings</h3>
+<p>In the ConsumerVPN application properties (found by right clicking on the project in the solution explorer and then going to settings on the left-hand side bar) you will find the following settings.</p>
+<ul>
+<li><strong>CallSettingsUpgrade</strong> - If <code>true</code>, call <code>ApplicationSettingsBase.Upgrade()</code> method on startup. It updates application settings to reflect a more recent installation of the application. Default is <code>true</code>. More info here <a href="https://docs.microsoft.com/en-us/dotnet/api/system.configuration.applicationsettingsbase.upgrade">https://docs.microsoft.com/en-us/dotnet/api/system.configuration.applicationsettingsbase.upgrade</a></li>
+<li><strong>Username</strong> - User&#39;s username. Default is <code>String.Empty</code>.</li>
+<li><strong>Password</strong> - User&#39;s password. Default is <code>String.Empty</code>.</li>
+<li><strong>ConnectionProtocol</strong> - VPN protocol. Default is <code>VpnSDK.Enums.NetworkConnectionType.IKEv2</code>.</li>
+<li><strong>OpenVpnProtocol</strong> - Network protocol that OpenVPN uses. Default is <code>VpnSDK.Enums.NetworkProtocolType.UDP</code>.</li>
+<li><strong>KillSwitch</strong> - If <code>true</code>, KillSwitch feature is on. Default is <code>true</code>.</li>
+<li><strong>SelectedCity</strong> - Place where user&#39;s selected city is stored. Default is <code>String.Empty</code>.</li>
+<li><strong>SelectedCountry</strong> - Place where user&#39;s selected country is stored. Default is <code>String.Empty</code>.</li>
+<li><strong>AutoReconnect</strong> - If <code>true</code>, the app tries to reconnect on VPN connection termination. Default is <code>false</code>.</li>
+<li><strong>BlockLANTraffic</strong> - If <code>true</code>, the app blocks LAN traffic when KillSwitch is on. Default is <code>false</code>.</li>
+<li><strong>Scramble</strong> - OpenVPN scramble/obfuscate option. If <code>true</code>, OpenVPN obfuscates its traffic. Default is <code>false</code>.</li>
+<li><strong>CloseStyle</strong> - Defines what happens when user tries to close the app. Default is <code>WLVPN.Enums.ApplicationCloseStyle.Dialog</code>.</li>
+<li><strong>Culture</strong> Application culture, 2-letter ISO language name. Default is <code>String.Empty</code>.</li>
+<li><strong>HideOnStartup</strong> - If <code>true</code>, hide the app window on startup.</li>
+<li><strong>BetaOptIn</strong> - If <code>true</code>, use Beta appcast URL, otherwise, use normal appcast URL. Default is <code>false</code>.</li>
+<li><strong>StartupType</strong> - Defines if the app connects to Last/Best location on startup or not. Default is <code>WLVPN.Enums.StartupType.NOP</code> (No operation).</li>
+<li><strong>ReconnectTries</strong> - The number of reconnect tries. Default is <code>5</code>.</li>
+<li><strong>EnableSpeech</strong> - If <code>true</code>, enables Speech Engine. Default is <code>false</code>.</li>
+<li><strong>EnableShortcuts</strong> - If <code>true</code>, enables application shortcuts. Default is <code>true</code>.</li>
+<li><strong>CipherType</strong> - OpenVPN Cipher type. Default is <code>VpnSDK.Enums.OpenVpnCipherType.AES_256_CBC</code>.</li>
+</ul>
+<p>These are application settings with their default values. If you want different default values, this is the place where you can update them.</p>
+<h3 id="application-name-and-namespace">Application name and namespace</h3>
+<p>Under the <strong>Application</strong> section of the project properties, you will want to change the field <strong>Assembly Name</strong> to something along the lines of your application brand. For example, if you were called <code>ExampleVPN</code>, it would be suggested to call it <code>ExampleVPN</code>. As well as this, you should changed the <strong>Default Namespace</strong> to <code>CompanyName.ApplicationName</code>. Visual Studio will assist you in updating all the namespaces in the project files automatically, except namespaces in XAML files, that you will have to update manually.</p>
+<h3 id="visual-settings">Visual Settings</h3>
+<p>Each of the files in the Resources folder may be changed to have your visualization, especially files starting with <code>Branding.*</code>. Each file will be discussed in this section.</p>
+<h3 id="brandingsystemxaml">Branding.System.xaml</h3>
+<p>The <code>Branding.System.xaml</code> file is a WPF resource file that defines application settings.</p>
+<p><code>ApiKey</code> and <code>AuthenticationToken</code>  will need to be updated to match the data provided to you by WLVPN SDK to ensure you&#39;re able to authorize to the backend and use all functionality.</p>
+<pre><code class="lang-xml">    &lt;!--  Application Name  --&gt;
+    &lt;system:String x:Key=&quot;ApplicationName&quot;&gt;ConsumerVPN&lt;/system:String&gt;
+
+    &lt;!--
+        WLVPN API Key.
+
+        To obtain API Key you need to be a registered WLVPN reseller.
+        If you have not done so already, please visit https://wlvpn.com/#contact to get started.
+    --&gt;
+    &lt;system:String x:Key=&quot;ApiKey&quot;&gt;YOURAPIKEY&lt;/system:String&gt;
+
+    &lt;!--
+        WLVPN API Authentication token
+
+        To obtain API Key you need to be a registered WLVPN reseller.
+        If you have not done so already, please visit https://wlvpn.com/#contact to get started.
+    --&gt;
+    &lt;system:String x:Key=&quot;AuthenticationToken&quot;&gt;YOURAUTHTOKEN&lt;/system:String&gt;
+
+    &lt;!--
+        NetSparkle Updater Appcast URLs for stable and beta channels.
+    --&gt;
+    &lt;system:String x:Key=&quot;AppcastUrl&quot;&gt;https://example.com/stable.xml&lt;/system:String&gt;
+    &lt;system:String x:Key=&quot;BetaAppcastUrl&quot;&gt;https://example.com/beta.xml&lt;/system:String&gt;
+</code></pre><h3 id="brandinggeneralxaml">Branding.General.xaml</h3>
+<p>The <code>Branding.General.xaml</code> file is a WPF resource file that defines application images and URLs.</p>
+<pre><code class="lang-xml">    &lt;!--  Application Icon  --&gt;
+    &lt;ImageSource x:Key=&quot;ApplicationIcon&quot;&gt;Icons/AppIcon.ico&lt;/ImageSource&gt;
+
+    &lt;!--  Company&#39;s website URL  --&gt;
+    &lt;system:Uri x:Key=&quot;WebsiteUrl&quot;&gt;https://example.com&lt;/system:Uri&gt;
+
+    &lt;!--  Forgot password URL  --&gt;
+    &lt;system:Uri x:Key=&quot;ForgotPasswordUrl&quot;&gt;https://example.com&lt;/system:Uri&gt;
+
+    &lt;!--  Sign Up URL  --&gt;
+    &lt;system:Uri x:Key=&quot;SignUpUrl&quot;&gt;https://example.com&lt;/system:Uri&gt;
+
+    &lt;!--  System Tray Icons  --&gt;
+    &lt;ImageSource x:Key=&quot;DisconnectedIcon&quot;&gt;Icons/AppIcon.ico&lt;/ImageSource&gt;
+    &lt;ImageSource x:Key=&quot;ConnectedIcon&quot;&gt;Icons/AppIconConnected.ico&lt;/ImageSource&gt;
+
+    &lt;!--  Login Screen Logo  --&gt;
+    &lt;BitmapImage x:Key=&quot;LoginLogoImage&quot; UriSource=&quot;pack://application:,,,/Resources/Images/LoginViewLogo.png&quot; /&gt;
+
+    &lt;!--  Login Screen Background  --&gt;
+    &lt;ImageSource x:Key=&quot;LoginBackgroundImage&quot;&gt;Images/LoginBackground.png&lt;/ImageSource&gt;
+
+    &lt;!--  Connected Screen Background Image  --&gt;
+    &lt;BitmapImage x:Key=&quot;ConnectedBackgroundImage&quot; UriSource=&quot;pack://application:,,,/Resources/Images/DottedMap.png&quot; /&gt;
+</code></pre><h3 id="brandingcolorsxaml">Branding.Colors.xaml</h3>
+<p>The <code>Branding.xaml</code> file is a WPF resource file that defines brushes and colors used in various places within the application. Resources are defined in this file using the normal WPF Resource definition forms. If you wish to change a color or a brush, this is the file where you do it. The keys and values defined in the file are shown below and are generally self-explanatory. Refer to the key names to get a better understanding of what the value represents.</p>
+<pre><code class="lang-xml">       &lt;!--  Generic colors and brushes  --&gt;
+
+    &lt;Color x:Key=&quot;AccentColor&quot;&gt;#FF4A90E2&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;AccentBrush&quot; Color=&quot;{StaticResource AccentColor}&quot; /&gt;
+
+    &lt;Color x:Key=&quot;AccentColor1&quot;&gt;#3483de&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;AccentBrush1&quot; Color=&quot;{StaticResource AccentColor1}&quot; /&gt;
+
+    &lt;Color x:Key=&quot;AccentColor2&quot;&gt;#2275d7&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;AccentBrush2&quot; Color=&quot;{StaticResource AccentColor2}&quot; /&gt;
+
+    &lt;Color x:Key=&quot;AccentColor3&quot;&gt;#30363E&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;AccentBrush3&quot; Color=&quot;{StaticResource AccentColor3}&quot; /&gt;
+
+    &lt;Color x:Key=&quot;AccentColor4&quot;&gt;#1b5dab&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;AccentBrush4&quot; Color=&quot;{StaticResource AccentColor4}&quot; /&gt;
+
+    &lt;Color x:Key=&quot;IdealForegroundColor&quot;&gt;#FFFFFFFF&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;IdealForegroundBrush&quot; Color=&quot;{StaticResource IdealForegroundColor}&quot; /&gt;
+
+    &lt;Color x:Key=&quot;IdealForegroundDisabledColor&quot;&gt;#8b8b8b&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;IdealForegroundDisabledBrush&quot; Color=&quot;{StaticResource IdealForegroundDisabledColor}&quot; /&gt;
+
+    &lt;Color x:Key=&quot;IdealBackgroundDisabledColor&quot;&gt;#333333&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;IdealBackgroundDisabledBrush&quot; Color=&quot;{StaticResource IdealBackgroundDisabledColor}&quot; /&gt;
+
+    &lt;!--  Specific colors and brushes  --&gt;
+
+    &lt;!--  Window Background  --&gt;
+    &lt;Color x:Key=&quot;WindowBackgroundColor&quot;&gt;#0f0f15&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;WindowBackgroundBrush&quot; Color=&quot;{StaticResource WindowBackgroundColor}&quot; /&gt;
+
+    &lt;!--  Window Title  --&gt;
+    &lt;Color x:Key=&quot;WindowTitleColor&quot;&gt;#22000000&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;WindowTitleBrush&quot; Color=&quot;{StaticResource WindowTitleColor}&quot; /&gt;
+
+    &lt;SolidColorBrush x:Key=&quot;WindowSecondTitleBrush&quot;
+                     Opacity=&quot;0.4&quot;
+                     Color=&quot;{StaticResource IdealForegroundColor}&quot; /&gt;
+
+    &lt;!--  Dialog Window  --&gt;
+    &lt;Color x:Key=&quot;DialogOverlayColor&quot;&gt;#DD000000&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;DialogOverlayBrush&quot; Color=&quot;{StaticResource DialogOverlayColor}&quot; /&gt;
+
+    &lt;Color x:Key=&quot;DialogBackgroundColor&quot;&gt;#0f0f15&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;DialogBackgroundBrush&quot; Color=&quot;{StaticResource DialogBackgroundColor}&quot; /&gt;
+
+    &lt;SolidColorBrush x:Key=&quot;DialogBorderBrush&quot; Color=&quot;{StaticResource AccentColor2}&quot; /&gt;
+
+    &lt;!--  Information and Settings Tab controls  --&gt;
+    &lt;Color x:Key=&quot;TabHeaderBackgroundColor&quot;&gt;#232327&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;TabHeaderBackgroundBrush&quot; Color=&quot;{StaticResource TabHeaderBackgroundColor}&quot; /&gt;
+
+    &lt;Color x:Key=&quot;TabContentBackgroundColor&quot;&gt;#232327&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;TabContentBackgroundBrush&quot; Color=&quot;{StaticResource TabContentBackgroundColor}&quot; /&gt;
+
+    &lt;!--  Main Tab Control background  --&gt;
+    &lt;Color x:Key=&quot;ContentBackgroundColor&quot;&gt;#161618&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;ContentBackgroundBrush&quot; Color=&quot;{StaticResource ContentBackgroundColor}&quot; /&gt;
+
+    &lt;!--  Progress Wheel  --&gt;
+    &lt;SolidColorBrush x:Key=&quot;SpinnerBrush&quot; Color=&quot;{StaticResource AccentColor1}&quot; /&gt;
+
+    &lt;!--  Disconnect Button  --&gt;
+    &lt;Color x:Key=&quot;DisconnectButtonColor&quot;&gt;#FFD0021B&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;DisconnectButtonBrush&quot; Color=&quot;{StaticResource DisconnectButtonColor}&quot; /&gt;
+
+    &lt;!--  Search Bar  --&gt;
+    &lt;Color x:Key=&quot;SearchBarBackgroundColor&quot;&gt;#212228&lt;/Color&gt;
+    &lt;SolidColorBrush x:Key=&quot;SearchBarBackgroundBrush&quot; Color=&quot;{StaticResource SearchBarBackgroundColor}&quot; /&gt;
+
+    &lt;!--  ScrollBar  --&gt;
+    &lt;SolidColorBrush x:Key=&quot;ScrollBarUpDownBrush&quot; Color=&quot;{DynamicResource AccentColor}&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ScrollBarThumbBrush&quot; Color=&quot;#606060&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ScrollBarBackgroundBrush&quot; Color=&quot;#11FFFFFF&quot; /&gt;
+
+    &lt;!--  ToggleSwitch control brushes  --&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Static.Background&quot; Color=&quot;#01FFFFFF&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Static.Border&quot; Color=&quot;{DynamicResource AccentColor}&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Static.Glyph&quot; Color=&quot;{DynamicResource IdealForegroundColor}&quot; /&gt;
+
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.MouseOver.Background&quot; Color=&quot;#01FFFFFF&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.MouseOver.Border&quot; Color=&quot;{DynamicResource AccentColor2}&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.MouseOver.Glyph&quot; Color=&quot;{DynamicResource IdealForegroundColor}&quot; /&gt;
+
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.MouseOver.On.Background&quot; Color=&quot;{DynamicResource AccentColor}&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.MouseOver.On.Border&quot; Color=&quot;{DynamicResource AccentColor}&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.MouseOver.On.Glyph&quot; Color=&quot;{DynamicResource IdealForegroundColor}&quot; /&gt;
+
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Disabled.Background&quot; Color=&quot;#00FFFFFF&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Disabled.Border&quot; Color=&quot;#FF999999&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Disabled.Glyph&quot; Color=&quot;#FF999999&quot; /&gt;
+
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Disabled.On.Background&quot; Color=&quot;#FFCCCCCC&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Disabled.On.Border&quot; Color=&quot;#FFCCCCCC&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Disabled.On.Glyph&quot; Color=&quot;#FFA3A3A3&quot; /&gt;
+
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Pressed.Background&quot; Color=&quot;#FF999999&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Pressed.Border&quot; Color=&quot;#FF999999&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Pressed.Glyph&quot; Color=&quot;{DynamicResource IdealForegroundColor}&quot; /&gt;
+
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Checked.Background&quot; Color=&quot;{DynamicResource AccentColor}&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Checked.Border&quot; Color=&quot;{DynamicResource AccentColor}&quot; /&gt;
+    &lt;SolidColorBrush x:Key=&quot;ToggleSwitch.Checked.Glyph&quot; Color=&quot;{DynamicResource IdealForegroundColor}&quot; /&gt;
+</code></pre><p>There are quite a lot of colors to change but don&#39;t get too scared. Nearly every color can be modified to your hearts content to ensure your application color scheme fits with the palette you wish to use for your brand.</p>
+<h4 id="image-assets">Image Assets</h4>
+<p>Within the Resources/Icons/ and Resources/Images/ folders, you will find multiple images to replace to make the client look how you wish it to. Keep in mind, it is suggested to keep them the same size unless you intend on modifying the view XAML files to fit everything correctly.</p>
+<table>
+<thead>
+<tr>
+<th>Image Description</th>
+<th style="text-align:center">Image</th>
+<th>Filename</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>An image of the countries on earth done in the style of a dot painting. This shows on the main screen, when a VPN connection is established. (520x263)</td>
+<td style="text-align:center"><img src="../images/images/DottedMap.png" alt="DottedMap"></td>
+<td>DottedMap.png</td>
+</tr>
+<tr>
+<td>An image of the icon used for the system tray icon as well as the logo in the about screen. Ensure this is a multi-dimension (16x16 up to 256x256) .ico file.</td>
+<td style="text-align:center"></td>
+<td>AppIcon.ico</td>
+</tr>
+<tr>
+<td>An image of the icon used for the system tray icon, it is visible when the app is connected. Ensure this is a multi-dimension (16x16 up to 256x256) .ico file.</td>
+<td style="text-align:center"></td>
+<td>AppIconConnected.ico</td>
+</tr>
+<tr>
+<td>An image of the application splash screen. (300 x 300)</td>
+<td style="text-align:center"><img src="../images/images/SplashScreen.png" alt="SplashScreen"></td>
+<td>SplashScreen.png</td>
+</tr>
+<tr>
+<td>An image of the logo used on the left side of the Login View. (234 x 49)</td>
+<td style="text-align:center"><img src="../images/images/LoginViewLogo.png" alt="LoginViewLogo"></td>
+<td>LoginViewLogo.png</td>
+</tr>
+<tr>
+<td>An image of the Login View background. (379 x 600)</td>
+<td style="text-align:center"><img src="../images/images/LoginBackground.png" alt="LoginViewLogo"></td>
+<td>LoginBackground.png</td>
+</tr>
+<tr>
+<td>A vector version of the icon used on Connected View.</td>
+<td style="text-align:center"></td>
+<td>ConnectedCheckMark.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Diagnostics tab item.</td>
+<td style="text-align:center"></td>
+<td>Diagnostics.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for General Settings tab item.</td>
+<td style="text-align:center"></td>
+<td>GeneralSettings.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used near IP info on Connected View.</td>
+<td style="text-align:center"></td>
+<td>Globe.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Help tab item.</td>
+<td style="text-align:center"></td>
+<td>Help.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Main view tab item.</td>
+<td style="text-align:center"></td>
+<td>Home.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Information tab item.</td>
+<td style="text-align:center"></td>
+<td>Info.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Licenses tab item.</td>
+<td style="text-align:center"></td>
+<td>License.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used near Location info on Connected View.</td>
+<td style="text-align:center"></td>
+<td>Location.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used on Login View for password field.</td>
+<td style="text-align:center"></td>
+<td>Lock.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for &quot;home site&quot; button that is available post-authentication on all views.</td>
+<td style="text-align:center"></td>
+<td>Logo.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Logout button.</td>
+<td style="text-align:center"></td>
+<td>Logout.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Search input.</td>
+<td style="text-align:center"></td>
+<td>MagnifyingGlass.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Settings tab item.</td>
+<td style="text-align:center"></td>
+<td>Settings.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used on Connected View.</td>
+<td style="text-align:center"></td>
+<td>Shield.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Connection Settings tab item.</td>
+<td style="text-align:center"></td>
+<td>Signal.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used for Best Available DataGrid item.</td>
+<td style="text-align:center"></td>
+<td>Speedometer.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon.</td>
+<td style="text-align:center"></td>
+<td>Tos.xaml</td>
+</tr>
+<tr>
+<td>A vector version of the icon used on Login View for username field.</td>
+<td style="text-align:center"></td>
+<td>User.xaml</td>
+</tr>
+<tr>
+<td><code>Resources/Images/Flags</code> directory. The list of available flags. The filename represents 2-letter ISO country name.</td>
+<td style="text-align:center"></td>
+<td>ad.png, us.png &amp; etc.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="library-licenses">Library licenses</h4>
+<p>The licenses.rtf file is a compilation of the licenses used for the 3rd party products used in this application.  If you leave it as is, it should be fine.  If you change the application logic and add any 3rd party libraries,  you will need to update this file with the appropriate licenses.</p>
+<h2 id="building-the-application-and-making-it-yours">Building the Application and making it yours</h2>
+<h3 id="getting-the-code">Getting the Code</h3>
+<p>The code is kept in a git repository at <a href="https://github.com/wlvpn/ConsumerVPN-v2-Windows">https://github.com/wlvpn/ConsumerVPN-v2-Windows</a>.  Clone the repository using your git client of choice on to your local machine.  The solution file in the repository is named VpnSDK.WLVpn.sln. Using an instance of Visual Studio 2019 running as an <strong>administrator</strong>, open the <code>ConsumerVPN.sln</code> file to begin.</p>
+<h3 id="configuring-visual-studio-to-use-the-wlvpn-nuget-feed">Configuring Visual Studio to use the WLVPN NuGet feed</h3>
+<p>Your account manager will provide you the details required to add the private WLVPN NuGet feed to your instance of Visual Studio. Using the provided details, follow the instructions provided by Microsoft <a href="https://docs.microsoft.com/en-us/vsts/package/nuget/consume?view=vsts#windows-add-the-feed-to-your-nuget-configuration">here</a> on how to add an external NuGet repository, this will allow you to use the VpnSDK package as well as others that may be required depending on your requirements. (Note: Do not follow any instructions past the linked paragraph as they are for VSTS configurations.)</p>
+<h3 id="changing-the-branding">Changing the Branding</h3>
+<p>You can change all the colors and links used by the application by changing values in the <code>Branding.Colors.xaml</code> and <code>Branding.General.xaml</code> file.  Start by changing one of the colors to something glaring and then looking at the application to better understand the relationship between the definitions and where they are used in the application.  For instance, changing one of the default accent colors to Orange gives us the following.</p>
+<h4 id="accentcolor-to-orange">AccentColor to Orange</h4>
+<pre><code class="lang-xaml">&lt;Color x:Key=&quot;AccentColor&quot;&gt;Orange&lt;/Color&gt;
+</code></pre><p><img src="../images/screenshots/orange.png" alt="preview1"></p>
+<p>Another example would be changing the <code>WindowBackgroundColor</code> key to Green.</p>
+<h5 id="content-control-color-to-green">Content Control color to Green</h5>
+<pre><code class="lang-xaml">    &lt;Color x:Key=&quot;ContentBackgroundColor&quot;&gt;Green&lt;/Color&gt;
+</code></pre><p><img src="../images/screenshots/green.png" alt="Connectivity Panel to Green"></p>
+<p>All of these resources can be found in <code>{PROJECT_ROOT}\src\ConsumerVPN\Resources\</code>.</p>
+<p>Just as you can easily change the colors or the images by modifying the files in the Branding folder, you can modify all the text strings in the <strong>Strings.XX.resx</strong> files, where <code>XX</code> is 2-letter ISO country code.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span><b>VpnSDK v2.0.x Documentation - © 2019 WLVPN</b></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
