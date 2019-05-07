@@ -1482,6 +1482,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.IRegion.Load
   nameWithType: IRegion.Load
+- uid: VpnSDK.Interfaces.IRegion.PingAll
+  name: PingAll()
+  href: api/VpnSDK.Interfaces.IRegion.html#VpnSDK_Interfaces_IRegion_PingAll
+  commentId: M:VpnSDK.Interfaces.IRegion.PingAll
+  fullName: VpnSDK.Interfaces.IRegion.PingAll()
+  nameWithType: IRegion.PingAll()
+- uid: VpnSDK.Interfaces.IRegion.PingAll*
+  name: PingAll
+  href: api/VpnSDK.Interfaces.IRegion.html#VpnSDK_Interfaces_IRegion_PingAll_
+  commentId: Overload:VpnSDK.Interfaces.IRegion.PingAll
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.IRegion.PingAll
+  nameWithType: IRegion.PingAll
 - uid: VpnSDK.Interfaces.ISDK
   name: ISDK
   href: api/VpnSDK.Interfaces.ISDK.html

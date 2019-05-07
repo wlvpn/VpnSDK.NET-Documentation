@@ -8,7 +8,7 @@
     <title>Quick Start | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Quick Start | VpnSDK v2 - WLVPN .NET Framework SDK ">
-    <meta name="generator" content="docfx 2.34.0.0">
+    <meta name="generator" content="docfx 2.41.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -20,7 +20,7 @@
     
     <meta property="docfx:rel" content="../">
     
-  </head>  <body data-spy="scroll" data-target="#affix">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -44,15 +44,15 @@
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
+                
                 <ul class="nav level1 navbar-nav">
-                  <li class="active">
-                    <a href="../articles/intro.html" title="Articles" class="active">Articles</a>
-                  </li>
-                  <li class="">
-                    <a href="../api/index.html" title="API Documentation" class="">API Documentation</a>
-                  </li>
-                </ul>
-            </div>
+                      <li>
+                          <a href="../articles/intro.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/index.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
           </div>
         </nav>
         
@@ -68,7 +68,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -112,8 +114,9 @@
 <p>It is suggested that you read through the code and try running it yourself, make your own adjustments along the way to get a good feel for how it works.</p>
 <h2 id="getting-started">Getting Started</h2>
 <p>Assuming you have added the NuGet repository provided to you by your account holder, create an empty .NET Console application targeting .NET 4.6.2 at minimum.
-You will also require a version of Visual Studio that has support for C# 7.1. If this isn&#39;t possible, you will need to adapt the <code>async Task Main()</code> method to
-create a method where you can run async operations.</p>
+You will also require a version of Visual Studio that has support for C# 7.1. <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version">https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version</a> outlines how to select the required C# version.
+If this isn&#39;t possible, you will need to adapt the <code>async Task Main()</code> method to
+create a method where you can run async operations.  </p>
 <p>In your new project import &quot;VpnSDK 2.0.x&quot; from NuGet and copy the following code.
 You will need to read through the code and provide your own API keys and authorization tokens.</p>
 <h2 id="the-code">The Code</h2>
@@ -250,7 +253,7 @@ namespace WLVPN.Example
     }
 }
 </code></pre><h3 id="conclusion">Conclusion</h3>
-<p>As you can see, the WLVPN SDK has been simplified from previous versions by ensuring that you can use just the standard .NET Framework library and start building your application rapidly.</p>
+<p>As you can see, the WLVPN SDK has been simplified from previous versions by ensuring you use just the standard .NET Framework library and start building your application rapidly.</p>
 <p>For more information, consider studying our ExampleApp found at <a href="https://github.com/wlvpn/ExampleApp-Windows/tree/v2">https://github.com/wlvpn/ExampleApp-Windows/tree/v2</a> or reviewing the API reference.</p>
 <p>Due to the simplicity in version 2 of the SDK, many barriers have been removed, simple events have replaced observable chaining and going from nothing to a working VPN connection is faster than ever before.</p>
 </article>
