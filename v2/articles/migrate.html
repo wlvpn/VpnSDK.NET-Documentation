@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Migrating From VpnSDK v1 to v2 | VpnSDK v2 - WLVPN .NET Framework SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Migrating From VpnSDK v1 to v2 | VpnSDK v2 - WLVPN .NET Framework SDK ">
+    <meta name="generator" content="docfx 2.42.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../articles/intro.html" title="Articles">Articles</a>
+                      </li>
+                      <li>
+                          <a href="../api/index.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
+                    </li>
+                    <li class="">
+                      <a href="quickstart.html" title="Quick Start" class="">Quick Start</a>
+                    </li>
+                    <li class="">
+                      <a href="branding.html" title="Branding ConsumerVPN" class="">Branding ConsumerVPN</a>
+                    </li>
+                    <li class="active">
+                      <a href="migrate.html" title="Migrating from VpnSDK v1" class="active">Migrating from VpnSDK v1</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="migrating-from-vpnsdk-v1-to-v2">Migrating From VpnSDK v1 to v2</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Migrating a codebase using the original VpnSDK release requires updating from the original reactive/observable flow to the standard asynchronous and event patterns found in modern day C#. While reactive code can provide developers with the ability to manage more complex codebases, the new task/event-based model in v2 allows for faster iteration by any C# developer without having to know the in&#39;s and out&#39;s of reactive programming.</p>
+<p>[!WARNING]</p>
+&lt;Customers who have used a branded version of ConsumerVPN with v1 are suggested to follow our branding guide and use ConsumerVPN v2 as a fresh base.&gt;
+
+
+
+<p>While this guide is not aimed at how to adapt v2 in to a similar interface found in v1, using  <a href="https://www.nuget.org/packages/System.Reactive/">System.Reactive</a>, developers more comfortable with the reactive programming model can convert the tasks and events in v2 to observable processes. </p>
+<p>Make sure to read the quick start guide first as it will help show the simplification of the API in v2. The most significant changes that will affect your codebase can be found by comparing the <a href="https://wlvpn.github.io/VpnSDK.NET-Documentation/v1/articles/quickstart.html">v1 quick start guide</a> to the <a href="https://wlvpn.github.io/VpnSDK.NET-Documentation/v2/articles/quickstart.html.">v2 version</a>.</p>
+<h2 id="constructing-the-sdk-instance">Constructing the SDK Instance</h2>
+<p>[!TIP]</p>
+&lt;Most namespaces have up from VpnSDK.Public to the root namespace of VpnSDK. Review the API documentation for specifics.&gt;
+
+<p>Constructing an instance of the SDK is similar to v1 which uses a builder pattern. <code>SDKBuilder</code> now requires providing the type <code>ISDK</code> as a generic to assist in versioning the main SDK interface. This is as simple as changing <code>new SDKBuilder()</code> to <code>new SDKBuilder&lt;ISDK&gt;()</code>. For applications using IKEv2, <code>RasConfiguration</code> remains the same and for applications using OpenVPN, extraneous diagnostic log file related properties have been removed as all diagnostic logs are now handled through using <a href="https://github.com/damianh/LibLog/">LibLog</a> to automatically supply log entries to any standard .NET logging framework.</p>
+<p>Compare the differences between building an SDK instance in ConsumerVPN v1 and v2.</p>
+<pre><code class="lang-c#">// VpnSDK v1
+new SDKBuilder()
+.SetApiKey(Helpers.Resource.Get&lt;string&gt;(&quot;API_KEY&quot;))
+.SetApplicationName(Helpers.Resource.Get&lt;string&gt;(&quot;BRAND_NAME&quot;))
+.SetAuthenticationToken(Helpers.Resource.Get&lt;string&gt;(&quot;AUTHORIZATION_TOKEN&quot;))
+.SetLogFilesPath(logFilesPath)
+.SetServerListCache(TimeSpan.FromDays(1))
+.SetOpenVpnConfiguration(new OpenVpnConfiguration
+{
+    OpenVpnCertificateFileName = &quot;ca.crt&quot;,
+    OpenVpnDirectory = &quot;OpenVPN&quot;,
+    OpenVpnExecutableFileName = &quot;openvpn.exe&quot;,
+    OpenVpnConfigDirectory = &quot;OpenVPN&quot;,
+    OpenVpnConfigFileName = &quot;config.ovpn&quot;,
+    OpenVpnLogFileName = &quot;openvpn.log&quot;,
+    TapDeviceDescription = &quot;TAP-Windows Adapter V9&quot;,
+    TapDeviceName = &quot;tap0901&quot;
+})
+.SetRasConfiguration(new RasConfiguration
+{
+    RasDeviceDescription = Resource.Get&lt;string&gt;(&quot;BRAND_NAME&quot;)
+})
+.Create();
+
+// VpnSDK v2
+new SDKBuilder&lt;ISDK&gt;()
+.SetApiKey(Resource.Get&lt;string&gt;(&quot;ApiKey&quot;))
+.SetAuthenticationToken(Resource.Get&lt;string&gt;(&quot;AuthenticationToken&quot;))
+.SetApplicationName(Resource.Get&lt;string&gt;(&quot;ApplicationName&quot;))
+.SetAutomaticRefreshTokenHandling(true)
+.SetServerListCache(TimeSpan.FromDays(1))
+.Create();
+</code></pre><p>VpnSDK v2 has sane defaults in construction and no longer requires as much specification.</p>
+<h2 id="isdk">ISDK</h2>
+<p>ISDK operations are no longer subscribed to but rather invoked and awaited on. For cases where a task doesn&#39;t apply, like an external case of a user being logged out, there are standard C# events that can be subscribed to at any time. All events will be invoked on the same thread that the SDK is created on by default as to provide UI safe events without requiring extra effort from the developer to marshal events between threads.</p>
+<p>The interface of the main SDK instance has changed significantly as a result and the API reference for the class should be directly reviewed <a href="https://wlvpn.github.io/VpnSDK.NET-Documentation/v2/api/VpnSDK.Interfaces.ISDK.html">here</a>. For any functionality not covered below, the API reference will have an equivalent event and task using similar patterns as demonstrated.</p>
+<h3 id="authentication">Authentication</h3>
+<p>All authentication and data loading now occurs within the <code>Login(username, password)</code>  task. When user authentication fails, an appropriate exception will be fired for the cause of error and this should be expected of all async calls within the SDK. </p>
+<p>The <code>AuthenticationStatusChanged</code> event can be subscribed to at any time to monitor whether the user has logged in or not and the <code>AuthenticationCredentialsExpired</code> event provides notification on when a users credentials have expired. If you are currently using a callback method in v1 for the login subscription, your exception catch clause for <code>Login</code>  and the previous two mentioned events will serve as replacements.</p>
+<h3 id="locations-regions">Locations (Regions)</h3>
+<p>The <code>RegionsList</code> collection has now been renamed to <code>Locations</code> and changed to a <a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1">ReadOnlyObservableCollection<ilocation></ilocation></a>. Rather than providing a feed of locations that the application needs to keep track of, a standard read-only observable collection is provided to simplify usage as developers were converting this observable in to a collection within their own code which can now be removed. <code>WhenLocationListChanged</code> can be replaced with the <code>Locations.CollectionChanged</code>event.</p>
+<p>Unlike v1, <code>Locations</code> is automatically populated on login regardless of any subscriptions, so boilerplate code to observe <code>WhenLocationListChanged</code> can be removed.</p>
+<h3 id="vpn-connectivity">VPN Connectivity</h3>
+<p>The <code>Connect</code> and <code>Disconnect</code> methods still require the same signatures as before but are now tasks. Just like authentication, when either of these operations fail an exception will fire on the awaiter. Upon awaiting both of these methods it&#39;s safe to assume the VPN is connected/disconnected.</p>
+<p><code>VpnConnectionStatusChanged</code> should be subscribed to make sure that in cases where the VPN tunnel is severed or connecting, the UI is updated without having to share the task&#39;s status throughout your UI code. This event should call what was once the <code>.Subscribe</code> callback of <code>.Connect</code> in v1.</p>
+<h3 id="diagnostic-logs">Diagnostic Logs</h3>
+<p>Logging has changed from being automatically written to a file by the SDK to instead using <a href="https://github.com/damianh/LibLog/">LibLog</a> to provide logs throughout the SDK to most logging frameworks under the <code>VpnSDK::*</code> namespace. While we suggest using <a href="https://serilog.net/">Serilog</a> in your application, most are supported by default. To keep VpnSDK logs separated, use the appropriate namespace filtering option in your logging framework to make anything that starts with <code>VpnSDK::</code> write to a different file. </p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Migrating from the v1 SDK to v2 will require moving away from the existing observable pattern found through v1 and instead use standard async patterns. To speed up your migration, you should ensure to review and compare the v1 and v2 documentation, especially the API reference. All of the example code repositories provide both v1 and v2 branches that serve as an easy way to compare the differences between the two versions and find equivalent code examples rapidly.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span><b>VpnSDK v2.0.x Documentation - © 2019 WLVPN</b></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
