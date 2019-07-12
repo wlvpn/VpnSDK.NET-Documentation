@@ -2353,6 +2353,23 @@ references:
   fullName.vb: VpnSDK.SDKBuilder(Of T).SetRasConfiguration
   nameWithType: SDKBuilder<T>.SetRasConfiguration
   nameWithType.vb: SDKBuilder(Of T).SetRasConfiguration
+- uid: VpnSDK.SDKBuilder`1.SetRunInUserspace(System.Boolean)
+  name: SetRunInUserspace(Boolean)
+  href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetRunInUserspace_System_Boolean_
+  commentId: M:VpnSDK.SDKBuilder`1.SetRunInUserspace(System.Boolean)
+  fullName: VpnSDK.SDKBuilder<T>.SetRunInUserspace(System.Boolean)
+  fullName.vb: VpnSDK.SDKBuilder(Of T).SetRunInUserspace(System.Boolean)
+  nameWithType: SDKBuilder<T>.SetRunInUserspace(Boolean)
+  nameWithType.vb: SDKBuilder(Of T).SetRunInUserspace(Boolean)
+- uid: VpnSDK.SDKBuilder`1.SetRunInUserspace*
+  name: SetRunInUserspace
+  href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetRunInUserspace_
+  commentId: Overload:VpnSDK.SDKBuilder`1.SetRunInUserspace
+  isSpec: "True"
+  fullName: VpnSDK.SDKBuilder<T>.SetRunInUserspace
+  fullName.vb: VpnSDK.SDKBuilder(Of T).SetRunInUserspace
+  nameWithType: SDKBuilder<T>.SetRunInUserspace
+  nameWithType.vb: SDKBuilder(Of T).SetRunInUserspace
 - uid: VpnSDK.SDKBuilder`1.SetServerListCache(System.Nullable{TimeSpan})
   name: SetServerListCache(Nullable<TimeSpan>)
   href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetServerListCache_System_Nullable_TimeSpan__

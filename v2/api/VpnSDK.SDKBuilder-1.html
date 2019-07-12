@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SDKBuilder&lt;T&gt;
    | VpnSDK v2 - WLVPN .NET Framework SDK ">
-    <meta name="generator" content="docfx 2.42.1.0">
+    <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -503,7 +503,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="VpnSDK.SDKBuilder-1.html">SDKBuilder</a>&lt;T&gt;</td>
-        <td><p>TBuilder.</p>
+        <td><p>a builder instance.</p>
 </td>
       </tr>
     </tbody>
@@ -548,7 +548,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="VpnSDK.SDKBuilder-1.html">SDKBuilder</a>&lt;T&gt;</td>
-        <td><p>TBuilder.</p>
+        <td><p>a builder instance.</p>
 </td>
       </tr>
     </tbody>
@@ -557,7 +557,8 @@
   
   <a id="VpnSDK_SDKBuilder_1_SetAutomaticRefreshTokenHandling_" data-uid="VpnSDK.SDKBuilder`1.SetAutomaticRefreshTokenHandling*"></a>
   <h4 id="VpnSDK_SDKBuilder_1_SetAutomaticRefreshTokenHandling_System_Boolean_" data-uid="VpnSDK.SDKBuilder`1.SetAutomaticRefreshTokenHandling(System.Boolean)">SetAutomaticRefreshTokenHandling(Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the automatic refresh token hanlding.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -576,7 +577,8 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">automaticallyRefresh</span></td>
-        <td></td>
+        <td><p>If set to true, SDK will automatically update OAuth Refresh Token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -591,7 +593,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="VpnSDK.SDKBuilder-1.html">SDKBuilder</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>a builder instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -707,6 +710,51 @@
         <td><span class="xref">RasConfiguration</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>the configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.SDKBuilder-1.html">SDKBuilder</a>&lt;T&gt;</td>
+        <td><p>a builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_SDKBuilder_1_SetRunInUserspace_" data-uid="VpnSDK.SDKBuilder`1.SetRunInUserspace*"></a>
+  <h4 id="VpnSDK_SDKBuilder_1_SetRunInUserspace_System_Boolean_" data-uid="VpnSDK.SDKBuilder`1.SetRunInUserspace(System.Boolean)">SetRunInUserspace(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets run in user space mode. This will disable OpenVPN and WFP.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SDKBuilder&lt;T&gt; SetRunInUserspace(bool runInUserspace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">runInUserspace</span></td>
+        <td><p>True if you want SDK to run in user space.</p>
 </td>
       </tr>
     </tbody>
