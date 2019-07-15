@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>WLVPN VpnSDK .NET Guides | VpnSDK v2 - WLVPN .NET Framework SDK </title>
+    <title>ConsumerVPN v2 Changelog | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="WLVPN VpnSDK .NET Guides | VpnSDK v2 - WLVPN .NET Framework SDK ">
+    <meta name="title" content="ConsumerVPN v2 Changelog | VpnSDK v2 - WLVPN .NET Framework SDK ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -89,8 +89,8 @@
                 <div class="toc" id="toc">
                   
                   <ul class="nav level1">
-                    <li class="active">
-                      <a href="intro.html" title="Introduction" class="active">Introduction</a>
+                    <li class="">
+                      <a href="intro.html" title="Introduction" class="">Introduction</a>
                     </li>
                     <li class="">
                       <a href="quickstart.html" title="Quick Start" class="">Quick Start</a>
@@ -98,8 +98,8 @@
                     <li class="">
                       <a href="branding.html" title="Branding ConsumerVPN" class="">Branding ConsumerVPN</a>
                     </li>
-                    <li class="">
-                      <a href="cvpn-v2-changelog.html" title="ConsumerVPN v2 Changelog" class="">ConsumerVPN v2 Changelog</a>
+                    <li class="active">
+                      <a href="cvpn-v2-changelog.html" title="ConsumerVPN v2 Changelog" class="active">ConsumerVPN v2 Changelog</a>
                     </li>
                     <li class="">
                       <a href="migrate.html" title="Migrating from VpnSDK v1" class="">Migrating from VpnSDK v1</a>
@@ -112,9 +112,25 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="wlvpn-vpnsdk-net-guides">WLVPN VpnSDK .NET Guides</h1>
+<h1 id="consumervpn-v2-changelog">ConsumerVPN v2 Changelog</h1>
 
-<p>Provided for you are guides and articles written by the WLVPN team to help you integrate VpnSDK rapidly in to your project and gain a better understanding of all the features provided by VpnSDK.</p>
+<h2 id="15072019">15/07/2019</h2>
+<ul>
+<li>Updated readme.md</li>
+<li>Renamed <code>src/ConsumerVPN</code> folder to <code>src/App</code> to make it look more generic.</li>
+<li>Fixed code signing issues.</li>
+<li>Improved customization process.</li>
+<li>Fixed issues with build script.</li>
+<li>Updated myget repo URL, it is not stackpath anymore.</li>
+<li>Reworked settings saving.</li>
+<li>Updated Language change translation.</li>
+<li>Updated code that is responsible for fixing CLR bug with loading resources.</li>
+<li>Changed lang version to v7.1.</li>
+<li>Changed the startup logic so that the second instance check is actually done at startup instead of after the bootstrapper is run.</li>
+<li>Use bloc instead of loc for datatemplate and styles to prevent memory leaking.</li>
+<li>Updated SDK library to v2.0.30.</li>
+</ul>
+<p>PR reference: <a href="https://github.com/wlvpn/ConsumerVPN-Windows/pull/1">https://github.com/wlvpn/ConsumerVPN-Windows/pull/1</a></p>
 </article>
           </div>
           

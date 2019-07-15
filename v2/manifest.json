@@ -810,7 +810,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/branding.html",
-          "hash": "XvWk8LUwubFo+wSNqhcvUA=="
+          "hash": "ZLCUt9R5JmLkB8FCZFtPWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cvpn-v2-changelog.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cvpn-v2-changelog.html",
+          "hash": "nW4On+hYuEWE0QqLZ/wcaw=="
         }
       },
       "is_incremental": false,
@@ -822,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "r9WnK1bBjLBGEAT23i0ydw=="
+          "hash": "IsBcyQJdjF37zenjzHzzUw=="
         }
       },
       "is_incremental": false,
@@ -834,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/migrate.html",
-          "hash": "E7aI0gNQ/cTJNAff3wm1ig=="
+          "hash": "byY0Acnx2wDQNJ21lhylQw=="
         }
       },
       "is_incremental": false,
@@ -846,7 +858,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/quickstart.html",
-          "hash": "8WcWTaPIcGWL35nKkmDoyQ=="
+          "hash": "dX3bYtQfALbvHes16DjZEg=="
         }
       },
       "is_incremental": false,
@@ -858,7 +870,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "05lTL6Dw5RN2FstkFSup1A=="
+          "hash": "UhnoP8tPZIxbSugCy+kzUA=="
         }
       },
       "is_incremental": false,
@@ -969,21 +981,12 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because docfx version changed from 2.41.0.0 to 2.43.2.0.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "DocfxVersionChanged"
+        "skipped_file_count": 0
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -992,15 +995,22 @@
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 64,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 7,
+          "skipped_file_count": 7
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
