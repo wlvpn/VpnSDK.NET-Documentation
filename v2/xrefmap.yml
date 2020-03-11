@@ -740,6 +740,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.CoreNoAvailableProtocols
   fullName: VpnSDK.Enums.ErrorType.CoreNoAvailableProtocols
   nameWithType: ErrorType.CoreNoAvailableProtocols
+- uid: VpnSDK.Enums.ErrorType.CoreNotElevated
+  name: CoreNotElevated
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_CoreNotElevated
+  commentId: F:VpnSDK.Enums.ErrorType.CoreNotElevated
+  fullName: VpnSDK.Enums.ErrorType.CoreNotElevated
+  nameWithType: ErrorType.CoreNotElevated
 - uid: VpnSDK.Enums.ErrorType.None
   name: None
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_None
@@ -752,6 +758,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.ReconnectOnPowerEventException
   fullName: VpnSDK.Enums.ErrorType.ReconnectOnPowerEventException
   nameWithType: ErrorType.ReconnectOnPowerEventException
+- uid: VpnSDK.Enums.ErrorType.ServerListError
+  name: ServerListError
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_ServerListError
+  commentId: F:VpnSDK.Enums.ErrorType.ServerListError
+  fullName: VpnSDK.Enums.ErrorType.ServerListError
+  nameWithType: ErrorType.ServerListError
 - uid: VpnSDK.Enums.ErrorType.TAPAdapterError
   name: TAPAdapterError
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_TAPAdapterError
@@ -866,6 +878,12 @@ references:
   commentId: F:VpnSDK.Enums.NetworkConnectionType.SSTP
   fullName: VpnSDK.Enums.NetworkConnectionType.SSTP
   nameWithType: NetworkConnectionType.SSTP
+- uid: VpnSDK.Enums.NetworkConnectionType.WireGuard
+  name: WireGuard
+  href: api/VpnSDK.Enums.NetworkConnectionType.html#VpnSDK_Enums_NetworkConnectionType_WireGuard
+  commentId: F:VpnSDK.Enums.NetworkConnectionType.WireGuard
+  fullName: VpnSDK.Enums.NetworkConnectionType.WireGuard
+  nameWithType: NetworkConnectionType.WireGuard
 - uid: VpnSDK.Enums.NetworkProtocolType
   name: NetworkProtocolType
   href: api/VpnSDK.Enums.NetworkProtocolType.html
@@ -1146,15 +1164,15 @@ references:
   commentId: T:VpnSDK.Helpers.VpnProtocolDiagnostics
   fullName: VpnSDK.Helpers.VpnProtocolDiagnostics
   nameWithType: VpnProtocolDiagnostics
-- uid: VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration,RasConfiguration,Dictionary{NetworkConnectionType,System.Boolean})
-  name: DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, Dictionary<NetworkConnectionType, Boolean>)
-  href: api/VpnSDK.Helpers.VpnProtocolDiagnostics.html#VpnSDK_Helpers_VpnProtocolDiagnostics_DiagnoseProtocolsAvailability_OpenVpnConfiguration_RasConfiguration_Dictionary_NetworkConnectionType_System_Boolean__
-  commentId: M:VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration,RasConfiguration,Dictionary{NetworkConnectionType,System.Boolean})
-  name.vb: DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, Dictionary(Of NetworkConnectionType, Boolean))
-  fullName: VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, Dictionary<NetworkConnectionType, System.Boolean>)
-  fullName.vb: VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, Dictionary(Of NetworkConnectionType, System.Boolean))
-  nameWithType: VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, Dictionary<NetworkConnectionType, Boolean>)
-  nameWithType.vb: VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, Dictionary(Of NetworkConnectionType, Boolean))
+- uid: VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration,RasConfiguration,WireguardConfiguration,Dictionary{NetworkConnectionType,System.Boolean})
+  name: DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, WireguardConfiguration, Dictionary<NetworkConnectionType, Boolean>)
+  href: api/VpnSDK.Helpers.VpnProtocolDiagnostics.html#VpnSDK_Helpers_VpnProtocolDiagnostics_DiagnoseProtocolsAvailability_OpenVpnConfiguration_RasConfiguration_WireguardConfiguration_Dictionary_NetworkConnectionType_System_Boolean__
+  commentId: M:VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration,RasConfiguration,WireguardConfiguration,Dictionary{NetworkConnectionType,System.Boolean})
+  name.vb: DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, WireguardConfiguration, Dictionary(Of NetworkConnectionType, Boolean))
+  fullName: VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, WireguardConfiguration, Dictionary<NetworkConnectionType, System.Boolean>)
+  fullName.vb: VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, WireguardConfiguration, Dictionary(Of NetworkConnectionType, System.Boolean))
+  nameWithType: VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, WireguardConfiguration, Dictionary<NetworkConnectionType, Boolean>)
+  nameWithType.vb: VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, WireguardConfiguration, Dictionary(Of NetworkConnectionType, Boolean))
 - uid: VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability*
   name: DiagnoseProtocolsAvailability
   href: api/VpnSDK.Helpers.VpnProtocolDiagnostics.html#VpnSDK_Helpers_VpnProtocolDiagnostics_DiagnoseProtocolsAvailability_
@@ -1717,6 +1735,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.IsDisposed
   nameWithType: ISDK.IsDisposed
+- uid: VpnSDK.Interfaces.ISDK.IsElevated
+  name: IsElevated
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsElevated
+  commentId: P:VpnSDK.Interfaces.ISDK.IsElevated
+  fullName: VpnSDK.Interfaces.ISDK.IsElevated
+  nameWithType: ISDK.IsElevated
+- uid: VpnSDK.Interfaces.ISDK.IsElevated*
+  name: IsElevated
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsElevated_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.IsElevated
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.IsElevated
+  nameWithType: ISDK.IsElevated
 - uid: VpnSDK.Interfaces.ISDK.Locations
   name: Locations
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Locations
@@ -1973,6 +2004,44 @@ references:
   isSpec: "True"
   fullName: VpnSDK.NotAuthorizedException.Type
   nameWithType: NotAuthorizedException.Type
+- uid: VpnSDK.NotElevatedException
+  name: NotElevatedException
+  href: api/VpnSDK.NotElevatedException.html
+  commentId: T:VpnSDK.NotElevatedException
+  fullName: VpnSDK.NotElevatedException
+  nameWithType: NotElevatedException
+- uid: VpnSDK.NotElevatedException.#ctor(System.String)
+  name: NotElevatedException(String)
+  href: api/VpnSDK.NotElevatedException.html#VpnSDK_NotElevatedException__ctor_System_String_
+  commentId: M:VpnSDK.NotElevatedException.#ctor(System.String)
+  fullName: VpnSDK.NotElevatedException.NotElevatedException(System.String)
+  nameWithType: NotElevatedException.NotElevatedException(String)
+- uid: VpnSDK.NotElevatedException.#ctor(System.String,Exception)
+  name: NotElevatedException(String, Exception)
+  href: api/VpnSDK.NotElevatedException.html#VpnSDK_NotElevatedException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.NotElevatedException.#ctor(System.String,Exception)
+  fullName: VpnSDK.NotElevatedException.NotElevatedException(System.String, Exception)
+  nameWithType: NotElevatedException.NotElevatedException(String, Exception)
+- uid: VpnSDK.NotElevatedException.#ctor*
+  name: NotElevatedException
+  href: api/VpnSDK.NotElevatedException.html#VpnSDK_NotElevatedException__ctor_
+  commentId: Overload:VpnSDK.NotElevatedException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.NotElevatedException.NotElevatedException
+  nameWithType: NotElevatedException.NotElevatedException
+- uid: VpnSDK.NotElevatedException.Type
+  name: Type
+  href: api/VpnSDK.NotElevatedException.html#VpnSDK_NotElevatedException_Type
+  commentId: P:VpnSDK.NotElevatedException.Type
+  fullName: VpnSDK.NotElevatedException.Type
+  nameWithType: NotElevatedException.Type
+- uid: VpnSDK.NotElevatedException.Type*
+  name: Type
+  href: api/VpnSDK.NotElevatedException.html#VpnSDK_NotElevatedException_Type_
+  commentId: Overload:VpnSDK.NotElevatedException.Type
+  isSpec: "True"
+  fullName: VpnSDK.NotElevatedException.Type
+  nameWithType: NotElevatedException.Type
 - uid: VpnSDK.NullLocationException
   name: NullLocationException
   href: api/VpnSDK.NullLocationException.html
@@ -2405,6 +2474,23 @@ references:
   fullName.vb: VpnSDK.SDKBuilder(Of T).SetSynchronizationContext
   nameWithType: SDKBuilder<T>.SetSynchronizationContext
   nameWithType.vb: SDKBuilder(Of T).SetSynchronizationContext
+- uid: VpnSDK.SDKBuilder`1.SetWireguardConfiguration(WireguardConfiguration)
+  name: SetWireguardConfiguration(WireguardConfiguration)
+  href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetWireguardConfiguration_WireguardConfiguration_
+  commentId: M:VpnSDK.SDKBuilder`1.SetWireguardConfiguration(WireguardConfiguration)
+  fullName: VpnSDK.SDKBuilder<T>.SetWireguardConfiguration(WireguardConfiguration)
+  fullName.vb: VpnSDK.SDKBuilder(Of T).SetWireguardConfiguration(WireguardConfiguration)
+  nameWithType: SDKBuilder<T>.SetWireguardConfiguration(WireguardConfiguration)
+  nameWithType.vb: SDKBuilder(Of T).SetWireguardConfiguration(WireguardConfiguration)
+- uid: VpnSDK.SDKBuilder`1.SetWireguardConfiguration*
+  name: SetWireguardConfiguration
+  href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetWireguardConfiguration_
+  commentId: Overload:VpnSDK.SDKBuilder`1.SetWireguardConfiguration
+  isSpec: "True"
+  fullName: VpnSDK.SDKBuilder<T>.SetWireguardConfiguration
+  fullName.vb: VpnSDK.SDKBuilder(Of T).SetWireguardConfiguration
+  nameWithType: SDKBuilder<T>.SetWireguardConfiguration
+  nameWithType.vb: SDKBuilder(Of T).SetWireguardConfiguration
 - uid: VpnSDK.SDKBuilder`1.Validate
   name: Validate()
   href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_Validate
@@ -2461,6 +2547,44 @@ references:
   fullName.vb: VpnSDK.SDKOperationEventHandler(Of T)
   nameWithType: SDKOperationEventHandler<T>
   nameWithType.vb: SDKOperationEventHandler(Of T)
+- uid: VpnSDK.ServerListException
+  name: ServerListException
+  href: api/VpnSDK.ServerListException.html
+  commentId: T:VpnSDK.ServerListException
+  fullName: VpnSDK.ServerListException
+  nameWithType: ServerListException
+- uid: VpnSDK.ServerListException.#ctor(System.String)
+  name: ServerListException(String)
+  href: api/VpnSDK.ServerListException.html#VpnSDK_ServerListException__ctor_System_String_
+  commentId: M:VpnSDK.ServerListException.#ctor(System.String)
+  fullName: VpnSDK.ServerListException.ServerListException(System.String)
+  nameWithType: ServerListException.ServerListException(String)
+- uid: VpnSDK.ServerListException.#ctor(System.String,Exception)
+  name: ServerListException(String, Exception)
+  href: api/VpnSDK.ServerListException.html#VpnSDK_ServerListException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.ServerListException.#ctor(System.String,Exception)
+  fullName: VpnSDK.ServerListException.ServerListException(System.String, Exception)
+  nameWithType: ServerListException.ServerListException(String, Exception)
+- uid: VpnSDK.ServerListException.#ctor*
+  name: ServerListException
+  href: api/VpnSDK.ServerListException.html#VpnSDK_ServerListException__ctor_
+  commentId: Overload:VpnSDK.ServerListException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.ServerListException.ServerListException
+  nameWithType: ServerListException.ServerListException
+- uid: VpnSDK.ServerListException.Type
+  name: Type
+  href: api/VpnSDK.ServerListException.html#VpnSDK_ServerListException_Type
+  commentId: P:VpnSDK.ServerListException.Type
+  fullName: VpnSDK.ServerListException.Type
+  nameWithType: ServerListException.Type
+- uid: VpnSDK.ServerListException.Type*
+  name: Type
+  href: api/VpnSDK.ServerListException.html#VpnSDK_ServerListException_Type_
+  commentId: Overload:VpnSDK.ServerListException.Type
+  isSpec: "True"
+  fullName: VpnSDK.ServerListException.Type
+  nameWithType: ServerListException.Type
 - uid: VpnSDK.TapAdapterException
   name: TapAdapterException
   href: api/VpnSDK.TapAdapterException.html

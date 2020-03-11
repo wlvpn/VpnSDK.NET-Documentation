@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class VpnProtocolDiagnostics
+    <title>Class ServerListException
    | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class VpnProtocolDiagnostics
+    <meta name="title" content="Class ServerListException
    | VpnSDK v2 - WLVPN .NET Framework SDK ">
     <meta name="generator" content="docfx 2.43.2.0">
     
@@ -168,8 +168,8 @@
                           <li class="">
                             <a href="VpnSDK.SDKOperationEventHandler-1.html" title="SDKOperationEventHandler&lt;T&gt;" class="">SDKOperationEventHandler&lt;T&gt;</a>
                           </li>
-                          <li class="">
-                            <a href="VpnSDK.ServerListException.html" title="ServerListException" class="">ServerListException</a>
+                          <li class="active">
+                            <a href="VpnSDK.ServerListException.html" title="ServerListException" class="active">ServerListException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.TapAdapterException.html" title="TapAdapterException" class="">TapAdapterException</a>
@@ -270,8 +270,8 @@
                           <li class="">
                             <a href="VpnSDK.Helpers.BatchPingUtility.html" title="BatchPingUtility" class="">BatchPingUtility</a>
                           </li>
-                          <li class="active">
-                            <a href="VpnSDK.Helpers.VpnProtocolDiagnostics.html" title="VpnProtocolDiagnostics" class="active">VpnProtocolDiagnostics</a>
+                          <li class="">
+                            <a href="VpnSDK.Helpers.VpnProtocolDiagnostics.html" title="VpnProtocolDiagnostics" class="">VpnProtocolDiagnostics</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -314,37 +314,39 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VpnSDK.Helpers.VpnProtocolDiagnostics">
+            <article class="content wrap" id="_content" data-uid="VpnSDK.ServerListException">
   
   
-  <h1 id="VpnSDK_Helpers_VpnProtocolDiagnostics" data-uid="VpnSDK.Helpers.VpnProtocolDiagnostics" class="text-break">Class VpnProtocolDiagnostics
+  <h1 id="VpnSDK_ServerListException" data-uid="VpnSDK.ServerListException" class="text-break">Class ServerListException
   </h1>
-  <div class="markdown level0 summary"><p>Class VpnProtocolDiagnostics. Provides utilities for diagnosing VPN protocol issues.</p>
+  <div class="markdown level0 summary"><p>Exception ServerListException. Fired when the app is unable to load servers.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">VpnProtocolDiagnostics</span></div>
+    <div class="level1"><a class="xref" href="VpnSDK.BaseSDKException.html">BaseSDKException</a></div>
+    <div class="level2"><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></div>
+    <div class="level3"><span class="xref">ServerListException</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Helpers.html">VpnSDK.Helpers</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.html">VpnSDK</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="VpnSDK_Helpers_VpnProtocolDiagnostics_syntax">Syntax</h5>
+  <h5 id="VpnSDK_ServerListException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VpnProtocolDiagnostics</code></pre>
+    <pre><code class="lang-csharp hljs">public class ServerListException : HTTPException</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="VpnSDK_Helpers_VpnProtocolDiagnostics_DiagnoseProtocolsAvailability_" data-uid="VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability*"></a>
-  <h4 id="VpnSDK_Helpers_VpnProtocolDiagnostics_DiagnoseProtocolsAvailability_OpenVpnConfiguration_RasConfiguration_WireguardConfiguration_Dictionary_NetworkConnectionType_System_Boolean__" data-uid="VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration,RasConfiguration,WireguardConfiguration,Dictionary{NetworkConnectionType,System.Boolean})">DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, WireguardConfiguration, Dictionary&lt;NetworkConnectionType, Boolean&gt;)</h4>
-  <div class="markdown level1 summary"><p>Diagnoses the protocols availability.</p>
+  <a id="VpnSDK_ServerListException__ctor_" data-uid="VpnSDK.ServerListException.#ctor*"></a>
+  <h4 id="VpnSDK_ServerListException__ctor_System_String_" data-uid="VpnSDK.ServerListException.#ctor(System.String)">ServerListException(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.ServerListException.html">ServerListException</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DiagnoseProtocolsAvailability(OpenVpnConfiguration openVpnConfiguration, RasConfiguration rasConfiguration, WireguardConfiguration wireguardConfiguration, Dictionary&lt;NetworkConnectionType, bool&gt; availableProtocols)</code></pre>
+    <pre><code class="lang-csharp hljs">public ServerListException(string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,31 +359,85 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">OpenVpnConfiguration</span></td>
-        <td><span class="parametername">openVpnConfiguration</span></td>
-        <td><p>The Open VPN configuration.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">RasConfiguration</span></td>
-        <td><span class="parametername">rasConfiguration</span></td>
-        <td><p>The RAS configuration.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">WireguardConfiguration</span></td>
-        <td><span class="parametername">wireguardConfiguration</span></td>
-        <td><p>The WireGuard® configuration.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">NetworkConnectionType</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td><span class="parametername">availableProtocols</span></td>
-        <td><p>The available protocols.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to pass to the calling code.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="VpnSDK_ServerListException__ctor_" data-uid="VpnSDK.ServerListException.#ctor*"></a>
+  <h4 id="VpnSDK_ServerListException__ctor_System_String_Exception_" data-uid="VpnSDK.ServerListException.#ctor(System.String,Exception)">ServerListException(String, Exception)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.ServerListException.html">ServerListException</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ServerListException(string message, Exception inner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to pass to the calling code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">inner</span></td>
+        <td><p>the exception that we are passing up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="VpnSDK_ServerListException_Type_" data-uid="VpnSDK.ServerListException.Type*"></a>
+  <h4 id="VpnSDK_ServerListException_Type" data-uid="VpnSDK.ServerListException.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the error type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ErrorType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ErrorType</span></td>
+        <td><p>The error type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VpnSDK.BaseSDKException.html#VpnSDK_BaseSDKException_Type">BaseSDKException.Type</a></div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></div>
+      <div><a class="xref" href="VpnSDK.BaseSDKException.html">BaseSDKException</a></div>
+      <div><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></div>
+  </div>
 </article>
           </div>
           

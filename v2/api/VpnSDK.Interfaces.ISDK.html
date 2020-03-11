@@ -133,6 +133,9 @@
                             <a href="VpnSDK.NotAuthorizedException.html" title="NotAuthorizedException" class="">NotAuthorizedException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.NotElevatedException.html" title="NotElevatedException" class="">NotElevatedException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.NullLocationException.html" title="NullLocationException" class="">NullLocationException</a>
                           </li>
                           <li class="">
@@ -164,6 +167,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.SDKOperationEventHandler-1.html" title="SDKOperationEventHandler&lt;T&gt;" class="">SDKOperationEventHandler&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.ServerListException.html" title="ServerListException" class="">ServerListException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.TapAdapterException.html" title="TapAdapterException" class="">TapAdapterException</a>
@@ -317,7 +323,7 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Interfaces.html">VpnSDK.Interfaces</a></h6>
-  <h6><strong>Assembly</strong>: VpnSDK.dll</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="VpnSDK_Interfaces_ISDK_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface ISDK : INotifyPropertyChanged, IDisposable</code></pre>
@@ -378,6 +384,22 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
+        <td><p>Thrown when the running process is not elevated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="VpnSDK_Interfaces_ISDK_AllowOnlyVPNConnectivity_" data-uid="VpnSDK.Interfaces.ISDK.AllowOnlyVPNConnectivity*"></a>
@@ -401,6 +423,22 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p><code>true</code> if [allow only VPN connectivity]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
+        <td><p>Thrown when the running process is not elevated.</p>
 </td>
       </tr>
     </tbody>
@@ -481,7 +519,24 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><code>true</code> if DNS leak protection is disabled otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
+        <td><p>Thrown when the running process is not elevated.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -507,7 +562,24 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td><p><code>true</code> if IPv6 leak protection is disabled otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
+        <td><p>Thrown when the running process is not elevated.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -625,6 +697,32 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">bool IsDisposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_IsElevated_" data-uid="VpnSDK.Interfaces.ISDK.IsElevated*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_IsElevated" data-uid="VpnSDK.Interfaces.ISDK.IsElevated">IsElevated</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the running process is elevated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsElevated { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -779,6 +877,37 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.UnsupportedProtocolException.html">UnsupportedProtocolException</a></td>
+        <td><p>ConnectionType is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>VPN server rejected credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
+        <td><p>User account became invalidated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>VPN authorization failed. Please try connecting to a different location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="VpnSDK_Interfaces_ISDK_Connect_" data-uid="VpnSDK.Interfaces.ISDK.Connect*"></a>
@@ -890,6 +1019,42 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
+        <td><p>Thrown when the running process is not elevated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.UnsupportedProtocolException.html">UnsupportedProtocolException</a></td>
+        <td><p>Thrown when OpenVPN protocol is not available.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
+        <td><p>This feature only works when the running process is elevated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.UnsupportedProtocolException.html">UnsupportedProtocolException</a></td>
+        <td><p>SDK is configured for running user space only. TAP Driver cannot be set up from user space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.UnsupportedProtocolException.html">UnsupportedProtocolException</a></td>
+        <td><p>OpenVPN is not available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="VpnSDK_Interfaces_ISDK_Login_" data-uid="VpnSDK.Interfaces.ISDK.Login*"></a>
@@ -937,6 +1102,27 @@
       <tr>
         <td><span class="xref">Task</span></td>
         <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
+        <td><p>Connection already in progress.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.ServerListException.html">ServerListException</a></td>
+        <td><p>Failed to retrieve server list.</p>
 </td>
       </tr>
     </tbody>
@@ -995,6 +1181,22 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotAuthorizedException.html">NotAuthorizedException</a></td>
+        <td><p>No user logged in to refresh server info.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="VpnSDK_Interfaces_ISDK_RefreshUserToken_" data-uid="VpnSDK.Interfaces.ISDK.RefreshUserToken*"></a>
@@ -1018,6 +1220,27 @@
       <tr>
         <td><span class="xref">Task</span></td>
         <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotAuthorizedException.html">NotAuthorizedException</a></td>
+        <td><p>No user logged in to refresh.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
+        <td><p>User account became invalidated.</p>
 </td>
       </tr>
     </tbody>
@@ -1179,7 +1402,7 @@ Ensure to notify the user that this happened or automatically reconnect for them
               <a href="#top">Back to top</a>
             </span>
             
-            <span><b>VpnSDK v2.0.x Documentation - © 2019 WLVPN</b></span>
+            <span><b>VpnSDK v2 Documentation - © 2020 WLVPN</b></span>
           </div>
         </div>
       </footer>

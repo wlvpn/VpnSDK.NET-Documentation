@@ -133,6 +133,9 @@
                             <a href="VpnSDK.NotAuthorizedException.html" title="NotAuthorizedException" class="">NotAuthorizedException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.NotElevatedException.html" title="NotElevatedException" class="">NotElevatedException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.NullLocationException.html" title="NullLocationException" class="">NullLocationException</a>
                           </li>
                           <li class="">
@@ -164,6 +167,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.SDKOperationEventHandler-1.html" title="SDKOperationEventHandler&lt;T&gt;" class="">SDKOperationEventHandler&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.ServerListException.html" title="ServerListException" class="">ServerListException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.TapAdapterException.html" title="TapAdapterException" class="">TapAdapterException</a>
@@ -322,7 +328,7 @@
     <div class="level1"><span class="xref">SDKBuilder&lt;T&gt;</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.html">VpnSDK</a></h6>
-  <h6><strong>Assembly</strong>: VpnSDK.dll</h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="VpnSDK_SDKBuilder_1_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class SDKBuilder&lt;T&gt;
@@ -867,6 +873,51 @@
   </table>
   
   
+  <a id="VpnSDK_SDKBuilder_1_SetWireguardConfiguration_" data-uid="VpnSDK.SDKBuilder`1.SetWireguardConfiguration*"></a>
+  <h4 id="VpnSDK_SDKBuilder_1_SetWireguardConfiguration_WireguardConfiguration_" data-uid="VpnSDK.SDKBuilder`1.SetWireguardConfiguration(WireguardConfiguration)">SetWireguardConfiguration(WireguardConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Sets the configuration for the WireGuard® connection type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SDKBuilder&lt;T&gt; SetWireguardConfiguration(WireguardConfiguration value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WireguardConfiguration</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The WireGuard® configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.SDKBuilder-1.html">SDKBuilder</a>&lt;T&gt;</td>
+        <td><p>a builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_SDKBuilder_1_Validate_" data-uid="VpnSDK.SDKBuilder`1.Validate*"></a>
   <h4 id="VpnSDK_SDKBuilder_1_Validate" data-uid="VpnSDK.SDKBuilder`1.Validate">Validate()</h4>
   <div class="markdown level1 summary"><p>Validates the configuration before creating the SDK instance.  The validation done depends on the type of client.</p>
@@ -922,7 +973,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span><b>VpnSDK v2.0.x Documentation - © 2019 WLVPN</b></span>
+            <span><b>VpnSDK v2 Documentation - © 2020 WLVPN</b></span>
           </div>
         </div>
       </footer>

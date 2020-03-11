@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class VpnProtocolDiagnostics
+    <title>Interface ISDKInternal
    | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class VpnProtocolDiagnostics
+    <meta name="title" content="Interface ISDKInternal
    | VpnSDK v2 - WLVPN .NET Framework SDK ">
     <meta name="generator" content="docfx 2.43.2.0">
     
@@ -189,6 +189,9 @@
                           <li class="">
                             <a href="VpnSDK.WFPException.html" title="WFPException" class="">WFPException</a>
                           </li>
+                          <li class="">
+                            <a href="VpnSDK.WireGuardConnectionConfigurationBuilder.html" title="WireGuardConnectionConfigurationBuilder" class="">WireGuardConnectionConfigurationBuilder</a>
+                          </li>
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
@@ -203,6 +206,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.DTO.RasConfiguration.html" title="RasConfiguration" class="">RasConfiguration</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.DTO.WireguardConfiguration.html" title="WireguardConfiguration" class="">WireguardConfiguration</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -270,8 +276,8 @@
                           <li class="">
                             <a href="VpnSDK.Helpers.BatchPingUtility.html" title="BatchPingUtility" class="">BatchPingUtility</a>
                           </li>
-                          <li class="active">
-                            <a href="VpnSDK.Helpers.VpnProtocolDiagnostics.html" title="VpnProtocolDiagnostics" class="active">VpnProtocolDiagnostics</a>
+                          <li class="">
+                            <a href="VpnSDK.Helpers.VpnProtocolDiagnostics.html" title="VpnProtocolDiagnostics" class="">VpnProtocolDiagnostics</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -281,6 +287,9 @@
                         <ul class="nav level2">
                           <li class="">
                             <a href="VpnSDK.Interfaces.IBestAvailable.html" title="IBestAvailable" class="">IBestAvailable</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.Interfaces.IChildren-1.html" title="IChildren&lt;T&gt;" class="">IChildren&lt;T&gt;</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.Interfaces.IConnectionConfiguration.html" title="IConnectionConfiguration" class="">IConnectionConfiguration</a>
@@ -303,8 +312,17 @@
                           <li class="">
                             <a href="VpnSDK.Interfaces.ISDK.html" title="ISDK" class="">ISDK</a>
                           </li>
+                          <li class="active">
+                            <a href="VpnSDK.Interfaces.ISDKInternal.html" title="ISDKInternal" class="active">ISDKInternal</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.Interfaces.IServer.html" title="IServer" class="">IServer</a>
+                          </li>
                           <li class="">
                             <a href="VpnSDK.Interfaces.IUser.html" title="IUser" class="">IUser</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html" title="IWireGuardConnectionConfiguration" class="">IWireGuardConnectionConfiguration</a>
                           </li>
                         </ul>  </li>
                   </ul>        </div>
@@ -314,37 +332,121 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VpnSDK.Helpers.VpnProtocolDiagnostics">
+            <article class="content wrap" id="_content" data-uid="VpnSDK.Interfaces.ISDKInternal">
   
   
-  <h1 id="VpnSDK_Helpers_VpnProtocolDiagnostics" data-uid="VpnSDK.Helpers.VpnProtocolDiagnostics" class="text-break">Class VpnProtocolDiagnostics
+  <h1 id="VpnSDK_Interfaces_ISDKInternal" data-uid="VpnSDK.Interfaces.ISDKInternal" class="text-break">Interface ISDKInternal
   </h1>
-  <div class="markdown level0 summary"><p>Class VpnProtocolDiagnostics. Provides utilities for diagnosing VPN protocol issues.</p>
+  <div class="markdown level0 summary"><p>Interface ISDKInternal. Provides an internal interface for the SDK APIs.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">VpnProtocolDiagnostics</span></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_VpnConnectionStatusChanged">ISDK.VpnConnectionStatusChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_AuthenticationStatusChanged">ISDK.AuthenticationStatusChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_AuthenticationCredentialsExpired">ISDK.AuthenticationCredentialsExpired</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_UserLocationStatusChanged">ISDK.UserLocationStatusChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_TapDeviceInstallationStatusChanged">ISDK.TapDeviceInstallationStatusChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsDisposed">ISDK.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsElevated">ISDK.IsElevated</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_TapDriverInstalled">ISDK.TapDriverInstalled</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsConnected">ISDK.IsConnected</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsConnecting">ISDK.IsConnecting</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsDisconnecting">ISDK.IsDisconnecting</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsConnectionCancelled">ISDK.IsConnectionCancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_AllowLANTraffic">ISDK.AllowLANTraffic</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_AllowOnlyVPNConnectivity">ISDK.AllowOnlyVPNConnectivity</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DisableDNSLeakProtection">ISDK.DisableDNSLeakProtection</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DisableIPv6LeakProtection">ISDK.DisableIPv6LeakProtection</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Locations">ISDK.Locations</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_User">ISDK.User</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_ActiveConnectionInformation">ISDK.ActiveConnectionInformation</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_CurrentNetworkGeolocation">ISDK.CurrentNetworkGeolocation</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_AvailableProtocols">ISDK.AvailableProtocols</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Connect_VpnSDK_Interfaces_ILocation_VpnSDK_Interfaces_IConnectionConfiguration_CancellationToken_">ISDK.Connect(ILocation, IConnectionConfiguration, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Connect_IEnumerable_VpnSDK_Interfaces_ILocation__VpnSDK_Interfaces_IConnectionConfiguration_CancellationToken_">ISDK.Connect(IEnumerable&lt;ILocation&gt;, IConnectionConfiguration, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Disconnect">ISDK.Disconnect()</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_InstallTapDriver">ISDK.InstallTapDriver()</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Login_System_String_System_String_">ISDK.Login(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Logout">ISDK.Logout()</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_RefreshUserToken">ISDK.RefreshUserToken()</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_RefreshServerInfo">ISDK.RefreshServerInfo()</a>
+    </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Helpers.html">VpnSDK.Helpers</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Interfaces.html">VpnSDK.Interfaces</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="VpnSDK_Helpers_VpnProtocolDiagnostics_syntax">Syntax</h5>
+  <h5 id="VpnSDK_Interfaces_ISDKInternal_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class VpnProtocolDiagnostics</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ISDKInternal : ISDK, INotifyPropertyChanged, IDisposable</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="VpnSDK_Helpers_VpnProtocolDiagnostics_DiagnoseProtocolsAvailability_" data-uid="VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability*"></a>
-  <h4 id="VpnSDK_Helpers_VpnProtocolDiagnostics_DiagnoseProtocolsAvailability_OpenVpnConfiguration_RasConfiguration_WireguardConfiguration_Dictionary_NetworkConnectionType_System_Boolean__" data-uid="VpnSDK.Helpers.VpnProtocolDiagnostics.DiagnoseProtocolsAvailability(OpenVpnConfiguration,RasConfiguration,WireguardConfiguration,Dictionary{NetworkConnectionType,System.Boolean})">DiagnoseProtocolsAvailability(OpenVpnConfiguration, RasConfiguration, WireguardConfiguration, Dictionary&lt;NetworkConnectionType, Boolean&gt;)</h4>
-  <div class="markdown level1 summary"><p>Diagnoses the protocols availability.</p>
-</div>
+  <a id="VpnSDK_Interfaces_ISDKInternal_DebugDropLocation_" data-uid="VpnSDK.Interfaces.ISDKInternal.DebugDropLocation*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDKInternal_DebugDropLocation_VpnSDK_Interfaces_ILocation_" data-uid="VpnSDK.Interfaces.ISDKInternal.DebugDropLocation(VpnSDK.Interfaces.ILocation)">DebugDropLocation(ILocation)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DiagnoseProtocolsAvailability(OpenVpnConfiguration openVpnConfiguration, RasConfiguration rasConfiguration, WireguardConfiguration wireguardConfiguration, Dictionary&lt;NetworkConnectionType, bool&gt; availableProtocols)</code></pre>
+    <pre><code class="lang-csharp hljs">void DebugDropLocation(ILocation location)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,27 +459,67 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">OpenVpnConfiguration</span></td>
-        <td><span class="parametername">openVpnConfiguration</span></td>
-        <td><p>The Open VPN configuration.</p>
+        <td><a class="xref" href="VpnSDK.Interfaces.ILocation.html">ILocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDKInternal_DebugDropServerInfo_" data-uid="VpnSDK.Interfaces.ISDKInternal.DebugDropServerInfo*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDKInternal_DebugDropServerInfo_System_Int32_" data-uid="VpnSDK.Interfaces.ISDKInternal.DebugDropServerInfo(System.Int32)">DebugDropServerInfo(Int32)</h4>
+  <div class="markdown level1 summary"><p>Helps to debug the server list updates. The method clears the Location observable collection.
+if no <code data-dev-comment-type="paramref" class="paramref">ignoreNumber</code> is provided.
+If <code data-dev-comment-type="paramref" class="paramref">ignoreNumber</code> is provided and it&apos;s greater than 0, SDK will remove items from
+Location observable collection, until the number of items there is equal to <code data-dev-comment-type="paramref" class="paramref">ignoreNumber</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DebugDropServerInfo(int ignoreNumber = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">ignoreNumber</span></td>
+        <td><p>Number of locations to save in Locations observable collection.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDKInternal_GetActiveRasConnections_" data-uid="VpnSDK.Interfaces.ISDKInternal.GetActiveRasConnections*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDKInternal_GetActiveRasConnections" data-uid="VpnSDK.Interfaces.ISDKInternal.GetActiveRasConnections">GetActiveRasConnections()</h4>
+  <div class="markdown level1 summary"><p>Gets active RAS connections.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; GetActiveRasConnections()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">RasConfiguration</span></td>
-        <td><span class="parametername">rasConfiguration</span></td>
-        <td><p>The RAS configuration.</p>
-</td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><span class="xref">WireguardConfiguration</span></td>
-        <td><span class="parametername">wireguardConfiguration</span></td>
-        <td><p>The WireGuard® configuration.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">NetworkConnectionType</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
-        <td><span class="parametername">availableProtocols</span></td>
-        <td><p>The available protocols.</p>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><p>List of RAS connection names.</p>
 </td>
       </tr>
     </tbody>
