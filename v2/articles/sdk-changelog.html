@@ -129,17 +129,25 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="vpnsdk-changelog">VpnSDK Changelog</h1>
 
-<h2 id="v2033">v2.0.33</h2>
-<h3 id="breaking-changes">Breaking Changes</h3>
-<ul>
-<li>When the running process is not elevated, setters of the following properties <code>DisableDNSLeakProtection</code>, <code>DisableIPv6LeakProtection</code>, <code>AllowOnlyVPNConnectivity</code> and <code>AllowLANTraffic</code> now throw <code>NotElevatedException</code>, the getter always returns the default value.</li>
-<li>When the running process is not elevated, OpenVPN protocol is disabled.</li>
-<li>When the running process is not elevated, <code>InstallTapDriver()</code> now throws <code>NotElevatedException</code>.</li>
-</ul>
+<h2 id="v2123">v2.1.23</h2>
 <h3 id="features">Features</h3>
-<ul>
-<li>Added <code>IsElevated</code> property to <code>ISDK</code> interface. That property indicates if the running process is elevated or not. </li>
-</ul>
+<ol>
+<li>An update in the WFP library to use a second optional flag for detecting loopback traffic.</li>
+<li>Loopback improvements: Changed WFP manager to look for interfaces with the loopback type on them as well as looking for 127.0.0.0/8. This should reduce edge cases of loopback traffic incorrectly characterized as normal traffic.</li>
+<li>Checks to determine if the running process is Elevated. If not Elevated the following features will not be functional:
+(a) DNS leak protection
+(b) IPv6 leak protection
+(c) OpenVPN protocol
+(d) Connection kill switch</li>
+<li>Login improvements: Ensures the server list is up to date upon user login. This version of SDK uses the existing server list cache (if it has not expired) at login while an updated list is fired in the background. Previously the server list cache would be used only
+(a) If the server list API was inaccessible; and
+(b) If the cache had not expired</li>
+<li>RefreshServerInfo() allows the server list to explicitly refresh if required. It now has a cool down of 5 minutes.</li>
+</ol>
+<h3 id="fixes">Fixes</h3>
+<ol>
+<li>Fix to recreate RAS phonebook entries. This is in the event these entries are deleted</li>
+</ol>
 <h2 id="v2030">v2.0.30</h2>
 <h3 id="bug-fixes">Bug fixes</h3>
 <ul>
