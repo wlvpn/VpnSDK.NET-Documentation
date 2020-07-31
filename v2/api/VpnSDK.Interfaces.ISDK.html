@@ -271,6 +271,9 @@
                             <a href="VpnSDK.Helpers.BatchPingUtility.html" title="BatchPingUtility" class="">BatchPingUtility</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Helpers.VersionHelper.html" title="VersionHelper" class="">VersionHelper</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Helpers.VpnProtocolDiagnostics.html" title="VpnProtocolDiagnostics" class="">VpnProtocolDiagnostics</a>
                           </li>
                         </ul>  </li>
@@ -384,22 +387,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
-        <td><p>Thrown when the running process is not elevated.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="VpnSDK_Interfaces_ISDK_AllowOnlyVPNConnectivity_" data-uid="VpnSDK.Interfaces.ISDK.AllowOnlyVPNConnectivity*"></a>
@@ -423,22 +410,6 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p><code>true</code> if [allow only VPN connectivity]; otherwise, <code>false</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
-        <td><p>Thrown when the running process is not elevated.</p>
 </td>
       </tr>
     </tbody>
@@ -467,6 +438,32 @@
         <td><span class="xref">Dictionary</span>&lt;<span class="xref">NetworkConnectionType</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
         <td><p>A dictionary where the key is what protocol and the value is whether it&apos;s available.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_BrandingInfo_" data-uid="VpnSDK.Interfaces.ISDK.BrandingInfo*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_BrandingInfo" data-uid="VpnSDK.Interfaces.ISDK.BrandingInfo">BrandingInfo</h4>
+  <div class="markdown level1 summary"><p>Gets the branding info for the brand. This property is null if branding info is not set for this particular brand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBrandingInfo BrandingInfo { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VpnSDK.Interfaces.IBrandingInfo</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -524,22 +521,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
-        <td><p>Thrown when the running process is not elevated.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   
   
   <a id="VpnSDK_Interfaces_ISDK_DisableIPv6LeakProtection_" data-uid="VpnSDK.Interfaces.ISDK.DisableIPv6LeakProtection*"></a>
@@ -563,22 +544,6 @@
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p><code>true</code> if IPv6 leak protection is disabled otherwise, <code>false</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
-        <td><p>Thrown when the running process is not elevated.</p>
 </td>
       </tr>
     </tbody>
@@ -994,6 +959,51 @@
   </table>
   
   
+  <a id="VpnSDK_Interfaces_ISDK_GetBrandingInfo_" data-uid="VpnSDK.Interfaces.ISDK.GetBrandingInfo*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_GetBrandingInfo_System_String_" data-uid="VpnSDK.Interfaces.ISDK.GetBrandingInfo(System.String)">GetBrandingInfo(String)</h4>
+  <div class="markdown level1 summary"><p>Gets branding information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IBrandingInfo&gt; GetBrandingInfo(string slugOrDomain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">slugOrDomain</span></td>
+        <td><p>Brand&apos;s slug or domain name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">VpnSDK.Interfaces.IBrandingInfo</span>&gt;</td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_ISDK_InstallTapDriver_" data-uid="VpnSDK.Interfaces.ISDK.InstallTapDriver*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_InstallTapDriver" data-uid="VpnSDK.Interfaces.ISDK.InstallTapDriver">InstallTapDriver()</h4>
   <div class="markdown level1 summary"><p>Installs the OpenVPN TAP driver. Removes existing TAP drivers if already installed.</p>
@@ -1059,7 +1069,7 @@
   
   <a id="VpnSDK_Interfaces_ISDK_Login_" data-uid="VpnSDK.Interfaces.ISDK.Login*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_Login_System_String_System_String_" data-uid="VpnSDK.Interfaces.ISDK.Login(System.String,System.String)">Login(String, String)</h4>
-  <div class="markdown level1 summary"><p>Logs the specified username and password against the WLVPN API.</p>
+  <div class="markdown level1 summary"><p>Logs in the specified username and password against the WLVPN API.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1129,6 +1139,64 @@
   </table>
   
   
+  <a id="VpnSDK_Interfaces_ISDK_Login_" data-uid="VpnSDK.Interfaces.ISDK.Login*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_Login_System_String_System_String_System_String_" data-uid="VpnSDK.Interfaces.ISDK.Login(System.String,System.String,System.String)">Login(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Logs in the specified username and password against the WLVPN API.
+Before doing this type of log in, SDK does branding API request using a slug/brand or domain provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task Login(string username, string password, string slugOrDomain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">username</span></td>
+        <td><p>The username.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>The password.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">slugOrDomain</span></td>
+        <td><p>Brand&apos;s slug or domain name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_ISDK_Logout_" data-uid="VpnSDK.Interfaces.ISDK.Logout*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_Logout" data-uid="VpnSDK.Interfaces.ISDK.Logout">Logout()</h4>
   <div class="markdown level1 summary"><p>Logs out the current user.</p>
@@ -1163,7 +1231,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task RefreshServerInfo()</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; RefreshServerInfo()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1175,12 +1243,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that returns a bool indicating if the server info refresh executed or not.
+If it false is returned, then you tried to call the task twice or more times within 5 minute interval.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="VpnSDK_Interfaces_ISDK_RefreshServerInfo_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Can be called once in 5 minutes.</p>
+</div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -1293,6 +1365,31 @@
     <tbody>
       <tr>
         <td><a class="xref" href="VpnSDK.SDKEventHandler-1.html">SDKEventHandler</a>&lt;<span class="xref">AuthenticationStatus</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VpnSDK_Interfaces_ISDK_LocationsRefreshStatusChanged" data-uid="VpnSDK.Interfaces.ISDK.LocationsRefreshStatusChanged">LocationsRefreshStatusChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs whenever the servers are being refreshed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event SDKEventHandler&lt;RefreshLocationListStatus&gt; LocationsRefreshStatusChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.SDKEventHandler-1.html">SDKEventHandler</a>&lt;<span class="xref">RefreshLocationListStatus</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

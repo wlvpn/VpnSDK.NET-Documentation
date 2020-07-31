@@ -271,6 +271,9 @@
                             <a href="VpnSDK.Helpers.BatchPingUtility.html" title="BatchPingUtility" class="">BatchPingUtility</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Helpers.VersionHelper.html" title="VersionHelper" class="">VersionHelper</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Helpers.VpnProtocolDiagnostics.html" title="VpnProtocolDiagnostics" class="">VpnProtocolDiagnostics</a>
                           </li>
                         </ul>  </li>
@@ -334,7 +337,8 @@
   
   <a id="VpnSDK_Interfaces_IConnectionInfo_Configuration_" data-uid="VpnSDK.Interfaces.IConnectionInfo.Configuration*"></a>
   <h4 id="VpnSDK_Interfaces_IConnectionInfo_Configuration" data-uid="VpnSDK.Interfaces.IConnectionInfo.Configuration">Configuration</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets connection&apos;s <a class="xref" href="VpnSDK.Interfaces.IConnectionConfiguration.html">IConnectionConfiguration</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -357,9 +361,114 @@
   </table>
   
   
+  <a id="VpnSDK_Interfaces_IConnectionInfo_IsDnsProtected_" data-uid="VpnSDK.Interfaces.IConnectionInfo.IsDnsProtected*"></a>
+  <h4 id="VpnSDK_Interfaces_IConnectionInfo_IsDnsProtected" data-uid="VpnSDK.Interfaces.IConnectionInfo.IsDnsProtected">IsDnsProtected</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether DNS leak protection is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDnsProtected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_IConnectionInfo_IsIPv6Protected_" data-uid="VpnSDK.Interfaces.IConnectionInfo.IsIPv6Protected*"></a>
+  <h4 id="VpnSDK_Interfaces_IConnectionInfo_IsIPv6Protected" data-uid="VpnSDK.Interfaces.IConnectionInfo.IsIPv6Protected">IsIPv6Protected</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether is IPv6 leak protection is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsIPv6Protected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_IConnectionInfo_IsKillKwitchOn_" data-uid="VpnSDK.Interfaces.IConnectionInfo.IsKillKwitchOn*"></a>
+  <h4 id="VpnSDK_Interfaces_IConnectionInfo_IsKillKwitchOn" data-uid="VpnSDK.Interfaces.IConnectionInfo.IsKillKwitchOn">IsKillKwitchOn</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether KillSwitch is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsKillKwitchOn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_IConnectionInfo_IsLanTrafficAllowed_" data-uid="VpnSDK.Interfaces.IConnectionInfo.IsLanTrafficAllowed*"></a>
+  <h4 id="VpnSDK_Interfaces_IConnectionInfo_IsLanTrafficAllowed" data-uid="VpnSDK.Interfaces.IConnectionInfo.IsLanTrafficAllowed">IsLanTrafficAllowed</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether local resources access is allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsLanTrafficAllowed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_IConnectionInfo_Location_" data-uid="VpnSDK.Interfaces.IConnectionInfo.Location*"></a>
   <h4 id="VpnSDK_Interfaces_IConnectionInfo_Location" data-uid="VpnSDK.Interfaces.IConnectionInfo.Location">Location</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets server&apos;s <a class="xref" href="VpnSDK.Interfaces.ILocation.html">ILocation</a> info.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -384,7 +493,8 @@
   
   <a id="VpnSDK_Interfaces_IConnectionInfo_Protocol_" data-uid="VpnSDK.Interfaces.IConnectionInfo.Protocol*"></a>
   <h4 id="VpnSDK_Interfaces_IConnectionInfo_Protocol" data-uid="VpnSDK.Interfaces.IConnectionInfo.Protocol">Protocol</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets connection&apos;s protocol <see cref="!:NetworkConnectionType"></see>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -401,6 +511,32 @@
     <tbody>
       <tr>
         <td><span class="xref">NetworkConnectionType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_IConnectionInfo_ServerIp_" data-uid="VpnSDK.Interfaces.IConnectionInfo.ServerIp*"></a>
+  <h4 id="VpnSDK_Interfaces_IConnectionInfo_ServerIp" data-uid="VpnSDK.Interfaces.IConnectionInfo.ServerIp">ServerIp</h4>
+  <div class="markdown level1 summary"><p>Gets server&apos;s IP address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPAddress ServerIp { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IPAddress</span></td>
         <td></td>
       </tr>
     </tbody>

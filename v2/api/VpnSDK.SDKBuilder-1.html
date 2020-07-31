@@ -271,6 +271,9 @@
                             <a href="VpnSDK.Helpers.BatchPingUtility.html" title="BatchPingUtility" class="">BatchPingUtility</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Helpers.VersionHelper.html" title="VersionHelper" class="">VersionHelper</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Helpers.VpnProtocolDiagnostics.html" title="VpnProtocolDiagnostics" class="">VpnProtocolDiagnostics</a>
                           </li>
                         </ul>  </li>
@@ -584,6 +587,52 @@
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><span class="parametername">automaticallyRefresh</span></td>
         <td><p>If set to true, SDK will automatically update OAuth Refresh Token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.SDKBuilder-1.html">SDKBuilder</a>&lt;T&gt;</td>
+        <td><p>a builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_SDKBuilder_1_SetBrandingKey_" data-uid="VpnSDK.SDKBuilder`1.SetBrandingKey*"></a>
+  <h4 id="VpnSDK_SDKBuilder_1_SetBrandingKey_System_String_" data-uid="VpnSDK.SDKBuilder`1.SetBrandingKey(System.String)">SetBrandingKey(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the Branding key. If this value is specified, providing API Key and Authentication Token is not required.
+If this value specified, you have to use <see cref="!:ISDK.Login(string, string, string)"></see> for logging in a user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SDKBuilder&lt;T&gt; SetBrandingKey(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>the branding key.</p>
 </td>
       </tr>
     </tbody>

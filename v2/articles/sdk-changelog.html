@@ -132,8 +132,24 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="vpnsdk-changelog">VpnSDK Changelog</h1>
 
-<h2 id="v2123">v2.1.23</h2>
+<h2 id="v2220">v2.2.20</h2>
 <h3 id="features">Features</h3>
+<ol>
+<li>Added IKEv2 fragmentation support for Windows 10 2004+ build.</li>
+<li>Added .NET Standard 2.0 support.</li>
+<li>Added a new event <code>LocationsRefreshStatusChanged</code> to ISDK. It returns a <code>RefreshLocationListStatus</code> on <code>ISDK.Locations</code> list update.</li>
+<li>Added a mechanism to enable TLS 1.2 for Windows 7 if it was disabled.</li>
+</ol>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ol>
+<li>Fixed an issue where servers in maintenance mode were included in the locations list.</li>
+<li>Fixed an issue with the RAS connection disposing.</li>
+<li>Fixed an edge case to prevent the NPE when active connections do not exist.</li>
+<li>Fixed an exception on token refresh.</li>
+<li>Improved <code>ISDK.Locations</code> collection updates.</li>
+</ol>
+<h2 id="v2123">v2.1.23</h2>
+<h3 id="features-1">Features</h3>
 <ol>
 <li>An update in the WFP library to use a second optional flag for detecting loopback traffic.</li>
 <li>Loopback improvements: Changed WFP manager to look for interfaces with the loopback type on them as well as looking for 127.0.0.0/8. This should reduce edge cases of loopback traffic incorrectly characterized as normal traffic.</li>
@@ -147,12 +163,23 @@
 (b) If the cache had not expired</li>
 <li>RefreshServerInfo() allows the server list to explicitly refresh if required. It now has a cool down of 5 minutes.</li>
 </ol>
-<h3 id="fixes">Fixes</h3>
+<h3 id="bug-fixes-1">Bug fixes</h3>
 <ol>
 <li>Fix to recreate RAS phonebook entries. This is in the event these entries are deleted</li>
 </ol>
+<h2 id="v2033">v2.0.33</h2>
+<h3 id="breaking-changes">Breaking Changes</h3>
+<ul>
+<li>When the running process is not elevated, setters of the following properties <code>DisableDNSLeakProtection</code>, <code>DisableIPv6LeakProtection</code>, <code>AllowOnlyVPNConnectivity</code> and <code>AllowLANTraffic</code> now throw <code>NotElevatedException</code>, the getter always returns the default value.</li>
+<li>When the running process is not elevated, OpenVPN protocol is disabled.</li>
+<li>When the running process is not elevated, <code>InstallTapDriver()</code> now throws <code>NotElevatedException</code>.</li>
+</ul>
+<h3 id="features-2">Features</h3>
+<ul>
+<li>Added <code>IsElevated</code> property to <code>ISDK</code> interface. That property indicates if the running process is elevated or not. </li>
+</ul>
 <h2 id="v2030">v2.0.30</h2>
-<h3 id="bug-fixes">Bug fixes</h3>
+<h3 id="bug-fixes-2">Bug fixes</h3>
 <ul>
 <li>Internal references update.</li>
 <li>API requests logging improved.</li>
@@ -164,7 +191,7 @@
 <li>For RAS type of connections, set a new metric via DotRas, rather than doing interop.</li>
 </ul>
 <h2 id="v2023">v2.0.23</h2>
-<h3 id="bug-fixes-1">Bug fixes</h3>
+<h3 id="bug-fixes-3">Bug fixes</h3>
 <ul>
 <li>Fixed the issue with reading exitcode of OpenVPN process that is not exited yet.</li>
 <li>Throw login exceptions correctly.</li>
