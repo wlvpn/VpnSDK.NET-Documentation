@@ -132,14 +132,18 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="vpnsdk-changelog">VpnSDK Changelog</h1>
 
+<h2 id="v2225">v2.2.25</h2>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ol>
+<li>Fixed OpenVPN&#39;s TAP adapter installation issues</li>
+</ol>
 <h2 id="v2224">v2.2.24</h2>
-<h3 id="bug-fixes-2224">Bug fixes</h3>
+<h3 id="bug-fixes-1">Bug fixes</h3>
 <ol>
 <li>Fixed an issue with the locations collection update.</li>
 <li>Fixed an issue where SDK threw a security exception on initialization when running under non-elevated process.</li>
 <li>Fixed the RAS connection dispose process.</li>
 </ol>
-
 <h2 id="v2220">v2.2.20</h2>
 <h3 id="features">Features</h3>
 <ol>
@@ -148,7 +152,7 @@
 <li>Added a new event <code>LocationsRefreshStatusChanged</code> to ISDK. It returns a <code>RefreshLocationListStatus</code> on <code>ISDK.Locations</code> list update.</li>
 <li>Added a mechanism to enable TLS 1.2 for Windows 7 if it was disabled.</li>
 </ol>
-<h3 id="bug-fixes">Bug fixes</h3>
+<h3 id="bug-fixes-2">Bug fixes</h3>
 <ol>
 <li>Fixed an issue where servers in maintenance mode were included in the locations list.</li>
 <li>Fixed an issue with the RAS connection disposing.</li>
@@ -171,7 +175,7 @@
 (b) If the cache had not expired</li>
 <li>RefreshServerInfo() allows the server list to explicitly refresh if required. It now has a cool down of 5 minutes.</li>
 </ol>
-<h3 id="bug-fixes-1">Bug fixes</h3>
+<h3 id="bug-fixes-3">Bug fixes</h3>
 <ol>
 <li>Fix to recreate RAS phonebook entries. This is in the event these entries are deleted</li>
 </ol>
@@ -187,7 +191,7 @@
 <li>Added <code>IsElevated</code> property to <code>ISDK</code> interface. That property indicates if the running process is elevated or not. </li>
 </ul>
 <h2 id="v2030">v2.0.30</h2>
-<h3 id="bug-fixes-2">Bug fixes</h3>
+<h3 id="bug-fixes-4">Bug fixes</h3>
 <ul>
 <li>Internal references update.</li>
 <li>API requests logging improved.</li>
@@ -199,7 +203,7 @@
 <li>For RAS type of connections, set a new metric via DotRas, rather than doing interop.</li>
 </ul>
 <h2 id="v2023">v2.0.23</h2>
-<h3 id="bug-fixes-3">Bug fixes</h3>
+<h3 id="bug-fixes-5">Bug fixes</h3>
 <ul>
 <li>Fixed the issue with reading exitcode of OpenVPN process that is not exited yet.</li>
 <li>Throw login exceptions correctly.</li>
