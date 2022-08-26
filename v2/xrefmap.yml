@@ -854,30 +854,12 @@ references:
   commentId: F:VpnSDK.Enums.NetworkConnectionType.IKEv2
   fullName: VpnSDK.Enums.NetworkConnectionType.IKEv2
   nameWithType: NetworkConnectionType.IKEv2
-- uid: VpnSDK.Enums.NetworkConnectionType.L2TP
-  name: L2TP
-  href: api/VpnSDK.Enums.NetworkConnectionType.html#VpnSDK_Enums_NetworkConnectionType_L2TP
-  commentId: F:VpnSDK.Enums.NetworkConnectionType.L2TP
-  fullName: VpnSDK.Enums.NetworkConnectionType.L2TP
-  nameWithType: NetworkConnectionType.L2TP
 - uid: VpnSDK.Enums.NetworkConnectionType.OpenVPN
   name: OpenVPN
   href: api/VpnSDK.Enums.NetworkConnectionType.html#VpnSDK_Enums_NetworkConnectionType_OpenVPN
   commentId: F:VpnSDK.Enums.NetworkConnectionType.OpenVPN
   fullName: VpnSDK.Enums.NetworkConnectionType.OpenVPN
   nameWithType: NetworkConnectionType.OpenVPN
-- uid: VpnSDK.Enums.NetworkConnectionType.PPTP
-  name: PPTP
-  href: api/VpnSDK.Enums.NetworkConnectionType.html#VpnSDK_Enums_NetworkConnectionType_PPTP
-  commentId: F:VpnSDK.Enums.NetworkConnectionType.PPTP
-  fullName: VpnSDK.Enums.NetworkConnectionType.PPTP
-  nameWithType: NetworkConnectionType.PPTP
-- uid: VpnSDK.Enums.NetworkConnectionType.SSTP
-  name: SSTP
-  href: api/VpnSDK.Enums.NetworkConnectionType.html#VpnSDK_Enums_NetworkConnectionType_SSTP
-  commentId: F:VpnSDK.Enums.NetworkConnectionType.SSTP
-  fullName: VpnSDK.Enums.NetworkConnectionType.SSTP
-  nameWithType: NetworkConnectionType.SSTP
 - uid: VpnSDK.Enums.NetworkConnectionType.WireGuard
   name: WireGuard
   href: api/VpnSDK.Enums.NetworkConnectionType.html#VpnSDK_Enums_NetworkConnectionType_WireGuard
@@ -1786,6 +1768,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.Disconnect
   nameWithType: ISDK.Disconnect
+- uid: VpnSDK.Interfaces.ISDK.DisposeAsync
+  name: DisposeAsync()
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DisposeAsync
+  commentId: M:VpnSDK.Interfaces.ISDK.DisposeAsync
+  fullName: VpnSDK.Interfaces.ISDK.DisposeAsync()
+  nameWithType: ISDK.DisposeAsync()
+- uid: VpnSDK.Interfaces.ISDK.DisposeAsync*
+  name: DisposeAsync
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DisposeAsync_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.DisposeAsync
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.DisposeAsync
+  nameWithType: ISDK.DisposeAsync
 - uid: VpnSDK.Interfaces.ISDK.GetBrandingInfo(System.String)
   name: GetBrandingInfo(String)
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetBrandingInfo_System_String_
