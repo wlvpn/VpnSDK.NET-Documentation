@@ -8,7 +8,7 @@
     <title>VpnSDK Changelog | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="VpnSDK Changelog | VpnSDK v2 - WLVPN .NET Framework SDK ">
-    <meta name="generator" content="docfx 2.43.2.0">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -67,11 +67,11 @@
       <div class="container body-content">
         
         <div id="search-results">
-          <div class="search-list"></div>
+          <div class="search-list">Search Results for <span></span></div>
           <div class="sr-items">
             <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
           </div>
-          <ul id="pagination"></ul>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
@@ -132,6 +132,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="vpnsdk-changelog">VpnSDK Changelog</h1>
 
+<h2 id="v2226">v2.2.26</h2>
+<h3 id="features">Features</h3>
+<ol>
+<li>Removed support for the legacy insecure protocols L2TP, SSTP and PPTP.</li>
+</ol>
 <h2 id="v2225">v2.2.25</h2>
 <h3 id="bug-fixes">Bug fixes</h3>
 <ol>
@@ -145,7 +150,7 @@
 <li>Fixed the RAS connection dispose process.</li>
 </ol>
 <h2 id="v2220">v2.2.20</h2>
-<h3 id="features">Features</h3>
+<h3 id="features-1">Features</h3>
 <ol>
 <li>Added IKEv2 fragmentation support for Windows 10 2004+ build.</li>
 <li>Added .NET Standard 2.0 support.</li>
@@ -161,7 +166,7 @@
 <li>Improved <code>ISDK.Locations</code> collection updates.</li>
 </ol>
 <h2 id="v2123">v2.1.23</h2>
-<h3 id="features-1">Features</h3>
+<h3 id="features-2">Features</h3>
 <ol>
 <li>An update in the WFP library to use a second optional flag for detecting loopback traffic.</li>
 <li>Loopback improvements: Changed WFP manager to look for interfaces with the loopback type on them as well as looking for 127.0.0.0/8. This should reduce edge cases of loopback traffic incorrectly characterized as normal traffic.</li>
@@ -186,7 +191,7 @@
 <li>When the running process is not elevated, OpenVPN protocol is disabled.</li>
 <li>When the running process is not elevated, <code>InstallTapDriver()</code> now throws <code>NotElevatedException</code>.</li>
 </ul>
-<h3 id="features-2">Features</h3>
+<h3 id="features-3">Features</h3>
 <ul>
 <li>Added <code>IsElevated</code> property to <code>ISDK</code> interface. That property indicates if the running process is elevated or not. </li>
 </ul>
@@ -219,7 +224,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
@@ -234,7 +240,7 @@
               <a href="#top">Back to top</a>
             </span>
             
-            <span><b>VpnSDK v2 Documentation - © 2020 WLVPN</b></span>
+            <span><b>VpnSDK v2 Documentation - © 2022 WLVPN</b></span>
           </div>
         </div>
       </footer>
