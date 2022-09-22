@@ -498,6 +498,77 @@ references:
   isSpec: "True"
   fullName: VpnSDK.DTO.RasConfiguration.UseConnectionTypeInName
   nameWithType: RasConfiguration.UseConnectionTypeInName
+- uid: VpnSDK.DTO.WireguardConfiguration
+  name: WireguardConfiguration
+  href: api/VpnSDK.DTO.WireguardConfiguration.html
+  commentId: T:VpnSDK.DTO.WireguardConfiguration
+  fullName: VpnSDK.DTO.WireguardConfiguration
+  nameWithType: WireguardConfiguration
+- uid: VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
+  name: ApiBaseUrl
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ApiBaseUrl
+  commentId: P:VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
+  fullName: VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
+  nameWithType: WireguardConfiguration.ApiBaseUrl
+- uid: VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl*
+  name: ApiBaseUrl
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ApiBaseUrl_
+  commentId: Overload:VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
+  isSpec: "True"
+  fullName: VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
+  nameWithType: WireguardConfiguration.ApiBaseUrl
+- uid: VpnSDK.DTO.WireguardConfiguration.ApiKey
+  name: ApiKey
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ApiKey
+  commentId: P:VpnSDK.DTO.WireguardConfiguration.ApiKey
+  fullName: VpnSDK.DTO.WireguardConfiguration.ApiKey
+  nameWithType: WireguardConfiguration.ApiKey
+- uid: VpnSDK.DTO.WireguardConfiguration.ApiKey*
+  name: ApiKey
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ApiKey_
+  commentId: Overload:VpnSDK.DTO.WireguardConfiguration.ApiKey
+  isSpec: "True"
+  fullName: VpnSDK.DTO.WireguardConfiguration.ApiKey
+  nameWithType: WireguardConfiguration.ApiKey
+- uid: VpnSDK.DTO.WireguardConfiguration.ConfigDirectory
+  name: ConfigDirectory
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ConfigDirectory
+  commentId: P:VpnSDK.DTO.WireguardConfiguration.ConfigDirectory
+  fullName: VpnSDK.DTO.WireguardConfiguration.ConfigDirectory
+  nameWithType: WireguardConfiguration.ConfigDirectory
+- uid: VpnSDK.DTO.WireguardConfiguration.ConfigDirectory*
+  name: ConfigDirectory
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ConfigDirectory_
+  commentId: Overload:VpnSDK.DTO.WireguardConfiguration.ConfigDirectory
+  isSpec: "True"
+  fullName: VpnSDK.DTO.WireguardConfiguration.ConfigDirectory
+  nameWithType: WireguardConfiguration.ConfigDirectory
+- uid: VpnSDK.DTO.WireguardConfiguration.ConnectionName
+  name: ConnectionName
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ConnectionName
+  commentId: P:VpnSDK.DTO.WireguardConfiguration.ConnectionName
+  fullName: VpnSDK.DTO.WireguardConfiguration.ConnectionName
+  nameWithType: WireguardConfiguration.ConnectionName
+- uid: VpnSDK.DTO.WireguardConfiguration.ConnectionName*
+  name: ConnectionName
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ConnectionName_
+  commentId: Overload:VpnSDK.DTO.WireguardConfiguration.ConnectionName
+  isSpec: "True"
+  fullName: VpnSDK.DTO.WireguardConfiguration.ConnectionName
+  nameWithType: WireguardConfiguration.ConnectionName
+- uid: VpnSDK.DTO.WireguardConfiguration.TunDeviceDescription
+  name: TunDeviceDescription
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_TunDeviceDescription
+  commentId: P:VpnSDK.DTO.WireguardConfiguration.TunDeviceDescription
+  fullName: VpnSDK.DTO.WireguardConfiguration.TunDeviceDescription
+  nameWithType: WireguardConfiguration.TunDeviceDescription
+- uid: VpnSDK.DTO.WireguardConfiguration.TunDeviceDescription*
+  name: TunDeviceDescription
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_TunDeviceDescription_
+  commentId: Overload:VpnSDK.DTO.WireguardConfiguration.TunDeviceDescription
+  isSpec: "True"
+  fullName: VpnSDK.DTO.WireguardConfiguration.TunDeviceDescription
+  nameWithType: WireguardConfiguration.TunDeviceDescription
 - uid: VpnSDK.EmptyAvailableVpnProtocolsException
   name: EmptyAvailableVpnProtocolsException
   href: api/VpnSDK.EmptyAvailableVpnProtocolsException.html
@@ -812,6 +883,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.VpnUnsupportedProtocolError
   fullName: VpnSDK.Enums.ErrorType.VpnUnsupportedProtocolError
   nameWithType: ErrorType.VpnUnsupportedProtocolError
+- uid: VpnSDK.Enums.ErrorType.WireGuardApiError
+  name: WireGuardApiError
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_WireGuardApiError
+  commentId: F:VpnSDK.Enums.ErrorType.WireGuardApiError
+  fullName: VpnSDK.Enums.ErrorType.WireGuardApiError
+  nameWithType: ErrorType.WireGuardApiError
 - uid: VpnSDK.Enums.LoadLevel
   name: LoadLevel
   href: api/VpnSDK.Enums.LoadLevel.html
@@ -2077,6 +2154,25 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.IUser.VpnCredential
   nameWithType: IUser.VpnCredential
+- uid: VpnSDK.Interfaces.IWireGuardConnectionConfiguration
+  name: IWireGuardConnectionConfiguration
+  href: api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html
+  commentId: T:VpnSDK.Interfaces.IWireGuardConnectionConfiguration
+  fullName: VpnSDK.Interfaces.IWireGuardConnectionConfiguration
+  nameWithType: IWireGuardConnectionConfiguration
+- uid: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.AllowLan
+  name: AllowLan
+  href: api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html#VpnSDK_Interfaces_IWireGuardConnectionConfiguration_AllowLan
+  commentId: P:VpnSDK.Interfaces.IWireGuardConnectionConfiguration.AllowLan
+  fullName: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.AllowLan
+  nameWithType: IWireGuardConnectionConfiguration.AllowLan
+- uid: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.AllowLan*
+  name: AllowLan
+  href: api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html#VpnSDK_Interfaces_IWireGuardConnectionConfiguration_AllowLan_
+  commentId: Overload:VpnSDK.Interfaces.IWireGuardConnectionConfiguration.AllowLan
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.AllowLan
+  nameWithType: IWireGuardConnectionConfiguration.AllowLan
 - uid: VpnSDK.InvalidConfigurationException
   name: InvalidConfigurationException
   href: api/VpnSDK.InvalidConfigurationException.html
@@ -2928,6 +3024,44 @@ references:
   isSpec: "True"
   fullName: VpnSDK.VpnException.VpnException
   nameWithType: VpnException.VpnException
+- uid: VpnSDK.VpnHostServiceException
+  name: VpnHostServiceException
+  href: api/VpnSDK.VpnHostServiceException.html
+  commentId: T:VpnSDK.VpnHostServiceException
+  fullName: VpnSDK.VpnHostServiceException
+  nameWithType: VpnHostServiceException
+- uid: VpnSDK.VpnHostServiceException.#ctor(System.String)
+  name: VpnHostServiceException(String)
+  href: api/VpnSDK.VpnHostServiceException.html#VpnSDK_VpnHostServiceException__ctor_System_String_
+  commentId: M:VpnSDK.VpnHostServiceException.#ctor(System.String)
+  fullName: VpnSDK.VpnHostServiceException.VpnHostServiceException(System.String)
+  nameWithType: VpnHostServiceException.VpnHostServiceException(String)
+- uid: VpnSDK.VpnHostServiceException.#ctor(System.String,Exception)
+  name: VpnHostServiceException(String, Exception)
+  href: api/VpnSDK.VpnHostServiceException.html#VpnSDK_VpnHostServiceException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.VpnHostServiceException.#ctor(System.String,Exception)
+  fullName: VpnSDK.VpnHostServiceException.VpnHostServiceException(System.String, Exception)
+  nameWithType: VpnHostServiceException.VpnHostServiceException(String, Exception)
+- uid: VpnSDK.VpnHostServiceException.#ctor*
+  name: VpnHostServiceException
+  href: api/VpnSDK.VpnHostServiceException.html#VpnSDK_VpnHostServiceException__ctor_
+  commentId: Overload:VpnSDK.VpnHostServiceException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.VpnHostServiceException.VpnHostServiceException
+  nameWithType: VpnHostServiceException.VpnHostServiceException
+- uid: VpnSDK.VpnHostServiceException.Type
+  name: Type
+  href: api/VpnSDK.VpnHostServiceException.html#VpnSDK_VpnHostServiceException_Type
+  commentId: P:VpnSDK.VpnHostServiceException.Type
+  fullName: VpnSDK.VpnHostServiceException.Type
+  nameWithType: VpnHostServiceException.Type
+- uid: VpnSDK.VpnHostServiceException.Type*
+  name: Type
+  href: api/VpnSDK.VpnHostServiceException.html#VpnSDK_VpnHostServiceException_Type_
+  commentId: Overload:VpnSDK.VpnHostServiceException.Type
+  isSpec: "True"
+  fullName: VpnSDK.VpnHostServiceException.Type
+  nameWithType: VpnHostServiceException.Type
 - uid: VpnSDK.WFPException
   name: WFPException
   href: api/VpnSDK.WFPException.html
@@ -2953,3 +3087,60 @@ references:
   isSpec: "True"
   fullName: VpnSDK.WFPException.WFPException
   nameWithType: WFPException.WFPException
+- uid: VpnSDK.WireGuardAPIException
+  name: WireGuardAPIException
+  href: api/VpnSDK.WireGuardAPIException.html
+  commentId: T:VpnSDK.WireGuardAPIException
+  fullName: VpnSDK.WireGuardAPIException
+  nameWithType: WireGuardAPIException
+- uid: VpnSDK.WireGuardAPIException.#ctor(System.String)
+  name: WireGuardAPIException(String)
+  href: api/VpnSDK.WireGuardAPIException.html#VpnSDK_WireGuardAPIException__ctor_System_String_
+  commentId: M:VpnSDK.WireGuardAPIException.#ctor(System.String)
+  fullName: VpnSDK.WireGuardAPIException.WireGuardAPIException(System.String)
+  nameWithType: WireGuardAPIException.WireGuardAPIException(String)
+- uid: VpnSDK.WireGuardAPIException.#ctor(System.String,Exception)
+  name: WireGuardAPIException(String, Exception)
+  href: api/VpnSDK.WireGuardAPIException.html#VpnSDK_WireGuardAPIException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.WireGuardAPIException.#ctor(System.String,Exception)
+  fullName: VpnSDK.WireGuardAPIException.WireGuardAPIException(System.String, Exception)
+  nameWithType: WireGuardAPIException.WireGuardAPIException(String, Exception)
+- uid: VpnSDK.WireGuardAPIException.#ctor*
+  name: WireGuardAPIException
+  href: api/VpnSDK.WireGuardAPIException.html#VpnSDK_WireGuardAPIException__ctor_
+  commentId: Overload:VpnSDK.WireGuardAPIException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.WireGuardAPIException.WireGuardAPIException
+  nameWithType: WireGuardAPIException.WireGuardAPIException
+- uid: VpnSDK.WireGuardAPIException.Type
+  name: Type
+  href: api/VpnSDK.WireGuardAPIException.html#VpnSDK_WireGuardAPIException_Type
+  commentId: P:VpnSDK.WireGuardAPIException.Type
+  fullName: VpnSDK.WireGuardAPIException.Type
+  nameWithType: WireGuardAPIException.Type
+- uid: VpnSDK.WireGuardAPIException.Type*
+  name: Type
+  href: api/VpnSDK.WireGuardAPIException.html#VpnSDK_WireGuardAPIException_Type_
+  commentId: Overload:VpnSDK.WireGuardAPIException.Type
+  isSpec: "True"
+  fullName: VpnSDK.WireGuardAPIException.Type
+  nameWithType: WireGuardAPIException.Type
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder
+  name: WireGuardConnectionConfigurationBuilder
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html
+  commentId: T:VpnSDK.WireGuardConnectionConfigurationBuilder
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder
+  nameWithType: WireGuardConnectionConfigurationBuilder
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.Build
+  name: Build()
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_Build
+  commentId: M:VpnSDK.WireGuardConnectionConfigurationBuilder.Build
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.Build()
+  nameWithType: WireGuardConnectionConfigurationBuilder.Build()
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.Build*
+  name: Build
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_Build_
+  commentId: Overload:VpnSDK.WireGuardConnectionConfigurationBuilder.Build
+  isSpec: "True"
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.Build
+  nameWithType: WireGuardConnectionConfigurationBuilder.Build
