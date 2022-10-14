@@ -3144,3 +3144,16 @@ references:
   isSpec: "True"
   fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.Build
   nameWithType: WireGuardConnectionConfigurationBuilder.Build
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic(System.Boolean)
+  name: SetBlockUntunneledTraffic(Boolean)
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_SetBlockUntunneledTraffic_System_Boolean_
+  commentId: M:VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic(System.Boolean)
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic(System.Boolean)
+  nameWithType: WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic(Boolean)
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic*
+  name: SetBlockUntunneledTraffic
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_SetBlockUntunneledTraffic_
+  commentId: Overload:VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic
+  isSpec: "True"
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic
+  nameWithType: WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic
