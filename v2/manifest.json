@@ -918,7 +918,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/branding.html",
-          "hash": "zXyV36HXrtXxYNl+/hjZvCYuJzK3shgcwKA8VZZ4Vm8="
+          "hash": "UJvUeMBXCjVKUEbYGXeIGVonBlYWlPgnqrOFwAl+2lk="
         }
       },
       "is_incremental": false,
@@ -930,7 +930,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cvpn-v2-changelog.html",
-          "hash": "H1VhjwCKAWmvb2VRJdAzV9oKmkmw1LqVlhfA2Klq8rc="
+          "hash": "/h4iVBf8Dv3mBW/DfqcAFpBhpwhnLwFOGaZBICHRcFo="
         }
       },
       "is_incremental": false,
@@ -978,7 +978,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/sdk-changelog.html",
-          "hash": "ZJhK2NOcIAh7tY6mFb3Pl67z0Bw90Jg877DnDNQwndA="
+          "hash": "b9cvLV7/wgA3g51DFAD6sWdFWIBVbeLVVWfly/Xba5I="
         }
       },
       "is_incremental": false,
