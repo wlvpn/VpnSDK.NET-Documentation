@@ -132,8 +132,13 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="vpnsdk-changelog">VpnSDK Changelog</h1>
 
-<h2 id="v2226">v2.2.26</h2>
+<h2 id="v2227">v2.2.27</h2>
 <h3 id="features">Features</h3>
+<ol>
+<li>Added support for WireGuard protocol.</li>
+</ol>
+<h2 id="v2226">v2.2.26</h2>
+<h3 id="features-1">Features</h3>
 <ol>
 <li>Removed support for the legacy insecure protocols L2TP, SSTP and PPTP.</li>
 </ol>
@@ -150,7 +155,7 @@
 <li>Fixed the RAS connection dispose process.</li>
 </ol>
 <h2 id="v2220">v2.2.20</h2>
-<h3 id="features-1">Features</h3>
+<h3 id="features-2">Features</h3>
 <ol>
 <li>Added IKEv2 fragmentation support for Windows 10 2004+ build.</li>
 <li>Added .NET Standard 2.0 support.</li>
@@ -166,7 +171,7 @@
 <li>Improved <code>ISDK.Locations</code> collection updates.</li>
 </ol>
 <h2 id="v2123">v2.1.23</h2>
-<h3 id="features-2">Features</h3>
+<h3 id="features-3">Features</h3>
 <ol>
 <li>An update in the WFP library to use a second optional flag for detecting loopback traffic.</li>
 <li>Loopback improvements: Changed WFP manager to look for interfaces with the loopback type on them as well as looking for 127.0.0.0/8. This should reduce edge cases of loopback traffic incorrectly characterized as normal traffic.</li>
@@ -191,7 +196,7 @@
 <li>When the running process is not elevated, OpenVPN protocol is disabled.</li>
 <li>When the running process is not elevated, <code>InstallTapDriver()</code> now throws <code>NotElevatedException</code>.</li>
 </ul>
-<h3 id="features-3">Features</h3>
+<h3 id="features-4">Features</h3>
 <ul>
 <li>Added <code>IsElevated</code> property to <code>ISDK</code> interface. That property indicates if the running process is elevated or not. </li>
 </ul>
