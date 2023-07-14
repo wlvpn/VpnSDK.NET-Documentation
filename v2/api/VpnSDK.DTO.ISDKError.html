@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class WireguardConfiguration
+    <title>Interface ISDKError
    | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class WireguardConfiguration
+    <meta name="title" content="Interface ISDKError
    | VpnSDK v2 - WLVPN .NET Framework SDK ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -213,8 +213,8 @@
                           <li class="">
                             <a href="VpnSDK.DTO.ConnectionError.html" title="ConnectionError" class="">ConnectionError</a>
                           </li>
-                          <li class="">
-                            <a href="VpnSDK.DTO.ISDKError.html" title="ISDKError" class="">ISDKError</a>
+                          <li class="active">
+                            <a href="VpnSDK.DTO.ISDKError.html" title="ISDKError" class="active">ISDKError</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.DTO.NetworkGeolocation.html" title="NetworkGeolocation" class="">NetworkGeolocation</a>
@@ -225,8 +225,8 @@
                           <li class="">
                             <a href="VpnSDK.DTO.RasConfiguration.html" title="RasConfiguration" class="">RasConfiguration</a>
                           </li>
-                          <li class="active">
-                            <a href="VpnSDK.DTO.WireguardConfiguration.html" title="WireguardConfiguration" class="active">WireguardConfiguration</a>
+                          <li class="">
+                            <a href="VpnSDK.DTO.WireguardConfiguration.html" title="WireguardConfiguration" class="">WireguardConfiguration</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -344,37 +344,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VpnSDK.DTO.WireguardConfiguration">
+            <article class="content wrap" id="_content" data-uid="VpnSDK.DTO.ISDKError">
   
   
-  <h1 id="VpnSDK_DTO_WireguardConfiguration" data-uid="VpnSDK.DTO.WireguardConfiguration" class="text-break">Class WireguardConfiguration
+  <h1 id="VpnSDK_DTO_ISDKError" data-uid="VpnSDK.DTO.ISDKError" class="text-break">Interface ISDKError
   </h1>
-  <div class="markdown level0 summary"><p>Class WireguardConfiguration.</p>
+  <div class="markdown level0 summary"><p>Interface ISDKError. Describes an SDK error that may occur during API requests or VPN connection process.
+For more info see: <a class="xref" href="VpnSDK.DTO.ApiHttpError.html">ApiHttpError</a>, <a class="xref" href="VpnSDK.DTO.ApiProxyError.html">ApiProxyError</a>, <a class="xref" href="VpnSDK.DTO.ConnectionError.html">ConnectionError</a>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">WireguardConfiguration</span></div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.DTO.html">VpnSDK.DTO</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="VpnSDK_DTO_WireguardConfiguration_syntax">Syntax</h5>
+  <h5 id="VpnSDK_DTO_ISDKError_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class WireguardConfiguration</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ISDKError</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="VpnSDK_DTO_WireguardConfiguration_ConfigDirectory_" data-uid="VpnSDK.DTO.WireguardConfiguration.ConfigDirectory*"></a>
-  <h4 id="VpnSDK_DTO_WireguardConfiguration_ConfigDirectory" data-uid="VpnSDK.DTO.WireguardConfiguration.ConfigDirectory">ConfigDirectory</h4>
-  <div class="markdown level1 summary"><p>Gets or sets WireGuard® config directory.</p>
+  <a id="VpnSDK_DTO_ISDKError_SystemException_" data-uid="VpnSDK.DTO.ISDKError.SystemException*"></a>
+  <h4 id="VpnSDK_DTO_ISDKError_SystemException" data-uid="VpnSDK.DTO.ISDKError.SystemException">SystemException</h4>
+  <div class="markdown level1 summary"><p>Gets the system <see cref="!:Exception"></see>, if any.
+Sometimes the API requests fail because of the system, not because the API is responding with a bad status.
+For example, this happens if a user has bad Internet connection and API request fails with <see cref="!:TimeoutException"></see>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ConfigDirectory { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">Exception SystemException { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -386,59 +384,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="VpnSDK_DTO_WireguardConfiguration_ConnectionName_" data-uid="VpnSDK.DTO.WireguardConfiguration.ConnectionName*"></a>
-  <h4 id="VpnSDK_DTO_WireguardConfiguration_ConnectionName" data-uid="VpnSDK.DTO.WireguardConfiguration.ConnectionName">ConnectionName</h4>
-  <div class="markdown level1 summary"><p>Gets or sets WireGuard® connection name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ConnectionName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="VpnSDK_DTO_WireguardConfiguration_TunDeviceDescription_" data-uid="VpnSDK.DTO.WireguardConfiguration.TunDeviceDescription*"></a>
-  <h4 id="VpnSDK_DTO_WireguardConfiguration_TunDeviceDescription" data-uid="VpnSDK.DTO.WireguardConfiguration.TunDeviceDescription">TunDeviceDescription</h4>
-  <div class="markdown level1 summary"><p>Gets or sets WinTUN device description used by Windows.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string TunDeviceDescription { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">Exception</span></td>
         <td></td>
       </tr>
     </tbody>
