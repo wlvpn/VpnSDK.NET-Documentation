@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Projects/Live/IPVanish-SDK2-VPNWIN-1526/VpnSDK-v2.Documentation",
+  "source_base_path": "D:/Projects/Live/VPNSDKv2/VpnSDK-v2.Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -966,7 +966,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/branding.html",
-          "hash": "AO/EjJ9ai3h0K7v/aIWjwszeZo64J/gM/fq/G3Cc3Es="
+          "hash": "FP2YMuTz8JjGm+iJo+rZXT6O1RTOJrOTOiaXshie7fo="
         }
       },
       "is_incremental": false,
@@ -978,7 +978,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cvpn-v2-changelog.html",
-          "hash": "3J8Ko9yMGAncJzSVvaET/W2EQ88992EQDepPYBKP5iY="
+          "hash": "az60wAYD23rLf19u8nodoWsZ5iTRzHCoJrrSSURfylI="
         }
       },
       "is_incremental": false,
@@ -1026,7 +1026,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/sdk-changelog.html",
-          "hash": "9gHe+6SUK2rZZOaKpE4u6P44jIS2LQ6GmFCkIlwMqpc="
+          "hash": "I0kW3t6nZVpUxI1qE0oEe++1x/NRuPVzM/+6rJIrWYA="
         }
       },
       "is_incremental": false,
