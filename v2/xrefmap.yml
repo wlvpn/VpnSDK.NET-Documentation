@@ -266,6 +266,199 @@ references:
   commentId: N:VpnSDK.DTO
   fullName: VpnSDK.DTO
   nameWithType: VpnSDK.DTO
+- uid: VpnSDK.DTO.ApiHttpError
+  name: ApiHttpError
+  href: api/VpnSDK.DTO.ApiHttpError.html
+  commentId: T:VpnSDK.DTO.ApiHttpError
+  fullName: VpnSDK.DTO.ApiHttpError
+  nameWithType: ApiHttpError
+- uid: VpnSDK.DTO.ApiHttpError.HttpResponse
+  name: HttpResponse
+  href: api/VpnSDK.DTO.ApiHttpError.html#VpnSDK_DTO_ApiHttpError_HttpResponse
+  commentId: P:VpnSDK.DTO.ApiHttpError.HttpResponse
+  fullName: VpnSDK.DTO.ApiHttpError.HttpResponse
+  nameWithType: ApiHttpError.HttpResponse
+- uid: VpnSDK.DTO.ApiHttpError.HttpResponse*
+  name: HttpResponse
+  href: api/VpnSDK.DTO.ApiHttpError.html#VpnSDK_DTO_ApiHttpError_HttpResponse_
+  commentId: Overload:VpnSDK.DTO.ApiHttpError.HttpResponse
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ApiHttpError.HttpResponse
+  nameWithType: ApiHttpError.HttpResponse
+- uid: VpnSDK.DTO.ApiHttpError.RequestUri
+  name: RequestUri
+  href: api/VpnSDK.DTO.ApiHttpError.html#VpnSDK_DTO_ApiHttpError_RequestUri
+  commentId: P:VpnSDK.DTO.ApiHttpError.RequestUri
+  fullName: VpnSDK.DTO.ApiHttpError.RequestUri
+  nameWithType: ApiHttpError.RequestUri
+- uid: VpnSDK.DTO.ApiHttpError.RequestUri*
+  name: RequestUri
+  href: api/VpnSDK.DTO.ApiHttpError.html#VpnSDK_DTO_ApiHttpError_RequestUri_
+  commentId: Overload:VpnSDK.DTO.ApiHttpError.RequestUri
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ApiHttpError.RequestUri
+  nameWithType: ApiHttpError.RequestUri
+- uid: VpnSDK.DTO.ApiHttpError.ResponseTime
+  name: ResponseTime
+  href: api/VpnSDK.DTO.ApiHttpError.html#VpnSDK_DTO_ApiHttpError_ResponseTime
+  commentId: P:VpnSDK.DTO.ApiHttpError.ResponseTime
+  fullName: VpnSDK.DTO.ApiHttpError.ResponseTime
+  nameWithType: ApiHttpError.ResponseTime
+- uid: VpnSDK.DTO.ApiHttpError.ResponseTime*
+  name: ResponseTime
+  href: api/VpnSDK.DTO.ApiHttpError.html#VpnSDK_DTO_ApiHttpError_ResponseTime_
+  commentId: Overload:VpnSDK.DTO.ApiHttpError.ResponseTime
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ApiHttpError.ResponseTime
+  nameWithType: ApiHttpError.ResponseTime
+- uid: VpnSDK.DTO.ApiHttpError.SystemException
+  name: SystemException
+  href: api/VpnSDK.DTO.ApiHttpError.html#VpnSDK_DTO_ApiHttpError_SystemException
+  commentId: P:VpnSDK.DTO.ApiHttpError.SystemException
+  fullName: VpnSDK.DTO.ApiHttpError.SystemException
+  nameWithType: ApiHttpError.SystemException
+- uid: VpnSDK.DTO.ApiHttpError.SystemException*
+  name: SystemException
+  href: api/VpnSDK.DTO.ApiHttpError.html#VpnSDK_DTO_ApiHttpError_SystemException_
+  commentId: Overload:VpnSDK.DTO.ApiHttpError.SystemException
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ApiHttpError.SystemException
+  nameWithType: ApiHttpError.SystemException
+- uid: VpnSDK.DTO.ApiProxyError
+  name: ApiProxyError
+  href: api/VpnSDK.DTO.ApiProxyError.html
+  commentId: T:VpnSDK.DTO.ApiProxyError
+  fullName: VpnSDK.DTO.ApiProxyError
+  nameWithType: ApiProxyError
+- uid: VpnSDK.DTO.ApiProxyError.Hostname
+  name: Hostname
+  href: api/VpnSDK.DTO.ApiProxyError.html#VpnSDK_DTO_ApiProxyError_Hostname
+  commentId: P:VpnSDK.DTO.ApiProxyError.Hostname
+  fullName: VpnSDK.DTO.ApiProxyError.Hostname
+  nameWithType: ApiProxyError.Hostname
+- uid: VpnSDK.DTO.ApiProxyError.Hostname*
+  name: Hostname
+  href: api/VpnSDK.DTO.ApiProxyError.html#VpnSDK_DTO_ApiProxyError_Hostname_
+  commentId: Overload:VpnSDK.DTO.ApiProxyError.Hostname
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ApiProxyError.Hostname
+  nameWithType: ApiProxyError.Hostname
+- uid: VpnSDK.DTO.ConnectionError
+  name: ConnectionError
+  href: api/VpnSDK.DTO.ConnectionError.html
+  commentId: T:VpnSDK.DTO.ConnectionError
+  fullName: VpnSDK.DTO.ConnectionError
+  nameWithType: ConnectionError
+- uid: VpnSDK.DTO.ConnectionError.#ctor(System.String,System.String,System.String,System.String,IConnectionConfiguration,Exception)
+  name: ConnectionError(String, String, String, String, IConnectionConfiguration, Exception)
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError__ctor_System_String_System_String_System_String_System_String_IConnectionConfiguration_Exception_
+  commentId: M:VpnSDK.DTO.ConnectionError.#ctor(System.String,System.String,System.String,System.String,IConnectionConfiguration,Exception)
+  fullName: VpnSDK.DTO.ConnectionError.ConnectionError(System.String, System.String, System.String, System.String, IConnectionConfiguration, Exception)
+  nameWithType: ConnectionError.ConnectionError(String, String, String, String, IConnectionConfiguration, Exception)
+- uid: VpnSDK.DTO.ConnectionError.#ctor*
+  name: ConnectionError
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError__ctor_
+  commentId: Overload:VpnSDK.DTO.ConnectionError.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ConnectionError.ConnectionError
+  nameWithType: ConnectionError.ConnectionError
+- uid: VpnSDK.DTO.ConnectionError.CityCode
+  name: CityCode
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_CityCode
+  commentId: P:VpnSDK.DTO.ConnectionError.CityCode
+  fullName: VpnSDK.DTO.ConnectionError.CityCode
+  nameWithType: ConnectionError.CityCode
+- uid: VpnSDK.DTO.ConnectionError.CityCode*
+  name: CityCode
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_CityCode_
+  commentId: Overload:VpnSDK.DTO.ConnectionError.CityCode
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ConnectionError.CityCode
+  nameWithType: ConnectionError.CityCode
+- uid: VpnSDK.DTO.ConnectionError.ConnectionConfiguration
+  name: ConnectionConfiguration
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_ConnectionConfiguration
+  commentId: P:VpnSDK.DTO.ConnectionError.ConnectionConfiguration
+  fullName: VpnSDK.DTO.ConnectionError.ConnectionConfiguration
+  nameWithType: ConnectionError.ConnectionConfiguration
+- uid: VpnSDK.DTO.ConnectionError.ConnectionConfiguration*
+  name: ConnectionConfiguration
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_ConnectionConfiguration_
+  commentId: Overload:VpnSDK.DTO.ConnectionError.ConnectionConfiguration
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ConnectionError.ConnectionConfiguration
+  nameWithType: ConnectionError.ConnectionConfiguration
+- uid: VpnSDK.DTO.ConnectionError.CountryCode
+  name: CountryCode
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_CountryCode
+  commentId: P:VpnSDK.DTO.ConnectionError.CountryCode
+  fullName: VpnSDK.DTO.ConnectionError.CountryCode
+  nameWithType: ConnectionError.CountryCode
+- uid: VpnSDK.DTO.ConnectionError.CountryCode*
+  name: CountryCode
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_CountryCode_
+  commentId: Overload:VpnSDK.DTO.ConnectionError.CountryCode
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ConnectionError.CountryCode
+  nameWithType: ConnectionError.CountryCode
+- uid: VpnSDK.DTO.ConnectionError.Hostname
+  name: Hostname
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_Hostname
+  commentId: P:VpnSDK.DTO.ConnectionError.Hostname
+  fullName: VpnSDK.DTO.ConnectionError.Hostname
+  nameWithType: ConnectionError.Hostname
+- uid: VpnSDK.DTO.ConnectionError.Hostname*
+  name: Hostname
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_Hostname_
+  commentId: Overload:VpnSDK.DTO.ConnectionError.Hostname
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ConnectionError.Hostname
+  nameWithType: ConnectionError.Hostname
+- uid: VpnSDK.DTO.ConnectionError.Ip
+  name: Ip
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_Ip
+  commentId: P:VpnSDK.DTO.ConnectionError.Ip
+  fullName: VpnSDK.DTO.ConnectionError.Ip
+  nameWithType: ConnectionError.Ip
+- uid: VpnSDK.DTO.ConnectionError.Ip*
+  name: Ip
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_Ip_
+  commentId: Overload:VpnSDK.DTO.ConnectionError.Ip
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ConnectionError.Ip
+  nameWithType: ConnectionError.Ip
+- uid: VpnSDK.DTO.ConnectionError.SystemException
+  name: SystemException
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_SystemException
+  commentId: P:VpnSDK.DTO.ConnectionError.SystemException
+  fullName: VpnSDK.DTO.ConnectionError.SystemException
+  nameWithType: ConnectionError.SystemException
+- uid: VpnSDK.DTO.ConnectionError.SystemException*
+  name: SystemException
+  href: api/VpnSDK.DTO.ConnectionError.html#VpnSDK_DTO_ConnectionError_SystemException_
+  commentId: Overload:VpnSDK.DTO.ConnectionError.SystemException
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ConnectionError.SystemException
+  nameWithType: ConnectionError.SystemException
+- uid: VpnSDK.DTO.ISDKError
+  name: ISDKError
+  href: api/VpnSDK.DTO.ISDKError.html
+  commentId: T:VpnSDK.DTO.ISDKError
+  fullName: VpnSDK.DTO.ISDKError
+  nameWithType: ISDKError
+- uid: VpnSDK.DTO.ISDKError.SystemException
+  name: SystemException
+  href: api/VpnSDK.DTO.ISDKError.html#VpnSDK_DTO_ISDKError_SystemException
+  commentId: P:VpnSDK.DTO.ISDKError.SystemException
+  fullName: VpnSDK.DTO.ISDKError.SystemException
+  nameWithType: ISDKError.SystemException
+- uid: VpnSDK.DTO.ISDKError.SystemException*
+  name: SystemException
+  href: api/VpnSDK.DTO.ISDKError.html#VpnSDK_DTO_ISDKError_SystemException_
+  commentId: Overload:VpnSDK.DTO.ISDKError.SystemException
+  isSpec: "True"
+  fullName: VpnSDK.DTO.ISDKError.SystemException
+  nameWithType: ISDKError.SystemException
 - uid: VpnSDK.DTO.NetworkGeolocation
   name: NetworkGeolocation
   href: api/VpnSDK.DTO.NetworkGeolocation.html
@@ -504,32 +697,6 @@ references:
   commentId: T:VpnSDK.DTO.WireguardConfiguration
   fullName: VpnSDK.DTO.WireguardConfiguration
   nameWithType: WireguardConfiguration
-- uid: VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
-  name: ApiBaseUrl
-  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ApiBaseUrl
-  commentId: P:VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
-  fullName: VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
-  nameWithType: WireguardConfiguration.ApiBaseUrl
-- uid: VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl*
-  name: ApiBaseUrl
-  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ApiBaseUrl_
-  commentId: Overload:VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
-  isSpec: "True"
-  fullName: VpnSDK.DTO.WireguardConfiguration.ApiBaseUrl
-  nameWithType: WireguardConfiguration.ApiBaseUrl
-- uid: VpnSDK.DTO.WireguardConfiguration.ApiKey
-  name: ApiKey
-  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ApiKey
-  commentId: P:VpnSDK.DTO.WireguardConfiguration.ApiKey
-  fullName: VpnSDK.DTO.WireguardConfiguration.ApiKey
-  nameWithType: WireguardConfiguration.ApiKey
-- uid: VpnSDK.DTO.WireguardConfiguration.ApiKey*
-  name: ApiKey
-  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ApiKey_
-  commentId: Overload:VpnSDK.DTO.WireguardConfiguration.ApiKey
-  isSpec: "True"
-  fullName: VpnSDK.DTO.WireguardConfiguration.ApiKey
-  nameWithType: WireguardConfiguration.ApiKey
 - uid: VpnSDK.DTO.WireguardConfiguration.ConfigDirectory
   name: ConfigDirectory
   href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ConfigDirectory
@@ -925,6 +1092,12 @@ references:
   commentId: T:VpnSDK.Enums.NetworkConnectionType
   fullName: VpnSDK.Enums.NetworkConnectionType
   nameWithType: NetworkConnectionType
+- uid: VpnSDK.Enums.NetworkConnectionType.Automatic
+  name: Automatic
+  href: api/VpnSDK.Enums.NetworkConnectionType.html#VpnSDK_Enums_NetworkConnectionType_Automatic
+  commentId: F:VpnSDK.Enums.NetworkConnectionType.Automatic
+  fullName: VpnSDK.Enums.NetworkConnectionType.Automatic
+  nameWithType: NetworkConnectionType.Automatic
 - uid: VpnSDK.Enums.NetworkConnectionType.IKEv2
   name: IKEv2
   href: api/VpnSDK.Enums.NetworkConnectionType.html#VpnSDK_Enums_NetworkConnectionType_IKEv2
@@ -1378,6 +1551,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.IConnectionInfo.Configuration
   nameWithType: IConnectionInfo.Configuration
+- uid: VpnSDK.Interfaces.IConnectionInfo.IsAutomaticProtocolUsed
+  name: IsAutomaticProtocolUsed
+  href: api/VpnSDK.Interfaces.IConnectionInfo.html#VpnSDK_Interfaces_IConnectionInfo_IsAutomaticProtocolUsed
+  commentId: P:VpnSDK.Interfaces.IConnectionInfo.IsAutomaticProtocolUsed
+  fullName: VpnSDK.Interfaces.IConnectionInfo.IsAutomaticProtocolUsed
+  nameWithType: IConnectionInfo.IsAutomaticProtocolUsed
+- uid: VpnSDK.Interfaces.IConnectionInfo.IsAutomaticProtocolUsed*
+  name: IsAutomaticProtocolUsed
+  href: api/VpnSDK.Interfaces.IConnectionInfo.html#VpnSDK_Interfaces_IConnectionInfo_IsAutomaticProtocolUsed_
+  commentId: Overload:VpnSDK.Interfaces.IConnectionInfo.IsAutomaticProtocolUsed
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.IConnectionInfo.IsAutomaticProtocolUsed
+  nameWithType: IConnectionInfo.IsAutomaticProtocolUsed
 - uid: VpnSDK.Interfaces.IConnectionInfo.IsDnsProtected
   name: IsDnsProtected
   href: api/VpnSDK.Interfaces.IConnectionInfo.html#VpnSDK_Interfaces_IConnectionInfo_IsDnsProtected
@@ -1475,6 +1661,19 @@ references:
   commentId: T:VpnSDK.Interfaces.ILocation
   fullName: VpnSDK.Interfaces.ILocation
   nameWithType: ILocation
+- uid: VpnSDK.Interfaces.ILocation.AvailableProtocols
+  name: AvailableProtocols
+  href: api/VpnSDK.Interfaces.ILocation.html#VpnSDK_Interfaces_ILocation_AvailableProtocols
+  commentId: P:VpnSDK.Interfaces.ILocation.AvailableProtocols
+  fullName: VpnSDK.Interfaces.ILocation.AvailableProtocols
+  nameWithType: ILocation.AvailableProtocols
+- uid: VpnSDK.Interfaces.ILocation.AvailableProtocols*
+  name: AvailableProtocols
+  href: api/VpnSDK.Interfaces.ILocation.html#VpnSDK_Interfaces_ILocation_AvailableProtocols_
+  commentId: Overload:VpnSDK.Interfaces.ILocation.AvailableProtocols
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ILocation.AvailableProtocols
+  nameWithType: ILocation.AvailableProtocols
 - uid: VpnSDK.Interfaces.ILocation.City
   name: City
   href: api/VpnSDK.Interfaces.ILocation.html#VpnSDK_Interfaces_ILocation_City
@@ -1720,6 +1919,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.AllowLANTraffic
   nameWithType: ISDK.AllowLANTraffic
+- uid: VpnSDK.Interfaces.ISDK.AllowLocalAdaptersWhenConnected
+  name: AllowLocalAdaptersWhenConnected
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_AllowLocalAdaptersWhenConnected
+  commentId: P:VpnSDK.Interfaces.ISDK.AllowLocalAdaptersWhenConnected
+  fullName: VpnSDK.Interfaces.ISDK.AllowLocalAdaptersWhenConnected
+  nameWithType: ISDK.AllowLocalAdaptersWhenConnected
+- uid: VpnSDK.Interfaces.ISDK.AllowLocalAdaptersWhenConnected*
+  name: AllowLocalAdaptersWhenConnected
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_AllowLocalAdaptersWhenConnected_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.AllowLocalAdaptersWhenConnected
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.AllowLocalAdaptersWhenConnected
+  nameWithType: ISDK.AllowLocalAdaptersWhenConnected
 - uid: VpnSDK.Interfaces.ISDK.AllowOnlyVPNConnectivity
   name: AllowOnlyVPNConnectivity
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_AllowOnlyVPNConnectivity
@@ -1771,6 +1983,15 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.BrandingInfo
   nameWithType: ISDK.BrandingInfo
+- uid: VpnSDK.Interfaces.ISDK.Connect(IEnumerable{VpnSDK.Interfaces.ILocation},IEnumerable{VpnSDK.Interfaces.IConnectionConfiguration},CancellationToken)
+  name: Connect(IEnumerable<ILocation>, IEnumerable<IConnectionConfiguration>, CancellationToken)
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Connect_IEnumerable_VpnSDK_Interfaces_ILocation__IEnumerable_VpnSDK_Interfaces_IConnectionConfiguration__CancellationToken_
+  commentId: M:VpnSDK.Interfaces.ISDK.Connect(IEnumerable{VpnSDK.Interfaces.ILocation},IEnumerable{VpnSDK.Interfaces.IConnectionConfiguration},CancellationToken)
+  name.vb: Connect(IEnumerable(Of ILocation), IEnumerable(Of IConnectionConfiguration), CancellationToken)
+  fullName: VpnSDK.Interfaces.ISDK.Connect(IEnumerable<VpnSDK.Interfaces.ILocation>, IEnumerable<VpnSDK.Interfaces.IConnectionConfiguration>, CancellationToken)
+  fullName.vb: VpnSDK.Interfaces.ISDK.Connect(IEnumerable(Of VpnSDK.Interfaces.ILocation), IEnumerable(Of VpnSDK.Interfaces.IConnectionConfiguration), CancellationToken)
+  nameWithType: ISDK.Connect(IEnumerable<ILocation>, IEnumerable<IConnectionConfiguration>, CancellationToken)
+  nameWithType.vb: ISDK.Connect(IEnumerable(Of ILocation), IEnumerable(Of IConnectionConfiguration), CancellationToken)
 - uid: VpnSDK.Interfaces.ISDK.Connect(IEnumerable{VpnSDK.Interfaces.ILocation},VpnSDK.Interfaces.IConnectionConfiguration,CancellationToken)
   name: Connect(IEnumerable<ILocation>, IConnectionConfiguration, CancellationToken)
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Connect_IEnumerable_VpnSDK_Interfaces_ILocation__VpnSDK_Interfaces_IConnectionConfiguration_CancellationToken_
@@ -1780,6 +2001,15 @@ references:
   fullName.vb: VpnSDK.Interfaces.ISDK.Connect(IEnumerable(Of VpnSDK.Interfaces.ILocation), VpnSDK.Interfaces.IConnectionConfiguration, CancellationToken)
   nameWithType: ISDK.Connect(IEnumerable<ILocation>, IConnectionConfiguration, CancellationToken)
   nameWithType.vb: ISDK.Connect(IEnumerable(Of ILocation), IConnectionConfiguration, CancellationToken)
+- uid: VpnSDK.Interfaces.ISDK.Connect(VpnSDK.Interfaces.ILocation,IEnumerable{VpnSDK.Interfaces.IConnectionConfiguration},CancellationToken)
+  name: Connect(ILocation, IEnumerable<IConnectionConfiguration>, CancellationToken)
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Connect_VpnSDK_Interfaces_ILocation_IEnumerable_VpnSDK_Interfaces_IConnectionConfiguration__CancellationToken_
+  commentId: M:VpnSDK.Interfaces.ISDK.Connect(VpnSDK.Interfaces.ILocation,IEnumerable{VpnSDK.Interfaces.IConnectionConfiguration},CancellationToken)
+  name.vb: Connect(ILocation, IEnumerable(Of IConnectionConfiguration), CancellationToken)
+  fullName: VpnSDK.Interfaces.ISDK.Connect(VpnSDK.Interfaces.ILocation, IEnumerable<VpnSDK.Interfaces.IConnectionConfiguration>, CancellationToken)
+  fullName.vb: VpnSDK.Interfaces.ISDK.Connect(VpnSDK.Interfaces.ILocation, IEnumerable(Of VpnSDK.Interfaces.IConnectionConfiguration), CancellationToken)
+  nameWithType: ISDK.Connect(ILocation, IEnumerable<IConnectionConfiguration>, CancellationToken)
+  nameWithType.vb: ISDK.Connect(ILocation, IEnumerable(Of IConnectionConfiguration), CancellationToken)
 - uid: VpnSDK.Interfaces.ISDK.Connect(VpnSDK.Interfaces.ILocation,VpnSDK.Interfaces.IConnectionConfiguration,CancellationToken)
   name: Connect(ILocation, IConnectionConfiguration, CancellationToken)
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Connect_VpnSDK_Interfaces_ILocation_VpnSDK_Interfaces_IConnectionConfiguration_CancellationToken_
@@ -1858,6 +2088,12 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.DisposeAsync
   nameWithType: ISDK.DisposeAsync
+- uid: VpnSDK.Interfaces.ISDK.ErrorRaised
+  name: ErrorRaised
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_ErrorRaised
+  commentId: E:VpnSDK.Interfaces.ISDK.ErrorRaised
+  fullName: VpnSDK.Interfaces.ISDK.ErrorRaised
+  nameWithType: ISDK.ErrorRaised
 - uid: VpnSDK.Interfaces.ISDK.GetBrandingInfo(System.String)
   name: GetBrandingInfo(String)
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetBrandingInfo_System_String_
@@ -3144,3 +3380,16 @@ references:
   isSpec: "True"
   fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.Build
   nameWithType: WireGuardConnectionConfigurationBuilder.Build
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic(System.Boolean)
+  name: SetBlockUntunneledTraffic(Boolean)
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_SetBlockUntunneledTraffic_System_Boolean_
+  commentId: M:VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic(System.Boolean)
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic(System.Boolean)
+  nameWithType: WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic(Boolean)
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic*
+  name: SetBlockUntunneledTraffic
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_SetBlockUntunneledTraffic_
+  commentId: Overload:VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic
+  isSpec: "True"
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic
+  nameWithType: WireGuardConnectionConfigurationBuilder.SetBlockUntunneledTraffic

@@ -205,6 +205,18 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="VpnSDK.DTO.ApiHttpError.html" title="ApiHttpError" class="">ApiHttpError</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.DTO.ApiProxyError.html" title="ApiProxyError" class="">ApiProxyError</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.DTO.ConnectionError.html" title="ConnectionError" class="">ConnectionError</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.DTO.ISDKError.html" title="ISDKError" class="">ISDKError</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.DTO.NetworkGeolocation.html" title="NetworkGeolocation" class="">NetworkGeolocation</a>
                           </li>
                           <li class="">
@@ -402,6 +414,38 @@
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_AllowLocalAdaptersWhenConnected_" data-uid="VpnSDK.Interfaces.ISDK.AllowLocalAdaptersWhenConnected*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_AllowLocalAdaptersWhenConnected" data-uid="VpnSDK.Interfaces.ISDK.AllowLocalAdaptersWhenConnected">AllowLocalAdaptersWhenConnected</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether to allow local network adapters when connected to a VPN.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AllowLocalAdaptersWhenConnected { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p><code>true</code> if [allow local adapters when connected]; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="VpnSDK_Interfaces_ISDK_AllowLocalAdaptersWhenConnected_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this property is <code>false</code>, the traffic won&apos;t be able to leak through any other network adapter. The only network adapter
+allowed to send and receive traffic will be a VPN adapter.
+If this property is <code>true</code>, the local adapters won&apos;t be banned. LAN access will be available, but the chance of IP address leak will be higher.</p>
+</div>
   
   
   <a id="VpnSDK_Interfaces_ISDK_AllowOnlyVPNConnectivity_" data-uid="VpnSDK.Interfaces.ISDK.AllowOnlyVPNConnectivity*"></a>
@@ -619,7 +663,7 @@
   
   <a id="VpnSDK_Interfaces_ISDK_IsConnectionCancelled_" data-uid="VpnSDK.Interfaces.ISDK.IsConnectionCancelled*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_IsConnectionCancelled" data-uid="VpnSDK.Interfaces.ISDK.IsConnectionCancelled">IsConnectionCancelled</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether VPN connection process was cancelled.</p>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether VPN connection process was canceled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -803,6 +847,94 @@
   
   
   <a id="VpnSDK_Interfaces_ISDK_Connect_" data-uid="VpnSDK.Interfaces.ISDK.Connect*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_Connect_IEnumerable_VpnSDK_Interfaces_ILocation__IEnumerable_VpnSDK_Interfaces_IConnectionConfiguration__CancellationToken_" data-uid="VpnSDK.Interfaces.ISDK.Connect(IEnumerable{VpnSDK.Interfaces.ILocation},IEnumerable{VpnSDK.Interfaces.IConnectionConfiguration},CancellationToken)">Connect(IEnumerable&lt;ILocation&gt;, IEnumerable&lt;IConnectionConfiguration&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Connects the user to the best VPN location in an enumerable using the protocol configurations provided in <code data-dev-comment-type="paramref" class="paramref">connectionConfigurations</code> list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task Connect(IEnumerable&lt;ILocation&gt; locations, IEnumerable&lt;IConnectionConfiguration&gt; connectionConfigurations, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="VpnSDK.Interfaces.ILocation.html">ILocation</a>&gt;</td>
+        <td><span class="parametername">locations</span></td>
+        <td><p>The target locations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="VpnSDK.Interfaces.IConnectionConfiguration.html">IConnectionConfiguration</a>&gt;</td>
+        <td><span class="parametername">connectionConfigurations</span></td>
+        <td><p>The list of protocol configurations for the connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token responsible for canceling the connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.UnsupportedProtocolException.html">UnsupportedProtocolException</a></td>
+        <td><p>ConnectionType is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>VPN server rejected credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
+        <td><p>User account became invalidated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>VPN authorization failed. Please try connecting to a different location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_Connect_" data-uid="VpnSDK.Interfaces.ISDK.Connect*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_Connect_IEnumerable_VpnSDK_Interfaces_ILocation__VpnSDK_Interfaces_IConnectionConfiguration_CancellationToken_" data-uid="VpnSDK.Interfaces.ISDK.Connect(IEnumerable{VpnSDK.Interfaces.ILocation},VpnSDK.Interfaces.IConnectionConfiguration,CancellationToken)">Connect(IEnumerable&lt;ILocation&gt;, IConnectionConfiguration, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Connects the user to the best VPN location in an enumerable using the specified configuration.</p>
 </div>
@@ -891,6 +1023,98 @@
   
   
   <a id="VpnSDK_Interfaces_ISDK_Connect_" data-uid="VpnSDK.Interfaces.ISDK.Connect*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_Connect_VpnSDK_Interfaces_ILocation_IEnumerable_VpnSDK_Interfaces_IConnectionConfiguration__CancellationToken_" data-uid="VpnSDK.Interfaces.ISDK.Connect(VpnSDK.Interfaces.ILocation,IEnumerable{VpnSDK.Interfaces.IConnectionConfiguration},CancellationToken)">Connect(ILocation, IEnumerable&lt;IConnectionConfiguration&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Connects the user to the best VPN location using the protocol configurations provided in <code data-dev-comment-type="paramref" class="paramref">connectionConfigurations</code> list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task Connect(ILocation location, IEnumerable&lt;IConnectionConfiguration&gt; connectionConfigurations, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.Interfaces.ILocation.html">ILocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The target location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="VpnSDK.Interfaces.IConnectionConfiguration.html">IConnectionConfiguration</a>&gt;</td>
+        <td><span class="parametername">connectionConfigurations</span></td>
+        <td><p>The list of protocol configurations for the connection.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token responsible for canceling the connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="VpnSDK_Interfaces_ISDK_Connect_VpnSDK_Interfaces_ILocation_IEnumerable_VpnSDK_Interfaces_IConnectionConfiguration__CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>SDK tries to connect to a VPN server using first protocol configuration provided in <code data-dev-comment-type="paramref" class="paramref">connectionConfigurations</code> list.
+If it fails to connect, SDK will try the next protocol configuration in the list. This process will be repeated until the end of the list is hit.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.UnsupportedProtocolException.html">UnsupportedProtocolException</a></td>
+        <td><p>ConnectionType is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>VPN server rejected credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
+        <td><p>User account became invalidated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>VPN authorization failed. Please try connecting to a different location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_Connect_" data-uid="VpnSDK.Interfaces.ISDK.Connect*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_Connect_VpnSDK_Interfaces_ILocation_VpnSDK_Interfaces_IConnectionConfiguration_CancellationToken_" data-uid="VpnSDK.Interfaces.ISDK.Connect(VpnSDK.Interfaces.ILocation,VpnSDK.Interfaces.IConnectionConfiguration,CancellationToken)">Connect(ILocation, IConnectionConfiguration, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Connects the user to the VPN location specified using the specified configuration.</p>
 </div>
@@ -941,6 +1165,37 @@
       <tr>
         <td><span class="xref">Task</span></td>
         <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.UnsupportedProtocolException.html">UnsupportedProtocolException</a></td>
+        <td><p>ConnectionType is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>VPN server rejected credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
+        <td><p>User account became invalidated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>VPN authorization failed. Please try connecting to a different location.</p>
 </td>
       </tr>
     </tbody>
@@ -1312,6 +1567,11 @@ If it false is returned, then you tried to call the task twice or more times wit
         <td><p>No user logged in to refresh server info.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.ServerListException.html">ServerListException</a></td>
+        <td><p>Failed to retrieve server list.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   
@@ -1410,6 +1670,31 @@ If it false is returned, then you tried to call the task twice or more times wit
     <tbody>
       <tr>
         <td><a class="xref" href="VpnSDK.SDKEventHandler-1.html">SDKEventHandler</a>&lt;<span class="xref">AuthenticationStatus</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VpnSDK_Interfaces_ISDK_ErrorRaised" data-uid="VpnSDK.Interfaces.ISDK.ErrorRaised">ErrorRaised</h4>
+  <div class="markdown level1 summary"><p>Fires when an error happens on VPN connection or during REST API request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event SDKEventHandler&lt;ISDKError&gt; ErrorRaised</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.SDKEventHandler-1.html">SDKEventHandler</a>&lt;<span class="xref">ISDKError</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1545,7 +1830,7 @@ Ensure to notify the user that this happened or automatically reconnect for them
               <a href="#top">Back to top</a>
             </span>
             
-            <span><b>VpnSDK v2 Documentation - © 2022 WLVPN</b></span>
+            <span><b>VpnSDK v2 Documentation - © 2023 WLVPN</b></span>
           </div>
         </div>
       </footer>
