@@ -121,6 +121,196 @@ references:
   isSpec: "True"
   fullName: VpnSDK.BaseSDKException.Type
   nameWithType: BaseSDKException.Type
+- uid: VpnSDK.Common.Dns
+  name: VpnSDK.Common.Dns
+  href: api/VpnSDK.Common.Dns.html
+  commentId: N:VpnSDK.Common.Dns
+  fullName: VpnSDK.Common.Dns
+  nameWithType: VpnSDK.Common.Dns
+- uid: VpnSDK.Common.Dns.DnsResolutionResult
+  name: DnsResolutionResult
+  href: api/VpnSDK.Common.Dns.DnsResolutionResult.html
+  commentId: T:VpnSDK.Common.Dns.DnsResolutionResult
+  fullName: VpnSDK.Common.Dns.DnsResolutionResult
+  nameWithType: DnsResolutionResult
+- uid: VpnSDK.Common.Dns.DnsResolutionResult.IpAddresses
+  name: IpAddresses
+  href: api/VpnSDK.Common.Dns.DnsResolutionResult.html#VpnSDK_Common_Dns_DnsResolutionResult_IpAddresses
+  commentId: P:VpnSDK.Common.Dns.DnsResolutionResult.IpAddresses
+  fullName: VpnSDK.Common.Dns.DnsResolutionResult.IpAddresses
+  nameWithType: DnsResolutionResult.IpAddresses
+- uid: VpnSDK.Common.Dns.DnsResolutionResult.IpAddresses*
+  name: IpAddresses
+  href: api/VpnSDK.Common.Dns.DnsResolutionResult.html#VpnSDK_Common_Dns_DnsResolutionResult_IpAddresses_
+  commentId: Overload:VpnSDK.Common.Dns.DnsResolutionResult.IpAddresses
+  isSpec: "True"
+  fullName: VpnSDK.Common.Dns.DnsResolutionResult.IpAddresses
+  nameWithType: DnsResolutionResult.IpAddresses
+- uid: VpnSDK.Common.Dns.DnsResolutionResult.IsDnsResolutionAllowedFurther
+  name: IsDnsResolutionAllowedFurther
+  href: api/VpnSDK.Common.Dns.DnsResolutionResult.html#VpnSDK_Common_Dns_DnsResolutionResult_IsDnsResolutionAllowedFurther
+  commentId: P:VpnSDK.Common.Dns.DnsResolutionResult.IsDnsResolutionAllowedFurther
+  fullName: VpnSDK.Common.Dns.DnsResolutionResult.IsDnsResolutionAllowedFurther
+  nameWithType: DnsResolutionResult.IsDnsResolutionAllowedFurther
+- uid: VpnSDK.Common.Dns.DnsResolutionResult.IsDnsResolutionAllowedFurther*
+  name: IsDnsResolutionAllowedFurther
+  href: api/VpnSDK.Common.Dns.DnsResolutionResult.html#VpnSDK_Common_Dns_DnsResolutionResult_IsDnsResolutionAllowedFurther_
+  commentId: Overload:VpnSDK.Common.Dns.DnsResolutionResult.IsDnsResolutionAllowedFurther
+  isSpec: "True"
+  fullName: VpnSDK.Common.Dns.DnsResolutionResult.IsDnsResolutionAllowedFurther
+  nameWithType: DnsResolutionResult.IsDnsResolutionAllowedFurther
+- uid: VpnSDK.Common.Dns.DnsResolutionResult.TimeToLive
+  name: TimeToLive
+  href: api/VpnSDK.Common.Dns.DnsResolutionResult.html#VpnSDK_Common_Dns_DnsResolutionResult_TimeToLive
+  commentId: P:VpnSDK.Common.Dns.DnsResolutionResult.TimeToLive
+  fullName: VpnSDK.Common.Dns.DnsResolutionResult.TimeToLive
+  nameWithType: DnsResolutionResult.TimeToLive
+- uid: VpnSDK.Common.Dns.DnsResolutionResult.TimeToLive*
+  name: TimeToLive
+  href: api/VpnSDK.Common.Dns.DnsResolutionResult.html#VpnSDK_Common_Dns_DnsResolutionResult_TimeToLive_
+  commentId: Overload:VpnSDK.Common.Dns.DnsResolutionResult.TimeToLive
+  isSpec: "True"
+  fullName: VpnSDK.Common.Dns.DnsResolutionResult.TimeToLive
+  nameWithType: DnsResolutionResult.TimeToLive
+- uid: VpnSDK.Common.Dns.IDnsRequestResolver
+  name: IDnsRequestResolver
+  href: api/VpnSDK.Common.Dns.IDnsRequestResolver.html
+  commentId: T:VpnSDK.Common.Dns.IDnsRequestResolver
+  fullName: VpnSDK.Common.Dns.IDnsRequestResolver
+  nameWithType: IDnsRequestResolver
+- uid: VpnSDK.Common.Dns.IDnsRequestResolver.ResolveAsync(System.String)
+  name: ResolveAsync(String)
+  href: api/VpnSDK.Common.Dns.IDnsRequestResolver.html#VpnSDK_Common_Dns_IDnsRequestResolver_ResolveAsync_System_String_
+  commentId: M:VpnSDK.Common.Dns.IDnsRequestResolver.ResolveAsync(System.String)
+  fullName: VpnSDK.Common.Dns.IDnsRequestResolver.ResolveAsync(System.String)
+  nameWithType: IDnsRequestResolver.ResolveAsync(String)
+- uid: VpnSDK.Common.Dns.IDnsRequestResolver.ResolveAsync*
+  name: ResolveAsync
+  href: api/VpnSDK.Common.Dns.IDnsRequestResolver.html#VpnSDK_Common_Dns_IDnsRequestResolver_ResolveAsync_
+  commentId: Overload:VpnSDK.Common.Dns.IDnsRequestResolver.ResolveAsync
+  isSpec: "True"
+  fullName: VpnSDK.Common.Dns.IDnsRequestResolver.ResolveAsync
+  nameWithType: IDnsRequestResolver.ResolveAsync
+- uid: VpnSDK.Common.Enums
+  name: VpnSDK.Common.Enums
+  href: api/VpnSDK.Common.Enums.html
+  commentId: N:VpnSDK.Common.Enums
+  fullName: VpnSDK.Common.Enums
+  nameWithType: VpnSDK.Common.Enums
+- uid: VpnSDK.Common.Enums.SplitTunnelMode
+  name: SplitTunnelMode
+  href: api/VpnSDK.Common.Enums.SplitTunnelMode.html
+  commentId: T:VpnSDK.Common.Enums.SplitTunnelMode
+  fullName: VpnSDK.Common.Enums.SplitTunnelMode
+  nameWithType: SplitTunnelMode
+- uid: VpnSDK.Common.Enums.SplitTunnelMode.Disabled
+  name: Disabled
+  href: api/VpnSDK.Common.Enums.SplitTunnelMode.html#VpnSDK_Common_Enums_SplitTunnelMode_Disabled
+  commentId: F:VpnSDK.Common.Enums.SplitTunnelMode.Disabled
+  fullName: VpnSDK.Common.Enums.SplitTunnelMode.Disabled
+  nameWithType: SplitTunnelMode.Disabled
+- uid: VpnSDK.Common.Enums.SplitTunnelMode.RouteSelectedTrafficOutsideVpn
+  name: RouteSelectedTrafficOutsideVpn
+  href: api/VpnSDK.Common.Enums.SplitTunnelMode.html#VpnSDK_Common_Enums_SplitTunnelMode_RouteSelectedTrafficOutsideVpn
+  commentId: F:VpnSDK.Common.Enums.SplitTunnelMode.RouteSelectedTrafficOutsideVpn
+  fullName: VpnSDK.Common.Enums.SplitTunnelMode.RouteSelectedTrafficOutsideVpn
+  nameWithType: SplitTunnelMode.RouteSelectedTrafficOutsideVpn
+- uid: VpnSDK.Common.Settings
+  name: VpnSDK.Common.Settings
+  href: api/VpnSDK.Common.Settings.html
+  commentId: N:VpnSDK.Common.Settings
+  fullName: VpnSDK.Common.Settings
+  nameWithType: VpnSDK.Common.Settings
+- uid: VpnSDK.Common.Settings.SplitTunnelApp
+  name: SplitTunnelApp
+  href: api/VpnSDK.Common.Settings.SplitTunnelApp.html
+  commentId: T:VpnSDK.Common.Settings.SplitTunnelApp
+  fullName: VpnSDK.Common.Settings.SplitTunnelApp
+  nameWithType: SplitTunnelApp
+- uid: VpnSDK.Common.Settings.SplitTunnelApp.#ctor(System.String,System.String)
+  name: SplitTunnelApp(String, String)
+  href: api/VpnSDK.Common.Settings.SplitTunnelApp.html#VpnSDK_Common_Settings_SplitTunnelApp__ctor_System_String_System_String_
+  commentId: M:VpnSDK.Common.Settings.SplitTunnelApp.#ctor(System.String,System.String)
+  fullName: VpnSDK.Common.Settings.SplitTunnelApp.SplitTunnelApp(System.String, System.String)
+  nameWithType: SplitTunnelApp.SplitTunnelApp(String, String)
+- uid: VpnSDK.Common.Settings.SplitTunnelApp.#ctor*
+  name: SplitTunnelApp
+  href: api/VpnSDK.Common.Settings.SplitTunnelApp.html#VpnSDK_Common_Settings_SplitTunnelApp__ctor_
+  commentId: Overload:VpnSDK.Common.Settings.SplitTunnelApp.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.Common.Settings.SplitTunnelApp.SplitTunnelApp
+  nameWithType: SplitTunnelApp.SplitTunnelApp
+- uid: VpnSDK.Common.Settings.SplitTunnelApp.Name
+  name: Name
+  href: api/VpnSDK.Common.Settings.SplitTunnelApp.html#VpnSDK_Common_Settings_SplitTunnelApp_Name
+  commentId: P:VpnSDK.Common.Settings.SplitTunnelApp.Name
+  fullName: VpnSDK.Common.Settings.SplitTunnelApp.Name
+  nameWithType: SplitTunnelApp.Name
+- uid: VpnSDK.Common.Settings.SplitTunnelApp.Name*
+  name: Name
+  href: api/VpnSDK.Common.Settings.SplitTunnelApp.html#VpnSDK_Common_Settings_SplitTunnelApp_Name_
+  commentId: Overload:VpnSDK.Common.Settings.SplitTunnelApp.Name
+  isSpec: "True"
+  fullName: VpnSDK.Common.Settings.SplitTunnelApp.Name
+  nameWithType: SplitTunnelApp.Name
+- uid: VpnSDK.Common.Settings.SplitTunnelApp.Path
+  name: Path
+  href: api/VpnSDK.Common.Settings.SplitTunnelApp.html#VpnSDK_Common_Settings_SplitTunnelApp_Path
+  commentId: P:VpnSDK.Common.Settings.SplitTunnelApp.Path
+  fullName: VpnSDK.Common.Settings.SplitTunnelApp.Path
+  nameWithType: SplitTunnelApp.Path
+- uid: VpnSDK.Common.Settings.SplitTunnelApp.Path*
+  name: Path
+  href: api/VpnSDK.Common.Settings.SplitTunnelApp.html#VpnSDK_Common_Settings_SplitTunnelApp_Path_
+  commentId: Overload:VpnSDK.Common.Settings.SplitTunnelApp.Path
+  isSpec: "True"
+  fullName: VpnSDK.Common.Settings.SplitTunnelApp.Path
+  nameWithType: SplitTunnelApp.Path
+- uid: VpnSDK.Common.Settings.SplitTunnelDomain
+  name: SplitTunnelDomain
+  href: api/VpnSDK.Common.Settings.SplitTunnelDomain.html
+  commentId: T:VpnSDK.Common.Settings.SplitTunnelDomain
+  fullName: VpnSDK.Common.Settings.SplitTunnelDomain
+  nameWithType: SplitTunnelDomain
+- uid: VpnSDK.Common.Settings.SplitTunnelDomain.#ctor(System.String,System.Boolean)
+  name: SplitTunnelDomain(String, Boolean)
+  href: api/VpnSDK.Common.Settings.SplitTunnelDomain.html#VpnSDK_Common_Settings_SplitTunnelDomain__ctor_System_String_System_Boolean_
+  commentId: M:VpnSDK.Common.Settings.SplitTunnelDomain.#ctor(System.String,System.Boolean)
+  fullName: VpnSDK.Common.Settings.SplitTunnelDomain.SplitTunnelDomain(System.String, System.Boolean)
+  nameWithType: SplitTunnelDomain.SplitTunnelDomain(String, Boolean)
+- uid: VpnSDK.Common.Settings.SplitTunnelDomain.#ctor*
+  name: SplitTunnelDomain
+  href: api/VpnSDK.Common.Settings.SplitTunnelDomain.html#VpnSDK_Common_Settings_SplitTunnelDomain__ctor_
+  commentId: Overload:VpnSDK.Common.Settings.SplitTunnelDomain.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.Common.Settings.SplitTunnelDomain.SplitTunnelDomain
+  nameWithType: SplitTunnelDomain.SplitTunnelDomain
+- uid: VpnSDK.Common.Settings.SplitTunnelDomain.DomainName
+  name: DomainName
+  href: api/VpnSDK.Common.Settings.SplitTunnelDomain.html#VpnSDK_Common_Settings_SplitTunnelDomain_DomainName
+  commentId: P:VpnSDK.Common.Settings.SplitTunnelDomain.DomainName
+  fullName: VpnSDK.Common.Settings.SplitTunnelDomain.DomainName
+  nameWithType: SplitTunnelDomain.DomainName
+- uid: VpnSDK.Common.Settings.SplitTunnelDomain.DomainName*
+  name: DomainName
+  href: api/VpnSDK.Common.Settings.SplitTunnelDomain.html#VpnSDK_Common_Settings_SplitTunnelDomain_DomainName_
+  commentId: Overload:VpnSDK.Common.Settings.SplitTunnelDomain.DomainName
+  isSpec: "True"
+  fullName: VpnSDK.Common.Settings.SplitTunnelDomain.DomainName
+  nameWithType: SplitTunnelDomain.DomainName
+- uid: VpnSDK.Common.Settings.SplitTunnelDomain.IncludeAllSubdomains
+  name: IncludeAllSubdomains
+  href: api/VpnSDK.Common.Settings.SplitTunnelDomain.html#VpnSDK_Common_Settings_SplitTunnelDomain_IncludeAllSubdomains
+  commentId: P:VpnSDK.Common.Settings.SplitTunnelDomain.IncludeAllSubdomains
+  fullName: VpnSDK.Common.Settings.SplitTunnelDomain.IncludeAllSubdomains
+  nameWithType: SplitTunnelDomain.IncludeAllSubdomains
+- uid: VpnSDK.Common.Settings.SplitTunnelDomain.IncludeAllSubdomains*
+  name: IncludeAllSubdomains
+  href: api/VpnSDK.Common.Settings.SplitTunnelDomain.html#VpnSDK_Common_Settings_SplitTunnelDomain_IncludeAllSubdomains_
+  commentId: Overload:VpnSDK.Common.Settings.SplitTunnelDomain.IncludeAllSubdomains
+  isSpec: "True"
+  fullName: VpnSDK.Common.Settings.SplitTunnelDomain.IncludeAllSubdomains
+  nameWithType: SplitTunnelDomain.IncludeAllSubdomains
 - uid: VpnSDK.ConnectionAlreadyEstablishedException
   name: ConnectionAlreadyEstablishedException
   href: api/VpnSDK.ConnectionAlreadyEstablishedException.html
@@ -2088,6 +2278,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.DisposeAsync
   nameWithType: ISDK.DisposeAsync
+- uid: VpnSDK.Interfaces.ISDK.DnsRequestResolver
+  name: DnsRequestResolver
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DnsRequestResolver
+  commentId: P:VpnSDK.Interfaces.ISDK.DnsRequestResolver
+  fullName: VpnSDK.Interfaces.ISDK.DnsRequestResolver
+  nameWithType: ISDK.DnsRequestResolver
+- uid: VpnSDK.Interfaces.ISDK.DnsRequestResolver*
+  name: DnsRequestResolver
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DnsRequestResolver_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.DnsRequestResolver
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.DnsRequestResolver
+  nameWithType: ISDK.DnsRequestResolver
 - uid: VpnSDK.Interfaces.ISDK.ErrorRaised
   name: ErrorRaised
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_ErrorRaised
@@ -2198,6 +2401,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.IsElevated
   nameWithType: ISDK.IsElevated
+- uid: VpnSDK.Interfaces.ISDK.IsSplitTunnelEnabled
+  name: IsSplitTunnelEnabled
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsSplitTunnelEnabled
+  commentId: P:VpnSDK.Interfaces.ISDK.IsSplitTunnelEnabled
+  fullName: VpnSDK.Interfaces.ISDK.IsSplitTunnelEnabled
+  nameWithType: ISDK.IsSplitTunnelEnabled
+- uid: VpnSDK.Interfaces.ISDK.IsSplitTunnelEnabled*
+  name: IsSplitTunnelEnabled
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_IsSplitTunnelEnabled_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.IsSplitTunnelEnabled
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.IsSplitTunnelEnabled
+  nameWithType: ISDK.IsSplitTunnelEnabled
 - uid: VpnSDK.Interfaces.ISDK.Locations
   name: Locations
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Locations
@@ -2275,6 +2491,45 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.RefreshUserToken
   nameWithType: ISDK.RefreshUserToken
+- uid: VpnSDK.Interfaces.ISDK.SplitTunnelAllowedApps
+  name: SplitTunnelAllowedApps
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_SplitTunnelAllowedApps
+  commentId: P:VpnSDK.Interfaces.ISDK.SplitTunnelAllowedApps
+  fullName: VpnSDK.Interfaces.ISDK.SplitTunnelAllowedApps
+  nameWithType: ISDK.SplitTunnelAllowedApps
+- uid: VpnSDK.Interfaces.ISDK.SplitTunnelAllowedApps*
+  name: SplitTunnelAllowedApps
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_SplitTunnelAllowedApps_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.SplitTunnelAllowedApps
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.SplitTunnelAllowedApps
+  nameWithType: ISDK.SplitTunnelAllowedApps
+- uid: VpnSDK.Interfaces.ISDK.SplitTunnelAllowedDomains
+  name: SplitTunnelAllowedDomains
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_SplitTunnelAllowedDomains
+  commentId: P:VpnSDK.Interfaces.ISDK.SplitTunnelAllowedDomains
+  fullName: VpnSDK.Interfaces.ISDK.SplitTunnelAllowedDomains
+  nameWithType: ISDK.SplitTunnelAllowedDomains
+- uid: VpnSDK.Interfaces.ISDK.SplitTunnelAllowedDomains*
+  name: SplitTunnelAllowedDomains
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_SplitTunnelAllowedDomains_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.SplitTunnelAllowedDomains
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.SplitTunnelAllowedDomains
+  nameWithType: ISDK.SplitTunnelAllowedDomains
+- uid: VpnSDK.Interfaces.ISDK.SplitTunnelMode
+  name: SplitTunnelMode
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_SplitTunnelMode
+  commentId: P:VpnSDK.Interfaces.ISDK.SplitTunnelMode
+  fullName: VpnSDK.Interfaces.ISDK.SplitTunnelMode
+  nameWithType: ISDK.SplitTunnelMode
+- uid: VpnSDK.Interfaces.ISDK.SplitTunnelMode*
+  name: SplitTunnelMode
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_SplitTunnelMode_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.SplitTunnelMode
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.SplitTunnelMode
+  nameWithType: ISDK.SplitTunnelMode
 - uid: VpnSDK.Interfaces.ISDK.TapDeviceInstallationStatusChanged
   name: TapDeviceInstallationStatusChanged
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_TapDeviceInstallationStatusChanged
