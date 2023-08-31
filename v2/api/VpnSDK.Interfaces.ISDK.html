@@ -201,6 +201,39 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
+                      <a href="VpnSDK.Common.Dns.html" title="VpnSDK.Common.Dns" class="">VpnSDK.Common.Dns</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="VpnSDK.Common.Dns.DnsResolutionResult.html" title="DnsResolutionResult" class="">DnsResolutionResult</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.Common.Dns.IDnsRequestResolver.html" title="IDnsRequestResolver" class="">IDnsRequestResolver</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="VpnSDK.Common.Enums.html" title="VpnSDK.Common.Enums" class="">VpnSDK.Common.Enums</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="VpnSDK.Common.Enums.SplitTunnelMode.html" title="SplitTunnelMode" class="">SplitTunnelMode</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="VpnSDK.Common.Settings.html" title="VpnSDK.Common.Settings" class="">VpnSDK.Common.Settings</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="VpnSDK.Common.Settings.SplitTunnelApp.html" title="SplitTunnelApp" class="">SplitTunnelApp</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.Common.Settings.SplitTunnelDomain.html" title="SplitTunnelDomain" class="">SplitTunnelDomain</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
                       <a href="VpnSDK.DTO.html" title="VpnSDK.DTO" class="">VpnSDK.DTO</a>
                         
                         <ul class="nav level2">
@@ -609,6 +642,33 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
   </table>
   
   
+  <a id="VpnSDK_Interfaces_ISDK_DnsRequestResolver_" data-uid="VpnSDK.Interfaces.ISDK.DnsRequestResolver*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_DnsRequestResolver" data-uid="VpnSDK.Interfaces.ISDK.DnsRequestResolver">DnsRequestResolver</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the external DNS resolver used for resolving domain names to IP addresses.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDnsRequestResolver DnsRequestResolver { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDnsRequestResolver</span></td>
+        <td><p>The external DNS resolver.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_ISDK_IsConnected_" data-uid="VpnSDK.Interfaces.ISDK.IsConnected*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_IsConnected" data-uid="VpnSDK.Interfaces.ISDK.IsConnected">IsConnected</h4>
   <div class="markdown level1 summary"><p>Gets a value indicating whether VPN connection established.</p>
@@ -765,6 +825,32 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
   </table>
   
   
+  <a id="VpnSDK_Interfaces_ISDK_IsSplitTunnelEnabled_" data-uid="VpnSDK.Interfaces.ISDK.IsSplitTunnelEnabled*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_IsSplitTunnelEnabled" data-uid="VpnSDK.Interfaces.ISDK.IsSplitTunnelEnabled">IsSplitTunnelEnabled</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether split tunneling is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSplitTunnelEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_ISDK_Locations_" data-uid="VpnSDK.Interfaces.ISDK.Locations*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_Locations" data-uid="VpnSDK.Interfaces.ISDK.Locations">Locations</h4>
   <div class="markdown level1 summary"><p>Gets the read only observable collection responsible for locations.</p>
@@ -787,6 +873,84 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
         <td><span class="xref">ReadOnlyObservableCollection</span>&lt;<a class="xref" href="VpnSDK.Interfaces.ILocation.html">ILocation</a>&gt;</td>
         <td><p>The locations.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_SplitTunnelAllowedApps_" data-uid="VpnSDK.Interfaces.ISDK.SplitTunnelAllowedApps*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_SplitTunnelAllowedApps" data-uid="VpnSDK.Interfaces.ISDK.SplitTunnelAllowedApps">SplitTunnelAllowedApps</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the list of allowed applications for split tunneling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;SplitTunnelApp&gt; SplitTunnelAllowedApps { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">SplitTunnelApp</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_SplitTunnelAllowedDomains_" data-uid="VpnSDK.Interfaces.ISDK.SplitTunnelAllowedDomains*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_SplitTunnelAllowedDomains" data-uid="VpnSDK.Interfaces.ISDK.SplitTunnelAllowedDomains">SplitTunnelAllowedDomains</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a collection of allowed domains for split tunneling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;SplitTunnelDomain&gt; SplitTunnelAllowedDomains { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">SplitTunnelDomain</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_SplitTunnelMode_" data-uid="VpnSDK.Interfaces.ISDK.SplitTunnelMode*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_SplitTunnelMode" data-uid="VpnSDK.Interfaces.ISDK.SplitTunnelMode">SplitTunnelMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the mode for split tunneling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SplitTunnelMode SplitTunnelMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">SplitTunnelMode</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
