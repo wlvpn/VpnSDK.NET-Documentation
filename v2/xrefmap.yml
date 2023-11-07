@@ -450,6 +450,103 @@ references:
   isSpec: "True"
   fullName: VpnSDK.CoreException.CoreException
   nameWithType: CoreException.CoreException
+- uid: VpnSDK.DataTransferEventArgs
+  name: DataTransferEventArgs
+  href: api/VpnSDK.DataTransferEventArgs.html
+  commentId: T:VpnSDK.DataTransferEventArgs
+  fullName: VpnSDK.DataTransferEventArgs
+  nameWithType: DataTransferEventArgs
+- uid: VpnSDK.DataTransferEventArgs.#ctor(System.Int64,System.Int64)
+  name: DataTransferEventArgs(Int64, Int64)
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs__ctor_System_Int64_System_Int64_
+  commentId: M:VpnSDK.DataTransferEventArgs.#ctor(System.Int64,System.Int64)
+  fullName: VpnSDK.DataTransferEventArgs.DataTransferEventArgs(System.Int64, System.Int64)
+  nameWithType: DataTransferEventArgs.DataTransferEventArgs(Int64, Int64)
+- uid: VpnSDK.DataTransferEventArgs.#ctor*
+  name: DataTransferEventArgs
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs__ctor_
+  commentId: Overload:VpnSDK.DataTransferEventArgs.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.DataTransferEventArgs.DataTransferEventArgs
+  nameWithType: DataTransferEventArgs.DataTransferEventArgs
+- uid: VpnSDK.DataTransferEventArgs.DownloadedBytes
+  name: DownloadedBytes
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_DownloadedBytes
+  commentId: P:VpnSDK.DataTransferEventArgs.DownloadedBytes
+  fullName: VpnSDK.DataTransferEventArgs.DownloadedBytes
+  nameWithType: DataTransferEventArgs.DownloadedBytes
+- uid: VpnSDK.DataTransferEventArgs.DownloadedBytes*
+  name: DownloadedBytes
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_DownloadedBytes_
+  commentId: Overload:VpnSDK.DataTransferEventArgs.DownloadedBytes
+  isSpec: "True"
+  fullName: VpnSDK.DataTransferEventArgs.DownloadedBytes
+  nameWithType: DataTransferEventArgs.DownloadedBytes
+- uid: VpnSDK.DataTransferEventArgs.Equals(System.Object)
+  name: Equals(Object)
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_Equals_System_Object_
+  commentId: M:VpnSDK.DataTransferEventArgs.Equals(System.Object)
+  fullName: VpnSDK.DataTransferEventArgs.Equals(System.Object)
+  nameWithType: DataTransferEventArgs.Equals(Object)
+- uid: VpnSDK.DataTransferEventArgs.Equals*
+  name: Equals
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_Equals_
+  commentId: Overload:VpnSDK.DataTransferEventArgs.Equals
+  isSpec: "True"
+  fullName: VpnSDK.DataTransferEventArgs.Equals
+  nameWithType: DataTransferEventArgs.Equals
+- uid: VpnSDK.DataTransferEventArgs.GetHashCode
+  name: GetHashCode()
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_GetHashCode
+  commentId: M:VpnSDK.DataTransferEventArgs.GetHashCode
+  fullName: VpnSDK.DataTransferEventArgs.GetHashCode()
+  nameWithType: DataTransferEventArgs.GetHashCode()
+- uid: VpnSDK.DataTransferEventArgs.GetHashCode*
+  name: GetHashCode
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_GetHashCode_
+  commentId: Overload:VpnSDK.DataTransferEventArgs.GetHashCode
+  isSpec: "True"
+  fullName: VpnSDK.DataTransferEventArgs.GetHashCode
+  nameWithType: DataTransferEventArgs.GetHashCode
+- uid: VpnSDK.DataTransferEventArgs.op_Equality(VpnSDK.DataTransferEventArgs,VpnSDK.DataTransferEventArgs)
+  name: Equality(DataTransferEventArgs, DataTransferEventArgs)
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_op_Equality_VpnSDK_DataTransferEventArgs_VpnSDK_DataTransferEventArgs_
+  commentId: M:VpnSDK.DataTransferEventArgs.op_Equality(VpnSDK.DataTransferEventArgs,VpnSDK.DataTransferEventArgs)
+  fullName: VpnSDK.DataTransferEventArgs.Equality(VpnSDK.DataTransferEventArgs, VpnSDK.DataTransferEventArgs)
+  nameWithType: DataTransferEventArgs.Equality(DataTransferEventArgs, DataTransferEventArgs)
+- uid: VpnSDK.DataTransferEventArgs.op_Equality*
+  name: Equality
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_op_Equality_
+  commentId: Overload:VpnSDK.DataTransferEventArgs.op_Equality
+  isSpec: "True"
+  fullName: VpnSDK.DataTransferEventArgs.Equality
+  nameWithType: DataTransferEventArgs.Equality
+- uid: VpnSDK.DataTransferEventArgs.op_Inequality(VpnSDK.DataTransferEventArgs,VpnSDK.DataTransferEventArgs)
+  name: Inequality(DataTransferEventArgs, DataTransferEventArgs)
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_op_Inequality_VpnSDK_DataTransferEventArgs_VpnSDK_DataTransferEventArgs_
+  commentId: M:VpnSDK.DataTransferEventArgs.op_Inequality(VpnSDK.DataTransferEventArgs,VpnSDK.DataTransferEventArgs)
+  fullName: VpnSDK.DataTransferEventArgs.Inequality(VpnSDK.DataTransferEventArgs, VpnSDK.DataTransferEventArgs)
+  nameWithType: DataTransferEventArgs.Inequality(DataTransferEventArgs, DataTransferEventArgs)
+- uid: VpnSDK.DataTransferEventArgs.op_Inequality*
+  name: Inequality
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_op_Inequality_
+  commentId: Overload:VpnSDK.DataTransferEventArgs.op_Inequality
+  isSpec: "True"
+  fullName: VpnSDK.DataTransferEventArgs.Inequality
+  nameWithType: DataTransferEventArgs.Inequality
+- uid: VpnSDK.DataTransferEventArgs.UploadedBytes
+  name: UploadedBytes
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_UploadedBytes
+  commentId: P:VpnSDK.DataTransferEventArgs.UploadedBytes
+  fullName: VpnSDK.DataTransferEventArgs.UploadedBytes
+  nameWithType: DataTransferEventArgs.UploadedBytes
+- uid: VpnSDK.DataTransferEventArgs.UploadedBytes*
+  name: UploadedBytes
+  href: api/VpnSDK.DataTransferEventArgs.html#VpnSDK_DataTransferEventArgs_UploadedBytes_
+  commentId: Overload:VpnSDK.DataTransferEventArgs.UploadedBytes
+  isSpec: "True"
+  fullName: VpnSDK.DataTransferEventArgs.UploadedBytes
+  nameWithType: DataTransferEventArgs.UploadedBytes
 - uid: VpnSDK.DTO
   name: VpnSDK.DTO
   href: api/VpnSDK.DTO.html
@@ -887,6 +984,19 @@ references:
   commentId: T:VpnSDK.DTO.WireguardConfiguration
   fullName: VpnSDK.DTO.WireguardConfiguration
   nameWithType: WireguardConfiguration
+- uid: VpnSDK.DTO.WireguardConfiguration.#ctor
+  name: WireguardConfiguration()
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration__ctor
+  commentId: M:VpnSDK.DTO.WireguardConfiguration.#ctor
+  fullName: VpnSDK.DTO.WireguardConfiguration.WireguardConfiguration()
+  nameWithType: WireguardConfiguration.WireguardConfiguration()
+- uid: VpnSDK.DTO.WireguardConfiguration.#ctor*
+  name: WireguardConfiguration
+  href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration__ctor_
+  commentId: Overload:VpnSDK.DTO.WireguardConfiguration.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.DTO.WireguardConfiguration.WireguardConfiguration
+  nameWithType: WireguardConfiguration.WireguardConfiguration
 - uid: VpnSDK.DTO.WireguardConfiguration.ConfigDirectory
   name: ConfigDirectory
   href: api/VpnSDK.DTO.WireguardConfiguration.html#VpnSDK_DTO_WireguardConfiguration_ConfigDirectory
@@ -2226,6 +2336,12 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.CurrentNetworkGeolocation
   nameWithType: ISDK.CurrentNetworkGeolocation
+- uid: VpnSDK.Interfaces.ISDK.DataTransferUpdate
+  name: DataTransferUpdate
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DataTransferUpdate
+  commentId: E:VpnSDK.Interfaces.ISDK.DataTransferUpdate
+  fullName: VpnSDK.Interfaces.ISDK.DataTransferUpdate
+  nameWithType: ISDK.DataTransferUpdate
 - uid: VpnSDK.Interfaces.ISDK.DisableDNSLeakProtection
   name: DisableDNSLeakProtection
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DisableDNSLeakProtection

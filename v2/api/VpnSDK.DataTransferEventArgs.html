@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IConnectionConfiguration
+    <title>Class DataTransferEventArgs
    | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IConnectionConfiguration
+    <meta name="title" content="Class DataTransferEventArgs
    | VpnSDK v2 - WLVPN .NET Framework SDK ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -117,8 +117,8 @@
                           <li class="">
                             <a href="VpnSDK.CoreException.html" title="CoreException" class="">CoreException</a>
                           </li>
-                          <li class="">
-                            <a href="VpnSDK.DataTransferEventArgs.html" title="DataTransferEventArgs" class="">DataTransferEventArgs</a>
+                          <li class="active">
+                            <a href="VpnSDK.DataTransferEventArgs.html" title="DataTransferEventArgs" class="active">DataTransferEventArgs</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.EmptyAvailableVpnProtocolsException.html" title="EmptyAvailableVpnProtocolsException" class="">EmptyAvailableVpnProtocolsException</a>
@@ -345,8 +345,8 @@
                           <li class="">
                             <a href="VpnSDK.Interfaces.IBestAvailable.html" title="IBestAvailable" class="">IBestAvailable</a>
                           </li>
-                          <li class="active">
-                            <a href="VpnSDK.Interfaces.IConnectionConfiguration.html" title="IConnectionConfiguration" class="active">IConnectionConfiguration</a>
+                          <li class="">
+                            <a href="VpnSDK.Interfaces.IConnectionConfiguration.html" title="IConnectionConfiguration" class="">IConnectionConfiguration</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.Interfaces.IConnectionInfo.html" title="IConnectionInfo" class="">IConnectionInfo</a>
@@ -380,32 +380,74 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VpnSDK.Interfaces.IConnectionConfiguration">
+            <article class="content wrap" id="_content" data-uid="VpnSDK.DataTransferEventArgs">
   
   
-  <h1 id="VpnSDK_Interfaces_IConnectionConfiguration" data-uid="VpnSDK.Interfaces.IConnectionConfiguration" class="text-break">Interface IConnectionConfiguration
+  <h1 id="VpnSDK_DataTransferEventArgs" data-uid="VpnSDK.DataTransferEventArgs" class="text-break">Class DataTransferEventArgs
   </h1>
-  <div class="markdown level0 summary"><p>Interface IConnectionConfiguration. Provides an interface for a connection configuration.</p>
+  <div class="markdown level0 summary"><p>Holds the VPN network data transfer information.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Interfaces.html">VpnSDK.Interfaces</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="VpnSDK_Interfaces_IConnectionConfiguration_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IConnectionConfiguration</code></pre>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">DataTransferEventArgs</span></div>
   </div>
-  <h3 id="properties">Properties
+  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.html">VpnSDK</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="VpnSDK_DataTransferEventArgs_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DataTransferEventArgs : EventArgs</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="VpnSDK_Interfaces_IConnectionConfiguration_ConnectionType_" data-uid="VpnSDK.Interfaces.IConnectionConfiguration.ConnectionType*"></a>
-  <h4 id="VpnSDK_Interfaces_IConnectionConfiguration_ConnectionType" data-uid="VpnSDK.Interfaces.IConnectionConfiguration.ConnectionType">ConnectionType</h4>
-  <div class="markdown level1 summary"><p>Gets the connection type to use. ( OpenVPN, IKEv2, etc. ).</p>
+  <a id="VpnSDK_DataTransferEventArgs__ctor_" data-uid="VpnSDK.DataTransferEventArgs.#ctor*"></a>
+  <h4 id="VpnSDK_DataTransferEventArgs__ctor_System_Int64_System_Int64_" data-uid="VpnSDK.DataTransferEventArgs.#ctor(System.Int64,System.Int64)">DataTransferEventArgs(Int64, Int64)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.DataTransferEventArgs.html">DataTransferEventArgs</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">NetworkConnectionType ConnectionType { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DataTransferEventArgs(long downloadedBytes, long uploadedBytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">downloadedBytes</span></td>
+        <td><p>Downloaded data size in bytes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">uploadedBytes</span></td>
+        <td><p>Uploaded data size in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="VpnSDK_DataTransferEventArgs_DownloadedBytes_" data-uid="VpnSDK.DataTransferEventArgs.DownloadedBytes*"></a>
+  <h4 id="VpnSDK_DataTransferEventArgs_DownloadedBytes" data-uid="VpnSDK.DataTransferEventArgs.DownloadedBytes">DownloadedBytes</h4>
+  <div class="markdown level1 summary"><p>Gets the downloaded data size in bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long DownloadedBytes { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -417,21 +459,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">NetworkConnectionType</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="VpnSDK_Interfaces_IConnectionConfiguration_ManagerType_" data-uid="VpnSDK.Interfaces.IConnectionConfiguration.ManagerType*"></a>
-  <h4 id="VpnSDK_Interfaces_IConnectionConfiguration_ManagerType" data-uid="VpnSDK.Interfaces.IConnectionConfiguration.ManagerType">ManagerType</h4>
-  <div class="markdown level1 summary"><p>Gets the VPN manager type to use.</p>
+  <a id="VpnSDK_DataTransferEventArgs_UploadedBytes_" data-uid="VpnSDK.DataTransferEventArgs.UploadedBytes*"></a>
+  <h4 id="VpnSDK_DataTransferEventArgs_UploadedBytes" data-uid="VpnSDK.DataTransferEventArgs.UploadedBytes">UploadedBytes</h4>
+  <div class="markdown level1 summary"><p>Gets the uploaded data size in bytes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">VpnManagerType ManagerType { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long UploadedBytes { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -443,8 +485,181 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">VpnManagerType</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">Int64</a></td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="VpnSDK_DataTransferEventArgs_Equals_" data-uid="VpnSDK.DataTransferEventArgs.Equals*"></a>
+  <h4 id="VpnSDK_DataTransferEventArgs_Equals_System_Object_" data-uid="VpnSDK.DataTransferEventArgs.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_DataTransferEventArgs_GetHashCode_" data-uid="VpnSDK.DataTransferEventArgs.GetHashCode*"></a>
+  <h4 id="VpnSDK_DataTransferEventArgs_GetHashCode" data-uid="VpnSDK.DataTransferEventArgs.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="VpnSDK_DataTransferEventArgs_op_Equality_" data-uid="VpnSDK.DataTransferEventArgs.op_Equality*"></a>
+  <h4 id="VpnSDK_DataTransferEventArgs_op_Equality_VpnSDK_DataTransferEventArgs_VpnSDK_DataTransferEventArgs_" data-uid="VpnSDK.DataTransferEventArgs.op_Equality(VpnSDK.DataTransferEventArgs,VpnSDK.DataTransferEventArgs)">Equality(DataTransferEventArgs, DataTransferEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Checks whether the given 2 instance contains same value or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(DataTransferEventArgs argsLeft, DataTransferEventArgs argsRight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.DataTransferEventArgs.html">DataTransferEventArgs</a></td>
+        <td><span class="parametername">argsLeft</span></td>
+        <td><p>First instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.DataTransferEventArgs.html">DataTransferEventArgs</a></td>
+        <td><span class="parametername">argsRight</span></td>
+        <td><p>Second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if both the instances have same values otherwise False.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_DataTransferEventArgs_op_Inequality_" data-uid="VpnSDK.DataTransferEventArgs.op_Inequality*"></a>
+  <h4 id="VpnSDK_DataTransferEventArgs_op_Inequality_VpnSDK_DataTransferEventArgs_VpnSDK_DataTransferEventArgs_" data-uid="VpnSDK.DataTransferEventArgs.op_Inequality(VpnSDK.DataTransferEventArgs,VpnSDK.DataTransferEventArgs)">Inequality(DataTransferEventArgs, DataTransferEventArgs)</h4>
+  <div class="markdown level1 summary"><p>Checks whether the given 2 instance contains same value or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(DataTransferEventArgs argsLeft, DataTransferEventArgs argsRight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.DataTransferEventArgs.html">DataTransferEventArgs</a></td>
+        <td><span class="parametername">argsLeft</span></td>
+        <td><p>First instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.DataTransferEventArgs.html">DataTransferEventArgs</a></td>
+        <td><span class="parametername">argsRight</span></td>
+        <td><p>Second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if both the instances have same values otherwise False.</p>
+</td>
       </tr>
     </tbody>
   </table>
