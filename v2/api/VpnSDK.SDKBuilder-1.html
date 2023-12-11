@@ -97,6 +97,9 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="VpnSDK.AccountMetadataException.html" title="AccountMetadataException" class="">AccountMetadataException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.APIException.html" title="APIException" class="">APIException</a>
                           </li>
                           <li class="">
@@ -119,6 +122,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.DataTransferEventArgs.html" title="DataTransferEventArgs" class="">DataTransferEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.DnsConfigurationException.html" title="DnsConfigurationException" class="">DnsConfigurationException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.EmptyAvailableVpnProtocolsException.html" title="EmptyAvailableVpnProtocolsException" class="">EmptyAvailableVpnProtocolsException</a>
@@ -278,6 +284,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.Enums.ConnectionStatus.html" title="ConnectionStatus" class="">ConnectionStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.Enums.DnsFilteringMode.html" title="DnsFilteringMode" class="">DnsFilteringMode</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.Enums.DriverInstallResult.html" title="DriverInstallResult" class="">DriverInstallResult</a>
@@ -963,6 +972,51 @@ If this value specified, you have to use <a class="xref" href="VpnSDK.Interfaces
         <td><span class="xref">SynchronizationContext</span></td>
         <td><span class="parametername">context</span></td>
         <td><p><see cref="!:SynchronizationContext"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.SDKBuilder-1.html">SDKBuilder</a>&lt;T&gt;</td>
+        <td><p>a builder instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_SDKBuilder_1_SetTokenBasedAuthentication_" data-uid="VpnSDK.SDKBuilder`1.SetTokenBasedAuthentication*"></a>
+  <h4 id="VpnSDK_SDKBuilder_1_SetTokenBasedAuthentication_System_Boolean_" data-uid="VpnSDK.SDKBuilder`1.SetTokenBasedAuthentication(System.Boolean)">SetTokenBasedAuthentication(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets whether the SDK should use token-based authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SDKBuilder&lt;T&gt; SetTokenBasedAuthentication(bool useTokenAuthentication)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">useTokenAuthentication</span></td>
+        <td><p>True means token based authentication will be performed otherwise user credentials will be used.</p>
 </td>
       </tr>
     </tbody>
