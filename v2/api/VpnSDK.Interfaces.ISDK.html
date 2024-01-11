@@ -97,6 +97,9 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="VpnSDK.AccountMetadataException.html" title="AccountMetadataException" class="">AccountMetadataException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.APIException.html" title="APIException" class="">APIException</a>
                           </li>
                           <li class="">
@@ -119,6 +122,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.DataTransferEventArgs.html" title="DataTransferEventArgs" class="">DataTransferEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.DnsConfigurationException.html" title="DnsConfigurationException" class="">DnsConfigurationException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.EmptyAvailableVpnProtocolsException.html" title="EmptyAvailableVpnProtocolsException" class="">EmptyAvailableVpnProtocolsException</a>
@@ -278,6 +284,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.Enums.ConnectionStatus.html" title="ConnectionStatus" class="">ConnectionStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.Enums.DnsFilteringMode.html" title="DnsFilteringMode" class="">DnsFilteringMode</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.Enums.DriverInstallResult.html" title="DriverInstallResult" class="">DriverInstallResult</a>
@@ -640,6 +649,32 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p><code>true</code> if IPv6 leak protection is disabled otherwise, <code>false</code>.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_DnsFilterMode_" data-uid="VpnSDK.Interfaces.ISDK.DnsFilterMode*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_DnsFilterMode" data-uid="VpnSDK.Interfaces.ISDK.DnsFilterMode">DnsFilterMode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the DNS filtering mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DnsFilteringMode DnsFilterMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DnsFilteringMode</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1088,6 +1123,11 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>User not logged in.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
         <td><p>User account became invalidated.</p>
 </td>
@@ -1173,6 +1213,11 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
       <tr>
         <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
         <td><p>VPN server rejected credentials.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>User not logged in.</p>
 </td>
       </tr>
       <tr>
@@ -1268,6 +1313,11 @@ If it fails to connect, SDK will try the next protocol configuration in the list
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>User not logged in.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
         <td><p>User account became invalidated.</p>
 </td>
@@ -1356,6 +1406,11 @@ If it fails to connect, SDK will try the next protocol configuration in the list
 </td>
       </tr>
       <tr>
+        <td><a class="xref" href="VpnSDK.VPNAuthenticationException.html">VPNAuthenticationException</a></td>
+        <td><p>User not logged in.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
         <td><p>User account became invalidated.</p>
 </td>
@@ -1424,6 +1479,33 @@ If it fails to connect, SDK will try the next protocol configuration in the list
   <h5 id="VpnSDK_Interfaces_ISDK_DisposeAsync_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Use this method, for example, on application exit. This will help to keep the app responsive.</p>
 </div>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_GetAccountMetadata_" data-uid="VpnSDK.Interfaces.ISDK.GetAccountMetadata*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_GetAccountMetadata" data-uid="VpnSDK.Interfaces.ISDK.GetAccountMetadata">GetAccountMetadata()</h4>
+  <div class="markdown level1 summary"><p>Gets the metadata values for account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Dictionary&lt;string, string&gt;&gt; GetAccountMetadata()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Dictionary</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><p>Metadata associated with account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="VpnSDK_Interfaces_ISDK_GetBrandingInfo_" data-uid="VpnSDK.Interfaces.ISDK.GetBrandingInfo*"></a>
@@ -1664,6 +1746,105 @@ Before doing this type of log in, SDK does branding API request using a slug/bra
   </table>
   
   
+  <a id="VpnSDK_Interfaces_ISDK_LoginWithAuthTokens_" data-uid="VpnSDK.Interfaces.ISDK.LoginWithAuthTokens*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_LoginWithAuthTokens_System_String_System_String_" data-uid="VpnSDK.Interfaces.ISDK.LoginWithAuthTokens(System.String,System.String)">LoginWithAuthTokens(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task LoginWithAuthTokens(string accessToken, string refreshToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">refreshToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_LoginWithAuthTokens_" data-uid="VpnSDK.Interfaces.ISDK.LoginWithAuthTokens*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_LoginWithAuthTokens_System_String_System_String_System_String_" data-uid="VpnSDK.Interfaces.ISDK.LoginWithAuthTokens(System.String,System.String,System.String)">LoginWithAuthTokens(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task LoginWithAuthTokens(string accessToken, string refreshToken, string slugOrDomain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">accessToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">refreshToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">slugOrDomain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_ISDK_Logout_" data-uid="VpnSDK.Interfaces.ISDK.Logout*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_Logout" data-uid="VpnSDK.Interfaces.ISDK.Logout">Logout()</h4>
   <div class="markdown level1 summary"><p>Logs out the current user.</p>
@@ -1785,6 +1966,140 @@ If it false is returned, then you tried to call the task twice or more times wit
       <tr>
         <td><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></td>
         <td><p>User account became invalidated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_SaveAccountMetadata_" data-uid="VpnSDK.Interfaces.ISDK.SaveAccountMetadata*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_SaveAccountMetadata_Dictionary_System_String_System_String__" data-uid="VpnSDK.Interfaces.ISDK.SaveAccountMetadata(Dictionary{System.String,System.String})">SaveAccountMetadata(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Set the metadata values for account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; SaveAccountMetadata(Dictionary&lt;string, string&gt; metadata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>True, if metadata saved successfully, otherwise False.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_StopSplitTunnelDriverService_" data-uid="VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_StopSplitTunnelDriverService_System_Boolean_" data-uid="VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService(System.Boolean)">StopSplitTunnelDriverService(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Stop split tunnel driver service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool StopSplitTunnelDriverService(bool waitForStop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">waitForStop</span></td>
+        <td><p>Bool parameter to wait till service is stopped.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns true on success otherwise false. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_UninstallSplitTunnelDriverService_" data-uid="VpnSDK.Interfaces.ISDK.UninstallSplitTunnelDriverService*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_UninstallSplitTunnelDriverService_System_Boolean_" data-uid="VpnSDK.Interfaces.ISDK.UninstallSplitTunnelDriverService(System.Boolean)">UninstallSplitTunnelDriverService(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Uninstall split tunnel driver service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UninstallSplitTunnelDriverService(bool waitForStop)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">waitForStop</span></td>
+        <td><p>Bool parameter to wait till service is removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns true on success otherwise false. </p>
 </td>
       </tr>
     </tbody>
@@ -1937,6 +2252,31 @@ If it false is returned, then you tried to call the task twice or more times wit
     <tbody>
       <tr>
         <td><a class="xref" href="VpnSDK.SDKOperationEventHandler.html">SDKOperationEventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VpnSDK_Interfaces_ISDK_TokensRefreshed" data-uid="VpnSDK.Interfaces.ISDK.TokensRefreshed">TokensRefreshed</h4>
+  <div class="markdown level1 summary"><p>Raised when tokens are refreshed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;IUser&gt; TokensRefreshed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">EventHandler</span>&lt;<a class="xref" href="VpnSDK.Interfaces.IUser.html">IUser</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

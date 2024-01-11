@@ -97,6 +97,9 @@
                         
                         <ul class="nav level2">
                           <li class="">
+                            <a href="VpnSDK.AccountMetadataException.html" title="AccountMetadataException" class="">AccountMetadataException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.APIException.html" title="APIException" class="">APIException</a>
                           </li>
                           <li class="">
@@ -119,6 +122,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.DataTransferEventArgs.html" title="DataTransferEventArgs" class="">DataTransferEventArgs</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.DnsConfigurationException.html" title="DnsConfigurationException" class="">DnsConfigurationException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.EmptyAvailableVpnProtocolsException.html" title="EmptyAvailableVpnProtocolsException" class="">EmptyAvailableVpnProtocolsException</a>
@@ -280,6 +286,9 @@
                             <a href="VpnSDK.Enums.ConnectionStatus.html" title="ConnectionStatus" class="">ConnectionStatus</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Enums.DnsFilteringMode.html" title="DnsFilteringMode" class="">DnsFilteringMode</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Enums.DriverInstallResult.html" title="DriverInstallResult" class="">DriverInstallResult</a>
                           </li>
                           <li class="">
@@ -398,6 +407,58 @@
   </h3>
   
   
+  <a id="VpnSDK_Interfaces_IUser_AccessToken_" data-uid="VpnSDK.Interfaces.IUser.AccessToken*"></a>
+  <h4 id="VpnSDK_Interfaces_IUser_AccessToken" data-uid="VpnSDK.Interfaces.IUser.AccessToken">AccessToken</h4>
+  <div class="markdown level1 summary"><p>Gets the access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string AccessToken { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_IUser_AccessTokenExpiry_" data-uid="VpnSDK.Interfaces.IUser.AccessTokenExpiry*"></a>
+  <h4 id="VpnSDK_Interfaces_IUser_AccessTokenExpiry" data-uid="VpnSDK.Interfaces.IUser.AccessTokenExpiry">AccessTokenExpiry</h4>
+  <div class="markdown level1 summary"><p>Gets the UTC time when the access token expires, or null if no access token is currently set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime? AccessTokenExpiry { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_IUser_EmailAddress_" data-uid="VpnSDK.Interfaces.IUser.EmailAddress*"></a>
   <h4 id="VpnSDK_Interfaces_IUser_EmailAddress" data-uid="VpnSDK.Interfaces.IUser.EmailAddress">EmailAddress</h4>
   <div class="markdown level1 summary"><p>Gets the email address provided by the API. This will be set to null if third-party authentication is used.</p>
@@ -447,6 +508,32 @@
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
         <td><p><code>true</code> if this instance is valid; otherwise, <code>false</code>.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_IUser_RefreshToken_" data-uid="VpnSDK.Interfaces.IUser.RefreshToken*"></a>
+  <h4 id="VpnSDK_Interfaces_IUser_RefreshToken" data-uid="VpnSDK.Interfaces.IUser.RefreshToken">RefreshToken</h4>
+  <div class="markdown level1 summary"><p>Gets the refresh token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RefreshToken { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

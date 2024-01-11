@@ -7,6 +7,44 @@ references:
   commentId: N:VpnSDK
   fullName: VpnSDK
   nameWithType: VpnSDK
+- uid: VpnSDK.AccountMetadataException
+  name: AccountMetadataException
+  href: api/VpnSDK.AccountMetadataException.html
+  commentId: T:VpnSDK.AccountMetadataException
+  fullName: VpnSDK.AccountMetadataException
+  nameWithType: AccountMetadataException
+- uid: VpnSDK.AccountMetadataException.#ctor(System.String)
+  name: AccountMetadataException(String)
+  href: api/VpnSDK.AccountMetadataException.html#VpnSDK_AccountMetadataException__ctor_System_String_
+  commentId: M:VpnSDK.AccountMetadataException.#ctor(System.String)
+  fullName: VpnSDK.AccountMetadataException.AccountMetadataException(System.String)
+  nameWithType: AccountMetadataException.AccountMetadataException(String)
+- uid: VpnSDK.AccountMetadataException.#ctor(System.String,Exception)
+  name: AccountMetadataException(String, Exception)
+  href: api/VpnSDK.AccountMetadataException.html#VpnSDK_AccountMetadataException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.AccountMetadataException.#ctor(System.String,Exception)
+  fullName: VpnSDK.AccountMetadataException.AccountMetadataException(System.String, Exception)
+  nameWithType: AccountMetadataException.AccountMetadataException(String, Exception)
+- uid: VpnSDK.AccountMetadataException.#ctor*
+  name: AccountMetadataException
+  href: api/VpnSDK.AccountMetadataException.html#VpnSDK_AccountMetadataException__ctor_
+  commentId: Overload:VpnSDK.AccountMetadataException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.AccountMetadataException.AccountMetadataException
+  nameWithType: AccountMetadataException.AccountMetadataException
+- uid: VpnSDK.AccountMetadataException.Type
+  name: Type
+  href: api/VpnSDK.AccountMetadataException.html#VpnSDK_AccountMetadataException_Type
+  commentId: P:VpnSDK.AccountMetadataException.Type
+  fullName: VpnSDK.AccountMetadataException.Type
+  nameWithType: AccountMetadataException.Type
+- uid: VpnSDK.AccountMetadataException.Type*
+  name: Type
+  href: api/VpnSDK.AccountMetadataException.html#VpnSDK_AccountMetadataException_Type_
+  commentId: Overload:VpnSDK.AccountMetadataException.Type
+  isSpec: "True"
+  fullName: VpnSDK.AccountMetadataException.Type
+  nameWithType: AccountMetadataException.Type
 - uid: VpnSDK.APIException
   name: APIException
   href: api/VpnSDK.APIException.html
@@ -547,6 +585,44 @@ references:
   isSpec: "True"
   fullName: VpnSDK.DataTransferEventArgs.UploadedBytes
   nameWithType: DataTransferEventArgs.UploadedBytes
+- uid: VpnSDK.DnsConfigurationException
+  name: DnsConfigurationException
+  href: api/VpnSDK.DnsConfigurationException.html
+  commentId: T:VpnSDK.DnsConfigurationException
+  fullName: VpnSDK.DnsConfigurationException
+  nameWithType: DnsConfigurationException
+- uid: VpnSDK.DnsConfigurationException.#ctor(System.String)
+  name: DnsConfigurationException(String)
+  href: api/VpnSDK.DnsConfigurationException.html#VpnSDK_DnsConfigurationException__ctor_System_String_
+  commentId: M:VpnSDK.DnsConfigurationException.#ctor(System.String)
+  fullName: VpnSDK.DnsConfigurationException.DnsConfigurationException(System.String)
+  nameWithType: DnsConfigurationException.DnsConfigurationException(String)
+- uid: VpnSDK.DnsConfigurationException.#ctor(System.String,Exception)
+  name: DnsConfigurationException(String, Exception)
+  href: api/VpnSDK.DnsConfigurationException.html#VpnSDK_DnsConfigurationException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.DnsConfigurationException.#ctor(System.String,Exception)
+  fullName: VpnSDK.DnsConfigurationException.DnsConfigurationException(System.String, Exception)
+  nameWithType: DnsConfigurationException.DnsConfigurationException(String, Exception)
+- uid: VpnSDK.DnsConfigurationException.#ctor*
+  name: DnsConfigurationException
+  href: api/VpnSDK.DnsConfigurationException.html#VpnSDK_DnsConfigurationException__ctor_
+  commentId: Overload:VpnSDK.DnsConfigurationException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.DnsConfigurationException.DnsConfigurationException
+  nameWithType: DnsConfigurationException.DnsConfigurationException
+- uid: VpnSDK.DnsConfigurationException.Type
+  name: Type
+  href: api/VpnSDK.DnsConfigurationException.html#VpnSDK_DnsConfigurationException_Type
+  commentId: P:VpnSDK.DnsConfigurationException.Type
+  fullName: VpnSDK.DnsConfigurationException.Type
+  nameWithType: DnsConfigurationException.Type
+- uid: VpnSDK.DnsConfigurationException.Type*
+  name: Type
+  href: api/VpnSDK.DnsConfigurationException.html#VpnSDK_DnsConfigurationException_Type_
+  commentId: Overload:VpnSDK.DnsConfigurationException.Type
+  isSpec: "True"
+  fullName: VpnSDK.DnsConfigurationException.Type
+  nameWithType: DnsConfigurationException.Type
 - uid: VpnSDK.DTO
   name: VpnSDK.DTO
   href: api/VpnSDK.DTO.html
@@ -1206,6 +1282,30 @@ references:
   commentId: F:VpnSDK.Enums.ConnectionStatus.Disconnecting
   fullName: VpnSDK.Enums.ConnectionStatus.Disconnecting
   nameWithType: ConnectionStatus.Disconnecting
+- uid: VpnSDK.Enums.DnsFilteringMode
+  name: DnsFilteringMode
+  href: api/VpnSDK.Enums.DnsFilteringMode.html
+  commentId: T:VpnSDK.Enums.DnsFilteringMode
+  fullName: VpnSDK.Enums.DnsFilteringMode
+  nameWithType: DnsFilteringMode
+- uid: VpnSDK.Enums.DnsFilteringMode.Disabled
+  name: Disabled
+  href: api/VpnSDK.Enums.DnsFilteringMode.html#VpnSDK_Enums_DnsFilteringMode_Disabled
+  commentId: F:VpnSDK.Enums.DnsFilteringMode.Disabled
+  fullName: VpnSDK.Enums.DnsFilteringMode.Disabled
+  nameWithType: DnsFilteringMode.Disabled
+- uid: VpnSDK.Enums.DnsFilteringMode.WithPartnerDns
+  name: WithPartnerDns
+  href: api/VpnSDK.Enums.DnsFilteringMode.html#VpnSDK_Enums_DnsFilteringMode_WithPartnerDns
+  commentId: F:VpnSDK.Enums.DnsFilteringMode.WithPartnerDns
+  fullName: VpnSDK.Enums.DnsFilteringMode.WithPartnerDns
+  nameWithType: DnsFilteringMode.WithPartnerDns
+- uid: VpnSDK.Enums.DnsFilteringMode.WithWLVPNDns
+  name: WithWLVPNDns
+  href: api/VpnSDK.Enums.DnsFilteringMode.html#VpnSDK_Enums_DnsFilteringMode_WithWLVPNDns
+  commentId: F:VpnSDK.Enums.DnsFilteringMode.WithWLVPNDns
+  fullName: VpnSDK.Enums.DnsFilteringMode.WithWLVPNDns
+  nameWithType: DnsFilteringMode.WithWLVPNDns
 - uid: VpnSDK.Enums.DriverInstallResult
   name: DriverInstallResult
   href: api/VpnSDK.Enums.DriverInstallResult.html
@@ -1236,6 +1336,12 @@ references:
   commentId: T:VpnSDK.Enums.ErrorType
   fullName: VpnSDK.Enums.ErrorType
   nameWithType: ErrorType
+- uid: VpnSDK.Enums.ErrorType.AccountMetadataError
+  name: AccountMetadataError
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_AccountMetadataError
+  commentId: F:VpnSDK.Enums.ErrorType.AccountMetadataError
+  fullName: VpnSDK.Enums.ErrorType.AccountMetadataError
+  nameWithType: ErrorType.AccountMetadataError
 - uid: VpnSDK.Enums.ErrorType.ApiAuthenticationError
   name: ApiAuthenticationError
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_ApiAuthenticationError
@@ -1284,6 +1390,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.CoreNotElevated
   fullName: VpnSDK.Enums.ErrorType.CoreNotElevated
   nameWithType: ErrorType.CoreNotElevated
+- uid: VpnSDK.Enums.ErrorType.DnsConfigurationError
+  name: DnsConfigurationError
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_DnsConfigurationError
+  commentId: F:VpnSDK.Enums.ErrorType.DnsConfigurationError
+  fullName: VpnSDK.Enums.ErrorType.DnsConfigurationError
+  nameWithType: ErrorType.DnsConfigurationError
 - uid: VpnSDK.Enums.ErrorType.None
   name: None
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_None
@@ -2394,6 +2506,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.DisposeAsync
   nameWithType: ISDK.DisposeAsync
+- uid: VpnSDK.Interfaces.ISDK.DnsFilterMode
+  name: DnsFilterMode
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DnsFilterMode
+  commentId: P:VpnSDK.Interfaces.ISDK.DnsFilterMode
+  fullName: VpnSDK.Interfaces.ISDK.DnsFilterMode
+  nameWithType: ISDK.DnsFilterMode
+- uid: VpnSDK.Interfaces.ISDK.DnsFilterMode*
+  name: DnsFilterMode
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DnsFilterMode_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.DnsFilterMode
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.DnsFilterMode
+  nameWithType: ISDK.DnsFilterMode
 - uid: VpnSDK.Interfaces.ISDK.DnsRequestResolver
   name: DnsRequestResolver
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DnsRequestResolver
@@ -2413,6 +2538,19 @@ references:
   commentId: E:VpnSDK.Interfaces.ISDK.ErrorRaised
   fullName: VpnSDK.Interfaces.ISDK.ErrorRaised
   nameWithType: ISDK.ErrorRaised
+- uid: VpnSDK.Interfaces.ISDK.GetAccountMetadata
+  name: GetAccountMetadata()
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetAccountMetadata
+  commentId: M:VpnSDK.Interfaces.ISDK.GetAccountMetadata
+  fullName: VpnSDK.Interfaces.ISDK.GetAccountMetadata()
+  nameWithType: ISDK.GetAccountMetadata()
+- uid: VpnSDK.Interfaces.ISDK.GetAccountMetadata*
+  name: GetAccountMetadata
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetAccountMetadata_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.GetAccountMetadata
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.GetAccountMetadata
+  nameWithType: ISDK.GetAccountMetadata
 - uid: VpnSDK.Interfaces.ISDK.GetBrandingInfo(System.String)
   name: GetBrandingInfo(String)
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetBrandingInfo_System_String_
@@ -2568,6 +2706,25 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.Login
   nameWithType: ISDK.Login
+- uid: VpnSDK.Interfaces.ISDK.LoginWithAuthTokens(System.String,System.String)
+  name: LoginWithAuthTokens(String, String)
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_LoginWithAuthTokens_System_String_System_String_
+  commentId: M:VpnSDK.Interfaces.ISDK.LoginWithAuthTokens(System.String,System.String)
+  fullName: VpnSDK.Interfaces.ISDK.LoginWithAuthTokens(System.String, System.String)
+  nameWithType: ISDK.LoginWithAuthTokens(String, String)
+- uid: VpnSDK.Interfaces.ISDK.LoginWithAuthTokens(System.String,System.String,System.String)
+  name: LoginWithAuthTokens(String, String, String)
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_LoginWithAuthTokens_System_String_System_String_System_String_
+  commentId: M:VpnSDK.Interfaces.ISDK.LoginWithAuthTokens(System.String,System.String,System.String)
+  fullName: VpnSDK.Interfaces.ISDK.LoginWithAuthTokens(System.String, System.String, System.String)
+  nameWithType: ISDK.LoginWithAuthTokens(String, String, String)
+- uid: VpnSDK.Interfaces.ISDK.LoginWithAuthTokens*
+  name: LoginWithAuthTokens
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_LoginWithAuthTokens_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.LoginWithAuthTokens
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.LoginWithAuthTokens
+  nameWithType: ISDK.LoginWithAuthTokens
 - uid: VpnSDK.Interfaces.ISDK.Logout
   name: Logout()
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_Logout
@@ -2607,6 +2764,22 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.RefreshUserToken
   nameWithType: ISDK.RefreshUserToken
+- uid: VpnSDK.Interfaces.ISDK.SaveAccountMetadata(Dictionary{System.String,System.String})
+  name: SaveAccountMetadata(Dictionary<String, String>)
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_SaveAccountMetadata_Dictionary_System_String_System_String__
+  commentId: M:VpnSDK.Interfaces.ISDK.SaveAccountMetadata(Dictionary{System.String,System.String})
+  name.vb: SaveAccountMetadata(Dictionary(Of String, String))
+  fullName: VpnSDK.Interfaces.ISDK.SaveAccountMetadata(Dictionary<System.String, System.String>)
+  fullName.vb: VpnSDK.Interfaces.ISDK.SaveAccountMetadata(Dictionary(Of System.String, System.String))
+  nameWithType: ISDK.SaveAccountMetadata(Dictionary<String, String>)
+  nameWithType.vb: ISDK.SaveAccountMetadata(Dictionary(Of String, String))
+- uid: VpnSDK.Interfaces.ISDK.SaveAccountMetadata*
+  name: SaveAccountMetadata
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_SaveAccountMetadata_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.SaveAccountMetadata
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.SaveAccountMetadata
+  nameWithType: ISDK.SaveAccountMetadata
 - uid: VpnSDK.Interfaces.ISDK.SplitTunnelAllowedApps
   name: SplitTunnelAllowedApps
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_SplitTunnelAllowedApps
@@ -2646,6 +2819,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.SplitTunnelMode
   nameWithType: ISDK.SplitTunnelMode
+- uid: VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService(System.Boolean)
+  name: StopSplitTunnelDriverService(Boolean)
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_StopSplitTunnelDriverService_System_Boolean_
+  commentId: M:VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService(System.Boolean)
+  fullName: VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService(System.Boolean)
+  nameWithType: ISDK.StopSplitTunnelDriverService(Boolean)
+- uid: VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService*
+  name: StopSplitTunnelDriverService
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_StopSplitTunnelDriverService_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService
+  nameWithType: ISDK.StopSplitTunnelDriverService
 - uid: VpnSDK.Interfaces.ISDK.TapDeviceInstallationStatusChanged
   name: TapDeviceInstallationStatusChanged
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_TapDeviceInstallationStatusChanged
@@ -2665,6 +2851,25 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.TapDriverInstalled
   nameWithType: ISDK.TapDriverInstalled
+- uid: VpnSDK.Interfaces.ISDK.TokensRefreshed
+  name: TokensRefreshed
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_TokensRefreshed
+  commentId: E:VpnSDK.Interfaces.ISDK.TokensRefreshed
+  fullName: VpnSDK.Interfaces.ISDK.TokensRefreshed
+  nameWithType: ISDK.TokensRefreshed
+- uid: VpnSDK.Interfaces.ISDK.UninstallSplitTunnelDriverService(System.Boolean)
+  name: UninstallSplitTunnelDriverService(Boolean)
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_UninstallSplitTunnelDriverService_System_Boolean_
+  commentId: M:VpnSDK.Interfaces.ISDK.UninstallSplitTunnelDriverService(System.Boolean)
+  fullName: VpnSDK.Interfaces.ISDK.UninstallSplitTunnelDriverService(System.Boolean)
+  nameWithType: ISDK.UninstallSplitTunnelDriverService(Boolean)
+- uid: VpnSDK.Interfaces.ISDK.UninstallSplitTunnelDriverService*
+  name: UninstallSplitTunnelDriverService
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_UninstallSplitTunnelDriverService_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.UninstallSplitTunnelDriverService
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.UninstallSplitTunnelDriverService
+  nameWithType: ISDK.UninstallSplitTunnelDriverService
 - uid: VpnSDK.Interfaces.ISDK.User
   name: User
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_User
@@ -2696,6 +2901,32 @@ references:
   commentId: T:VpnSDK.Interfaces.IUser
   fullName: VpnSDK.Interfaces.IUser
   nameWithType: IUser
+- uid: VpnSDK.Interfaces.IUser.AccessToken
+  name: AccessToken
+  href: api/VpnSDK.Interfaces.IUser.html#VpnSDK_Interfaces_IUser_AccessToken
+  commentId: P:VpnSDK.Interfaces.IUser.AccessToken
+  fullName: VpnSDK.Interfaces.IUser.AccessToken
+  nameWithType: IUser.AccessToken
+- uid: VpnSDK.Interfaces.IUser.AccessToken*
+  name: AccessToken
+  href: api/VpnSDK.Interfaces.IUser.html#VpnSDK_Interfaces_IUser_AccessToken_
+  commentId: Overload:VpnSDK.Interfaces.IUser.AccessToken
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.IUser.AccessToken
+  nameWithType: IUser.AccessToken
+- uid: VpnSDK.Interfaces.IUser.AccessTokenExpiry
+  name: AccessTokenExpiry
+  href: api/VpnSDK.Interfaces.IUser.html#VpnSDK_Interfaces_IUser_AccessTokenExpiry
+  commentId: P:VpnSDK.Interfaces.IUser.AccessTokenExpiry
+  fullName: VpnSDK.Interfaces.IUser.AccessTokenExpiry
+  nameWithType: IUser.AccessTokenExpiry
+- uid: VpnSDK.Interfaces.IUser.AccessTokenExpiry*
+  name: AccessTokenExpiry
+  href: api/VpnSDK.Interfaces.IUser.html#VpnSDK_Interfaces_IUser_AccessTokenExpiry_
+  commentId: Overload:VpnSDK.Interfaces.IUser.AccessTokenExpiry
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.IUser.AccessTokenExpiry
+  nameWithType: IUser.AccessTokenExpiry
 - uid: VpnSDK.Interfaces.IUser.EmailAddress
   name: EmailAddress
   href: api/VpnSDK.Interfaces.IUser.html#VpnSDK_Interfaces_IUser_EmailAddress
@@ -2722,6 +2953,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.IUser.IsValid
   nameWithType: IUser.IsValid
+- uid: VpnSDK.Interfaces.IUser.RefreshToken
+  name: RefreshToken
+  href: api/VpnSDK.Interfaces.IUser.html#VpnSDK_Interfaces_IUser_RefreshToken
+  commentId: P:VpnSDK.Interfaces.IUser.RefreshToken
+  fullName: VpnSDK.Interfaces.IUser.RefreshToken
+  nameWithType: IUser.RefreshToken
+- uid: VpnSDK.Interfaces.IUser.RefreshToken*
+  name: RefreshToken
+  href: api/VpnSDK.Interfaces.IUser.html#VpnSDK_Interfaces_IUser_RefreshToken_
+  commentId: Overload:VpnSDK.Interfaces.IUser.RefreshToken
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.IUser.RefreshToken
+  nameWithType: IUser.RefreshToken
 - uid: VpnSDK.Interfaces.IUser.Status
   name: Status
   href: api/VpnSDK.Interfaces.IUser.html#VpnSDK_Interfaces_IUser_Status
@@ -3343,6 +3587,23 @@ references:
   fullName.vb: VpnSDK.SDKBuilder(Of T).SetSynchronizationContext
   nameWithType: SDKBuilder<T>.SetSynchronizationContext
   nameWithType.vb: SDKBuilder(Of T).SetSynchronizationContext
+- uid: VpnSDK.SDKBuilder`1.SetTokenBasedAuthentication(System.Boolean)
+  name: SetTokenBasedAuthentication(Boolean)
+  href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetTokenBasedAuthentication_System_Boolean_
+  commentId: M:VpnSDK.SDKBuilder`1.SetTokenBasedAuthentication(System.Boolean)
+  fullName: VpnSDK.SDKBuilder<T>.SetTokenBasedAuthentication(System.Boolean)
+  fullName.vb: VpnSDK.SDKBuilder(Of T).SetTokenBasedAuthentication(System.Boolean)
+  nameWithType: SDKBuilder<T>.SetTokenBasedAuthentication(Boolean)
+  nameWithType.vb: SDKBuilder(Of T).SetTokenBasedAuthentication(Boolean)
+- uid: VpnSDK.SDKBuilder`1.SetTokenBasedAuthentication*
+  name: SetTokenBasedAuthentication
+  href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetTokenBasedAuthentication_
+  commentId: Overload:VpnSDK.SDKBuilder`1.SetTokenBasedAuthentication
+  isSpec: "True"
+  fullName: VpnSDK.SDKBuilder<T>.SetTokenBasedAuthentication
+  fullName.vb: VpnSDK.SDKBuilder(Of T).SetTokenBasedAuthentication
+  nameWithType: SDKBuilder<T>.SetTokenBasedAuthentication
+  nameWithType.vb: SDKBuilder(Of T).SetTokenBasedAuthentication
 - uid: VpnSDK.SDKBuilder`1.SetWireguardConfiguration(WireguardConfiguration)
   name: SetWireguardConfiguration(WireguardConfiguration)
   href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetWireguardConfiguration_WireguardConfiguration_
