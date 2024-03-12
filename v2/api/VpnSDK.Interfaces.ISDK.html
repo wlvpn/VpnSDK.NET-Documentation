@@ -112,6 +112,9 @@
                             <a href="VpnSDK.ConnectionAlreadyEstablishedException.html" title="ConnectionAlreadyEstablishedException" class="">ConnectionAlreadyEstablishedException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.ConnectionConfigurationBuilderBase.html" title="ConnectionConfigurationBuilderBase" class="">ConnectionConfigurationBuilderBase</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.ConnectionException.html" title="ConnectionException" class="">ConnectionException</a>
                           </li>
                           <li class="">
@@ -136,7 +139,16 @@
                             <a href="VpnSDK.HTTPException.html" title="HTTPException" class="">HTTPException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.InvalidAccountException.html" title="InvalidAccountException" class="">InvalidAccountException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.InvalidConfigurationException.html" title="InvalidConfigurationException" class="">InvalidConfigurationException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.InvalidDoubleHopConfigurationException.html" title="InvalidDoubleHopConfigurationException" class="">InvalidDoubleHopConfigurationException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.InvalidServerException.html" title="InvalidServerException" class="">InvalidServerException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.NotAuthorizedException.html" title="NotAuthorizedException" class="">NotAuthorizedException</a>
@@ -292,6 +304,9 @@
                             <a href="VpnSDK.Enums.DriverInstallResult.html" title="DriverInstallResult" class="">DriverInstallResult</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Enums.DriverUninstallResult.html" title="DriverUninstallResult" class="">DriverUninstallResult</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Enums.ErrorType.html" title="ErrorType" class="">ErrorType</a>
                           </li>
                           <li class="">
@@ -359,6 +374,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.Interfaces.IConnectionInfo.html" title="IConnectionInfo" class="">IConnectionInfo</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.Interfaces.IDoubleHopConfiguration.html" title="IDoubleHopConfiguration" class="">IDoubleHopConfiguration</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.Interfaces.ILocation.html" title="ILocation" class="">ILocation</a>
@@ -889,6 +907,32 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
   </table>
   
   
+  <a id="VpnSDK_Interfaces_ISDK_IsTapDriverInstalled_" data-uid="VpnSDK.Interfaces.ISDK.IsTapDriverInstalled*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_IsTapDriverInstalled" data-uid="VpnSDK.Interfaces.ISDK.IsTapDriverInstalled">IsTapDriverInstalled</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether TAP driver installed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsTapDriverInstalled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_ISDK_Locations_" data-uid="VpnSDK.Interfaces.ISDK.Locations*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_Locations" data-uid="VpnSDK.Interfaces.ISDK.Locations">Locations</h4>
   <div class="markdown level1 summary"><p>Gets the read only observable collection responsible for locations.</p>
@@ -994,32 +1038,6 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
   </table>
   
   
-  <a id="VpnSDK_Interfaces_ISDK_TapDriverInstalled_" data-uid="VpnSDK.Interfaces.ISDK.TapDriverInstalled*"></a>
-  <h4 id="VpnSDK_Interfaces_ISDK_TapDriverInstalled" data-uid="VpnSDK.Interfaces.ISDK.TapDriverInstalled">TapDriverInstalled</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether TAP driver installed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool TapDriverInstalled { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="VpnSDK_Interfaces_ISDK_User_" data-uid="VpnSDK.Interfaces.ISDK.User*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_User" data-uid="VpnSDK.Interfaces.ISDK.User">User</h4>
   <div class="markdown level1 summary"><p>Gets the user which was logged in. This property is null if user was not authorized.</p>
@@ -1044,6 +1062,36 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_VpnNetworkInterfaceMetricValue_" data-uid="VpnSDK.Interfaces.ISDK.VpnNetworkInterfaceMetricValue*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_VpnNetworkInterfaceMetricValue" data-uid="VpnSDK.Interfaces.ISDK.VpnNetworkInterfaceMetricValue">VpnNetworkInterfaceMetricValue</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the metric for the VPN network interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">uint? VpnNetworkInterfaceMetricValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">UInt32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="VpnSDK_Interfaces_ISDK_VpnNetworkInterfaceMetricValue_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The metric is used to determine the priority of the network interface when routing network traffic.
+A lower metric value indicates a higher priority.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   
@@ -2016,6 +2064,64 @@ If it false is returned, then you tried to call the task twice or more times wit
   </table>
   
   
+  <a id="VpnSDK_Interfaces_ISDK_SetDnsMonitorConfig_" data-uid="VpnSDK.Interfaces.ISDK.SetDnsMonitorConfig*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_SetDnsMonitorConfig_DnsMonitoringConfig_" data-uid="VpnSDK.Interfaces.ISDK.SetDnsMonitorConfig(DnsMonitoringConfig)">SetDnsMonitorConfig(DnsMonitoringConfig)</h4>
+  <div class="markdown level1 summary"><p>Set the DNS Monitor related configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetDnsMonitorConfig(DnsMonitoringConfig dnsMonitorConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">DnsMonitoringConfig</span></td>
+        <td><span class="parametername">dnsMonitorConfig</span></td>
+        <td><p>Instance of <see cref="!:DnsMonitorConfig"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_SetTrafficOptimizerConfig_" data-uid="VpnSDK.Interfaces.ISDK.SetTrafficOptimizerConfig*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_SetTrafficOptimizerConfig_TrafficOptimizerConfig_" data-uid="VpnSDK.Interfaces.ISDK.SetTrafficOptimizerConfig(TrafficOptimizerConfig)">SetTrafficOptimizerConfig(TrafficOptimizerConfig)</h4>
+  <div class="markdown level1 summary"><p>Set the traffic optimizer related configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetTrafficOptimizerConfig(TrafficOptimizerConfig trafficOptimizerConfig)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TrafficOptimizerConfig</span></td>
+        <td><span class="parametername">trafficOptimizerConfig</span></td>
+        <td><p>Instanace of <see cref="!:TrafficOptimizerConfig"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_ISDK_StopSplitTunnelDriverService_" data-uid="VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_StopSplitTunnelDriverService_System_Boolean_" data-uid="VpnSDK.Interfaces.ISDK.StopSplitTunnelDriverService(System.Boolean)">StopSplitTunnelDriverService(Boolean)</h4>
   <div class="markdown level1 summary"><p>Stop split tunnel driver service.</p>
@@ -2104,6 +2210,59 @@ If it false is returned, then you tried to call the task twice or more times wit
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_UninstallTapDriver_" data-uid="VpnSDK.Interfaces.ISDK.UninstallTapDriver*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_UninstallTapDriver" data-uid="VpnSDK.Interfaces.ISDK.UninstallTapDriver">UninstallTapDriver()</h4>
+  <div class="markdown level1 summary"><p>Uninstalls the OpenVPN TAP driver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DriverUninstallResult&gt; UninstallTapDriver()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">DriverUninstallResult</span>&gt;</td>
+        <td><p>Task&lt;DriverUninstallResult&gt;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotElevatedException.html">NotElevatedException</a></td>
+        <td><p>Thrown when the running process is not elevated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.UnsupportedProtocolException.html">UnsupportedProtocolException</a></td>
+        <td><p>Thrown when OpenVPN protocol is not available.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.UnsupportedProtocolException.html">UnsupportedProtocolException</a></td>
+        <td><p>SDK is configured for running user space only. TAP Driver cannot be set up from user space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="events">Events
   </h3>
   
@@ -2177,6 +2336,31 @@ If it false is returned, then you tried to call the task twice or more times wit
     <tbody>
       <tr>
         <td><a class="xref" href="VpnSDK.SDKEventHandler-1.html">SDKEventHandler</a>&lt;<a class="xref" href="VpnSDK.DataTransferEventArgs.html">DataTransferEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VpnSDK_Interfaces_ISDK_DnsMonitoringUpdate" data-uid="VpnSDK.Interfaces.ISDK.DnsMonitoringUpdate">DnsMonitoringUpdate</h4>
+  <div class="markdown level1 summary"><p>Raised when DNS request has been made.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;DnsMonitoringArgs&gt; DnsMonitoringUpdate</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">DnsMonitoringArgs</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

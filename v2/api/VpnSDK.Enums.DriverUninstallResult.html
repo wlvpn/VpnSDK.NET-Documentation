@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IWireGuardConnectionConfiguration
+    <title>Enum DriverUninstallResult
    | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IWireGuardConnectionConfiguration
+    <meta name="title" content="Enum DriverUninstallResult
    | VpnSDK v2 - WLVPN .NET Framework SDK ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -303,8 +303,8 @@
                           <li class="">
                             <a href="VpnSDK.Enums.DriverInstallResult.html" title="DriverInstallResult" class="">DriverInstallResult</a>
                           </li>
-                          <li class="">
-                            <a href="VpnSDK.Enums.DriverUninstallResult.html" title="DriverUninstallResult" class="">DriverUninstallResult</a>
+                          <li class="active">
+                            <a href="VpnSDK.Enums.DriverUninstallResult.html" title="DriverUninstallResult" class="active">DriverUninstallResult</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.Enums.ErrorType.html" title="ErrorType" class="">ErrorType</a>
@@ -396,8 +396,8 @@
                           <li class="">
                             <a href="VpnSDK.Interfaces.IUser.html" title="IUser" class="">IUser</a>
                           </li>
-                          <li class="active">
-                            <a href="VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html" title="IWireGuardConnectionConfiguration" class="active">IWireGuardConnectionConfiguration</a>
+                          <li class="">
+                            <a href="VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html" title="IWireGuardConnectionConfiguration" class="">IWireGuardConnectionConfiguration</a>
                           </li>
                         </ul>  </li>
                   </ul>        </div>
@@ -407,60 +407,52 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VpnSDK.Interfaces.IWireGuardConnectionConfiguration">
+            <article class="content wrap" id="_content" data-uid="VpnSDK.Enums.DriverUninstallResult">
   
   
-  <h1 id="VpnSDK_Interfaces_IWireGuardConnectionConfiguration" data-uid="VpnSDK.Interfaces.IWireGuardConnectionConfiguration" class="text-break">Interface IWireGuardConnectionConfiguration
+  <h1 id="VpnSDK_Enums_DriverUninstallResult" data-uid="VpnSDK.Enums.DriverUninstallResult" class="text-break">Enum DriverUninstallResult
   </h1>
-  <div class="markdown level0 summary"><p>Interface IWireGuardConnectionConfiguration. Tagging interface for Wireguard-based <a class="xref" href="VpnSDK.Interfaces.IConnectionConfiguration.html">IConnectionConfiguration</a>.</p>
+  <div class="markdown level0 summary"><p>Enum DriverUninstallResult. Describes the result of uninstalling a device driver.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="VpnSDK.Interfaces.IConnectionConfiguration.html#VpnSDK_Interfaces_IConnectionConfiguration_ConnectionType">IConnectionConfiguration.ConnectionType</a>
-    </div>
-    <div>
-      <a class="xref" href="VpnSDK.Interfaces.IConnectionConfiguration.html#VpnSDK_Interfaces_IConnectionConfiguration_ManagerType">IConnectionConfiguration.ManagerType</a>
-    </div>
-    <div>
-      <a class="xref" href="VpnSDK.Interfaces.IDoubleHopConfiguration.html#VpnSDK_Interfaces_IDoubleHopConfiguration_DoubleHopSettings">IDoubleHopConfiguration.DoubleHopSettings</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Interfaces.html">VpnSDK.Interfaces</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Enums.html">VpnSDK.Enums</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="VpnSDK_Interfaces_IWireGuardConnectionConfiguration_syntax">Syntax</h5>
+  <h5 id="VpnSDK_Enums_DriverUninstallResult_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IWireGuardConnectionConfiguration : IConnectionConfiguration, IDoubleHopConfiguration</code></pre>
+    <pre><code class="lang-csharp hljs">public enum DriverUninstallResult</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="fields">Fields
   </h3>
-  
-  
-  <a id="VpnSDK_Interfaces_IWireGuardConnectionConfiguration_AllowLan_" data-uid="VpnSDK.Interfaces.IWireGuardConnectionConfiguration.AllowLan*"></a>
-  <h4 id="VpnSDK_Interfaces_IWireGuardConnectionConfiguration_AllowLan" data-uid="VpnSDK.Interfaces.IWireGuardConnectionConfiguration.AllowLan">AllowLan</h4>
-  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether LAN resource are not routed to VPN tunnel.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool AllowLan { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
-    </thead>
+    <thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
+        <td id="VpnSDK_Enums_DriverUninstallResult_Failed">Failed</td>
+        <td><p>The driver uninstallation failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="VpnSDK_Enums_DriverUninstallResult_NotAvailable">NotAvailable</td>
+        <td><p>Driver is not detected.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="VpnSDK_Enums_DriverUninstallResult_RebootRequired">RebootRequired</td>
+        <td><p>The driver uninstalled successfully but a reboot is required.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="VpnSDK_Enums_DriverUninstallResult_Success">Success</td>
+        <td><p>The driver was uninstalled successfully.</p>
+</td>
       </tr>
     </tbody>
-  </table>
+  </thead></thead></table>
 </article>
           </div>
           
