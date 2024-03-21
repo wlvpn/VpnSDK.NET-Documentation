@@ -3218,18 +3218,24 @@ references:
   commentId: T:VpnSDK.InvalidAccountException
   fullName: VpnSDK.InvalidAccountException
   nameWithType: InvalidAccountException
-- uid: VpnSDK.InvalidAccountException.#ctor(System.String)
-  name: InvalidAccountException(String)
-  href: api/VpnSDK.InvalidAccountException.html#VpnSDK_InvalidAccountException__ctor_System_String_
-  commentId: M:VpnSDK.InvalidAccountException.#ctor(System.String)
-  fullName: VpnSDK.InvalidAccountException.InvalidAccountException(System.String)
-  nameWithType: InvalidAccountException.InvalidAccountException(String)
-- uid: VpnSDK.InvalidAccountException.#ctor(System.String,Exception)
-  name: InvalidAccountException(String, Exception)
-  href: api/VpnSDK.InvalidAccountException.html#VpnSDK_InvalidAccountException__ctor_System_String_Exception_
-  commentId: M:VpnSDK.InvalidAccountException.#ctor(System.String,Exception)
-  fullName: VpnSDK.InvalidAccountException.InvalidAccountException(System.String, Exception)
-  nameWithType: InvalidAccountException.InvalidAccountException(String, Exception)
+- uid: VpnSDK.InvalidAccountException.#ctor(System.String,Exception,System.Nullable{AccountStatus})
+  name: InvalidAccountException(String, Exception, Nullable<AccountStatus>)
+  href: api/VpnSDK.InvalidAccountException.html#VpnSDK_InvalidAccountException__ctor_System_String_Exception_System_Nullable_AccountStatus__
+  commentId: M:VpnSDK.InvalidAccountException.#ctor(System.String,Exception,System.Nullable{AccountStatus})
+  name.vb: InvalidAccountException(String, Exception, Nullable(Of AccountStatus))
+  fullName: VpnSDK.InvalidAccountException.InvalidAccountException(System.String, Exception, System.Nullable<AccountStatus>)
+  fullName.vb: VpnSDK.InvalidAccountException.InvalidAccountException(System.String, Exception, System.Nullable(Of AccountStatus))
+  nameWithType: InvalidAccountException.InvalidAccountException(String, Exception, Nullable<AccountStatus>)
+  nameWithType.vb: InvalidAccountException.InvalidAccountException(String, Exception, Nullable(Of AccountStatus))
+- uid: VpnSDK.InvalidAccountException.#ctor(System.String,System.Nullable{AccountStatus})
+  name: InvalidAccountException(String, Nullable<AccountStatus>)
+  href: api/VpnSDK.InvalidAccountException.html#VpnSDK_InvalidAccountException__ctor_System_String_System_Nullable_AccountStatus__
+  commentId: M:VpnSDK.InvalidAccountException.#ctor(System.String,System.Nullable{AccountStatus})
+  name.vb: InvalidAccountException(String, Nullable(Of AccountStatus))
+  fullName: VpnSDK.InvalidAccountException.InvalidAccountException(System.String, System.Nullable<AccountStatus>)
+  fullName.vb: VpnSDK.InvalidAccountException.InvalidAccountException(System.String, System.Nullable(Of AccountStatus))
+  nameWithType: InvalidAccountException.InvalidAccountException(String, Nullable<AccountStatus>)
+  nameWithType.vb: InvalidAccountException.InvalidAccountException(String, Nullable(Of AccountStatus))
 - uid: VpnSDK.InvalidAccountException.#ctor*
   name: InvalidAccountException
   href: api/VpnSDK.InvalidAccountException.html#VpnSDK_InvalidAccountException__ctor_
@@ -3237,6 +3243,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.InvalidAccountException.InvalidAccountException
   nameWithType: InvalidAccountException.InvalidAccountException
+- uid: VpnSDK.InvalidAccountException.AccountStatus
+  name: AccountStatus
+  href: api/VpnSDK.InvalidAccountException.html#VpnSDK_InvalidAccountException_AccountStatus
+  commentId: P:VpnSDK.InvalidAccountException.AccountStatus
+  fullName: VpnSDK.InvalidAccountException.AccountStatus
+  nameWithType: InvalidAccountException.AccountStatus
+- uid: VpnSDK.InvalidAccountException.AccountStatus*
+  name: AccountStatus
+  href: api/VpnSDK.InvalidAccountException.html#VpnSDK_InvalidAccountException_AccountStatus_
+  commentId: Overload:VpnSDK.InvalidAccountException.AccountStatus
+  isSpec: "True"
+  fullName: VpnSDK.InvalidAccountException.AccountStatus
+  nameWithType: InvalidAccountException.AccountStatus
 - uid: VpnSDK.InvalidAccountException.Type
   name: Type
   href: api/VpnSDK.InvalidAccountException.html#VpnSDK_InvalidAccountException_Type
