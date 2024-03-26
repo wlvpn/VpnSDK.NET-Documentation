@@ -112,6 +112,9 @@
                             <a href="VpnSDK.ConnectionAlreadyEstablishedException.html" title="ConnectionAlreadyEstablishedException" class="">ConnectionAlreadyEstablishedException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.ConnectionConfigurationBuilderBase.html" title="ConnectionConfigurationBuilderBase" class="">ConnectionConfigurationBuilderBase</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.ConnectionException.html" title="ConnectionException" class="">ConnectionException</a>
                           </li>
                           <li class="">
@@ -136,7 +139,16 @@
                             <a href="VpnSDK.HTTPException.html" title="HTTPException" class="">HTTPException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.InvalidAccountException.html" title="InvalidAccountException" class="">InvalidAccountException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.InvalidConfigurationException.html" title="InvalidConfigurationException" class="">InvalidConfigurationException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.InvalidDoubleHopConfigurationException.html" title="InvalidDoubleHopConfigurationException" class="">InvalidDoubleHopConfigurationException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.InvalidServerException.html" title="InvalidServerException" class="">InvalidServerException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.NotAuthorizedException.html" title="NotAuthorizedException" class="">NotAuthorizedException</a>
@@ -292,6 +304,9 @@
                             <a href="VpnSDK.Enums.DriverInstallResult.html" title="DriverInstallResult" class="">DriverInstallResult</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Enums.DriverUninstallResult.html" title="DriverUninstallResult" class="">DriverUninstallResult</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Enums.ErrorType.html" title="ErrorType" class="">ErrorType</a>
                           </li>
                           <li class="">
@@ -361,6 +376,9 @@
                             <a href="VpnSDK.Interfaces.IConnectionInfo.html" title="IConnectionInfo" class="">IConnectionInfo</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Interfaces.IDoubleHopConfiguration.html" title="IDoubleHopConfiguration" class="">IDoubleHopConfiguration</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Interfaces.ILocation.html" title="ILocation" class="">ILocation</a>
                           </li>
                           <li class="">
@@ -408,6 +426,19 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class OpenVpnConfiguration</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="VpnSDK_DTO_OpenVpnConfiguration__ctor_" data-uid="VpnSDK.DTO.OpenVpnConfiguration.#ctor*"></a>
+  <h4 id="VpnSDK_DTO_OpenVpnConfiguration__ctor" data-uid="VpnSDK.DTO.OpenVpnConfiguration.#ctor">OpenVpnConfiguration()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.DTO.OpenVpnConfiguration.html">OpenVpnConfiguration</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpenVpnConfiguration()</code></pre>
+  </div>
   <h3 id="properties">Properties
   </h3>
   
@@ -440,7 +471,8 @@
   
   <a id="VpnSDK_DTO_OpenVpnConfiguration_ConfigurationFileOptions_" data-uid="VpnSDK.DTO.OpenVpnConfiguration.ConfigurationFileOptions*"></a>
   <h4 id="VpnSDK_DTO_OpenVpnConfiguration_ConfigurationFileOptions" data-uid="VpnSDK.DTO.OpenVpnConfiguration.ConfigurationFileOptions">ConfigurationFileOptions</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets openvpn configuration options.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -537,6 +569,32 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_DTO_OpenVpnConfiguration_PreferredTapAdapter_" data-uid="VpnSDK.DTO.OpenVpnConfiguration.PreferredTapAdapter*"></a>
+  <h4 id="VpnSDK_DTO_OpenVpnConfiguration_PreferredTapAdapter" data-uid="VpnSDK.DTO.OpenVpnConfiguration.PreferredTapAdapter">PreferredTapAdapter</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the TapAdapter to use on connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpenVpnTapAdapter PreferredTapAdapter { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">OpenVpnTapAdapter</span></td>
         <td></td>
       </tr>
     </tbody>

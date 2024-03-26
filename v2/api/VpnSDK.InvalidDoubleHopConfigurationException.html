@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RegionLoadChecker
+    <title>Class InvalidDoubleHopConfigurationException
    | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RegionLoadChecker
+    <meta name="title" content="Class InvalidDoubleHopConfigurationException
    | VpnSDK v2 - WLVPN .NET Framework SDK ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -144,8 +144,8 @@
                           <li class="">
                             <a href="VpnSDK.InvalidConfigurationException.html" title="InvalidConfigurationException" class="">InvalidConfigurationException</a>
                           </li>
-                          <li class="">
-                            <a href="VpnSDK.InvalidDoubleHopConfigurationException.html" title="InvalidDoubleHopConfigurationException" class="">InvalidDoubleHopConfigurationException</a>
+                          <li class="active">
+                            <a href="VpnSDK.InvalidDoubleHopConfigurationException.html" title="InvalidDoubleHopConfigurationException" class="active">InvalidDoubleHopConfigurationException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.InvalidServerException.html" title="InvalidServerException" class="">InvalidServerException</a>
@@ -342,8 +342,8 @@
                           <li class="">
                             <a href="VpnSDK.Extensions.LocationExtensions.html" title="LocationExtensions" class="">LocationExtensions</a>
                           </li>
-                          <li class="active">
-                            <a href="VpnSDK.Extensions.RegionLoadChecker.html" title="RegionLoadChecker" class="active">RegionLoadChecker</a>
+                          <li class="">
+                            <a href="VpnSDK.Extensions.RegionLoadChecker.html" title="RegionLoadChecker" class="">RegionLoadChecker</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -407,37 +407,39 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VpnSDK.Extensions.RegionLoadChecker">
+            <article class="content wrap" id="_content" data-uid="VpnSDK.InvalidDoubleHopConfigurationException">
   
   
-  <h1 id="VpnSDK_Extensions_RegionLoadChecker" data-uid="VpnSDK.Extensions.RegionLoadChecker" class="text-break">Class RegionLoadChecker
+  <h1 id="VpnSDK_InvalidDoubleHopConfigurationException" data-uid="VpnSDK.InvalidDoubleHopConfigurationException" class="text-break">Class InvalidDoubleHopConfigurationException
   </h1>
-  <div class="markdown level0 summary"><p>Class RegionLoadChecker. Provides utilities for checking a locations load by averaging them all and providing a simple <a class="xref" href="VpnSDK.Enums.LoadLevel.html">LoadLevel</a> value.</p>
+  <div class="markdown level0 summary"><p>Represents an exception thrown when there is an invalid double hop configuration error.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">RegionLoadChecker</span></div>
+    <div class="level1"><a class="xref" href="VpnSDK.BaseSDKException.html">BaseSDKException</a></div>
+    <div class="level2"><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></div>
+    <div class="level3"><span class="xref">InvalidDoubleHopConfigurationException</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Extensions.html">VpnSDK.Extensions</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.html">VpnSDK</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="VpnSDK_Extensions_RegionLoadChecker_syntax">Syntax</h5>
+  <h5 id="VpnSDK_InvalidDoubleHopConfigurationException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class RegionLoadChecker</code></pre>
+    <pre><code class="lang-csharp hljs">public class InvalidDoubleHopConfigurationException : HTTPException</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="VpnSDK_Extensions_RegionLoadChecker_GetRegionLoadLevel_" data-uid="VpnSDK.Extensions.RegionLoadChecker.GetRegionLoadLevel*"></a>
-  <h4 id="VpnSDK_Extensions_RegionLoadChecker_GetRegionLoadLevel_System_Nullable_System_UInt16__" data-uid="VpnSDK.Extensions.RegionLoadChecker.GetRegionLoadLevel(System.Nullable{System.UInt16})">GetRegionLoadLevel(Nullable&lt;UInt16&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get <a class="xref" href="VpnSDK.Enums.LoadLevel.html">LoadLevel</a> from a Region&apos;s load level.</p>
+  <a id="VpnSDK_InvalidDoubleHopConfigurationException__ctor_" data-uid="VpnSDK.InvalidDoubleHopConfigurationException.#ctor*"></a>
+  <h4 id="VpnSDK_InvalidDoubleHopConfigurationException__ctor_System_String_" data-uid="VpnSDK.InvalidDoubleHopConfigurationException.#ctor(System.String)">InvalidDoubleHopConfigurationException(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.InvalidDoubleHopConfigurationException.html">InvalidDoubleHopConfigurationException</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LoadLevel GetRegionLoadLevel(this ushort? value)</code></pre>
+    <pre><code class="lang-csharp hljs">public InvalidDoubleHopConfigurationException(string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -450,14 +452,62 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a>&gt;</td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The number value representing the load level.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to pass to the calling code.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  
+  
+  <a id="VpnSDK_InvalidDoubleHopConfigurationException__ctor_" data-uid="VpnSDK.InvalidDoubleHopConfigurationException.#ctor*"></a>
+  <h4 id="VpnSDK_InvalidDoubleHopConfigurationException__ctor_System_String_Exception_" data-uid="VpnSDK.InvalidDoubleHopConfigurationException.#ctor(System.String,Exception)">InvalidDoubleHopConfigurationException(String, Exception)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.InvalidDoubleHopConfigurationException.html">InvalidDoubleHopConfigurationException</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InvalidDoubleHopConfigurationException(string message, Exception inner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to pass to the calling code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">inner</span></td>
+        <td><p>The exception that we are passing up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="VpnSDK_InvalidDoubleHopConfigurationException_Type_" data-uid="VpnSDK.InvalidDoubleHopConfigurationException.Type*"></a>
+  <h4 id="VpnSDK_InvalidDoubleHopConfigurationException_Type" data-uid="VpnSDK.InvalidDoubleHopConfigurationException.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the error type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ErrorType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -467,12 +517,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">LoadLevel</span></td>
-        <td><p>The appropriate <a class="xref" href="VpnSDK.Enums.LoadLevel.html">LoadLevel</a> associated with the value.</p>
+        <td><span class="xref">ErrorType</span></td>
+        <td><p>The error type.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VpnSDK.BaseSDKException.html#VpnSDK_BaseSDKException_Type">BaseSDKException.Type</a></div>
 </article>
           </div>
           
