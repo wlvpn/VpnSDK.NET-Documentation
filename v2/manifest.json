@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.ConnectionConfigurationBuilderBase.html",
-          "hash": "+NH3rczKM6i8o8rPuzxY5NGzBFwXVd1ugelevl+stQQ="
+          "hash": "kzaP6lrI3sAmhtCRDYoPF69bED+gRK7s3Adit0TU9r4="
         }
       },
       "is_incremental": false,
@@ -786,7 +786,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html",
-          "hash": "re0sCv/EtgpBQFRYKu4jJDW07jCTuyM/HexE/MJzFUg="
+          "hash": "LoZo50o06SvYKa0iTV33b3Tbre8SVfPcXa9CsoEerG4="
         }
       },
       "is_incremental": false,
@@ -1122,7 +1122,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.WireGuardConnectionConfigurationBuilder.html",
-          "hash": "GkaFsevksFqnJmJrJs/yNYqx+nboGRATE6fCVal16is="
+          "hash": "1tO7ESOmFnO+a0XpnshdnxVHpGOFtKQm2YaI9CfM8a4="
         }
       },
       "is_incremental": false,

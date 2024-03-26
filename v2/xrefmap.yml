@@ -3212,6 +3212,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.AllowLan
   nameWithType: IWireGuardConnectionConfiguration.AllowLan
+- uid: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.Mtu
+  name: Mtu
+  href: api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html#VpnSDK_Interfaces_IWireGuardConnectionConfiguration_Mtu
+  commentId: P:VpnSDK.Interfaces.IWireGuardConnectionConfiguration.Mtu
+  fullName: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.Mtu
+  nameWithType: IWireGuardConnectionConfiguration.Mtu
+- uid: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.Mtu*
+  name: Mtu
+  href: api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html#VpnSDK_Interfaces_IWireGuardConnectionConfiguration_Mtu_
+  commentId: Overload:VpnSDK.Interfaces.IWireGuardConnectionConfiguration.Mtu
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.Mtu
+  nameWithType: IWireGuardConnectionConfiguration.Mtu
 - uid: VpnSDK.InvalidAccountException
   name: InvalidAccountException
   href: api/VpnSDK.InvalidAccountException.html
@@ -4372,3 +4385,32 @@ references:
   isSpec: "True"
   fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetDoubleHopSettings
   nameWithType: WireGuardConnectionConfigurationBuilder.SetDoubleHopSettings
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.SetMtu(System.Nullable{System.Int32})
+  name: SetMtu(Nullable<Int32>)
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_SetMtu_System_Nullable_System_Int32__
+  commentId: M:VpnSDK.WireGuardConnectionConfigurationBuilder.SetMtu(System.Nullable{System.Int32})
+  name.vb: SetMtu(Nullable(Of Int32))
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetMtu(System.Nullable<System.Int32>)
+  fullName.vb: VpnSDK.WireGuardConnectionConfigurationBuilder.SetMtu(System.Nullable(Of System.Int32))
+  nameWithType: WireGuardConnectionConfigurationBuilder.SetMtu(Nullable<Int32>)
+  nameWithType.vb: WireGuardConnectionConfigurationBuilder.SetMtu(Nullable(Of Int32))
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.SetMtu*
+  name: SetMtu
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_SetMtu_
+  commentId: Overload:VpnSDK.WireGuardConnectionConfigurationBuilder.SetMtu
+  isSpec: "True"
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetMtu
+  nameWithType: WireGuardConnectionConfigurationBuilder.SetMtu
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.Validate
+  name: Validate()
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_Validate
+  commentId: M:VpnSDK.WireGuardConnectionConfigurationBuilder.Validate
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.Validate()
+  nameWithType: WireGuardConnectionConfigurationBuilder.Validate()
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.Validate*
+  name: Validate
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_Validate_
+  commentId: Overload:VpnSDK.WireGuardConnectionConfigurationBuilder.Validate
+  isSpec: "True"
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.Validate
+  nameWithType: WireGuardConnectionConfigurationBuilder.Validate
