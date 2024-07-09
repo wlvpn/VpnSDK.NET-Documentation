@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.APIException.html",
-          "hash": "Za6kb8LOQTmWhv0zl4YzZYAjmy4cmF5h8JjdHYKNsyE="
+          "hash": "OkLxjTRS3KwXVq34cJvy4swBf0vwGCjOxuf7uBwJnWE="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,19 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.AccountMetadataException.html",
-          "hash": "B9anDTChLSY6iUdjoYiTPJMOnPVk4Lcf2u2fQvhx7v4="
+          "hash": "Wj1vyGkOyj/mPRPGIwhFClIPymbYYIA8ADb77lTUFu0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.ApiTimeoutException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.ApiTimeoutException.html",
+          "hash": "xju3eJXnucqhQPgUrXKinixmDsb80Hps8i7TuxDR9r4="
         }
       },
       "is_incremental": false,
@@ -42,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.AuthenticationException.html",
-          "hash": "rJ0GCl8HYAqxI8whyWshfGYUjf8emEd4oQABJfrAgfE="
+          "hash": "T7JRshvg1RjVn3Uu2xtcCtMgpEVlTFdPVHKsbNhMJdE="
         }
       },
       "is_incremental": false,
@@ -54,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.BaseSDKException.html",
-          "hash": "LkgH/Cf/SqGuJVSZZxrwKSZLkQfdH9ZNjJcz364g6ws="
+          "hash": "YngBmr5bu2q04h2U6KBC8UXEMzwnlhIe8To7/DP6nxo="
         }
       },
       "is_incremental": false,
@@ -66,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Common.Dns.DnsResolutionResult.html",
-          "hash": "nuKvWy+DzPou1tplNoLuBGaa77PSJ/HUHm+EcWdh0hs="
+          "hash": "A/a5PdBM2KvPB7cZ4UzzawqsCXLFjXKkEK2KMY3un+M="
         }
       },
       "is_incremental": false,
@@ -78,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Common.Dns.IDnsRequestResolver.html",
-          "hash": "uyUN1HPqJpVTmvP7oKy6D2XYbJD5CFbXzzsJae9nzJg="
+          "hash": "taYGGUw6sGsOCy6052PpoxARJTwCVcKdSTubiA+qCzM="
         }
       },
       "is_incremental": false,
@@ -90,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Common.Dns.html",
-          "hash": "xZp4lzhvUzJxEBA1iOfZvPC76sFfWIXbWcDCMPTJHdw="
+          "hash": "22QTn9MSDQGutEzzN0pzv69XYDaS6vBr765fUU5du9Y="
         }
       },
       "is_incremental": false,
@@ -102,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Common.Enums.SplitTunnelMode.html",
-          "hash": "bA0kTIun+JvvhnBVfx7VgUr58n1uwVIqhCJUhx8uqM0="
+          "hash": "gYg6MnvB9IfAe+0XiLyAopH4k1ZeDaH7ktOb+oEIPpo="
         }
       },
       "is_incremental": false,
@@ -114,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Common.Enums.html",
-          "hash": "rPn3cqa728BtlxIZ81D5vFUzXgW8YK+ymx9GjW3/S1w="
+          "hash": "/csB+E6V+qcnBe7e9tUKbyUe6pavYF8sXjL5gbVfeCw="
         }
       },
       "is_incremental": false,
@@ -126,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Common.Settings.SplitTunnelApp.html",
-          "hash": "xnszo6nnj5TvblDvPgD2FWKG16ZZMcEuKE5mqqkaFUI="
+          "hash": "2Bkj3Wk/jGDaEZg7XAaRyNnx6El6dZa1Btl6PtIRrrQ="
         }
       },
       "is_incremental": false,
@@ -138,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Common.Settings.SplitTunnelDomain.html",
-          "hash": "tRtctKhDC0A/M2a/WF7U1xjV5GzFmy663YMkOtDa6HI="
+          "hash": "n/thcFjxE/JmvchyBLtUI4q2B6v60gKrS4/jMqBbN+s="
         }
       },
       "is_incremental": false,
@@ -150,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Common.Settings.html",
-          "hash": "LD6syqK/9Hp9uAS+VTGPUa6b9LANMy6V7UESj+6wgYg="
+          "hash": "aQIXJ1aPoVzfqDObvDXfEiN6xNDgAGg1/tkqof7qZCA="
         }
       },
       "is_incremental": false,
@@ -162,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.ConnectionAlreadyEstablishedException.html",
-          "hash": "NIa9Tpj8b7qFNsf78BoyzMXbEb0TKxzm45vs1vHZaoU="
+          "hash": "AU6LJdoPjrjYBGoDj3BS6Mn9aTN4MC6UpiGaVKxZm30="
         }
       },
       "is_incremental": false,
@@ -174,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.ConnectionConfigurationBuilderBase.html",
-          "hash": "kzaP6lrI3sAmhtCRDYoPF69bED+gRK7s3Adit0TU9r4="
+          "hash": "CimbcNRwd24nVb9UpXp0PnFLPzuK0UoQyk4UHeesiN8="
         }
       },
       "is_incremental": false,
@@ -186,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.ConnectionException.html",
-          "hash": "Kgu0soLDBLci7f2GwNzNmqSbYJeCUq41Wbj59IqmijU="
+          "hash": "hGsvRvlCkJuBUygMqqXJqjmBvAJKhnpkcBncEv4HCLE="
         }
       },
       "is_incremental": false,
@@ -198,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.ConnectionTerminatedException.html",
-          "hash": "2AKyxs0CUfXLG9MILqfzbG4BN6HjelbL5k3BN49H7us="
+          "hash": "47t///S4KD39jgK/kMHX2GTG1QlEqOdpmDcG9qzU6CA="
         }
       },
       "is_incremental": false,
@@ -210,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.CoreException.html",
-          "hash": "/uxFArEM1W3nDqHDQ90sXAs7VN7bCyKM25F3h6Lk0jk="
+          "hash": "BMk2zy/85YazJj7Ak0wA/EmA59vPSo1tfjdSchqWoj8="
         }
       },
       "is_incremental": false,
@@ -222,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.ApiHttpError.html",
-          "hash": "QcCrjpNB0D6lI3i2KrfkljY37pYRrIfifnY2dzwXt88="
+          "hash": "XdBvFKidtCsiLU9IW9cqof7BHkEXwQ/CkZHN4GVehqU="
         }
       },
       "is_incremental": false,
@@ -234,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.ApiProxyError.html",
-          "hash": "XvkqSYFulMr91bNh+CERHhRJehCo5xlJ2AQVsQrYVR4="
+          "hash": "/c9ILOsyKJlqqga446fNfa+JVkRfJZzh6+nttfO2ojo="
         }
       },
       "is_incremental": false,
@@ -246,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.ConnectionError.html",
-          "hash": "zDq7UUEZ64gMFUAeI1mgiZksxEJa3Uh9RL0GtmWD/KQ="
+          "hash": "VM/W8gfSXOUzFdIH6aYhljm5unKQba6s9XXkwWH/hBs="
         }
       },
       "is_incremental": false,
@@ -258,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.ISDKError.html",
-          "hash": "vGuiFGwlWnAQc1XxWJoJIw0KV0hiOt+LKH60wKUqLDs="
+          "hash": "NN6Zxm7MCQXPOAnldPdpNK3i9h1efEjUcZM6UNxZqHA="
         }
       },
       "is_incremental": false,
@@ -270,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.NetworkGeolocation.html",
-          "hash": "4McmwsSkJmoSl6UVYLvIb+9k4Fh6NK5keKN/BjYwcVk="
+          "hash": "fppGkAOrBNyGIA6HROUGiCDgMS8zvNkSeRo1CFv+Py8="
         }
       },
       "is_incremental": false,
@@ -282,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.OpenVpnConfiguration.html",
-          "hash": "TGyfAjmZECBbMEE7M8ugF4FHIV4sEOCSZJnR8zNV4Tc="
+          "hash": "fPP4OK0JiiShAZXfxDUXUFNoR7qrgnWunuNz5bf6MbU="
         }
       },
       "is_incremental": false,
@@ -294,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.RasConfiguration.html",
-          "hash": "hkESVxAqkQmgq9vfAa7eJEkhV/TtWIiSE8GegpJrvh8="
+          "hash": "mRmsJKzqJacBvI5rOP1XAl+3lvw+I4COFICi07LJ5QM="
         }
       },
       "is_incremental": false,
@@ -306,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.WireguardConfiguration.html",
-          "hash": "vaTPLBzdc9ZG6I0JKy5azJ0j3eEgyxuUHJIy82CVL6o="
+          "hash": "2ywIYKJIrCcbFyDc53hEXe9mPPG6puLyFSzcgSo5Vk4="
         }
       },
       "is_incremental": false,
@@ -318,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.html",
-          "hash": "j89xkrNLWjDQIBVHX0O6S5YNR9vf4ke5dNHsFXUDnxc="
+          "hash": "9bWk+QW8mgDSDOdUSNSdpoG2Vth8/go3AstbGs4RI4w="
         }
       },
       "is_incremental": false,
@@ -330,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DataTransferEventArgs.html",
-          "hash": "btOloxI835UBDPah2NwaS4aqo2E3z4Ve0HMLlxzVkHE="
+          "hash": "excUUe0DpyUixJmaYqPB9MXmmAoCTxUNQ0z8jW7BRIE="
         }
       },
       "is_incremental": false,
@@ -342,7 +354,19 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DnsConfigurationException.html",
-          "hash": "/ppCL38VnH2lrRLzv0FMY3iT4LjfJGbJUxmJ9kbVcrc="
+          "hash": "9fo0uUlZ6/8Lp6+0GpbbL8kU71IxW/45Zve4nKoKT14="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.DoubleHopNotAvailableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.DoubleHopNotAvailableException.html",
+          "hash": "dpL8zsdsL+whtFmtBshEqH+KvBQka5zuoMh1kPaiWO4="
         }
       },
       "is_incremental": false,
@@ -354,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.EmptyAvailableVpnProtocolsException.html",
-          "hash": "wYOi8iaFH55/h3iWrOwsJ4z3h2JWy8JaeXP/UZiLSaU="
+          "hash": "rY5HXoSPHIjjIN9T0Wfw46d2fLyyhHJfNRjnBj1s/WU="
         }
       },
       "is_incremental": false,
@@ -366,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.AccountStatus.html",
-          "hash": "dyk18ewQhhGtqE/XVkLgMmVlK6qRzzzPH8bbZiot1mU="
+          "hash": "KeeWf7rLyFSIyA3AXdGgNPNvANZFw+7N3uQghnqJupo="
         }
       },
       "is_incremental": false,
@@ -378,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.AuthenticationStatus.html",
-          "hash": "5MzWxsEVNp/kMXgFYA8i20j1Y8wybnQ/AYc7Azuup6U="
+          "hash": "Fo7YnqID3Pr3xxLRb4YTyuZX0oa3azs1rb4mPB1dKBE="
         }
       },
       "is_incremental": false,
@@ -390,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.ConnectionStatus.html",
-          "hash": "12v1EHImdk+8QiIpVQ1W4djKfVpA6kqsf8VQ/hOSIys="
+          "hash": "46zgskNzRqtff8gb7a8vttP3guPNHoppYkPyw4VeKRI="
         }
       },
       "is_incremental": false,
@@ -402,7 +426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.DnsFilteringMode.html",
-          "hash": "6XZi8GvDnIUz5xy1/SHZjxT55vqUzyMgUY6RqmOpyUI="
+          "hash": "yoHDocY2F1bUAa5YSMkYKL62MczrxvIej1Pv853sidM="
         }
       },
       "is_incremental": false,
@@ -414,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.DriverInstallResult.html",
-          "hash": "7UB08KKt46K4xKqydL93mnQFLxLs8qwtd8Ol/Gjje0w="
+          "hash": "+ToxCx7uLi+Q7EXl9QSqSHHm3wpyRksfQniiP5miVWQ="
         }
       },
       "is_incremental": false,
@@ -426,7 +450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.DriverUninstallResult.html",
-          "hash": "51Y3XujMHgaMRvG98ff66gYC9Ul5277Ldq89NwbLzXE="
+          "hash": "x6drQAn8KSXBKnC9PiEI/VaNj8ZoaMztd/81/+1wwVg="
         }
       },
       "is_incremental": false,
@@ -438,7 +462,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.ErrorType.html",
-          "hash": "4aLe0g/JP5U3hFI4392i+/gKNl4QV3WKqpzH3J6MQTk="
+          "hash": "vMoulBZCFZ+USPURL5eEqlZce7IA6koveJ5AWDrQ1cI="
         }
       },
       "is_incremental": false,
@@ -450,7 +474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.LoadLevel.html",
-          "hash": "Roh5U0YciBOALtuxZAsjdxpxJXMFlG7/2HMGaBHRFUk="
+          "hash": "L9grSg6iT14sSY41d60AizfUC/tpE6O/WqtQ1IsjBsg="
         }
       },
       "is_incremental": false,
@@ -462,7 +486,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.NetworkConnectionType.html",
-          "hash": "3gpTOWwLMmMLpMgPQOjqO3+84AGuKjfle7VN0neHQqA="
+          "hash": "mZPRvQRJxvfeMet3sa3e20vC2JQp2sUWpRmttHcAhdo="
         }
       },
       "is_incremental": false,
@@ -474,7 +498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.NetworkProtocolType.html",
-          "hash": "xQHDT6f3wFiyknYwQuZjMGMHscx29gXjUi7G95+a7qI="
+          "hash": "k6OaL1DWI+xaY2UXjXTvpx6E2kVn+02K/dIWfeKcY7U="
         }
       },
       "is_incremental": false,
@@ -486,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.OpenVpnCipherType.html",
-          "hash": "svtVbbRqTnwczy/5ogYQtxaL872iDCpDJh54DHZxy+o="
+          "hash": "I5wQF340rGJCRxEumoqwFPTGnkREVge5Htw2CB6sI2M="
         }
       },
       "is_incremental": false,
@@ -498,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.OpenVpnLogLevel.html",
-          "hash": "N3eCyxBV7elW9bmgouAmsc2j+jxUfBRGKb7zt/tmbSw="
+          "hash": "RJIbG9yGidSrd7BtoV8NUc/bOEsHw64P40APiZQxU1Y="
         }
       },
       "is_incremental": false,
@@ -510,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.OperationStatus.html",
-          "hash": "mFHfk1LpJ19du+VPHmSJoaJJkG8Vwkjgf2oQDTFBEck="
+          "hash": "ZO/r2WocmRLtMfEM9zOn8wOLWjh6SVZU8C8iBtrXe2U="
         }
       },
       "is_incremental": false,
@@ -522,7 +546,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.RefreshLocationListStatus.html",
-          "hash": "YBd507x/o/rkJPECEIQDR7yee51HraJtVhvL/d7bm5U="
+          "hash": "7KU2CIzshu/FIgapfQl6YpIjJxiqzZvDF4hrmYQpCd0="
         }
       },
       "is_incremental": false,
@@ -534,7 +558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Enums.html",
-          "hash": "VWOWT484ozBHgmF/LLoiAr7BZUSoQRA4dZNChU7vQ7o="
+          "hash": "Gdqs0UWDaA9/iwju/NRr0ErKGqVsTU6f3Dp3NONMbOE="
         }
       },
       "is_incremental": false,
@@ -546,7 +570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Extensions.ExceptionExtensions.html",
-          "hash": "v05QvUsZO8Q4ZAZ+cMmky6ofAepDurRSa3/TVKN8gaI="
+          "hash": "m1/LBHd2pNtgaHoyPS3H+r/2ONoC5mhknaELR6LvB5s="
         }
       },
       "is_incremental": false,
@@ -558,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Extensions.LocationExtensions.html",
-          "hash": "U0mwBrBmpqz3XUll3Qzlbf+v+j5tIBUbEExqLUkP33k="
+          "hash": "ZYNyPiutRNUHfzC2CAR4JrLh5S81aH+Lv3Uk5390iik="
         }
       },
       "is_incremental": false,
@@ -570,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Extensions.RegionLoadChecker.html",
-          "hash": "ER9bKSBv2rNhdS2krSxJ6niWGXk9jmRi1KfkxeMLprY="
+          "hash": "OsUQXy1RSMwLHCnOuAOTfK7sPVHB0BN6LUO+6BxOXcw="
         }
       },
       "is_incremental": false,
@@ -582,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Extensions.html",
-          "hash": "Tuk/fJl5fQ/yNrDHMJKuPc3x9JiaMUzUR41J/qRrM6A="
+          "hash": "oknf5CxVSYHnzIzLRW9fL4mjVTLbYr30h1ub1WPvTmI="
         }
       },
       "is_incremental": false,
@@ -594,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.FetchLocationsException.html",
-          "hash": "KHFaw6xGOcokQfgloBoF/RftkQtnhfgVg973edQsSmA="
+          "hash": "+HsQsvMhgJa9mnnaRr1ZoT9w87ze3uX5AIHHXCDk1/g="
         }
       },
       "is_incremental": false,
@@ -606,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.HTTPException.html",
-          "hash": "VsT6r0/SVF6baLlboPM0X9FEOgiHDwbOqrfialbtht4="
+          "hash": "J8mNxshc2PlL/4xyq8y+Y3QAqnvegsv5zCAfxcl6jHg="
         }
       },
       "is_incremental": false,
@@ -618,7 +642,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Helpers.BatchPingUtility.html",
-          "hash": "PEIOyu89vMSxP4av+YgIhvgUelyK2y8uAACz45yGCVk="
+          "hash": "cjM0RoTAmUdasm1iT4gzyofe99Bmb7kRQlSDMRxHgAA="
         }
       },
       "is_incremental": false,
@@ -630,7 +654,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Helpers.VersionHelper.html",
-          "hash": "YzMgPd+iSKgFoi/ANcNvMRElNUYXm8dNw6T7Xd6FMQ0="
+          "hash": "bNSltT/xIRCwJ4wqjEZNNcOg0+saGVd7YpQ8y4P/yKM="
         }
       },
       "is_incremental": false,
@@ -642,7 +666,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Helpers.VpnProtocolDiagnostics.html",
-          "hash": "c8sLylepqaAWuC83dV/qWr+a80dKbt8X8mGoq3wnNeI="
+          "hash": "+lnZYhNTnLqs/43EA4U2PDuq6/AzSbOHCC9hGnE2Ti4="
         }
       },
       "is_incremental": false,
@@ -654,7 +678,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Helpers.html",
-          "hash": "oeGePazDfzP2+JlGgTQJhlHPPwjpQzAIoctjAYKfPy4="
+          "hash": "fKhzTes/eoj/Qh8vVYeyGqw5oTrfTtF8Xl9L7qX8Vek="
         }
       },
       "is_incremental": false,
@@ -666,7 +690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IBestAvailable.html",
-          "hash": "wpMPIeB5jJPD95kAOJZYI/pH9qWFrMK+ppfOTsAfd6Q="
+          "hash": "vof9QQIdE0s76gzMqO1/BRGFnkzKXO90HyukT4v/bEU="
         }
       },
       "is_incremental": false,
@@ -678,7 +702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IConnectionConfiguration.html",
-          "hash": "xm5Xv9PuioVYIxHdq5YS9xOG1Zp30tjL5JHBnYinr9w="
+          "hash": "2d+DAPrlSzfX0d2oQaV1tiVyWCSAIF8QnGMQ2OPRpmU="
         }
       },
       "is_incremental": false,
@@ -690,7 +714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IConnectionInfo.html",
-          "hash": "wgNadE4hUG8RPXJuikTK6TyI0+n6WQSX/2sQ4OaRPPc="
+          "hash": "YU67U7htWvjwwtNiV6rCVEhKbCCPH7fSCkI7GA0wvTs="
         }
       },
       "is_incremental": false,
@@ -702,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IDoubleHopConfiguration.html",
-          "hash": "RHVmOexiYXsHZB3sYIQPYe1z9uDJokn+2A5gTTCW4gk="
+          "hash": "0cQ9YOcKBe0nLlb92UmN5BXuNVEAzWV/CNKkOb/6Uts="
         }
       },
       "is_incremental": false,
@@ -714,7 +738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.ILocation.html",
-          "hash": "iALTKcvBVE4l2g/a72ScBSrN4ZigmYxY55KaDjuMAxM="
+          "hash": "obcGaepsHy24WmlsOG8cDRkbYKLs/L/n2JyAOE5g00A="
         }
       },
       "is_incremental": false,
@@ -726,7 +750,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IOpenVpnConnectionConfiguration.html",
-          "hash": "wGkcTACQ2p7awKXMaFLKVdAKlFRXBQ+A3DRn42XU/80="
+          "hash": "ZLpnzF2jP/wYZgme//4ONaCu6te4BWMgakdlArSZqcc="
         }
       },
       "is_incremental": false,
@@ -738,7 +762,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IRasConnectionConfiguration.html",
-          "hash": "NtoNAAUvqodv4yZmvHlqwKuWy4UdAStVjI+hVQTMut0="
+          "hash": "hlMszKyzztV0/gEJz9BJSAc3XvaAWV6r8W5MYeSjQVE="
         }
       },
       "is_incremental": false,
@@ -750,7 +774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IRegion.html",
-          "hash": "SExlp8IszZ4MgxWZnJbKNKb5FOYMCI9/jP3e7WPKpjc="
+          "hash": "roThpjYeSv4KxVSBm/Vw/E67Yv2Zwm0KYaXYd/BG5Uk="
         }
       },
       "is_incremental": false,
@@ -762,7 +786,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.ISDK.html",
-          "hash": "eV7IKTrG5E1/I9N1kKanG7FSzgyqlAaFR0F6BYfDKcw="
+          "hash": "atWgWiQMqpBvmUeWsPxHhejblMGvkdFq8b3EBDcKXxo="
         }
       },
       "is_incremental": false,
@@ -774,7 +798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IUser.html",
-          "hash": "bvCcuxm/0GaVxQm4Wlth13eG3pP3joL1I3i8ikx0cq8="
+          "hash": "H+rlC8pS/GRxHieQPYv+oWG0mtVt2DJY101yOxN2lzw="
         }
       },
       "is_incremental": false,
@@ -786,7 +810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html",
-          "hash": "LoZo50o06SvYKa0iTV33b3Tbre8SVfPcXa9CsoEerG4="
+          "hash": "BKJqHCm9FfS1Es7FDIHLpgINlUoDvRK7UpwLE/aDt48="
         }
       },
       "is_incremental": false,
@@ -798,7 +822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.html",
-          "hash": "labnBZwFOsvYEQZJMrqtpzrDuA25jc3VS2/dda+WcLM="
+          "hash": "wOg1a+PDKcYiclqYWKsTuDEdktcSMQ62sDC8bjUnY54="
         }
       },
       "is_incremental": false,
@@ -810,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.InvalidAccountException.html",
-          "hash": "VsnDw6bpRg32F+//5HS3eC3KpQrmKJ8dlb+rFfTC99I="
+          "hash": "hSX3yFMk7hAOd+HW5Ar+/q6b9GVlZdDlghgoKfQpRWc="
         }
       },
       "is_incremental": false,
@@ -822,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.InvalidConfigurationException.html",
-          "hash": "GsLQh/YW3cDDljXU2JRQ06ZEP52zFPavdbZlFM0chxc="
+          "hash": "G0dKzZY+ahDPtVGjK583R4oHGZF5sI4Jt1QMD7SWhe0="
         }
       },
       "is_incremental": false,
@@ -834,7 +858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.InvalidDoubleHopConfigurationException.html",
-          "hash": "IWAKW0iuu1ULYn2M0lULBDWd4deNWpLpNXLu3vIzQjY="
+          "hash": "QsYm2AZXMby+8W/u9dgoawBrCRBln9ryokHroGK2fY0="
         }
       },
       "is_incremental": false,
@@ -846,7 +870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.InvalidServerException.html",
-          "hash": "XXJMgukjVlLIYIWe32cBQ+uu/Ts7EV5Re+qtK9nGiMs="
+          "hash": "bjqhNCbi5M9TomWxwBsIhM6Fo/RmlvdIULLHcaXUhIM="
         }
       },
       "is_incremental": false,
@@ -858,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.NotAuthorizedException.html",
-          "hash": "xmtPig/glCIQm9HcO66OxbwXvsT8i/6Pm7vgBRINYuw="
+          "hash": "HE0gNzMsLegAoo5nIufxZxvQLCsDfwfCHVQwmY3oYf0="
         }
       },
       "is_incremental": false,
@@ -870,7 +894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.NotElevatedException.html",
-          "hash": "FZef8ecMOppXLacfe/Pg4H3dbSyimvZSxTrGY+hAr2I="
+          "hash": "wPhlNUIwvQZA7XLwbBlagd7kGNp0r9+HEKcAkV0hKiU="
         }
       },
       "is_incremental": false,
@@ -882,7 +906,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.NullLocationException.html",
-          "hash": "F4KdMlRcyMBgK23dDFLxQxwWywS0NoC2wo5+TK8Fk8c="
+          "hash": "dWz32m4manrD0aFwkkS6fKVLlwOEXLEVdKkbQ0xWV3o="
         }
       },
       "is_incremental": false,
@@ -894,7 +918,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.OAuthException.html",
-          "hash": "8qUm9JxOnMs5xhitAUnVord9ghNJNP6To6MDmZirrtY="
+          "hash": "RN+M9n3QjjlitmYASviAOw10T9dJG8bkOF38XbxWeuU="
         }
       },
       "is_incremental": false,
@@ -906,7 +930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.OpenVpnConnectionConfigurationBuilder.html",
-          "hash": "3v7Ije60VtwOD1apK9hTg3vt3ztgZPUtvQijD83W8Wk="
+          "hash": "U1v+L3RJ2W8ytiL+Sfis40b7YioLoQYsP9WBPEG7Y90="
         }
       },
       "is_incremental": false,
@@ -918,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.RasConnectionConfigurationBuilder.html",
-          "hash": "nBPQZhjsTOS+k8PSqmF+T6RRjftCQE7Iik2KCRjlKFw="
+          "hash": "xbZdZJX/AY+N3XKgmUlv5zHGZdmE1buN0RxxjSFHO7U="
         }
       },
       "is_incremental": false,
@@ -930,7 +954,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.ReconnectOnPowerEventException.html",
-          "hash": "FCJdvO1Wq0BuVcYybgw5DzJP98B3uEIv1pRvb9rNBIA="
+          "hash": "/MIbWy1+C0t1DGG46p6hsUlcIjgxjziLm85WgsOc4jo="
         }
       },
       "is_incremental": false,
@@ -942,7 +966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.SDKBuilder-1.html",
-          "hash": "sdf6UBO7V5eWV+Ze2zq/BL5K5KKNFn1Jfa6KeTS/IWY="
+          "hash": "QHgc4VYngbE3Two1pyP/v8ABgxI1M+f4aWoUwiwFP0I="
         }
       },
       "is_incremental": false,
@@ -954,7 +978,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.SDKChangeEventHandler-1.html",
-          "hash": "Sdo9popVV0FUkfZ8tuA/RiJbX5utR8a79R1rqmZB1u0="
+          "hash": "pIDGc+tp7MJ3aDUOJfApY1eMtvbOgDHGwuK0meV6S4s="
         }
       },
       "is_incremental": false,
@@ -966,7 +990,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.SDKEventHandler-1.html",
-          "hash": "e4hzLEZmT+I2btUgxvMrFSPuzRahizKobkffEsfKWWc="
+          "hash": "pcY83y6FEf8VN4gyPytApYXcBo9Kh9XQUWMMU4aCaSU="
         }
       },
       "is_incremental": false,
@@ -978,7 +1002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.SDKEventHandler.html",
-          "hash": "2ifD39Q8+EfEtSnbay6HZD+bXbYPCZtyfzA1WacNeYE="
+          "hash": "g/JyE5inWrKKwn4AzSvfES1/Dd3Or94zqZtieetFZHc="
         }
       },
       "is_incremental": false,
@@ -990,7 +1014,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.SDKOperationEventHandler-1.html",
-          "hash": "2TMyILSLiP8Meesw5lmOuqryxPlYMgm8UP1gulcoW8U="
+          "hash": "Q1w2qrEBIvbWK3mq5uM/7XWnSuGieogP4p55NMJw2Nk="
         }
       },
       "is_incremental": false,
@@ -1002,7 +1026,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.SDKOperationEventHandler.html",
-          "hash": "nHzKgNOqRh/qoBrLmheIxBnBTOQDhU4yxZHS85uUJrQ="
+          "hash": "HN80waQ0xTWi7H+6cJgYTm1sHVh67Dp6REPGBGPsx/0="
         }
       },
       "is_incremental": false,
@@ -1014,7 +1038,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.ServerListException.html",
-          "hash": "4Hb3R6SEZYJNvdLbQ4mC8MIqRuMKWr6YP7W/UrgT8no="
+          "hash": "IDiDSTFyAVg/Xbgq2FOxj6Fc6lPanK50264wT/AOnEc="
         }
       },
       "is_incremental": false,
@@ -1026,7 +1050,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.TapAdapterException.html",
-          "hash": "rKAew7hZCSrD3wHlASoue5HTPUIvXHbiEH3KIdmgo1E="
+          "hash": "CihSur/SCQL++pm0EPcVOx2/u7yq15P6gogsefqvA4Q="
         }
       },
       "is_incremental": false,
@@ -1038,7 +1062,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.UnknownErrorException.html",
-          "hash": "1Wiof8eqH7aqMjmPVTI3FObUTooOuofDnxizE3EowSU="
+          "hash": "3+FzCaVwLX9Il11/5Zpqj6/unmdkj6kyFA16NjHE530="
         }
       },
       "is_incremental": false,
@@ -1050,7 +1074,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.UnsupportedProtocolException.html",
-          "hash": "nKAJY5TWtH20wprRlWWLPdnhpKW54A6LEQld6+WMT10="
+          "hash": "5l7rV7U2mzdkm6IwU63BvVNhfskFDNH6xZ1mdqiXfYs="
         }
       },
       "is_incremental": false,
@@ -1062,7 +1086,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.VPNAuthenticationException.html",
-          "hash": "8gFX6NaFX/tlDyua7XXag61eUbYikYnkzALkHSBn5yk="
+          "hash": "4f5IOdKYxTxU/A9QoeYDuTKq9hhxMTCUHv5kECtAeOU="
         }
       },
       "is_incremental": false,
@@ -1074,7 +1098,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.VpnException.html",
-          "hash": "HZ8R7On0NHbpbDk4rsIoTyJVn+qH0unF1RV/ZAfn+kE="
+          "hash": "ruspNjXt8s54Wp2yf5gV6/xW+HE3n14rGTU9LWuK1rU="
         }
       },
       "is_incremental": false,
@@ -1086,7 +1110,19 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.VpnHostServiceException.html",
-          "hash": "uzw0xwdp0JvxEO+DQewQfGd3pDysqR4N+55Ppssm2N0="
+          "hash": "oSmzwyebvt9z1Mm9Ckxz/rD0CTpmpUHjXZgzvRTjE34="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VpnSDK.VpnHostServiceFileNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VpnSDK.VpnHostServiceFileNotFoundException.html",
+          "hash": "tmpuSyAPYqPGRvkcVK1K99D/baaKP7lSdC1M7DGT4aY="
         }
       },
       "is_incremental": false,
@@ -1098,7 +1134,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.WFPException.html",
-          "hash": "rYw4tjkisgZsgb2OSZh68tpEwy8mEl/Rn6YBN38qENM="
+          "hash": "A/64aSvcjf0+k9cNr9SHmh9/iRZObdKvVihaC11ebrU="
         }
       },
       "is_incremental": false,
@@ -1110,7 +1146,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.WireGuardAPIException.html",
-          "hash": "H0GKwWvRZhsKtSkzd0Ayg7VrDhipGVy8eK9h4lJ86vM="
+          "hash": "EmVoybvvG0jZjk5HYgjfqFLuaNsBDw1inHvy6rCGH/M="
         }
       },
       "is_incremental": false,
@@ -1122,7 +1158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.WireGuardConnectionConfigurationBuilder.html",
-          "hash": "1tO7ESOmFnO+a0XpnshdnxVHpGOFtKQm2YaI9CfM8a4="
+          "hash": "f292ZAbOzKF6lsn6RmmCKSW8UkRtNxAF7mLU1xNBUB0="
         }
       },
       "is_incremental": false,
@@ -1134,7 +1170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.html",
-          "hash": "52buOpsQz/v4h3QafweRx4mSxrD6V0ujeTIJN483m70="
+          "hash": "8eyvMh9A/+ZiIvrK3u95meW96YYjsMDT7QWunUS9I0s="
         }
       },
       "is_incremental": false,
@@ -1146,7 +1182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "3locZusBj0UUi63+Ew2xSXj3K4YOL77KyaucDUoiHxA="
+          "hash": "ZMWvlRaNPj8a6FeUz5R8O0FUFRCY7v9KZNrf8loO9kg="
         }
       },
       "is_incremental": false,
@@ -1158,7 +1194,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7nhqg7Ay+tX4eQLzi7aeq/p7EqV44FMqETIO6LTDceU="
+          "hash": "fQCbgXzkcV0XwtQEri405ISMjBqU57tOxjfFkhdjsy8="
         }
       },
       "is_incremental": false,
@@ -1382,7 +1418,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 94,
+          "total_file_count": 97,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

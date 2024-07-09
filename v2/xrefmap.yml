@@ -83,6 +83,44 @@ references:
   isSpec: "True"
   fullName: VpnSDK.APIException.Type
   nameWithType: APIException.Type
+- uid: VpnSDK.ApiTimeoutException
+  name: ApiTimeoutException
+  href: api/VpnSDK.ApiTimeoutException.html
+  commentId: T:VpnSDK.ApiTimeoutException
+  fullName: VpnSDK.ApiTimeoutException
+  nameWithType: ApiTimeoutException
+- uid: VpnSDK.ApiTimeoutException.#ctor(System.String)
+  name: ApiTimeoutException(String)
+  href: api/VpnSDK.ApiTimeoutException.html#VpnSDK_ApiTimeoutException__ctor_System_String_
+  commentId: M:VpnSDK.ApiTimeoutException.#ctor(System.String)
+  fullName: VpnSDK.ApiTimeoutException.ApiTimeoutException(System.String)
+  nameWithType: ApiTimeoutException.ApiTimeoutException(String)
+- uid: VpnSDK.ApiTimeoutException.#ctor(System.String,Exception)
+  name: ApiTimeoutException(String, Exception)
+  href: api/VpnSDK.ApiTimeoutException.html#VpnSDK_ApiTimeoutException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.ApiTimeoutException.#ctor(System.String,Exception)
+  fullName: VpnSDK.ApiTimeoutException.ApiTimeoutException(System.String, Exception)
+  nameWithType: ApiTimeoutException.ApiTimeoutException(String, Exception)
+- uid: VpnSDK.ApiTimeoutException.#ctor*
+  name: ApiTimeoutException
+  href: api/VpnSDK.ApiTimeoutException.html#VpnSDK_ApiTimeoutException__ctor_
+  commentId: Overload:VpnSDK.ApiTimeoutException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.ApiTimeoutException.ApiTimeoutException
+  nameWithType: ApiTimeoutException.ApiTimeoutException
+- uid: VpnSDK.ApiTimeoutException.Type
+  name: Type
+  href: api/VpnSDK.ApiTimeoutException.html#VpnSDK_ApiTimeoutException_Type
+  commentId: P:VpnSDK.ApiTimeoutException.Type
+  fullName: VpnSDK.ApiTimeoutException.Type
+  nameWithType: ApiTimeoutException.Type
+- uid: VpnSDK.ApiTimeoutException.Type*
+  name: Type
+  href: api/VpnSDK.ApiTimeoutException.html#VpnSDK_ApiTimeoutException_Type_
+  commentId: Overload:VpnSDK.ApiTimeoutException.Type
+  isSpec: "True"
+  fullName: VpnSDK.ApiTimeoutException.Type
+  nameWithType: ApiTimeoutException.Type
 - uid: VpnSDK.AuthenticationException
   name: AuthenticationException
   href: api/VpnSDK.AuthenticationException.html
@@ -660,6 +698,44 @@ references:
   isSpec: "True"
   fullName: VpnSDK.DnsConfigurationException.Type
   nameWithType: DnsConfigurationException.Type
+- uid: VpnSDK.DoubleHopNotAvailableException
+  name: DoubleHopNotAvailableException
+  href: api/VpnSDK.DoubleHopNotAvailableException.html
+  commentId: T:VpnSDK.DoubleHopNotAvailableException
+  fullName: VpnSDK.DoubleHopNotAvailableException
+  nameWithType: DoubleHopNotAvailableException
+- uid: VpnSDK.DoubleHopNotAvailableException.#ctor(System.String)
+  name: DoubleHopNotAvailableException(String)
+  href: api/VpnSDK.DoubleHopNotAvailableException.html#VpnSDK_DoubleHopNotAvailableException__ctor_System_String_
+  commentId: M:VpnSDK.DoubleHopNotAvailableException.#ctor(System.String)
+  fullName: VpnSDK.DoubleHopNotAvailableException.DoubleHopNotAvailableException(System.String)
+  nameWithType: DoubleHopNotAvailableException.DoubleHopNotAvailableException(String)
+- uid: VpnSDK.DoubleHopNotAvailableException.#ctor(System.String,Exception)
+  name: DoubleHopNotAvailableException(String, Exception)
+  href: api/VpnSDK.DoubleHopNotAvailableException.html#VpnSDK_DoubleHopNotAvailableException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.DoubleHopNotAvailableException.#ctor(System.String,Exception)
+  fullName: VpnSDK.DoubleHopNotAvailableException.DoubleHopNotAvailableException(System.String, Exception)
+  nameWithType: DoubleHopNotAvailableException.DoubleHopNotAvailableException(String, Exception)
+- uid: VpnSDK.DoubleHopNotAvailableException.#ctor*
+  name: DoubleHopNotAvailableException
+  href: api/VpnSDK.DoubleHopNotAvailableException.html#VpnSDK_DoubleHopNotAvailableException__ctor_
+  commentId: Overload:VpnSDK.DoubleHopNotAvailableException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.DoubleHopNotAvailableException.DoubleHopNotAvailableException
+  nameWithType: DoubleHopNotAvailableException.DoubleHopNotAvailableException
+- uid: VpnSDK.DoubleHopNotAvailableException.Type
+  name: Type
+  href: api/VpnSDK.DoubleHopNotAvailableException.html#VpnSDK_DoubleHopNotAvailableException_Type
+  commentId: P:VpnSDK.DoubleHopNotAvailableException.Type
+  fullName: VpnSDK.DoubleHopNotAvailableException.Type
+  nameWithType: DoubleHopNotAvailableException.Type
+- uid: VpnSDK.DoubleHopNotAvailableException.Type*
+  name: Type
+  href: api/VpnSDK.DoubleHopNotAvailableException.html#VpnSDK_DoubleHopNotAvailableException_Type_
+  commentId: Overload:VpnSDK.DoubleHopNotAvailableException.Type
+  isSpec: "True"
+  fullName: VpnSDK.DoubleHopNotAvailableException.Type
+  nameWithType: DoubleHopNotAvailableException.Type
 - uid: VpnSDK.DTO
   name: VpnSDK.DTO
   href: api/VpnSDK.DTO.html
@@ -1046,6 +1122,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.DTO.OpenVpnConfiguration.OpenVpnDirectory
   nameWithType: OpenVpnConfiguration.OpenVpnDirectory
+- uid: VpnSDK.DTO.OpenVpnConfiguration.OpenVpnDriverDirectory
+  name: OpenVpnDriverDirectory
+  href: api/VpnSDK.DTO.OpenVpnConfiguration.html#VpnSDK_DTO_OpenVpnConfiguration_OpenVpnDriverDirectory
+  commentId: P:VpnSDK.DTO.OpenVpnConfiguration.OpenVpnDriverDirectory
+  fullName: VpnSDK.DTO.OpenVpnConfiguration.OpenVpnDriverDirectory
+  nameWithType: OpenVpnConfiguration.OpenVpnDriverDirectory
+- uid: VpnSDK.DTO.OpenVpnConfiguration.OpenVpnDriverDirectory*
+  name: OpenVpnDriverDirectory
+  href: api/VpnSDK.DTO.OpenVpnConfiguration.html#VpnSDK_DTO_OpenVpnConfiguration_OpenVpnDriverDirectory_
+  commentId: Overload:VpnSDK.DTO.OpenVpnConfiguration.OpenVpnDriverDirectory
+  isSpec: "True"
+  fullName: VpnSDK.DTO.OpenVpnConfiguration.OpenVpnDriverDirectory
+  nameWithType: OpenVpnConfiguration.OpenVpnDriverDirectory
 - uid: VpnSDK.DTO.OpenVpnConfiguration.OpenVpnExecutableFileName
   name: OpenVpnExecutableFileName
   href: api/VpnSDK.DTO.OpenVpnConfiguration.html#VpnSDK_DTO_OpenVpnConfiguration_OpenVpnExecutableFileName
@@ -1465,6 +1554,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.ApiOAuthError
   fullName: VpnSDK.Enums.ErrorType.ApiOAuthError
   nameWithType: ErrorType.ApiOAuthError
+- uid: VpnSDK.Enums.ErrorType.ApiTimeout
+  name: ApiTimeout
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_ApiTimeout
+  commentId: F:VpnSDK.Enums.ErrorType.ApiTimeout
+  fullName: VpnSDK.Enums.ErrorType.ApiTimeout
+  nameWithType: ErrorType.ApiTimeout
 - uid: VpnSDK.Enums.ErrorType.CoreInvalidConfiguration
   name: CoreInvalidConfiguration
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_CoreInvalidConfiguration
@@ -1489,6 +1584,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.DnsConfigurationError
   fullName: VpnSDK.Enums.ErrorType.DnsConfigurationError
   nameWithType: ErrorType.DnsConfigurationError
+- uid: VpnSDK.Enums.ErrorType.DoublehopNotAvailable
+  name: DoublehopNotAvailable
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_DoublehopNotAvailable
+  commentId: F:VpnSDK.Enums.ErrorType.DoublehopNotAvailable
+  fullName: VpnSDK.Enums.ErrorType.DoublehopNotAvailable
+  nameWithType: ErrorType.DoublehopNotAvailable
 - uid: VpnSDK.Enums.ErrorType.InvalidAccountError
   name: InvalidAccountError
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_InvalidAccountError
@@ -1525,6 +1626,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.ServerListError
   fullName: VpnSDK.Enums.ErrorType.ServerListError
   nameWithType: ErrorType.ServerListError
+- uid: VpnSDK.Enums.ErrorType.ServerUnhealthy
+  name: ServerUnhealthy
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_ServerUnhealthy
+  commentId: F:VpnSDK.Enums.ErrorType.ServerUnhealthy
+  fullName: VpnSDK.Enums.ErrorType.ServerUnhealthy
+  nameWithType: ErrorType.ServerUnhealthy
 - uid: VpnSDK.Enums.ErrorType.TAPAdapterError
   name: TAPAdapterError
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_TAPAdapterError
@@ -1561,6 +1668,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.VpnConnectionUnexpectedlyDisconnected
   fullName: VpnSDK.Enums.ErrorType.VpnConnectionUnexpectedlyDisconnected
   nameWithType: ErrorType.VpnConnectionUnexpectedlyDisconnected
+- uid: VpnSDK.Enums.ErrorType.VpnHostServiceFileNotFound
+  name: VpnHostServiceFileNotFound
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_VpnHostServiceFileNotFound
+  commentId: F:VpnSDK.Enums.ErrorType.VpnHostServiceFileNotFound
+  fullName: VpnSDK.Enums.ErrorType.VpnHostServiceFileNotFound
+  nameWithType: ErrorType.VpnHostServiceFileNotFound
 - uid: VpnSDK.Enums.ErrorType.VpnLocationIsNull
   name: VpnLocationIsNull
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_VpnLocationIsNull
@@ -2512,6 +2625,12 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.AvailableProtocols
   nameWithType: ISDK.AvailableProtocols
+- uid: VpnSDK.Interfaces.ISDK.BeforeConnectionStateFiltersApplied
+  name: BeforeConnectionStateFiltersApplied
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_BeforeConnectionStateFiltersApplied
+  commentId: E:VpnSDK.Interfaces.ISDK.BeforeConnectionStateFiltersApplied
+  fullName: VpnSDK.Interfaces.ISDK.BeforeConnectionStateFiltersApplied
+  nameWithType: ISDK.BeforeConnectionStateFiltersApplied
 - uid: VpnSDK.Interfaces.ISDK.BrandingInfo
   name: BrandingInfo
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_BrandingInfo
@@ -2687,6 +2806,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.GetAccountMetadata
   nameWithType: ISDK.GetAccountMetadata
+- uid: VpnSDK.Interfaces.ISDK.GetActiveVpnConnectionName
+  name: GetActiveVpnConnectionName()
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetActiveVpnConnectionName
+  commentId: M:VpnSDK.Interfaces.ISDK.GetActiveVpnConnectionName
+  fullName: VpnSDK.Interfaces.ISDK.GetActiveVpnConnectionName()
+  nameWithType: ISDK.GetActiveVpnConnectionName()
+- uid: VpnSDK.Interfaces.ISDK.GetActiveVpnConnectionName*
+  name: GetActiveVpnConnectionName
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetActiveVpnConnectionName_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.GetActiveVpnConnectionName
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.GetActiveVpnConnectionName
+  nameWithType: ISDK.GetActiveVpnConnectionName
 - uid: VpnSDK.Interfaces.ISDK.GetBrandingInfo(System.String)
   name: GetBrandingInfo(String)
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetBrandingInfo_System_String_
@@ -3848,6 +3980,23 @@ references:
   fullName.vb: VpnSDK.SDKBuilder(Of T).SetBuildMockup
   nameWithType: SDKBuilder<T>.SetBuildMockup
   nameWithType.vb: SDKBuilder(Of T).SetBuildMockup
+- uid: VpnSDK.SDKBuilder`1.SetCalloutDriverName(System.String)
+  name: SetCalloutDriverName(String)
+  href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetCalloutDriverName_System_String_
+  commentId: M:VpnSDK.SDKBuilder`1.SetCalloutDriverName(System.String)
+  fullName: VpnSDK.SDKBuilder<T>.SetCalloutDriverName(System.String)
+  fullName.vb: VpnSDK.SDKBuilder(Of T).SetCalloutDriverName(System.String)
+  nameWithType: SDKBuilder<T>.SetCalloutDriverName(String)
+  nameWithType.vb: SDKBuilder(Of T).SetCalloutDriverName(String)
+- uid: VpnSDK.SDKBuilder`1.SetCalloutDriverName*
+  name: SetCalloutDriverName
+  href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetCalloutDriverName_
+  commentId: Overload:VpnSDK.SDKBuilder`1.SetCalloutDriverName
+  isSpec: "True"
+  fullName: VpnSDK.SDKBuilder<T>.SetCalloutDriverName
+  fullName.vb: VpnSDK.SDKBuilder(Of T).SetCalloutDriverName
+  nameWithType: SDKBuilder<T>.SetCalloutDriverName
+  nameWithType.vb: SDKBuilder(Of T).SetCalloutDriverName
 - uid: VpnSDK.SDKBuilder`1.SetOpenVpnConfiguration(OpenVpnConfiguration)
   name: SetOpenVpnConfiguration(OpenVpnConfiguration)
   href: api/VpnSDK.SDKBuilder-1.html#VpnSDK_SDKBuilder_1_SetOpenVpnConfiguration_OpenVpnConfiguration_
@@ -4277,6 +4426,44 @@ references:
   isSpec: "True"
   fullName: VpnSDK.VpnHostServiceException.Type
   nameWithType: VpnHostServiceException.Type
+- uid: VpnSDK.VpnHostServiceFileNotFoundException
+  name: VpnHostServiceFileNotFoundException
+  href: api/VpnSDK.VpnHostServiceFileNotFoundException.html
+  commentId: T:VpnSDK.VpnHostServiceFileNotFoundException
+  fullName: VpnSDK.VpnHostServiceFileNotFoundException
+  nameWithType: VpnHostServiceFileNotFoundException
+- uid: VpnSDK.VpnHostServiceFileNotFoundException.#ctor(System.String)
+  name: VpnHostServiceFileNotFoundException(String)
+  href: api/VpnSDK.VpnHostServiceFileNotFoundException.html#VpnSDK_VpnHostServiceFileNotFoundException__ctor_System_String_
+  commentId: M:VpnSDK.VpnHostServiceFileNotFoundException.#ctor(System.String)
+  fullName: VpnSDK.VpnHostServiceFileNotFoundException.VpnHostServiceFileNotFoundException(System.String)
+  nameWithType: VpnHostServiceFileNotFoundException.VpnHostServiceFileNotFoundException(String)
+- uid: VpnSDK.VpnHostServiceFileNotFoundException.#ctor(System.String,Exception)
+  name: VpnHostServiceFileNotFoundException(String, Exception)
+  href: api/VpnSDK.VpnHostServiceFileNotFoundException.html#VpnSDK_VpnHostServiceFileNotFoundException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.VpnHostServiceFileNotFoundException.#ctor(System.String,Exception)
+  fullName: VpnSDK.VpnHostServiceFileNotFoundException.VpnHostServiceFileNotFoundException(System.String, Exception)
+  nameWithType: VpnHostServiceFileNotFoundException.VpnHostServiceFileNotFoundException(String, Exception)
+- uid: VpnSDK.VpnHostServiceFileNotFoundException.#ctor*
+  name: VpnHostServiceFileNotFoundException
+  href: api/VpnSDK.VpnHostServiceFileNotFoundException.html#VpnSDK_VpnHostServiceFileNotFoundException__ctor_
+  commentId: Overload:VpnSDK.VpnHostServiceFileNotFoundException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.VpnHostServiceFileNotFoundException.VpnHostServiceFileNotFoundException
+  nameWithType: VpnHostServiceFileNotFoundException.VpnHostServiceFileNotFoundException
+- uid: VpnSDK.VpnHostServiceFileNotFoundException.Type
+  name: Type
+  href: api/VpnSDK.VpnHostServiceFileNotFoundException.html#VpnSDK_VpnHostServiceFileNotFoundException_Type
+  commentId: P:VpnSDK.VpnHostServiceFileNotFoundException.Type
+  fullName: VpnSDK.VpnHostServiceFileNotFoundException.Type
+  nameWithType: VpnHostServiceFileNotFoundException.Type
+- uid: VpnSDK.VpnHostServiceFileNotFoundException.Type*
+  name: Type
+  href: api/VpnSDK.VpnHostServiceFileNotFoundException.html#VpnSDK_VpnHostServiceFileNotFoundException_Type_
+  commentId: Overload:VpnSDK.VpnHostServiceFileNotFoundException.Type
+  isSpec: "True"
+  fullName: VpnSDK.VpnHostServiceFileNotFoundException.Type
+  nameWithType: VpnHostServiceFileNotFoundException.Type
 - uid: VpnSDK.WFPException
   name: WFPException
   href: api/VpnSDK.WFPException.html

@@ -103,6 +103,9 @@
                             <a href="VpnSDK.APIException.html" title="APIException" class="">APIException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.ApiTimeoutException.html" title="ApiTimeoutException" class="">ApiTimeoutException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.AuthenticationException.html" title="AuthenticationException" class="">AuthenticationException</a>
                           </li>
                           <li class="">
@@ -128,6 +131,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.DnsConfigurationException.html" title="DnsConfigurationException" class="">DnsConfigurationException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.DoubleHopNotAvailableException.html" title="DoubleHopNotAvailableException" class="">DoubleHopNotAvailableException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.EmptyAvailableVpnProtocolsException.html" title="EmptyAvailableVpnProtocolsException" class="">EmptyAvailableVpnProtocolsException</a>
@@ -209,6 +215,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.VpnHostServiceException.html" title="VpnHostServiceException" class="">VpnHostServiceException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.VpnHostServiceFileNotFoundException.html" title="VpnHostServiceFileNotFoundException" class="">VpnHostServiceFileNotFoundException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.WFPException.html" title="WFPException" class="">WFPException</a>
@@ -417,7 +426,7 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">SDKBuilder&lt;T&gt;</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.html">VpnSDK</a></h6>
@@ -494,7 +503,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><span class="xref">System.String</span>[]</td>
         <td><span class="parametername">value</span></td>
         <td><p>The API base URLs.</p>
 </td>
@@ -539,7 +548,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>the API key.</p>
 </td>
@@ -584,7 +593,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value.</p>
 </td>
@@ -629,7 +638,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value.</p>
 </td>
@@ -674,7 +683,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">automaticallyRefresh</span></td>
         <td><p>If set to true, SDK will automatically update OAuth Refresh Token.</p>
 </td>
@@ -720,7 +729,7 @@ If this value specified, you have to use <a class="xref" href="VpnSDK.Interfaces
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>the branding key.</p>
 </td>
@@ -764,7 +773,7 @@ If this value specified, you have to use <a class="xref" href="VpnSDK.Interfaces
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
@@ -782,6 +791,51 @@ If this value specified, you have to use <a class="xref" href="VpnSDK.Interfaces
       <tr>
         <td><a class="xref" href="VpnSDK.SDKBuilder-1.html">SDKBuilder</a>&lt;T&gt;</td>
         <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_SDKBuilder_1_SetCalloutDriverName_" data-uid="VpnSDK.SDKBuilder`1.SetCalloutDriverName*"></a>
+  <h4 id="VpnSDK_SDKBuilder_1_SetCalloutDriverName_System_String_" data-uid="VpnSDK.SDKBuilder`1.SetCalloutDriverName(System.String)">SetCalloutDriverName(String)</h4>
+  <div class="markdown level1 summary"><p>Sets the callout driver service name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SDKBuilder&lt;T&gt; SetCalloutDriverName(string calloutDriverName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">calloutDriverName</span></td>
+        <td><p>The callout driver service name.The maximum string length is 256 characters. Allowed characters are &quot;a-z&quot;, &quot;A-Z&quot;, &quot;0-9&quot;, &quot;_&quot;, and &quot;-&quot;. The service name case is preserved, but service name comparisons are always case insensitive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.SDKBuilder-1.html">SDKBuilder</a>&lt;T&gt;</td>
+        <td><p>a builder instance.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -897,7 +951,7 @@ If this value specified, you have to use <a class="xref" href="VpnSDK.Interfaces
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">runInUserspace</span></td>
         <td><p>True if you want SDK to run in user space.</p>
 </td>
@@ -942,7 +996,7 @@ If this value specified, you have to use <a class="xref" href="VpnSDK.Interfaces
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">TimeSpan</span>&gt;</td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">TimeSpan</span>&gt;</td>
         <td><span class="parametername">time</span></td>
         <td><p>Time interval.</p>
 </td>
@@ -1032,7 +1086,7 @@ If this value specified, you have to use <a class="xref" href="VpnSDK.Interfaces
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">useTokenAuthentication</span></td>
         <td><p>True means token based authentication will be performed otherwise user credentials will be used.</p>
 </td>
