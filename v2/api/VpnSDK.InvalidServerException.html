@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IUser
+    <title>Class InvalidServerException
    | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IUser
+    <meta name="title" content="Class InvalidServerException
    | VpnSDK v2 - WLVPN .NET Framework SDK ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -153,8 +153,8 @@
                           <li class="">
                             <a href="VpnSDK.InvalidDoubleHopConfigurationException.html" title="InvalidDoubleHopConfigurationException" class="">InvalidDoubleHopConfigurationException</a>
                           </li>
-                          <li class="">
-                            <a href="VpnSDK.InvalidServerException.html" title="InvalidServerException" class="">InvalidServerException</a>
+                          <li class="active">
+                            <a href="VpnSDK.InvalidServerException.html" title="InvalidServerException" class="active">InvalidServerException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.NotAuthorizedException.html" title="NotAuthorizedException" class="">NotAuthorizedException</a>
@@ -402,8 +402,8 @@
                           <li class="">
                             <a href="VpnSDK.Interfaces.ISDK.html" title="ISDK" class="">ISDK</a>
                           </li>
-                          <li class="active">
-                            <a href="VpnSDK.Interfaces.IUser.html" title="IUser" class="active">IUser</a>
+                          <li class="">
+                            <a href="VpnSDK.Interfaces.IUser.html" title="IUser" class="">IUser</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html" title="IWireGuardConnectionConfiguration" class="">IWireGuardConnectionConfiguration</a>
@@ -416,32 +416,105 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VpnSDK.Interfaces.IUser">
+            <article class="content wrap" id="_content" data-uid="VpnSDK.InvalidServerException">
   
   
-  <h1 id="VpnSDK_Interfaces_IUser" data-uid="VpnSDK.Interfaces.IUser" class="text-break">Interface IUser
+  <h1 id="VpnSDK_InvalidServerException" data-uid="VpnSDK.InvalidServerException" class="text-break">Class InvalidServerException
   </h1>
-  <div class="markdown level0 summary"><p>Interface IUser. Provides an interface for API users/customers.</p>
+  <div class="markdown level0 summary"><p>Represents an exception thrown when an invalid server error occurs.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.Interfaces.html">VpnSDK.Interfaces</a></h6>
-  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="VpnSDK_Interfaces_IUser_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IUser : INotifyPropertyChanged</code></pre>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="VpnSDK.BaseSDKException.html">BaseSDKException</a></div>
+    <div class="level2"><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></div>
+    <div class="level3"><span class="xref">InvalidServerException</span></div>
   </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.html">VpnSDK</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="VpnSDK_InvalidServerException_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InvalidServerException : HTTPException</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="VpnSDK_InvalidServerException__ctor_" data-uid="VpnSDK.InvalidServerException.#ctor*"></a>
+  <h4 id="VpnSDK_InvalidServerException__ctor_System_String_" data-uid="VpnSDK.InvalidServerException.#ctor(System.String)">InvalidServerException(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.InvalidServerException.html">InvalidServerException</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InvalidServerException(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to pass to the calling code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_InvalidServerException__ctor_" data-uid="VpnSDK.InvalidServerException.#ctor*"></a>
+  <h4 id="VpnSDK_InvalidServerException__ctor_System_String_Exception_" data-uid="VpnSDK.InvalidServerException.#ctor(System.String,Exception)">InvalidServerException(String, Exception)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.InvalidServerException.html">InvalidServerException</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InvalidServerException(string message, Exception inner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to pass to the calling code.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">inner</span></td>
+        <td><p>The exception that we are passing up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="VpnSDK_Interfaces_IUser_AccessToken_" data-uid="VpnSDK.Interfaces.IUser.AccessToken*"></a>
-  <h4 id="VpnSDK_Interfaces_IUser_AccessToken" data-uid="VpnSDK.Interfaces.IUser.AccessToken">AccessToken</h4>
-  <div class="markdown level1 summary"><p>Gets the access token.</p>
+  <a id="VpnSDK_InvalidServerException_Type_" data-uid="VpnSDK.InvalidServerException.Type*"></a>
+  <h4 id="VpnSDK_InvalidServerException_Type" data-uid="VpnSDK.InvalidServerException.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the error type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string AccessToken { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override ErrorType Type { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -453,198 +526,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="VpnSDK_Interfaces_IUser_AccessTokenExpiry_" data-uid="VpnSDK.Interfaces.IUser.AccessTokenExpiry*"></a>
-  <h4 id="VpnSDK_Interfaces_IUser_AccessTokenExpiry" data-uid="VpnSDK.Interfaces.IUser.AccessTokenExpiry">AccessTokenExpiry</h4>
-  <div class="markdown level1 summary"><p>Gets the UTC time when the access token expires, or null if no access token is currently set.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">DateTime? AccessTokenExpiry { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="VpnSDK_Interfaces_IUser_EmailAddress_" data-uid="VpnSDK.Interfaces.IUser.EmailAddress*"></a>
-  <h4 id="VpnSDK_Interfaces_IUser_EmailAddress" data-uid="VpnSDK.Interfaces.IUser.EmailAddress">EmailAddress</h4>
-  <div class="markdown level1 summary"><p>Gets the email address provided by the API. This will be set to null if third-party authentication is used.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string EmailAddress { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The email address.</p>
+        <td><span class="xref">ErrorType</span></td>
+        <td><p>The error type.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="VpnSDK_Interfaces_IUser_IsValid_" data-uid="VpnSDK.Interfaces.IUser.IsValid*"></a>
-  <h4 id="VpnSDK_Interfaces_IUser_IsValid" data-uid="VpnSDK.Interfaces.IUser.IsValid">IsValid</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether returns true if the user object is valid.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsValid { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if this instance is valid; otherwise, <code>false</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="VpnSDK_Interfaces_IUser_RefreshToken_" data-uid="VpnSDK.Interfaces.IUser.RefreshToken*"></a>
-  <h4 id="VpnSDK_Interfaces_IUser_RefreshToken" data-uid="VpnSDK.Interfaces.IUser.RefreshToken">RefreshToken</h4>
-  <div class="markdown level1 summary"><p>Gets the refresh token.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string RefreshToken { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="VpnSDK_Interfaces_IUser_Status_" data-uid="VpnSDK.Interfaces.IUser.Status*"></a>
-  <h4 id="VpnSDK_Interfaces_IUser_Status" data-uid="VpnSDK.Interfaces.IUser.Status">Status</h4>
-  <div class="markdown level1 summary"><p>Gets the current account status.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">AccountStatus Status { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">AccountStatus</span></td>
-        <td><p>The status.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="VpnSDK_Interfaces_IUser_SubscriptionExpiry_" data-uid="VpnSDK.Interfaces.IUser.SubscriptionExpiry*"></a>
-  <h4 id="VpnSDK_Interfaces_IUser_SubscriptionExpiry" data-uid="VpnSDK.Interfaces.IUser.SubscriptionExpiry">SubscriptionExpiry</h4>
-  <div class="markdown level1 summary"><p>Gets the subscription expiry date if known.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">DateTime? SubscriptionExpiry { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
-        <td><p>The subscription expiry.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="VpnSDK_Interfaces_IUser_VpnCredential_" data-uid="VpnSDK.Interfaces.IUser.VpnCredential*"></a>
-  <h4 id="VpnSDK_Interfaces_IUser_VpnCredential" data-uid="VpnSDK.Interfaces.IUser.VpnCredential">VpnCredential</h4>
-  <div class="markdown level1 summary"><p>Gets the VPN server credential.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">NetworkCredential VpnCredential { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">NetworkCredential</span></td>
-        <td><p>The VPN credential.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VpnSDK.BaseSDKException.html#VpnSDK_BaseSDKException_Type">BaseSDKException.Type</a></div>
 </article>
           </div>
           

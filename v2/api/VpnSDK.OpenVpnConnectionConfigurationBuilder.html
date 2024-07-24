@@ -103,6 +103,9 @@
                             <a href="VpnSDK.APIException.html" title="APIException" class="">APIException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.ApiTimeoutException.html" title="ApiTimeoutException" class="">ApiTimeoutException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.AuthenticationException.html" title="AuthenticationException" class="">AuthenticationException</a>
                           </li>
                           <li class="">
@@ -110,6 +113,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.ConnectionAlreadyEstablishedException.html" title="ConnectionAlreadyEstablishedException" class="">ConnectionAlreadyEstablishedException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.ConnectionConfigurationBuilderBase.html" title="ConnectionConfigurationBuilderBase" class="">ConnectionConfigurationBuilderBase</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.ConnectionException.html" title="ConnectionException" class="">ConnectionException</a>
@@ -127,6 +133,9 @@
                             <a href="VpnSDK.DnsConfigurationException.html" title="DnsConfigurationException" class="">DnsConfigurationException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.DoubleHopNotAvailableException.html" title="DoubleHopNotAvailableException" class="">DoubleHopNotAvailableException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.EmptyAvailableVpnProtocolsException.html" title="EmptyAvailableVpnProtocolsException" class="">EmptyAvailableVpnProtocolsException</a>
                           </li>
                           <li class="">
@@ -136,7 +145,16 @@
                             <a href="VpnSDK.HTTPException.html" title="HTTPException" class="">HTTPException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.InvalidAccountException.html" title="InvalidAccountException" class="">InvalidAccountException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.InvalidConfigurationException.html" title="InvalidConfigurationException" class="">InvalidConfigurationException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.InvalidDoubleHopConfigurationException.html" title="InvalidDoubleHopConfigurationException" class="">InvalidDoubleHopConfigurationException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.InvalidServerException.html" title="InvalidServerException" class="">InvalidServerException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.NotAuthorizedException.html" title="NotAuthorizedException" class="">NotAuthorizedException</a>
@@ -197,6 +215,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.VpnHostServiceException.html" title="VpnHostServiceException" class="">VpnHostServiceException</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.VpnHostServiceFileNotFoundException.html" title="VpnHostServiceFileNotFoundException" class="">VpnHostServiceFileNotFoundException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.WFPException.html" title="WFPException" class="">WFPException</a>
@@ -292,6 +313,9 @@
                             <a href="VpnSDK.Enums.DriverInstallResult.html" title="DriverInstallResult" class="">DriverInstallResult</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Enums.DriverUninstallResult.html" title="DriverUninstallResult" class="">DriverUninstallResult</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Enums.ErrorType.html" title="ErrorType" class="">ErrorType</a>
                           </li>
                           <li class="">
@@ -361,6 +385,9 @@
                             <a href="VpnSDK.Interfaces.IConnectionInfo.html" title="IConnectionInfo" class="">IConnectionInfo</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.Interfaces.IDoubleHopConfiguration.html" title="IDoubleHopConfiguration" class="">IDoubleHopConfiguration</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.Interfaces.ILocation.html" title="ILocation" class="">ILocation</a>
                           </li>
                           <li class="">
@@ -399,14 +426,30 @@
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">OpenVpnConnectionConfigurationBuilder</span></div>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="VpnSDK.ConnectionConfigurationBuilderBase.html">ConnectionConfigurationBuilderBase</a></div>
+    <div class="level2"><span class="xref">OpenVpnConnectionConfigurationBuilder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="VpnSDK.ConnectionConfigurationBuilderBase.html#VpnSDK_ConnectionConfigurationBuilderBase_IsDoubleHopEnabled">ConnectionConfigurationBuilderBase.IsDoubleHopEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.ConnectionConfigurationBuilderBase.html#VpnSDK_ConnectionConfigurationBuilderBase_EntryLocation">ConnectionConfigurationBuilderBase.EntryLocation</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.ConnectionConfigurationBuilderBase.html#VpnSDK_ConnectionConfigurationBuilderBase_ExitLocation">ConnectionConfigurationBuilderBase.ExitLocation</a>
+    </div>
+    <div>
+      <a class="xref" href="VpnSDK.ConnectionConfigurationBuilderBase.html#VpnSDK_ConnectionConfigurationBuilderBase_Validate">ConnectionConfigurationBuilderBase.Validate()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.html">VpnSDK</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="VpnSDK_OpenVpnConnectionConfigurationBuilder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OpenVpnConnectionConfigurationBuilder</code></pre>
+    <pre><code class="lang-csharp hljs">public class OpenVpnConnectionConfigurationBuilder : ConnectionConfigurationBuilderBase</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -484,6 +527,63 @@
   </table>
   
   
+  <a id="VpnSDK_OpenVpnConnectionConfigurationBuilder_SetDoubleHopSettings_" data-uid="VpnSDK.OpenVpnConnectionConfigurationBuilder.SetDoubleHopSettings*"></a>
+  <h4 id="VpnSDK_OpenVpnConnectionConfigurationBuilder_SetDoubleHopSettings_System_Boolean_ILocation_ILocation_" data-uid="VpnSDK.OpenVpnConnectionConfigurationBuilder.SetDoubleHopSettings(System.Boolean,ILocation,ILocation)">SetDoubleHopSettings(Boolean, ILocation, ILocation)</h4>
+  <div class="markdown level1 summary"><p>Sets the double hop settings for the OpenVPN connection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OpenVpnConnectionConfigurationBuilder SetDoubleHopSettings(bool isEnabled, ILocation entryLocation, ILocation exitLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isEnabled</span></td>
+        <td><p>A boolean indicating whether double hop is enabled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILocation</span></td>
+        <td><span class="parametername">entryLocation</span></td>
+        <td><p>The entry location for double hop.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILocation</span></td>
+        <td><span class="parametername">exitLocation</span></td>
+        <td><p>The exit location for double hop.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.OpenVpnConnectionConfigurationBuilder.html">OpenVpnConnectionConfigurationBuilder</a></td>
+        <td><p>The OpenVpnConnectionConfigurationBuilder for method chaining.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_OpenVpnConnectionConfigurationBuilder_SetNetworkProtocol_" data-uid="VpnSDK.OpenVpnConnectionConfigurationBuilder.SetNetworkProtocol*"></a>
   <h4 id="VpnSDK_OpenVpnConnectionConfigurationBuilder_SetNetworkProtocol_NetworkProtocolType_" data-uid="VpnSDK.OpenVpnConnectionConfigurationBuilder.SetNetworkProtocol(NetworkProtocolType)">SetNetworkProtocol(NetworkProtocolType)</h4>
   <div class="markdown level1 summary"><p>Sets the network protocol.</p>
@@ -549,7 +649,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="xref">System.UInt16</span></td>
         <td><span class="parametername">port</span></td>
         <td><p>The port.</p>
 </td>
@@ -594,7 +694,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">scramble</span></td>
         <td><p>if set to <code>true</code> traffic scrambling is enabled.</p>
 </td>
