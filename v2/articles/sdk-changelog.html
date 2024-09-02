@@ -132,6 +132,13 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="vpnsdk-changelog">VpnSDK Changelog</h1>
 
+<h2 id="v2242">v2.2.42</h2>
+<h3 id="bug-fixes">Bug fixes</h3>
+<ol>
+<li>Fixed an issue where the SDK used an incorrect port for WireGuard protocol connections in certain edge cases.</li>
+<li>Addressed an issue where double-hop connections with OpenVPN failed if the OpenVPN TAP adapter was not installed during SDK initialization.</li>
+<li>Updated the external VPN check code to also detect Ethernet adapters.</li>
+</ol>
 <h2 id="v2240">v2.2.40</h2>
 <h3 id="features">Features</h3>
 <ol>
@@ -192,7 +199,7 @@ while setting up the SDK.</li>
 </ul>
 </li>
 </ol>
-<h3 id="bug-fixes">Bug fixes</h3>
+<h3 id="bug-fixes-1">Bug fixes</h3>
 <ol>
 <li>Fixed an issue where WireGuard remained connected after manually killing VpnHostService.exe.</li>
 <li>The SDK now includes automatic retry logic to connect to the next server if the current one is detected as unhealthy, improving server failover handling.</li>
@@ -211,7 +218,7 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>Added new methods for stopping and uninstalling the split tunnel driver service.</li>
 <li>Removed the logging of DNS requests unless Debug Mode is enabled.</li>
 </ol>
-<h3 id="bug-fixes-1">Bug fixes</h3>
+<h3 id="bug-fixes-2">Bug fixes</h3>
 <ol>
 <li>Fixed an issue where some network filters failed to clear correctly following an abrupt SDK termination.</li>
 <li>Fixed a minor issue when disconnecting the SDK when domain based split tunneling is active.</li>
@@ -225,7 +232,7 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>Added the ability to set a custom description for the OpenVPN TAP adapter.</li>
 <li>The Split Tunneling drivers are now WHQL certified for compatibility and stability.</li>
 </ol>
-<h3 id="bug-fixes-2">Bug fixes</h3>
+<h3 id="bug-fixes-3">Bug fixes</h3>
 <ol>
 <li>Resolved a crash triggered during the loading of our SDK in C++ CLR.</li>
 </ol>
@@ -241,12 +248,12 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>Implemented the option to allow or block local network interfaces while connected to a VPN server. </li>
 <li>Upgraded OpenVPN to version 2.6.4, ensuring the latest security enhancements and performance improvements are available to our users.</li>
 </ol>
-<h3 id="bug-fixes-3">Bug fixes</h3>
+<h3 id="bug-fixes-4">Bug fixes</h3>
 <ol>
 <li>Addressed and resolved several bugs to enhance the overall stability and reliability of the SDK.</li>
 </ol>
 <h2 id="v2228">v2.2.28</h2>
-<h3 id="bug-fixes-4">Bug fixes</h3>
+<h3 id="bug-fixes-5">Bug fixes</h3>
 <ol>
 <li>Fixed Kill switch issues with WireGuard on .NETCore app.</li>
 </ol>
@@ -261,12 +268,12 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>Removed support for the legacy insecure protocols L2TP, SSTP and PPTP.</li>
 </ol>
 <h2 id="v2225">v2.2.25</h2>
-<h3 id="bug-fixes-5">Bug fixes</h3>
+<h3 id="bug-fixes-6">Bug fixes</h3>
 <ol>
 <li>Fixed OpenVPN&#39;s TAP adapter installation issues</li>
 </ol>
 <h2 id="v2224">v2.2.24</h2>
-<h3 id="bug-fixes-6">Bug fixes</h3>
+<h3 id="bug-fixes-7">Bug fixes</h3>
 <ol>
 <li>Fixed an issue with the locations collection update.</li>
 <li>Fixed an issue where SDK threw a security exception on initialization when running under non-elevated process.</li>
@@ -280,7 +287,7 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>Added a new event <code>LocationsRefreshStatusChanged</code> to ISDK. It returns a <code>RefreshLocationListStatus</code> on <code>ISDK.Locations</code> list update.</li>
 <li>Added a mechanism to enable TLS 1.2 for Windows 7 if it was disabled.</li>
 </ol>
-<h3 id="bug-fixes-7">Bug fixes</h3>
+<h3 id="bug-fixes-8">Bug fixes</h3>
 <ol>
 <li>Fixed an issue where servers in maintenance mode were included in the locations list.</li>
 <li>Fixed an issue with the RAS connection disposing.</li>
@@ -303,7 +310,7 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 (b) If the cache had not expired</li>
 <li>RefreshServerInfo() allows the server list to explicitly refresh if required. It now has a cool down of 5 minutes.</li>
 </ol>
-<h3 id="bug-fixes-8">Bug fixes</h3>
+<h3 id="bug-fixes-9">Bug fixes</h3>
 <ol>
 <li>Fix to recreate RAS phonebook entries. This is in the event these entries are deleted</li>
 </ol>
@@ -319,7 +326,7 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>Added <code>IsElevated</code> property to <code>ISDK</code> interface. That property indicates if the running process is elevated or not. </li>
 </ul>
 <h2 id="v2030">v2.0.30</h2>
-<h3 id="bug-fixes-9">Bug fixes</h3>
+<h3 id="bug-fixes-10">Bug fixes</h3>
 <ul>
 <li>Internal references update.</li>
 <li>API requests logging improved.</li>
@@ -331,7 +338,7 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>For RAS type of connections, set a new metric via DotRas, rather than doing interop.</li>
 </ul>
 <h2 id="v2023">v2.0.23</h2>
-<h3 id="bug-fixes-10">Bug fixes</h3>
+<h3 id="bug-fixes-11">Bug fixes</h3>
 <ul>
 <li>Fixed the issue with reading exitcode of OpenVPN process that is not exited yet.</li>
 <li>Throw login exceptions correctly.</li>
