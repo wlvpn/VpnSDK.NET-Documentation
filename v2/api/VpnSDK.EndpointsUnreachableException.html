@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Delegate SDKOperationEventHandler&lt;T&gt;
+    <title>Class EndpointsUnreachableException
    | VpnSDK v2 - WLVPN .NET Framework SDK </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Delegate SDKOperationEventHandler&lt;T&gt;
+    <meta name="title" content="Class EndpointsUnreachableException
    | VpnSDK v2 - WLVPN .NET Framework SDK ">
     <meta name="generator" content="docfx 2.58.0.0">
     
@@ -141,8 +141,8 @@
                           <li class="">
                             <a href="VpnSDK.EmptyAvailableVpnProtocolsException.html" title="EmptyAvailableVpnProtocolsException" class="">EmptyAvailableVpnProtocolsException</a>
                           </li>
-                          <li class="">
-                            <a href="VpnSDK.EndpointsUnreachableException.html" title="EndpointsUnreachableException" class="">EndpointsUnreachableException</a>
+                          <li class="active">
+                            <a href="VpnSDK.EndpointsUnreachableException.html" title="EndpointsUnreachableException" class="active">EndpointsUnreachableException</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.FetchLocationsException.html" title="FetchLocationsException" class="">FetchLocationsException</a>
@@ -198,8 +198,8 @@
                           <li class="">
                             <a href="VpnSDK.SDKOperationEventHandler.html" title="SDKOperationEventHandler" class="">SDKOperationEventHandler</a>
                           </li>
-                          <li class="active">
-                            <a href="VpnSDK.SDKOperationEventHandler-1.html" title="SDKOperationEventHandler&lt;T&gt;" class="active">SDKOperationEventHandler&lt;T&gt;</a>
+                          <li class="">
+                            <a href="VpnSDK.SDKOperationEventHandler-1.html" title="SDKOperationEventHandler&lt;T&gt;" class="">SDKOperationEventHandler&lt;T&gt;</a>
                           </li>
                           <li class="">
                             <a href="VpnSDK.ServerListException.html" title="ServerListException" class="">ServerListException</a>
@@ -422,19 +422,40 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VpnSDK.SDKOperationEventHandler`1">
+            <article class="content wrap" id="_content" data-uid="VpnSDK.EndpointsUnreachableException">
   
   
-  <h1 id="VpnSDK_SDKOperationEventHandler_1" data-uid="VpnSDK.SDKOperationEventHandler`1" class="text-break">Delegate SDKOperationEventHandler&lt;T&gt;
+  <h1 id="VpnSDK_EndpointsUnreachableException" data-uid="VpnSDK.EndpointsUnreachableException" class="text-break">Class EndpointsUnreachableException
   </h1>
-  <div class="markdown level0 summary"><p>Delegate SDKOperationEventHandler. Represents the current state of an operation.</p>
+  <div class="markdown level0 summary"><p>Exception thrown when all API endpoints are unreachable.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="VpnSDK.BaseSDKException.html">BaseSDKException</a></div>
+    <div class="level2"><a class="xref" href="VpnSDK.HTTPException.html">HTTPException</a></div>
+    <div class="level3"><a class="xref" href="VpnSDK.APIException.html">APIException</a></div>
+    <div class="level4"><span class="xref">EndpointsUnreachableException</span></div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="VpnSDK.html">VpnSDK</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="VpnSDK_SDKOperationEventHandler_1_syntax">Syntax</h5>
+  <h5 id="VpnSDK_EndpointsUnreachableException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void SDKOperationEventHandler&lt;in T&gt;(ISDK sender, OperationStatus status, T args);</code></pre>
+    <pre><code class="lang-csharp hljs">public class EndpointsUnreachableException : APIException</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="VpnSDK_EndpointsUnreachableException__ctor_" data-uid="VpnSDK.EndpointsUnreachableException.#ctor*"></a>
+  <h4 id="VpnSDK_EndpointsUnreachableException__ctor_System_String_" data-uid="VpnSDK.EndpointsUnreachableException.#ctor(System.String)">EndpointsUnreachableException(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.EndpointsUnreachableException.html">EndpointsUnreachableException</a> class with a specified error message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EndpointsUnreachableException(string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -447,41 +468,80 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ISDK</span></td>
-        <td><span class="parametername">sender</span></td>
-        <td><p>The SDK instance that has fired the event.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">OperationStatus</span></td>
-        <td><span class="parametername">status</span></td>
-        <td><p>The current operation status.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">args</span></td>
-        <td><p>The payload as a result of the operation.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message that describes the error.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="typeParameters">Type Parameters</h5>
+  
+  
+  <a id="VpnSDK_EndpointsUnreachableException__ctor_" data-uid="VpnSDK.EndpointsUnreachableException.#ctor*"></a>
+  <h4 id="VpnSDK_EndpointsUnreachableException__ctor_System_String_Exception_" data-uid="VpnSDK.EndpointsUnreachableException.#ctor(System.String,Exception)">EndpointsUnreachableException(String, Exception)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VpnSDK.EndpointsUnreachableException.html">EndpointsUnreachableException</a> class with a specified.
+error message and a reference to the inner exception that is the cause of this exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EndpointsUnreachableException(string message, Exception inner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
+        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The payload type.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message that describes the error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">inner</span></td>
+        <td><p>The exception that is the cause of this exception.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="VpnSDK_EndpointsUnreachableException_Type_" data-uid="VpnSDK.EndpointsUnreachableException.Type*"></a>
+  <h4 id="VpnSDK_EndpointsUnreachableException_Type" data-uid="VpnSDK.EndpointsUnreachableException.Type">Type</h4>
+  <div class="markdown level1 summary"><p>Gets the error type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override ErrorType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ErrorType</span></td>
+        <td><p>The error type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="VpnSDK.APIException.html#VpnSDK_APIException_Type">APIException.Type</a></div>
 </article>
           </div>
           

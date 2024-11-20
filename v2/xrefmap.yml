@@ -698,6 +698,44 @@ references:
   isSpec: "True"
   fullName: VpnSDK.DnsConfigurationException.Type
   nameWithType: DnsConfigurationException.Type
+- uid: VpnSDK.DoubleHopException
+  name: DoubleHopException
+  href: api/VpnSDK.DoubleHopException.html
+  commentId: T:VpnSDK.DoubleHopException
+  fullName: VpnSDK.DoubleHopException
+  nameWithType: DoubleHopException
+- uid: VpnSDK.DoubleHopException.#ctor(System.String)
+  name: DoubleHopException(String)
+  href: api/VpnSDK.DoubleHopException.html#VpnSDK_DoubleHopException__ctor_System_String_
+  commentId: M:VpnSDK.DoubleHopException.#ctor(System.String)
+  fullName: VpnSDK.DoubleHopException.DoubleHopException(System.String)
+  nameWithType: DoubleHopException.DoubleHopException(String)
+- uid: VpnSDK.DoubleHopException.#ctor(System.String,Exception)
+  name: DoubleHopException(String, Exception)
+  href: api/VpnSDK.DoubleHopException.html#VpnSDK_DoubleHopException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.DoubleHopException.#ctor(System.String,Exception)
+  fullName: VpnSDK.DoubleHopException.DoubleHopException(System.String, Exception)
+  nameWithType: DoubleHopException.DoubleHopException(String, Exception)
+- uid: VpnSDK.DoubleHopException.#ctor*
+  name: DoubleHopException
+  href: api/VpnSDK.DoubleHopException.html#VpnSDK_DoubleHopException__ctor_
+  commentId: Overload:VpnSDK.DoubleHopException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.DoubleHopException.DoubleHopException
+  nameWithType: DoubleHopException.DoubleHopException
+- uid: VpnSDK.DoubleHopException.Type
+  name: Type
+  href: api/VpnSDK.DoubleHopException.html#VpnSDK_DoubleHopException_Type
+  commentId: P:VpnSDK.DoubleHopException.Type
+  fullName: VpnSDK.DoubleHopException.Type
+  nameWithType: DoubleHopException.Type
+- uid: VpnSDK.DoubleHopException.Type*
+  name: Type
+  href: api/VpnSDK.DoubleHopException.html#VpnSDK_DoubleHopException_Type_
+  commentId: Overload:VpnSDK.DoubleHopException.Type
+  isSpec: "True"
+  fullName: VpnSDK.DoubleHopException.Type
+  nameWithType: DoubleHopException.Type
 - uid: VpnSDK.DoubleHopNotAvailableException
   name: DoubleHopNotAvailableException
   href: api/VpnSDK.DoubleHopNotAvailableException.html
@@ -1302,6 +1340,44 @@ references:
   isSpec: "True"
   fullName: VpnSDK.EmptyAvailableVpnProtocolsException.Type
   nameWithType: EmptyAvailableVpnProtocolsException.Type
+- uid: VpnSDK.EndpointsUnreachableException
+  name: EndpointsUnreachableException
+  href: api/VpnSDK.EndpointsUnreachableException.html
+  commentId: T:VpnSDK.EndpointsUnreachableException
+  fullName: VpnSDK.EndpointsUnreachableException
+  nameWithType: EndpointsUnreachableException
+- uid: VpnSDK.EndpointsUnreachableException.#ctor(System.String)
+  name: EndpointsUnreachableException(String)
+  href: api/VpnSDK.EndpointsUnreachableException.html#VpnSDK_EndpointsUnreachableException__ctor_System_String_
+  commentId: M:VpnSDK.EndpointsUnreachableException.#ctor(System.String)
+  fullName: VpnSDK.EndpointsUnreachableException.EndpointsUnreachableException(System.String)
+  nameWithType: EndpointsUnreachableException.EndpointsUnreachableException(String)
+- uid: VpnSDK.EndpointsUnreachableException.#ctor(System.String,Exception)
+  name: EndpointsUnreachableException(String, Exception)
+  href: api/VpnSDK.EndpointsUnreachableException.html#VpnSDK_EndpointsUnreachableException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.EndpointsUnreachableException.#ctor(System.String,Exception)
+  fullName: VpnSDK.EndpointsUnreachableException.EndpointsUnreachableException(System.String, Exception)
+  nameWithType: EndpointsUnreachableException.EndpointsUnreachableException(String, Exception)
+- uid: VpnSDK.EndpointsUnreachableException.#ctor*
+  name: EndpointsUnreachableException
+  href: api/VpnSDK.EndpointsUnreachableException.html#VpnSDK_EndpointsUnreachableException__ctor_
+  commentId: Overload:VpnSDK.EndpointsUnreachableException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.EndpointsUnreachableException.EndpointsUnreachableException
+  nameWithType: EndpointsUnreachableException.EndpointsUnreachableException
+- uid: VpnSDK.EndpointsUnreachableException.Type
+  name: Type
+  href: api/VpnSDK.EndpointsUnreachableException.html#VpnSDK_EndpointsUnreachableException_Type
+  commentId: P:VpnSDK.EndpointsUnreachableException.Type
+  fullName: VpnSDK.EndpointsUnreachableException.Type
+  nameWithType: EndpointsUnreachableException.Type
+- uid: VpnSDK.EndpointsUnreachableException.Type*
+  name: Type
+  href: api/VpnSDK.EndpointsUnreachableException.html#VpnSDK_EndpointsUnreachableException_Type_
+  commentId: Overload:VpnSDK.EndpointsUnreachableException.Type
+  isSpec: "True"
+  fullName: VpnSDK.EndpointsUnreachableException.Type
+  nameWithType: EndpointsUnreachableException.Type
 - uid: VpnSDK.Enums
   name: VpnSDK.Enums
   href: api/VpnSDK.Enums.html
@@ -1524,6 +1600,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.AccountMetadataError
   fullName: VpnSDK.Enums.ErrorType.AccountMetadataError
   nameWithType: ErrorType.AccountMetadataError
+- uid: VpnSDK.Enums.ErrorType.AllApiEndpointsUnreachable
+  name: AllApiEndpointsUnreachable
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_AllApiEndpointsUnreachable
+  commentId: F:VpnSDK.Enums.ErrorType.AllApiEndpointsUnreachable
+  fullName: VpnSDK.Enums.ErrorType.AllApiEndpointsUnreachable
+  nameWithType: ErrorType.AllApiEndpointsUnreachable
 - uid: VpnSDK.Enums.ErrorType.ApiAuthenticationError
   name: ApiAuthenticationError
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_ApiAuthenticationError
