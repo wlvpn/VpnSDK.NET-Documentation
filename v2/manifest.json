@@ -294,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.DTO.OpenVpnConfiguration.html",
-          "hash": "nV51ceEblkobCf2HSNtV11eP5D5zRH89rMaaz8vI2wg="
+          "hash": "T2GSBLxxkFTlj31D+2FqyR4F03QjqBGRumKvYMRYK40="
         }
       },
       "is_incremental": false,
@@ -810,7 +810,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.ISDK.html",
-          "hash": "6MTalGbn2wE30OskZNdiN7LgX+prjiJb6Jt+OUi4vwo="
+          "hash": "oBW7/I97eVYrIpjdhA711sd5r9JQNXjTHNYXZNMZ0jk="
         }
       },
       "is_incremental": false,
@@ -1302,7 +1302,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/sdk-changelog.html",
-          "hash": "NRszlOdz6X2vX1IlgYrDaP/OmPUsGtEKIK0orVK+z6Q="
+          "hash": "MOKpUlMGw+ZVisy6wGvd1i1hqU1eeEB5cGUIswydw2g="
         }
       },
       "is_incremental": false,
@@ -1426,11 +1426,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
