@@ -132,13 +132,23 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="vpnsdk-changelog">VpnSDK Changelog</h1>
 
-<h2 id="v2246">v2.2.46</h2>
+<h2 id="v2247">v2.2.47</h2>
+<h3 id="features">Features</h3>
+<ol>
+<li>Increased the default WireGuard service timeout from 10 to 30 seconds, now allowing it to be configured.</li>
+</ol>
 <h3 id="bug-fixes">Bug fixes</h3>
+<ol>
+<li>Resolved an issue where the OpenVPN adapter was not detected after a system restart.</li>
+<li>Fixed a crash that occurred when the partner app targeted the .NET Framework.</li>
+</ol>
+<h2 id="v2246">v2.2.46</h2>
+<h3 id="bug-fixes-1">Bug fixes</h3>
 <ol>
 <li>Improved the server selection logic to ensure better load distribution.</li>
 </ol>
 <h2 id="v2245">v2.2.45</h2>
-<h3 id="features">Features</h3>
+<h3 id="features-1">Features</h3>
 <ol>
 <li>The optimal algorithm now prioritizes the user&#39;s location.</li>
 <li>A specific exception (EndpointsUnreachableException) is now thrown when all API endpoints are blocked, enabling partners to handle such scenarios effectively.</li>
@@ -146,19 +156,19 @@
 <li>The SDK now supports shorter access token durations.</li>
 </ol>
 <h2 id="v2244">v2.2.44</h2>
-<h3 id="features-1">Features</h3>
+<h3 id="features-2">Features</h3>
 <ol>
 <li>Implemented general enhancements to API request handling.</li>
 </ol>
 <h2 id="v2242">v2.2.42</h2>
-<h3 id="bug-fixes-1">Bug fixes</h3>
+<h3 id="bug-fixes-2">Bug fixes</h3>
 <ol>
 <li>Fixed an issue where the SDK used an incorrect port for WireGuard protocol connections in certain edge cases.</li>
 <li>Addressed an issue where double-hop connections with OpenVPN failed if the OpenVPN TAP adapter was not installed during SDK initialization.</li>
 <li>Updated the external VPN check code to also detect Ethernet adapters.</li>
 </ol>
 <h2 id="v2240">v2.2.40</h2>
-<h3 id="features-2">Features</h3>
+<h3 id="features-3">Features</h3>
 <ol>
 <li>IKEv2 Support<ul>
 <li>Added support for IKEv2 on Windows Server 2016 and 2019.</li>
@@ -217,7 +227,7 @@ while setting up the SDK.</li>
 </ul>
 </li>
 </ol>
-<h3 id="bug-fixes-2">Bug fixes</h3>
+<h3 id="bug-fixes-3">Bug fixes</h3>
 <ol>
 <li>Fixed an issue where WireGuard remained connected after manually killing VpnHostService.exe.</li>
 <li>The SDK now includes automatic retry logic to connect to the next server if the current one is detected as unhealthy, improving server failover handling.</li>
@@ -225,7 +235,7 @@ while setting up the SDK.</li>
 <li>Various minor stability improvements have been made to the SDK</li>
 </ol>
 <h2 id="v2232">v2.2.32</h2>
-<h3 id="features-3">Features</h3>
+<h3 id="features-4">Features</h3>
 <ol>
 <li>OpenVPN TAP adapters for Win 10 and above have been updated and are now WHQL certified for improved compatibility and stability. 
 To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet package to version 2.5.3.</li>
@@ -236,13 +246,13 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>Added new methods for stopping and uninstalling the split tunnel driver service.</li>
 <li>Removed the logging of DNS requests unless Debug Mode is enabled.</li>
 </ol>
-<h3 id="bug-fixes-3">Bug fixes</h3>
+<h3 id="bug-fixes-4">Bug fixes</h3>
 <ol>
 <li>Fixed an issue where some network filters failed to clear correctly following an abrupt SDK termination.</li>
 <li>Fixed a minor issue when disconnecting the SDK when domain based split tunneling is active.</li>
 </ol>
 <h2 id="v2231">v2.2.31</h2>
-<h3 id="features-4">Features</h3>
+<h3 id="features-5">Features</h3>
 <ol>
 <li>Introduced a new DataTransfer Event, allowing users to retrieve the downloaded and uploaded bytes for a VPN connection.</li>
 <li>Removed the domain validations from the SplitTunnelDomain class. Now, it&#39;s up to the client to provide a valid domain, giving the partner more control over validation.</li>
@@ -250,62 +260,62 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>Added the ability to set a custom description for the OpenVPN TAP adapter.</li>
 <li>The Split Tunneling drivers are now WHQL certified for compatibility and stability.</li>
 </ol>
-<h3 id="bug-fixes-4">Bug fixes</h3>
+<h3 id="bug-fixes-5">Bug fixes</h3>
 <ol>
 <li>Resolved a crash triggered during the loading of our SDK in C++ CLR.</li>
 </ol>
 <h2 id="v2230">v2.2.30</h2>
-<h3 id="features-5">Features</h3>
+<h3 id="features-6">Features</h3>
 <ol>
 <li>Application and Domain-based Split Tunneling: Added support for selectively routing specific applications or domains through the local adapter.</li>
 </ol>
 <h2 id="v2229">v2.2.29</h2>
-<h3 id="features-6">Features</h3>
+<h3 id="features-7">Features</h3>
 <ol>
 <li>Added an Automatic option for protocol selection, making it easier to choose a protocol for your VPN connection.</li>
 <li>Implemented the option to allow or block local network interfaces while connected to a VPN server. </li>
 <li>Upgraded OpenVPN to version 2.6.4, ensuring the latest security enhancements and performance improvements are available to our users.</li>
 </ol>
-<h3 id="bug-fixes-5">Bug fixes</h3>
+<h3 id="bug-fixes-6">Bug fixes</h3>
 <ol>
 <li>Addressed and resolved several bugs to enhance the overall stability and reliability of the SDK.</li>
 </ol>
 <h2 id="v2228">v2.2.28</h2>
-<h3 id="bug-fixes-6">Bug fixes</h3>
+<h3 id="bug-fixes-7">Bug fixes</h3>
 <ol>
 <li>Fixed Kill switch issues with WireGuard on .NETCore app.</li>
 </ol>
 <h2 id="v2227">v2.2.27</h2>
-<h3 id="features-7">Features</h3>
+<h3 id="features-8">Features</h3>
 <ol>
 <li>Added support for WireGuard protocol.</li>
 </ol>
 <h2 id="v2226">v2.2.26</h2>
-<h3 id="features-8">Features</h3>
+<h3 id="features-9">Features</h3>
 <ol>
 <li>Removed support for the legacy insecure protocols L2TP, SSTP and PPTP.</li>
 </ol>
 <h2 id="v2225">v2.2.25</h2>
-<h3 id="bug-fixes-7">Bug fixes</h3>
+<h3 id="bug-fixes-8">Bug fixes</h3>
 <ol>
 <li>Fixed OpenVPN&#39;s TAP adapter installation issues</li>
 </ol>
 <h2 id="v2224">v2.2.24</h2>
-<h3 id="bug-fixes-8">Bug fixes</h3>
+<h3 id="bug-fixes-9">Bug fixes</h3>
 <ol>
 <li>Fixed an issue with the locations collection update.</li>
 <li>Fixed an issue where SDK threw a security exception on initialization when running under non-elevated process.</li>
 <li>Fixed the RAS connection dispose process.</li>
 </ol>
 <h2 id="v2220">v2.2.20</h2>
-<h3 id="features-9">Features</h3>
+<h3 id="features-10">Features</h3>
 <ol>
 <li>Added IKEv2 fragmentation support for Windows 10 2004+ build.</li>
 <li>Added .NET Standard 2.0 support.</li>
 <li>Added a new event <code>LocationsRefreshStatusChanged</code> to ISDK. It returns a <code>RefreshLocationListStatus</code> on <code>ISDK.Locations</code> list update.</li>
 <li>Added a mechanism to enable TLS 1.2 for Windows 7 if it was disabled.</li>
 </ol>
-<h3 id="bug-fixes-9">Bug fixes</h3>
+<h3 id="bug-fixes-10">Bug fixes</h3>
 <ol>
 <li>Fixed an issue where servers in maintenance mode were included in the locations list.</li>
 <li>Fixed an issue with the RAS connection disposing.</li>
@@ -314,7 +324,7 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>Improved <code>ISDK.Locations</code> collection updates.</li>
 </ol>
 <h2 id="v2123">v2.1.23</h2>
-<h3 id="features-10">Features</h3>
+<h3 id="features-11">Features</h3>
 <ol>
 <li>An update in the WFP library to use a second optional flag for detecting loopback traffic.</li>
 <li>Loopback improvements: Changed WFP manager to look for interfaces with the loopback type on them as well as looking for 127.0.0.0/8. This should reduce edge cases of loopback traffic incorrectly characterized as normal traffic.</li>
@@ -328,7 +338,7 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 (b) If the cache had not expired</li>
 <li>RefreshServerInfo() allows the server list to explicitly refresh if required. It now has a cool down of 5 minutes.</li>
 </ol>
-<h3 id="bug-fixes-10">Bug fixes</h3>
+<h3 id="bug-fixes-11">Bug fixes</h3>
 <ol>
 <li>Fix to recreate RAS phonebook entries. This is in the event these entries are deleted</li>
 </ol>
@@ -339,12 +349,12 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>When the running process is not elevated, OpenVPN protocol is disabled.</li>
 <li>When the running process is not elevated, <code>InstallTapDriver()</code> now throws <code>NotElevatedException</code>.</li>
 </ul>
-<h3 id="features-11">Features</h3>
+<h3 id="features-12">Features</h3>
 <ul>
 <li>Added <code>IsElevated</code> property to <code>ISDK</code> interface. That property indicates if the running process is elevated or not. </li>
 </ul>
 <h2 id="v2030">v2.0.30</h2>
-<h3 id="bug-fixes-11">Bug fixes</h3>
+<h3 id="bug-fixes-12">Bug fixes</h3>
 <ul>
 <li>Internal references update.</li>
 <li>API requests logging improved.</li>
@@ -356,7 +366,7 @@ To update the TAP adapters, simply upgrade the OpenVPN.Binaries.Scramble nuGet p
 <li>For RAS type of connections, set a new metric via DotRas, rather than doing interop.</li>
 </ul>
 <h2 id="v2023">v2.0.23</h2>
-<h3 id="bug-fixes-12">Bug fixes</h3>
+<h3 id="bug-fixes-13">Bug fixes</h3>
 <ul>
 <li>Fixed the issue with reading exitcode of OpenVPN process that is not exited yet.</li>
 <li>Throw login exceptions correctly.</li>
