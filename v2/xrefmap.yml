@@ -1199,19 +1199,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.DTO.OpenVpnConfiguration.PreferredTapAdapter
   nameWithType: OpenVpnConfiguration.PreferredTapAdapter
-- uid: VpnSDK.DTO.OpenVpnConfiguration.TapDeviceDescription
-  name: TapDeviceDescription
-  href: api/VpnSDK.DTO.OpenVpnConfiguration.html#VpnSDK_DTO_OpenVpnConfiguration_TapDeviceDescription
-  commentId: P:VpnSDK.DTO.OpenVpnConfiguration.TapDeviceDescription
-  fullName: VpnSDK.DTO.OpenVpnConfiguration.TapDeviceDescription
-  nameWithType: OpenVpnConfiguration.TapDeviceDescription
-- uid: VpnSDK.DTO.OpenVpnConfiguration.TapDeviceDescription*
-  name: TapDeviceDescription
-  href: api/VpnSDK.DTO.OpenVpnConfiguration.html#VpnSDK_DTO_OpenVpnConfiguration_TapDeviceDescription_
-  commentId: Overload:VpnSDK.DTO.OpenVpnConfiguration.TapDeviceDescription
+- uid: VpnSDK.DTO.OpenVpnConfiguration.TapDeviceFriendlyName
+  name: TapDeviceFriendlyName
+  href: api/VpnSDK.DTO.OpenVpnConfiguration.html#VpnSDK_DTO_OpenVpnConfiguration_TapDeviceFriendlyName
+  commentId: P:VpnSDK.DTO.OpenVpnConfiguration.TapDeviceFriendlyName
+  fullName: VpnSDK.DTO.OpenVpnConfiguration.TapDeviceFriendlyName
+  nameWithType: OpenVpnConfiguration.TapDeviceFriendlyName
+- uid: VpnSDK.DTO.OpenVpnConfiguration.TapDeviceFriendlyName*
+  name: TapDeviceFriendlyName
+  href: api/VpnSDK.DTO.OpenVpnConfiguration.html#VpnSDK_DTO_OpenVpnConfiguration_TapDeviceFriendlyName_
+  commentId: Overload:VpnSDK.DTO.OpenVpnConfiguration.TapDeviceFriendlyName
   isSpec: "True"
-  fullName: VpnSDK.DTO.OpenVpnConfiguration.TapDeviceDescription
-  nameWithType: OpenVpnConfiguration.TapDeviceDescription
+  fullName: VpnSDK.DTO.OpenVpnConfiguration.TapDeviceFriendlyName
+  nameWithType: OpenVpnConfiguration.TapDeviceFriendlyName
 - uid: VpnSDK.DTO.RasConfiguration
   name: RasConfiguration
   href: api/VpnSDK.DTO.RasConfiguration.html
@@ -3227,6 +3227,19 @@ references:
   commentId: E:VpnSDK.Interfaces.ISDK.TapDeviceInstallationStatusChanged
   fullName: VpnSDK.Interfaces.ISDK.TapDeviceInstallationStatusChanged
   nameWithType: ISDK.TapDeviceInstallationStatusChanged
+- uid: VpnSDK.Interfaces.ISDK.TapDriverDescription
+  name: TapDriverDescription
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_TapDriverDescription
+  commentId: P:VpnSDK.Interfaces.ISDK.TapDriverDescription
+  fullName: VpnSDK.Interfaces.ISDK.TapDriverDescription
+  nameWithType: ISDK.TapDriverDescription
+- uid: VpnSDK.Interfaces.ISDK.TapDriverDescription*
+  name: TapDriverDescription
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_TapDriverDescription_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.TapDriverDescription
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.TapDriverDescription
+  nameWithType: ISDK.TapDriverDescription
 - uid: VpnSDK.Interfaces.ISDK.TokensRefreshed
   name: TokensRefreshed
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_TokensRefreshed
@@ -3439,6 +3452,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.Mtu
   nameWithType: IWireGuardConnectionConfiguration.Mtu
+- uid: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.ServiceStartTimeoutInSeconds
+  name: ServiceStartTimeoutInSeconds
+  href: api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html#VpnSDK_Interfaces_IWireGuardConnectionConfiguration_ServiceStartTimeoutInSeconds
+  commentId: P:VpnSDK.Interfaces.IWireGuardConnectionConfiguration.ServiceStartTimeoutInSeconds
+  fullName: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.ServiceStartTimeoutInSeconds
+  nameWithType: IWireGuardConnectionConfiguration.ServiceStartTimeoutInSeconds
+- uid: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.ServiceStartTimeoutInSeconds*
+  name: ServiceStartTimeoutInSeconds
+  href: api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html#VpnSDK_Interfaces_IWireGuardConnectionConfiguration_ServiceStartTimeoutInSeconds_
+  commentId: Overload:VpnSDK.Interfaces.IWireGuardConnectionConfiguration.ServiceStartTimeoutInSeconds
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.IWireGuardConnectionConfiguration.ServiceStartTimeoutInSeconds
+  nameWithType: IWireGuardConnectionConfiguration.ServiceStartTimeoutInSeconds
 - uid: VpnSDK.InvalidAccountException
   name: InvalidAccountException
   href: api/VpnSDK.InvalidAccountException.html
@@ -4670,6 +4696,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetMtu
   nameWithType: WireGuardConnectionConfigurationBuilder.SetMtu
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.SetServiceStartTimeout(System.Int16)
+  name: SetServiceStartTimeout(Int16)
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_SetServiceStartTimeout_System_Int16_
+  commentId: M:VpnSDK.WireGuardConnectionConfigurationBuilder.SetServiceStartTimeout(System.Int16)
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetServiceStartTimeout(System.Int16)
+  nameWithType: WireGuardConnectionConfigurationBuilder.SetServiceStartTimeout(Int16)
+- uid: VpnSDK.WireGuardConnectionConfigurationBuilder.SetServiceStartTimeout*
+  name: SetServiceStartTimeout
+  href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_SetServiceStartTimeout_
+  commentId: Overload:VpnSDK.WireGuardConnectionConfigurationBuilder.SetServiceStartTimeout
+  isSpec: "True"
+  fullName: VpnSDK.WireGuardConnectionConfigurationBuilder.SetServiceStartTimeout
+  nameWithType: WireGuardConnectionConfigurationBuilder.SetServiceStartTimeout
 - uid: VpnSDK.WireGuardConnectionConfigurationBuilder.Validate
   name: Validate()
   href: api/VpnSDK.WireGuardConnectionConfigurationBuilder.html#VpnSDK_WireGuardConnectionConfigurationBuilder_Validate

@@ -834,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.Interfaces.IWireGuardConnectionConfiguration.html",
-          "hash": "1k9BPWun5ROWWea68ubs8egxme+srDG924DR7yfQKg0="
+          "hash": "kcsXqSM5dQ+AolH8KnlvMnHbuFTmUo5g2XEBuT9cBfo="
         }
       },
       "is_incremental": false,
@@ -1182,7 +1182,7 @@
       "output": {
         ".html": {
           "relative_path": "api/VpnSDK.WireGuardConnectionConfigurationBuilder.html",
-          "hash": "DjgDLawyBlpuB9ErPZrnup6kY3ukj/PXWvTkjlMiHUk="
+          "hash": "AIJEgL/Tbs76+elfQKZlmIqZxYQywMi8IKwmclJRYYM="
         }
       },
       "is_incremental": false,
@@ -1254,7 +1254,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cvpn-v2-changelog.html",
-          "hash": "HunJei5D0HaOanNO+i9MDNNbzY/3ZYoLDUKvag18H5M="
+          "hash": "HvJWk0X+YuuLRVs4Y4uk0X2dGV/l4U+FDVStFBmZBXc="
         }
       },
       "is_incremental": false,
@@ -1302,7 +1302,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/sdk-changelog.html",
-          "hash": "MOKpUlMGw+ZVisy6wGvd1i1hqU1eeEB5cGUIswydw2g="
+          "hash": "L2Be9mXqry6ub4JVSp0QRqy7KY4Bt8tkK0un5TLJFNw="
         }
       },
       "is_incremental": false,
@@ -1426,11 +1426,11 @@
     {
       "status": {
         "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
         "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
