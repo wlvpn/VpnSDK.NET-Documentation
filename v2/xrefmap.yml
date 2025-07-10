@@ -1534,6 +1534,30 @@ references:
   commentId: F:VpnSDK.Enums.DnsFilteringMode.WithWLVPNDns
   fullName: VpnSDK.Enums.DnsFilteringMode.WithWLVPNDns
   nameWithType: DnsFilteringMode.WithWLVPNDns
+- uid: VpnSDK.Enums.Driver
+  name: Driver
+  href: api/VpnSDK.Enums.Driver.html
+  commentId: T:VpnSDK.Enums.Driver
+  fullName: VpnSDK.Enums.Driver
+  nameWithType: Driver
+- uid: VpnSDK.Enums.Driver.Callout
+  name: Callout
+  href: api/VpnSDK.Enums.Driver.html#VpnSDK_Enums_Driver_Callout
+  commentId: F:VpnSDK.Enums.Driver.Callout
+  fullName: VpnSDK.Enums.Driver.Callout
+  nameWithType: Driver.Callout
+- uid: VpnSDK.Enums.Driver.None
+  name: None
+  href: api/VpnSDK.Enums.Driver.html#VpnSDK_Enums_Driver_None
+  commentId: F:VpnSDK.Enums.Driver.None
+  fullName: VpnSDK.Enums.Driver.None
+  nameWithType: Driver.None
+- uid: VpnSDK.Enums.Driver.OpenVPN
+  name: OpenVPN
+  href: api/VpnSDK.Enums.Driver.html#VpnSDK_Enums_Driver_OpenVPN
+  commentId: F:VpnSDK.Enums.Driver.OpenVPN
+  fullName: VpnSDK.Enums.Driver.OpenVPN
+  nameWithType: Driver.OpenVPN
 - uid: VpnSDK.Enums.DriverInstallResult
   name: DriverInstallResult
   href: api/VpnSDK.Enums.DriverInstallResult.html
@@ -2914,6 +2938,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.GetBrandingInfo
   nameWithType: ISDK.GetBrandingInfo
+- uid: VpnSDK.Interfaces.ISDK.GetDriverVersion(Driver)
+  name: GetDriverVersion(Driver)
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetDriverVersion_Driver_
+  commentId: M:VpnSDK.Interfaces.ISDK.GetDriverVersion(Driver)
+  fullName: VpnSDK.Interfaces.ISDK.GetDriverVersion(Driver)
+  nameWithType: ISDK.GetDriverVersion(Driver)
+- uid: VpnSDK.Interfaces.ISDK.GetDriverVersion*
+  name: GetDriverVersion
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetDriverVersion_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.GetDriverVersion
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.GetDriverVersion
+  nameWithType: ISDK.GetDriverVersion
 - uid: VpnSDK.Interfaces.ISDK.InstallTapDriver
   name: InstallTapDriver()
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_InstallTapDriver
