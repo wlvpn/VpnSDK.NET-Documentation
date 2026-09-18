@@ -145,6 +145,9 @@
                             <a href="VpnSDK.EndpointsUnreachableException.html" title="EndpointsUnreachableException" class="">EndpointsUnreachableException</a>
                           </li>
                           <li class="">
+                            <a href="VpnSDK.FeatureNotAvailableException.html" title="FeatureNotAvailableException" class="">FeatureNotAvailableException</a>
+                          </li>
+                          <li class="">
                             <a href="VpnSDK.FetchLocationsException.html" title="FetchLocationsException" class="">FetchLocationsException</a>
                           </li>
                           <li class="">
@@ -347,6 +350,9 @@
                           </li>
                           <li class="">
                             <a href="VpnSDK.Enums.RefreshLocationListStatus.html" title="RefreshLocationListStatus" class="">RefreshLocationListStatus</a>
+                          </li>
+                          <li class="">
+                            <a href="VpnSDK.Enums.UserEntitlement.html" title="UserEntitlement" class="">UserEntitlement</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -630,6 +636,34 @@ If this property is <code>true</code>, the local adapters won&apos;t be banned. 
       <tr>
         <td><span class="xref">NetworkGeolocation</span></td>
         <td><p>The current network geolocation when established, else <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_DedicatedIpServerLocations_" data-uid="VpnSDK.Interfaces.ISDK.DedicatedIpServerLocations*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_DedicatedIpServerLocations" data-uid="VpnSDK.Interfaces.ISDK.DedicatedIpServerLocations">DedicatedIpServerLocations</h4>
+  <div class="markdown level1 summary"><p>Gets a read-only observable collection of dedicated IP server locations.
+This collection is populated from the /servers/dedicated-ip endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ReadOnlyObservableCollection&lt;ILocation&gt; DedicatedIpServerLocations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ReadOnlyObservableCollection</span>&lt;<a class="xref" href="VpnSDK.Interfaces.ILocation.html">ILocation</a>&gt;</td>
+        <td><p>A read-only collection of dedicated IP server locations organized by city.</p>
 </td>
       </tr>
     </tbody>
@@ -1717,6 +1751,33 @@ If it fails to connect, SDK will try the next protocol configuration in the list
   </table>
   
   
+  <a id="VpnSDK_Interfaces_ISDK_GetUserEntitlementsAsync_" data-uid="VpnSDK.Interfaces.ISDK.GetUserEntitlementsAsync*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_GetUserEntitlementsAsync" data-uid="VpnSDK.Interfaces.ISDK.GetUserEntitlementsAsync">GetUserEntitlementsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the set of entitlements available for the current user&apos;s account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyCollection&lt;UserEntitlement&gt;&gt; GetUserEntitlementsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IReadOnlyCollection</span>&lt;<span class="xref">UserEntitlement</span>&gt;&gt;</td>
+        <td><p>A read-only collection of entitlements the user has access to. Returns an empty collection if the call fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="VpnSDK_Interfaces_ISDK_InstallTapDriver_" data-uid="VpnSDK.Interfaces.ISDK.InstallTapDriver*"></a>
   <h4 id="VpnSDK_Interfaces_ISDK_InstallTapDriver" data-uid="VpnSDK.Interfaces.ISDK.InstallTapDriver">InstallTapDriver()</h4>
   <div class="markdown level1 summary"><p>Installs the OpenVPN TAP driver. Removes existing TAP drivers if already installed.</p>
@@ -2030,6 +2091,58 @@ Before doing this type of log in, SDK does branding API request using a slug/bra
       <tr>
         <td><span class="xref">Task</span></td>
         <td><p>A <span class="xref">System.Threading.Tasks.Task</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="VpnSDK_Interfaces_ISDK_RefreshDedicatedIpServerLocations_" data-uid="VpnSDK.Interfaces.ISDK.RefreshDedicatedIpServerLocations*"></a>
+  <h4 id="VpnSDK_Interfaces_ISDK_RefreshDedicatedIpServerLocations" data-uid="VpnSDK.Interfaces.ISDK.RefreshDedicatedIpServerLocations">RefreshDedicatedIpServerLocations()</h4>
+  <div class="markdown level1 summary"><p>Refreshes the dedicated IP server locations manually.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; RefreshDedicatedIpServerLocations()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task</span> that returns a bool indicating if the refresh executed or not.
+If false is returned, then you tried to call the task twice or more times within 15 minute interval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="VpnSDK_Interfaces_ISDK_RefreshDedicatedIpServerLocations_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Can be called once in 15 minutes.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.NotAuthorizedException.html">NotAuthorizedException</a></td>
+        <td><p>No user logged in to refresh dedicated IP server locations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="VpnSDK.ServerListException.html">ServerListException</a></td>
+        <td><p>Failed to retrieve dedicated IP server list.</p>
 </td>
       </tr>
     </tbody>
@@ -2477,6 +2590,31 @@ If it false is returned, then you tried to call the task twice or more times wit
     <tbody>
       <tr>
         <td><a class="xref" href="VpnSDK.SDKEventHandler-1.html">SDKEventHandler</a>&lt;<a class="xref" href="VpnSDK.DataTransferEventArgs.html">DataTransferEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="VpnSDK_Interfaces_ISDK_DedicatedIpServerLocationsRefreshStatusChanged" data-uid="VpnSDK.Interfaces.ISDK.DedicatedIpServerLocationsRefreshStatusChanged">DedicatedIpServerLocationsRefreshStatusChanged</h4>
+  <div class="markdown level1 summary"><p>Occurs whenever the dedicated IP server locations are being refreshed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event SDKEventHandler&lt;RefreshLocationListStatus&gt; DedicatedIpServerLocationsRefreshStatusChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="VpnSDK.SDKEventHandler-1.html">SDKEventHandler</a>&lt;<span class="xref">RefreshLocationListStatus</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
