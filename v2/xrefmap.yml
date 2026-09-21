@@ -1696,6 +1696,12 @@ references:
   commentId: F:VpnSDK.Enums.ErrorType.DoublehopNotAvailable
   fullName: VpnSDK.Enums.ErrorType.DoublehopNotAvailable
   nameWithType: ErrorType.DoublehopNotAvailable
+- uid: VpnSDK.Enums.ErrorType.FeatureNotAvailable
+  name: FeatureNotAvailable
+  href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_FeatureNotAvailable
+  commentId: F:VpnSDK.Enums.ErrorType.FeatureNotAvailable
+  fullName: VpnSDK.Enums.ErrorType.FeatureNotAvailable
+  nameWithType: ErrorType.FeatureNotAvailable
 - uid: VpnSDK.Enums.ErrorType.InvalidAccountError
   name: InvalidAccountError
   href: api/VpnSDK.Enums.ErrorType.html#VpnSDK_Enums_ErrorType_InvalidAccountError
@@ -1990,6 +1996,18 @@ references:
   commentId: F:VpnSDK.Enums.RefreshLocationListStatus.Refreshing
   fullName: VpnSDK.Enums.RefreshLocationListStatus.Refreshing
   nameWithType: RefreshLocationListStatus.Refreshing
+- uid: VpnSDK.Enums.UserEntitlement
+  name: UserEntitlement
+  href: api/VpnSDK.Enums.UserEntitlement.html
+  commentId: T:VpnSDK.Enums.UserEntitlement
+  fullName: VpnSDK.Enums.UserEntitlement
+  nameWithType: UserEntitlement
+- uid: VpnSDK.Enums.UserEntitlement.DedicatedIp
+  name: DedicatedIp
+  href: api/VpnSDK.Enums.UserEntitlement.html#VpnSDK_Enums_UserEntitlement_DedicatedIp
+  commentId: F:VpnSDK.Enums.UserEntitlement.DedicatedIp
+  fullName: VpnSDK.Enums.UserEntitlement.DedicatedIp
+  nameWithType: UserEntitlement.DedicatedIp
 - uid: VpnSDK.Extensions
   name: VpnSDK.Extensions
   href: api/VpnSDK.Extensions.html
@@ -2072,6 +2090,44 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Extensions.RegionLoadChecker.GetRegionLoadLevel
   nameWithType: RegionLoadChecker.GetRegionLoadLevel
+- uid: VpnSDK.FeatureNotAvailableException
+  name: FeatureNotAvailableException
+  href: api/VpnSDK.FeatureNotAvailableException.html
+  commentId: T:VpnSDK.FeatureNotAvailableException
+  fullName: VpnSDK.FeatureNotAvailableException
+  nameWithType: FeatureNotAvailableException
+- uid: VpnSDK.FeatureNotAvailableException.#ctor(System.String)
+  name: FeatureNotAvailableException(String)
+  href: api/VpnSDK.FeatureNotAvailableException.html#VpnSDK_FeatureNotAvailableException__ctor_System_String_
+  commentId: M:VpnSDK.FeatureNotAvailableException.#ctor(System.String)
+  fullName: VpnSDK.FeatureNotAvailableException.FeatureNotAvailableException(System.String)
+  nameWithType: FeatureNotAvailableException.FeatureNotAvailableException(String)
+- uid: VpnSDK.FeatureNotAvailableException.#ctor(System.String,Exception)
+  name: FeatureNotAvailableException(String, Exception)
+  href: api/VpnSDK.FeatureNotAvailableException.html#VpnSDK_FeatureNotAvailableException__ctor_System_String_Exception_
+  commentId: M:VpnSDK.FeatureNotAvailableException.#ctor(System.String,Exception)
+  fullName: VpnSDK.FeatureNotAvailableException.FeatureNotAvailableException(System.String, Exception)
+  nameWithType: FeatureNotAvailableException.FeatureNotAvailableException(String, Exception)
+- uid: VpnSDK.FeatureNotAvailableException.#ctor*
+  name: FeatureNotAvailableException
+  href: api/VpnSDK.FeatureNotAvailableException.html#VpnSDK_FeatureNotAvailableException__ctor_
+  commentId: Overload:VpnSDK.FeatureNotAvailableException.#ctor
+  isSpec: "True"
+  fullName: VpnSDK.FeatureNotAvailableException.FeatureNotAvailableException
+  nameWithType: FeatureNotAvailableException.FeatureNotAvailableException
+- uid: VpnSDK.FeatureNotAvailableException.Type
+  name: Type
+  href: api/VpnSDK.FeatureNotAvailableException.html#VpnSDK_FeatureNotAvailableException_Type
+  commentId: P:VpnSDK.FeatureNotAvailableException.Type
+  fullName: VpnSDK.FeatureNotAvailableException.Type
+  nameWithType: FeatureNotAvailableException.Type
+- uid: VpnSDK.FeatureNotAvailableException.Type*
+  name: Type
+  href: api/VpnSDK.FeatureNotAvailableException.html#VpnSDK_FeatureNotAvailableException_Type_
+  commentId: Overload:VpnSDK.FeatureNotAvailableException.Type
+  isSpec: "True"
+  fullName: VpnSDK.FeatureNotAvailableException.Type
+  nameWithType: FeatureNotAvailableException.Type
 - uid: VpnSDK.FetchLocationsException
   name: FetchLocationsException
   href: api/VpnSDK.FetchLocationsException.html
@@ -2809,6 +2865,25 @@ references:
   commentId: E:VpnSDK.Interfaces.ISDK.DataTransferUpdate
   fullName: VpnSDK.Interfaces.ISDK.DataTransferUpdate
   nameWithType: ISDK.DataTransferUpdate
+- uid: VpnSDK.Interfaces.ISDK.DedicatedIpServerLocations
+  name: DedicatedIpServerLocations
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DedicatedIpServerLocations
+  commentId: P:VpnSDK.Interfaces.ISDK.DedicatedIpServerLocations
+  fullName: VpnSDK.Interfaces.ISDK.DedicatedIpServerLocations
+  nameWithType: ISDK.DedicatedIpServerLocations
+- uid: VpnSDK.Interfaces.ISDK.DedicatedIpServerLocations*
+  name: DedicatedIpServerLocations
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DedicatedIpServerLocations_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.DedicatedIpServerLocations
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.DedicatedIpServerLocations
+  nameWithType: ISDK.DedicatedIpServerLocations
+- uid: VpnSDK.Interfaces.ISDK.DedicatedIpServerLocationsRefreshStatusChanged
+  name: DedicatedIpServerLocationsRefreshStatusChanged
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DedicatedIpServerLocationsRefreshStatusChanged
+  commentId: E:VpnSDK.Interfaces.ISDK.DedicatedIpServerLocationsRefreshStatusChanged
+  fullName: VpnSDK.Interfaces.ISDK.DedicatedIpServerLocationsRefreshStatusChanged
+  nameWithType: ISDK.DedicatedIpServerLocationsRefreshStatusChanged
 - uid: VpnSDK.Interfaces.ISDK.DisableDNSLeakProtection
   name: DisableDNSLeakProtection
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_DisableDNSLeakProtection
@@ -2951,6 +3026,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.GetDriverVersion
   nameWithType: ISDK.GetDriverVersion
+- uid: VpnSDK.Interfaces.ISDK.GetUserEntitlementsAsync
+  name: GetUserEntitlementsAsync()
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetUserEntitlementsAsync
+  commentId: M:VpnSDK.Interfaces.ISDK.GetUserEntitlementsAsync
+  fullName: VpnSDK.Interfaces.ISDK.GetUserEntitlementsAsync()
+  nameWithType: ISDK.GetUserEntitlementsAsync()
+- uid: VpnSDK.Interfaces.ISDK.GetUserEntitlementsAsync*
+  name: GetUserEntitlementsAsync
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_GetUserEntitlementsAsync_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.GetUserEntitlementsAsync
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.GetUserEntitlementsAsync
+  nameWithType: ISDK.GetUserEntitlementsAsync
 - uid: VpnSDK.Interfaces.ISDK.InstallTapDriver
   name: InstallTapDriver()
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_InstallTapDriver
@@ -3138,6 +3226,19 @@ references:
   isSpec: "True"
   fullName: VpnSDK.Interfaces.ISDK.Logout
   nameWithType: ISDK.Logout
+- uid: VpnSDK.Interfaces.ISDK.RefreshDedicatedIpServerLocations
+  name: RefreshDedicatedIpServerLocations()
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_RefreshDedicatedIpServerLocations
+  commentId: M:VpnSDK.Interfaces.ISDK.RefreshDedicatedIpServerLocations
+  fullName: VpnSDK.Interfaces.ISDK.RefreshDedicatedIpServerLocations()
+  nameWithType: ISDK.RefreshDedicatedIpServerLocations()
+- uid: VpnSDK.Interfaces.ISDK.RefreshDedicatedIpServerLocations*
+  name: RefreshDedicatedIpServerLocations
+  href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_RefreshDedicatedIpServerLocations_
+  commentId: Overload:VpnSDK.Interfaces.ISDK.RefreshDedicatedIpServerLocations
+  isSpec: "True"
+  fullName: VpnSDK.Interfaces.ISDK.RefreshDedicatedIpServerLocations
+  nameWithType: ISDK.RefreshDedicatedIpServerLocations
 - uid: VpnSDK.Interfaces.ISDK.RefreshServerInfo
   name: RefreshServerInfo()
   href: api/VpnSDK.Interfaces.ISDK.html#VpnSDK_Interfaces_ISDK_RefreshServerInfo
