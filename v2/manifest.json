@@ -1290,7 +1290,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cvpn-v2-changelog.html",
-          "hash": "3LYeTNzCD1QudECFfL9j7h2uGeChO0QuxHWRIIR+ysc="
+          "hash": "vYgwjZitn22Uj2p9Yzo14uNFp10xEd9+dzQnsR8guqY="
         }
       },
       "is_incremental": false,
@@ -1338,7 +1338,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/sdk-changelog.html",
-          "hash": "tsffb0D8x6L7mZsVEwKNlMUHMFD+ssKCgLGRt0shmtQ="
+          "hash": "LyFdaPAfp1wovJ+4jj9ZKkWvEmF3Zn1sjDgZySWSfkE="
         }
       },
       "is_incremental": false,
